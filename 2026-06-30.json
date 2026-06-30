@@ -1,139 +1,199 @@
 {
   "date": "2026-06-30",
   "ai_news_count": 10,
-  "stories_count": 10,
+  "stories_count": 20,
   "ai_news": [
     {
-      "title": "GPT-5.6正式发布，史上最强但使用受限",
-      "summary_zh": "OpenAI正式发布GPT-5.6，号称史上最强模型，在推理、多模态和长文本处理上实现重大突破。然而，由于模型能力逼近关键安全阈值，OpenAI对使用资格和方式施加了严格限制，引发业界对AI安全与可用性平衡的广泛讨论。这一事件标志着前沿AI部署进入新阶段。",
+      "title": "GPT-5.6正式发布，史上最强但被自己坑惨了",
+      "summary_zh": "OpenAI正式发布GPT-5.6，该模型在多项基准测试中创下纪录，被描述为史上最强。然而，由于模型能力逼近关键安全阈值，OpenAI被迫实施严格的使用限制，导致大部分用户无法直接访问其全部功能，引发了关于AI安全与可用性平衡的广泛讨论。",
       "source": "爱范儿",
       "url": "https://www.ifanr.com/1670225",
       "score": 5
     },
     {
-      "title": "Chamath Palihapitiya的AI编程初创公司获1.35亿美元A轮融资",
-      "summary_zh": "知名投资人Chamath Palihapitiya创立的AI编程初创公司完成1.35亿美元A轮融资，他本人亲自出任CEO。此举凸显VC对AI编程赛道持续高涨的热情。该融资规模在A轮中极为罕见，反映市场对AI辅助软件开发工具的巨大需求，可能重塑编程工具竞争格局。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/",
-      "score": 5
-    },
-    {
-      "title": "Anthropic与加州政府达成协议，以半价提供Claude服务",
-      "summary_zh": "Anthropic与加州州长纽森达成协议，允许加州政府以半价使用Claude AI模型。此举不仅为Anthropic赢得重要政府客户，也标志着AI公司与公共部门深度合作的新模式。与此同时，联邦政府与Anthropic关系紧张，凸显AI政治博弈的复杂性。",
+      "title": "Anthropic与加州州长达成协议，政府半价使用Claude",
+      "summary_zh": "Anthropic与加州州长纽森达成协议，允许加州政府以半价使用其AI模型Claude。此举深化了Anthropic与加州的关系，同时凸显了该公司与联邦政府之间的紧张关系。该协议可能为其他州政府与AI公司的合作树立先例，对AI政策的制定产生重大影响。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/",
       "score": 5
     },
     {
-      "title": "韩国科技巨头承诺投资超5500亿美元缓解‘内存危机’",
-      "summary_zh": "全球两大内存芯片巨头三星和SK海力士宣布投资超过5500亿美元建设新内存晶圆厂，以应对AI驱动下的‘内存危机’。此举旨在巩固韩国作为AI技术强国的地位，并缓解因AI训练和推理需求激增导致的内存短缺问题，对全球AI基础设施供应至关重要。",
+      "title": "韩国科技巨头承诺投资超5500亿美元缓解‘RAMageddon’",
+      "summary_zh": "全球最大的两家内存芯片公司——三星和SK海力士，承诺投资超过5500亿美元建设新的内存实验室和晶圆厂，以应对人工智能带来的内存需求激增。此举旨在将韩国定位为AI技术强国，并缓解全球范围内因AI计算需求导致的‘内存危机’（RAMageddon）。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/06/29/south-korean-tech-giants-commit-over-550b-to-ease-ramageddon/",
       "score": 5
     },
     {
-      "title": "OpenAI为Codex发布专用硬件设备",
-      "summary_zh": "OpenAI宣布将于7月15日发布一款与AI编程工具Codex相关的硬件设备。视频展示了一个方形多按钮设备，旨在为Codex提供快捷操作升级。此举标志着OpenAI从纯软件向硬件领域的拓展，可能开创AI编程的新交互范式，并引发对AI专用硬件的更多关注。",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/959174/openai-codex-hardware-work-louder",
-      "score": 4
-    },
-    {
-      "title": "Arena AI排行榜业务估值达1亿美元",
-      "summary_zh": "运营广受欢迎的AI模型排行榜的初创公司Arena，其商业服务自去年9月推出以来迅速增长，目前业务估值已达1亿美元。这一成就凸显了AI评估和基准测试市场的巨大商业潜力，也反映了行业对模型性能透明度的迫切需求。",
+      "title": "ChatGPT的AI排行榜Arena成为估值1亿美元的业务",
+      "summary_zh": "运营着广受欢迎的免费AI模型排行榜的初创公司Arena，在去年9月推出商业服务后，已发展成为一项价值1亿美元的业务。该平台已成为社区评估和比较不同AI模型性能的关键参考，其商业化成功标志着AI评估领域的重要里程碑。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/06/29/arena-the-ai-leaderboard-everyone-uses-is-now-a-100m-business/",
       "score": 4
     },
     {
-      "title": "DeepSeek发布大模型推理加速框架DSpark",
-      "summary_zh": "DeepSeek发布DSpark推理加速框架，旨在解决大模型推理时的‘挤出效应’问题，加快回答生成速度。该框架通过系统工程创新优化模型部署效率，对降低AI应用延迟和成本具有实际意义，可能推动大模型在实时场景中的更广泛应用。",
+      "title": "OpenAI为Codex预告新硬件设备",
+      "summary_zh": "OpenAI发布了一段预告视频，展示了一款与AI编程工具Codex相关的方形设备，并宣布将于7月15日发布。该设备被描述为Codex快捷方式的升级版，可能是一款专用硬件，旨在提升AI辅助编程的效率和体验，标志着OpenAI从软件向硬件领域的拓展。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/959174/openai-codex-hardware-work-louder",
+      "score": 4
+    },
+    {
+      "title": "Cursor推出移动应用，可远程指导编码智能体",
+      "summary_zh": "AI编码工具Cursor发布了一款新的移动应用，允许用户远程指导和监控其编码智能体（Coding Agent）。这一功能使开发者能够在移动设备上管理后台运行的AI编程任务，极大地提升了AI辅助开发的灵活性和便利性，是AI编程工具向移动端延伸的重要一步。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go/",
+      "score": 4
+    },
+    {
+      "title": "Chamath Palihapitiya为其AI编码初创公司融资1.35亿美元并出任CEO",
+      "summary_zh": "知名投资人Chamath Palihapitiya为其AI编码初创公司完成了1.35亿美元的A轮融资，并亲自出任CEO。这笔巨额融资反映了风险投资界对AI编码领域的持续狂热，也彰显了Palihapitiya对该赛道的深度押注，预计将加剧AI编码工具市场的竞争。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/",
+      "score": 4
+    },
+    {
+      "title": "DeepSeek发布DSpark大模型推理加速框架",
+      "summary_zh": "中国AI公司DeepSeek发布了名为DSpark的大模型推理加速框架，旨在解决AI模型回答时的‘挤牙膏’问题，即提升推理速度和效率。该框架的推出，有望降低大模型部署成本，并推动更流畅、更实时的AI交互体验，是AI工程化领域的重要技术突破。",
       "source": "爱范儿",
       "url": "https://www.ifanr.com/1670249",
       "score": 4
     },
     {
       "title": "自变量机器人2个月完成4轮融资，估值突破200亿元",
-      "summary_zh": "具身智能公司自变量机器人在两个月内连续完成四轮融资，估值突破200亿元人民币，成为大湾区首家达到此估值的具身智能公司。投资方阵容豪华，反映出资本对机器人结合AI技术的强烈信心，以及具身智能赛道的高热度。",
+      "summary_zh": "具身智能公司自变量机器人（Zibianliang）在短短两个月内完成了4轮融资，估值突破200亿元人民币，成为大湾区首家估值超过200亿的具身智能公司。这一系列快速融资表明资本对具身智能赛道的高度看好，也反映了中国在机器人领域的研发和商业化进程正在加速。",
       "source": "爱范儿",
       "url": "https://www.ifanr.com/1670322",
       "score": 4
     },
     {
-      "title": "Cursor推出移动应用，可远程指导编码代理",
-      "summary_zh": "AI编程工具Cursor发布移动应用，允许开发者通过手机远程监控和指导其编码代理。这一创新解决了开发者在外出时无法跟进AI编程进度的痛点，提升了AI编程工作流的灵活性和可控性，有望成为AI编程工具的新标配功能。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go/",
-      "score": 4
-    },
-    {
-      "title": "TIDAL打击AI音乐，切断AI生成内容的变现渠道",
-      "summary_zh": "音乐流媒体平台TIDAL宣布新政策，将从7月15日起对完全由AI生成的音乐进行标记，并立即停止对此类内容的付费。平台还将使用自动化工具移除冒充艺术家的AI音乐。此举在保护艺术家权益和应对AI音乐泛滥方面树立了行业先例，可能引发其他平台效仿。",
+      "title": "Tidal打击AI音乐，切断AI生成音乐的变现渠道",
+      "summary_zh": "音乐流媒体平台Tidal宣布新政策，将从7月15日起对完全由AI生成的音乐进行标记，并立即停止向其支付版税。此外，Tidal还将使用自动化工具移除试图模仿艺术家或乐队的AI音乐。此举是主流平台对AI生成内容采取的最严厉措施之一，旨在保护艺术家权益。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/06/29/tidal-cracks-down-on-ai-music-by-cutting-off-monetization/",
-      "score": 4
+      "score": 3
     }
   ],
   "stories": [
     {
-      "title": "沈园惊梦",
-      "dynasty": "南宋",
-      "category": "唐诗宋词背后的故事",
-      "source": "《宋史·陆游传》、周密《齐东野语》"
+      "title": "曹冲称象：大象从何而来",
+      "dynasty": "东汉",
+      "category": "历史趣考",
+      "source": "《三国志·魏书·邓哀王冲传》"
     },
     {
-      "title": "杜甫草堂诗史",
-      "dynasty": "唐代",
-      "category": "唐诗宋词背后的故事",
-      "source": "《旧唐书·杜甫传》、仇兆鳌《杜诗详注》"
-    },
-    {
-      "title": "白居易《长恨歌》创作缘起",
-      "dynasty": "唐代",
-      "category": "唐诗宋词背后的故事",
-      "source": "陈鸿《长恨歌传》、《新唐书·白居易传》"
-    },
-    {
-      "title": "柳永奉旨填词",
+      "title": "司马光砸缸：宋代真能烧制大缸吗",
       "dynasty": "北宋",
-      "category": "唐诗宋词背后的故事",
-      "source": "《宋史·柳永传》、叶梦得《避暑录话》"
+      "category": "历史趣考",
+      "source": "《宋史·司马光传》"
     },
     {
-      "title": "范仲淹划粥断齑",
-      "dynasty": "北宋",
-      "category": "唐诗宋词背后的故事",
-      "source": "《宋史·范仲淹传》、彭乘《墨客挥犀》"
+      "title": "草船借箭：真实主角是孙权",
+      "dynasty": "东汉",
+      "category": "历史趣考",
+      "source": "《三国志·吴书·吴主传》注引《魏略》"
     },
     {
-      "title": "毕昇发明活字印刷",
-      "dynasty": "北宋",
-      "category": "古代科技发明故事",
-      "source": "沈括《梦溪笔谈·技艺》"
+      "title": "焚书坑儒的真相：被误读的秦始皇",
+      "dynasty": "秦",
+      "category": "历史趣考",
+      "source": "《史记·秦始皇本纪》"
     },
     {
-      "title": "徐霞客探长江源",
-      "dynasty": "明代",
+      "title": "古代奇葩法律：汉代的‘腹诽罪’",
+      "dynasty": "西汉",
+      "category": "历史趣考",
+      "source": "《汉书·食货志》"
+    },
+    {
+      "title": "古代黑科技：曾侯乙编钟的声学奇迹",
+      "dynasty": "战国",
+      "category": "历史趣考",
+      "source": "《考古》1979年曾侯乙墓发掘报告"
+    },
+    {
+      "title": "二十八星宿的由来：东方苍龙七宿",
+      "dynasty": "先秦",
       "category": "古代天文地理",
-      "source": "《徐霞客游记·溯江纪源》"
+      "source": "《史记·天官书》《尚书·尧典》"
     },
     {
-      "title": "张骞凿空西域",
+      "title": "二十四节气：从太阳历到农耕指南",
       "dynasty": "西汉",
       "category": "古代天文地理",
-      "source": "《史记·大宛列传》、《汉书·张骞传》"
+      "source": "《淮南子·天文训》"
     },
     {
-      "title": "李冰父子修都江堰",
-      "dynasty": "战国（秦国）",
-      "category": "古代科技发明故事",
-      "source": "《史记·河渠书》、《华阳国志·蜀志》"
+      "title": "都江堰的岁修制度：李冰的千年智慧",
+      "dynasty": "战国",
+      "category": "古代天文地理",
+      "source": "《水经注·江水》"
     },
     {
-      "title": "管仲射钩与齐桓公称霸",
+      "title": "《禹贡地域图》：中国最早的地图集",
+      "dynasty": "西晋",
+      "category": "古代天文地理",
+      "source": "《晋书·裴秀传》"
+    },
+    {
+      "title": "田单火牛阵：以弱胜强的兵法奇迹",
+      "dynasty": "战国",
+      "category": "兵法谋略故事",
+      "source": "《史记·田单列传》"
+    },
+    {
+      "title": "围魏救赵：孙膑的避实击虚",
+      "dynasty": "战国",
+      "category": "兵法谋略故事",
+      "source": "《史记·孙子吴起列传》"
+    },
+    {
+      "title": "背水一战：韩信的绝地求生",
+      "dynasty": "西汉",
+      "category": "兵法谋略故事",
+      "source": "《史记·淮阴侯列传》"
+    },
+    {
+      "title": "七夕节的由来：牛郎织女与星宿崇拜",
+      "dynasty": "先秦至汉",
+      "category": "传统节日传说",
+      "source": "《诗经·小雅·大东》《古诗十九首》"
+    },
+    {
+      "title": "清明节的寒食传说：介子推的故事",
       "dynasty": "春秋",
-      "category": "历史故事",
-      "source": "《史记·齐太公世家》、《左传·庄公九年》"
+      "category": "传统节日传说",
+      "source": "《左传·僖公二十四年》《史记·晋世家》"
+    },
+    {
+      "title": "端午节：屈原投江与龙舟竞渡",
+      "dynasty": "战国",
+      "category": "传统节日传说",
+      "source": "《史记·屈原贾生列传》《续齐谐记》"
+    },
+    {
+      "title": "中秋节的起源：嫦娥奔月与月宫传说",
+      "dynasty": "先秦至唐",
+      "category": "传统节日传说",
+      "source": "《淮南子·览冥训》《酉阳杂俎》"
+    },
+    {
+      "title": "重阳节的登高：桓景避灾的传说",
+      "dynasty": "东汉",
+      "category": "传统节日传说",
+      "source": "《续齐谐记》"
+    },
+    {
+      "title": "元宵节的起源：汉文帝与‘平吕’纪念",
+      "dynasty": "西汉",
+      "category": "传统节日传说",
+      "source": "《史记·吕太后本纪》《汉书·文帝纪》"
+    },
+    {
+      "title": "除夕的由来：年兽传说与岁末驱邪",
+      "dynasty": "先秦至汉",
+      "category": "传统节日传说",
+      "source": "《荆楚岁时记》《吕氏春秋·季冬纪》"
     }
   ]
 }
