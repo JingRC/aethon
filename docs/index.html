@@ -188,6 +188,33 @@
     font-style: italic;
   }
 
+  /* ── Baidu Baike links ── */
+  .story-links {
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border);
+    font-size: 13px;
+  }
+  .story-links .links-label {
+    color: var(--text-secondary);
+    margin-right: 6px;
+  }
+  .story-links a {
+    display: inline-block;
+    margin: 2px 4px;
+    padding: 3px 12px;
+    border-radius: 14px;
+    background: #eff6ff;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 12px;
+    transition: background .15s;
+  }
+  .story-links a:hover {
+    background: #dbeafe;
+    text-decoration: underline;
+  }
+
   /* ── Footer ── */
   .footer {
     text-align: center;
@@ -223,103 +250,117 @@
     <div class="card-header">
       <span class="card-number ai">1</span>
       <span class="card-title">
-        <a href="https://www.ifanr.com/1670225" target="_blank">GPT-5.6正式发布，史上最强但使用受限</a>
+        <a href="https://www.ifanr.com/1670225" target="_blank">GPT-5.6正式发布，史上最强但被自己坑惨了</a>
       </span>
       <span class="score">★★★★★</span>
     </div>
     <div class="card-meta">
       <span class="tag source">爱范儿</span>
     </div>
-    <div class="summary">OpenAI正式发布GPT-5.6，号称史上最强模型，在推理、多模态和长文本处理上实现重大突破。然而，由于模型能力逼近关键安全阈值，OpenAI对使用资格和方式施加了严格限制，引发业界对AI安全与可用性平衡的广泛讨论。这一事件标志着前沿AI部署进入新阶段。</div>
+    <div class="summary">OpenAI正式发布GPT-5.6，该模型在多项基准测试中创下纪录，被描述为史上最强。然而，由于模型能力逼近关键安全阈值，OpenAI被迫实施严格的使用限制，导致大部分用户无法直接访问其全部功能，引发了关于AI安全与可用性平衡的广泛讨论。</div>
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number ai">2</span>
       <span class="card-title">
-        <a href="https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/" target="_blank">Chamath Palihapitiya的AI编程初创公司获1.35亿美元A轮融资</a>
+        <a href="https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/" target="_blank">Anthropic与加州州长达成协议，政府半价使用Claude</a>
       </span>
       <span class="score">★★★★★</span>
     </div>
     <div class="card-meta">
       <span class="tag source">TechCrunch</span>
     </div>
-    <div class="summary">知名投资人Chamath Palihapitiya创立的AI编程初创公司完成1.35亿美元A轮融资，他本人亲自出任CEO。此举凸显VC对AI编程赛道持续高涨的热情。该融资规模在A轮中极为罕见，反映市场对AI辅助软件开发工具的巨大需求，可能重塑编程工具竞争格局。</div>
+    <div class="summary">Anthropic与加州州长纽森达成协议，允许加州政府以半价使用其AI模型Claude。此举深化了Anthropic与加州的关系，同时凸显了该公司与联邦政府之间的紧张关系。该协议可能为其他州政府与AI公司的合作树立先例，对AI政策的制定产生重大影响。</div>
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number ai">3</span>
       <span class="card-title">
-        <a href="https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/" target="_blank">Anthropic与加州政府达成协议，以半价提供Claude服务</a>
+        <a href="https://techcrunch.com/2026/06/29/south-korean-tech-giants-commit-over-550b-to-ease-ramageddon/" target="_blank">韩国科技巨头承诺投资超5500亿美元缓解‘RAMageddon’</a>
       </span>
       <span class="score">★★★★★</span>
     </div>
     <div class="card-meta">
       <span class="tag source">TechCrunch</span>
     </div>
-    <div class="summary">Anthropic与加州州长纽森达成协议，允许加州政府以半价使用Claude AI模型。此举不仅为Anthropic赢得重要政府客户，也标志着AI公司与公共部门深度合作的新模式。与此同时，联邦政府与Anthropic关系紧张，凸显AI政治博弈的复杂性。</div>
+    <div class="summary">全球最大的两家内存芯片公司——三星和SK海力士，承诺投资超过5500亿美元建设新的内存实验室和晶圆厂，以应对人工智能带来的内存需求激增。此举旨在将韩国定位为AI技术强国，并缓解全球范围内因AI计算需求导致的‘内存危机’（RAMageddon）。</div>
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number ai">4</span>
       <span class="card-title">
-        <a href="https://techcrunch.com/2026/06/29/south-korean-tech-giants-commit-over-550b-to-ease-ramageddon/" target="_blank">韩国科技巨头承诺投资超5500亿美元缓解‘内存危机’</a>
+        <a href="https://techcrunch.com/2026/06/29/arena-the-ai-leaderboard-everyone-uses-is-now-a-100m-business/" target="_blank">ChatGPT的AI排行榜Arena成为估值1亿美元的业务</a>
       </span>
-      <span class="score">★★★★★</span>
+      <span class="score">★★★★☆</span>
     </div>
     <div class="card-meta">
       <span class="tag source">TechCrunch</span>
     </div>
-    <div class="summary">全球两大内存芯片巨头三星和SK海力士宣布投资超过5500亿美元建设新内存晶圆厂，以应对AI驱动下的‘内存危机’。此举旨在巩固韩国作为AI技术强国的地位，并缓解因AI训练和推理需求激增导致的内存短缺问题，对全球AI基础设施供应至关重要。</div>
+    <div class="summary">运营着广受欢迎的免费AI模型排行榜的初创公司Arena，在去年9月推出商业服务后，已发展成为一项价值1亿美元的业务。该平台已成为社区评估和比较不同AI模型性能的关键参考，其商业化成功标志着AI评估领域的重要里程碑。</div>
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number ai">5</span>
       <span class="card-title">
-        <a href="https://www.theverge.com/ai-artificial-intelligence/959174/openai-codex-hardware-work-louder" target="_blank">OpenAI为Codex发布专用硬件设备</a>
+        <a href="https://www.theverge.com/ai-artificial-intelligence/959174/openai-codex-hardware-work-louder" target="_blank">OpenAI为Codex预告新硬件设备</a>
       </span>
       <span class="score">★★★★☆</span>
     </div>
     <div class="card-meta">
       <span class="tag source">The Verge</span>
     </div>
-    <div class="summary">OpenAI宣布将于7月15日发布一款与AI编程工具Codex相关的硬件设备。视频展示了一个方形多按钮设备，旨在为Codex提供快捷操作升级。此举标志着OpenAI从纯软件向硬件领域的拓展，可能开创AI编程的新交互范式，并引发对AI专用硬件的更多关注。</div>
+    <div class="summary">OpenAI发布了一段预告视频，展示了一款与AI编程工具Codex相关的方形设备，并宣布将于7月15日发布。该设备被描述为Codex快捷方式的升级版，可能是一款专用硬件，旨在提升AI辅助编程的效率和体验，标志着OpenAI从软件向硬件领域的拓展。</div>
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number ai">6</span>
       <span class="card-title">
-        <a href="https://techcrunch.com/2026/06/29/arena-the-ai-leaderboard-everyone-uses-is-now-a-100m-business/" target="_blank">Arena AI排行榜业务估值达1亿美元</a>
+        <a href="https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go/" target="_blank">Cursor推出移动应用，可远程指导编码智能体</a>
       </span>
       <span class="score">★★★★☆</span>
     </div>
     <div class="card-meta">
       <span class="tag source">TechCrunch</span>
     </div>
-    <div class="summary">运营广受欢迎的AI模型排行榜的初创公司Arena，其商业服务自去年9月推出以来迅速增长，目前业务估值已达1亿美元。这一成就凸显了AI评估和基准测试市场的巨大商业潜力，也反映了行业对模型性能透明度的迫切需求。</div>
+    <div class="summary">AI编码工具Cursor发布了一款新的移动应用，允许用户远程指导和监控其编码智能体（Coding Agent）。这一功能使开发者能够在移动设备上管理后台运行的AI编程任务，极大地提升了AI辅助开发的灵活性和便利性，是AI编程工具向移动端延伸的重要一步。</div>
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number ai">7</span>
       <span class="card-title">
-        <a href="https://www.ifanr.com/1670249" target="_blank">DeepSeek发布大模型推理加速框架DSpark</a>
+        <a href="https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/" target="_blank">Chamath Palihapitiya为其AI编码初创公司融资1.35亿美元并出任CEO</a>
+      </span>
+      <span class="score">★★★★☆</span>
+    </div>
+    <div class="card-meta">
+      <span class="tag source">TechCrunch</span>
+    </div>
+    <div class="summary">知名投资人Chamath Palihapitiya为其AI编码初创公司完成了1.35亿美元的A轮融资，并亲自出任CEO。这笔巨额融资反映了风险投资界对AI编码领域的持续狂热，也彰显了Palihapitiya对该赛道的深度押注，预计将加剧AI编码工具市场的竞争。</div>
+  </div>
+  
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number ai">8</span>
+      <span class="card-title">
+        <a href="https://www.ifanr.com/1670249" target="_blank">DeepSeek发布DSpark大模型推理加速框架</a>
       </span>
       <span class="score">★★★★☆</span>
     </div>
     <div class="card-meta">
       <span class="tag source">爱范儿</span>
     </div>
-    <div class="summary">DeepSeek发布DSpark推理加速框架，旨在解决大模型推理时的‘挤出效应’问题，加快回答生成速度。该框架通过系统工程创新优化模型部署效率，对降低AI应用延迟和成本具有实际意义，可能推动大模型在实时场景中的更广泛应用。</div>
+    <div class="summary">中国AI公司DeepSeek发布了名为DSpark的大模型推理加速框架，旨在解决AI模型回答时的‘挤牙膏’问题，即提升推理速度和效率。该框架的推出，有望降低大模型部署成本，并推动更流畅、更实时的AI交互体验，是AI工程化领域的重要技术突破。</div>
   </div>
   
   <div class="card">
     <div class="card-header">
-      <span class="card-number ai">8</span>
+      <span class="card-number ai">9</span>
       <span class="card-title">
         <a href="https://www.ifanr.com/1670322" target="_blank">自变量机器人2个月完成4轮融资，估值突破200亿元</a>
       </span>
@@ -328,35 +369,21 @@
     <div class="card-meta">
       <span class="tag source">爱范儿</span>
     </div>
-    <div class="summary">具身智能公司自变量机器人在两个月内连续完成四轮融资，估值突破200亿元人民币，成为大湾区首家达到此估值的具身智能公司。投资方阵容豪华，反映出资本对机器人结合AI技术的强烈信心，以及具身智能赛道的高热度。</div>
-  </div>
-  
-  <div class="card">
-    <div class="card-header">
-      <span class="card-number ai">9</span>
-      <span class="card-title">
-        <a href="https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go/" target="_blank">Cursor推出移动应用，可远程指导编码代理</a>
-      </span>
-      <span class="score">★★★★☆</span>
-    </div>
-    <div class="card-meta">
-      <span class="tag source">TechCrunch</span>
-    </div>
-    <div class="summary">AI编程工具Cursor发布移动应用，允许开发者通过手机远程监控和指导其编码代理。这一创新解决了开发者在外出时无法跟进AI编程进度的痛点，提升了AI编程工作流的灵活性和可控性，有望成为AI编程工具的新标配功能。</div>
+    <div class="summary">具身智能公司自变量机器人（Zibianliang）在短短两个月内完成了4轮融资，估值突破200亿元人民币，成为大湾区首家估值超过200亿的具身智能公司。这一系列快速融资表明资本对具身智能赛道的高度看好，也反映了中国在机器人领域的研发和商业化进程正在加速。</div>
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number ai">10</span>
       <span class="card-title">
-        <a href="https://techcrunch.com/2026/06/29/tidal-cracks-down-on-ai-music-by-cutting-off-monetization/" target="_blank">TIDAL打击AI音乐，切断AI生成内容的变现渠道</a>
+        <a href="https://techcrunch.com/2026/06/29/tidal-cracks-down-on-ai-music-by-cutting-off-monetization/" target="_blank">Tidal打击AI音乐，切断AI生成音乐的变现渠道</a>
       </span>
-      <span class="score">★★★★☆</span>
+      <span class="score">★★★☆☆</span>
     </div>
     <div class="card-meta">
       <span class="tag source">TechCrunch</span>
     </div>
-    <div class="summary">音乐流媒体平台TIDAL宣布新政策，将从7月15日起对完全由AI生成的音乐进行标记，并立即停止对此类内容的付费。平台还将使用自动化工具移除冒充艺术家的AI音乐。此举在保护艺术家权益和应对AI音乐泛滥方面树立了行业先例，可能引发其他平台效仿。</div>
+    <div class="summary">音乐流媒体平台Tidal宣布新政策，将从7月15日起对完全由AI生成的音乐进行标记，并立即停止向其支付版税。此外，Tidal还将使用自动化工具移除试图模仿艺术家或乐队的AI音乐。此举是主流平台对AI生成内容采取的最严厉措施之一，旨在保护艺术家权益。</div>
   </div>
   
 
@@ -364,217 +391,827 @@
   <div class="section-heading story">
     <span class="icon">🏯</span>
     <h2>中国古代故事 · 典故 · 天文地理 · 科技发明</h2>
-    <span class="count">10 则故事</span>
+    <span class="count">20 则故事</span>
   </div>
 
   
   <div class="card">
     <div class="card-header">
       <span class="card-number story">1</span>
-      <span class="card-title">沈园惊梦</span>
+      <span class="card-title">曹冲称象：大象从何而来</span>
     </div>
     <div class="card-meta">
-      <span class="tag dynasty">南宋</span>
-      <span class="tag category">唐诗宋词背后的故事</span>
-      <span class="tag">《宋史·陆游传》、周密《齐东野语》</span>
+      <span class="tag dynasty">东汉</span>
+      <span class="tag category">历史趣考</span>
+      <span class="tag">《三国志·魏书·邓哀王冲传》</span>
     </div>
-    <div class="story-content">南宋诗人陆游与表妹唐婉青梅竹马，婚后琴瑟和鸣。陆母却以唐婉无子为由，强逼休妻。陆游无奈另娶，唐婉再嫁赵士程。十年后，陆游在绍兴沈园偶遇唐婉夫妇。唐婉遣人送酒肴致意。陆游悲痛欲绝，在园壁题下《钗头凤》：'红酥手，黄縢酒，满城春色宫墙柳……'唐婉读后和词一首，不久抑郁而终。陆游晚年多次重游沈园，写下'伤心桥下春波绿，曾是惊鸿照影来'等悼亡诗句，至死不忘。</div>
+    <div class="story-content">公元200年左右，孙权送给曹操一头大象，曹操大喜，问群臣如何称其重量。众人无计，六岁的曹冲提议将象置于船上，刻下吃水线，再换以石头称重。曹操采纳，果然得象重。但有趣的是，大象并非中国本土物种。据《后汉书》记载，当时南方交州（今越南）进贡了驯象，孙权作为江东霸主，控制了长江流域，才得以获取。这头象很可能来自东南亚，通过贸易或朝贡而来。曹冲的智慧虽小，却折射出东汉末年的国际交流。</div>
     
     <div class="lesson">
-      <span class="lesson-label">💡 寓意：</span>爱情虽美，但封建礼教常无情扼杀真情，珍惜眼前人，莫待失去空悲切。
+      <span class="lesson-label">💡 寓意：</span>善用等价转换思维，化繁为简，儿童亦可成大事。
     </div>
     
     
-    <div class="fun-fact">📎 沈园至今保留陆游题壁的《钗头凤》石刻，是绍兴著名爱情圣地。</div>
+    <div class="fun-fact">📎 曹冲称象比阿基米德浮力原理的应用早约400年，但文献未提浮力理论。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E6%9B%B9%E5%86%B2" target="_blank" rel="noopener">曹冲</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%9B%B9%E6%93%8D" target="_blank" rel="noopener">曹操</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%AD%99%E6%9D%83" target="_blank" rel="noopener">孙权</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%A4%A7%E8%B1%A1" target="_blank" rel="noopener">大象</a>
+      
+      <a href="https://baike.baidu.com/item/%E4%B8%89%E5%9B%BD%E5%BF%97" target="_blank" rel="noopener">三国志</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%9B%B9%E5%86%B2%E7%A7%B0%E8%B1%A1%EF%BC%9A%E5%A4%A7%E8%B1%A1%E4%BB%8E%E4%BD%95%E8%80%8C%E6%9D%A5" target="_blank" rel="noopener">曹冲称象：大象从何而来</a>
+      
+      <a href="https://baike.baidu.com/item/%E4%B8%89%E5%9B%BD%E5%BF%97%C2%B7%E9%AD%8F%E4%B9%A6%C2%B7%E9%82%93%E5%93%80%E7%8E%8B%E5%86%B2%E4%BC%A0" target="_blank" rel="noopener">三国志·魏书·邓哀王冲传</a>
+      
+    </div>
     
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number story">2</span>
-      <span class="card-title">杜甫草堂诗史</span>
+      <span class="card-title">司马光砸缸：宋代真能烧制大缸吗</span>
     </div>
     <div class="card-meta">
-      <span class="tag dynasty">唐代</span>
-      <span class="tag category">唐诗宋词背后的故事</span>
-      <span class="tag">《旧唐书·杜甫传》、仇兆鳌《杜诗详注》</span>
+      <span class="tag dynasty">北宋</span>
+      <span class="tag category">历史趣考</span>
+      <span class="tag">《宋史·司马光传》</span>
     </div>
-    <div class="story-content">安史之乱后，杜甫携家逃难至成都，在浣花溪畔建起茅屋，即后世闻名的杜甫草堂。在此居住的四年间，他创作了240余首诗，包括《春夜喜雨》：'好雨知时节，当春乃发生'；《茅屋为秋风所破歌》：'安得广厦千万间，大庇天下寒士俱欢颜'。这些诗真实记录了战乱中百姓的苦难，被誉为'诗史'。杜甫在草堂种药、养鸡，与邻居农夫交往，生活虽贫困却充满人文关怀。</div>
+    <div class="story-content">司马光幼时，一儿坠入水缸，他砸缸救人。故事家喻户晓，但考据发现，宋代烧制大型陶缸的技术已成熟。据《天工开物》记载，宋代窑炉能生产直径1米以上的陶缸，用于储水或酿酒。然而，司马光砸缸的“缸”在史料中实为“瓮”，即一种小口大腹的陶器。后世演义为“缸”，可能是为了叙事生动。司马光砸缸不仅展现了急智，也印证了宋代手工业的发达。</div>
     
     <div class="lesson">
-      <span class="lesson-label">💡 寓意：</span>真正的伟大文学源自对人民苦难的深切同情与真实记录。
+      <span class="lesson-label">💡 寓意：</span>危急时刻需打破常规，勇敢行动比犹豫更有效。
     </div>
     
     
-    <div class="fun-fact">📎 杜甫草堂现存明清建筑，是中国文学史上最著名的故居之一。</div>
+    <div class="fun-fact">📎 司马光后来主持编修《资治通鉴》，砸缸故事最早出自《宋史》本传。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E5%8F%B8%E9%A9%AC%E5%85%89" target="_blank" rel="noopener">司马光</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%A0%B8%E7%BC%B8" target="_blank" rel="noopener">砸缸</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%AE%8B%E4%BB%A3" target="_blank" rel="noopener">宋代</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%B5%84%E6%B2%BB%E9%80%9A%E9%89%B4" target="_blank" rel="noopener">资治通鉴</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%A4%A9%E5%B7%A5%E5%BC%80%E7%89%A9" target="_blank" rel="noopener">天工开物</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%BE%A4%E5%84%BF" target="_blank" rel="noopener">群儿</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8F%B8%E9%A9%AC%E5%85%89%E7%A0%B8%E7%BC%B8%EF%BC%9A%E5%AE%8B%E4%BB%A3%E7%9C%9F%E8%83%BD%E7%83%A7%E5%88%B6%E5%A4%A7%E7%BC%B8%E5%90%97" target="_blank" rel="noopener">司马光砸缸：宋代真能烧制大缸吗</a>
+      
+    </div>
     
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number story">3</span>
-      <span class="card-title">白居易《长恨歌》创作缘起</span>
+      <span class="card-title">草船借箭：真实主角是孙权</span>
     </div>
     <div class="card-meta">
-      <span class="tag dynasty">唐代</span>
-      <span class="tag category">唐诗宋词背后的故事</span>
-      <span class="tag">陈鸿《长恨歌传》、《新唐书·白居易传》</span>
+      <span class="tag dynasty">东汉</span>
+      <span class="tag category">历史趣考</span>
+      <span class="tag">《三国志·吴书·吴主传》注引《魏略》</span>
     </div>
-    <div class="story-content">元和元年（806年），白居易与友人陈鸿、王质夫同游仙游寺，谈及唐玄宗与杨贵妃的悲剧。王质夫建议白居易以诗记录这段历史，以免湮没。白居易于是创作了长篇叙事诗《长恨歌》，陈鸿则写了《长恨歌传》。诗中'回眸一笑百媚生''梨花一枝春带雨'等句千古流传。白居易并非单纯歌颂爱情，而是借'长恨'讽刺唐玄宗荒淫误国，表达'从此君王不早朝'的批判，同时寄寓对美好爱情幻灭的哀悯。</div>
+    <div class="story-content">草船借箭的故事常归功于诸葛亮，但《三国志》记载，真正的主角是孙权。公元213年，孙权乘船侦察曹操水寨，曹操下令放箭，箭矢密集扎在船侧，导致船身倾斜。孙权机智地调转船头，让另一面受箭，使船平衡后安全返回。这一事件被裴松之注引《魏略》记录。罗贯中在《三国演义》中将其移花接木给诸葛亮，以突出其智谋。实际上，孙权才是草船借箭的鼻祖。</div>
     
     <div class="lesson">
-      <span class="lesson-label">💡 寓意：</span>文学可以同时承载歌颂与批判，借古讽今方能发人深省。
+      <span class="lesson-label">💡 寓意：</span>临危不乱，利用敌人资源化险为夷，是最高明的防守。
     </div>
     
     
-    <div class="fun-fact">📎 《长恨歌》中的'七月七日长生殿'场景，实为白居易的艺术虚构，史书无此记载。</div>
+    <div class="fun-fact">📎 《魏略》是曹魏史书，记载了孙权受箭细节，比《三国演义》早1000多年。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E5%AD%99%E6%9D%83" target="_blank" rel="noopener">孙权</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%8D%89%E8%88%B9%E5%80%9F%E7%AE%AD" target="_blank" rel="noopener">草船借箭</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%AF%B8%E8%91%9B%E4%BA%AE" target="_blank" rel="noopener">诸葛亮</a>
+      
+      <a href="https://baike.baidu.com/item/%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89" target="_blank" rel="noopener">三国演义</a>
+      
+      <a href="https://baike.baidu.com/item/%E9%AD%8F%E7%95%A5" target="_blank" rel="noopener">魏略</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%9B%B9%E6%93%8D" target="_blank" rel="noopener">曹操</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%8D%89%E8%88%B9%E5%80%9F%E7%AE%AD%EF%BC%9A%E7%9C%9F%E5%AE%9E%E4%B8%BB%E8%A7%92%E6%98%AF%E5%AD%99%E6%9D%83" target="_blank" rel="noopener">草船借箭：真实主角是孙权</a>
+      
+    </div>
     
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number story">4</span>
-      <span class="card-title">柳永奉旨填词</span>
+      <span class="card-title">焚书坑儒的真相：被误读的秦始皇</span>
     </div>
     <div class="card-meta">
-      <span class="tag dynasty">北宋</span>
-      <span class="tag category">唐诗宋词背后的故事</span>
-      <span class="tag">《宋史·柳永传》、叶梦得《避暑录话》</span>
+      <span class="tag dynasty">秦</span>
+      <span class="tag category">历史趣考</span>
+      <span class="tag">《史记·秦始皇本纪》</span>
     </div>
-    <div class="story-content">柳永才华横溢却屡试不第，失意后流连于青楼歌馆，为歌女填词。他的词通俗动人，'凡有井水处，即能歌柳词'。一次，柳永科举本已考中，但宋仁宗看到他的名字，想起他写过的'忍把浮名，换了浅斟低唱'，便故意黜落他，说：'且去浅斟低唱，何要浮名？'柳永从此自嘲为'奉旨填词柳三变'，索性专心创作慢词，将市井生活与羁旅离愁写入词中，开创了宋词新局面。他的《雨霖铃》至今传唱不衰。</div>
+    <div class="story-content">传统认为秦始皇焚书坑儒毁灭文化，但考据发现，焚书针对的是民间私藏《诗》《书》等百家语，医药、卜筮、种树等实用书籍得以保留。坑儒更准确说是“坑术士”，因卢生、侯生等方士诽谤皇帝后逃亡，秦始皇下令追查，牵连460余人被坑杀。这些人多为方士和儒生，但并非所有儒生。据《史记》记载，秦始皇仍保留博士官制度，朝廷中儒生依然活跃。焚书坑儒更多是政治清洗，而非全面文化灭绝。</div>
     
     <div class="lesson">
-      <span class="lesson-label">💡 寓意：</span>逆境可以成为创作的催化剂，真正的才华不会被政治打压所埋没。
+      <span class="lesson-label">💡 寓意：</span>历史评价需结合时代背景，避免以偏概全。
     </div>
     
     
-    <div class="fun-fact">📎 柳永去世时家无余财，由歌女们集资安葬，每年清明节有'吊柳会'。</div>
+    <div class="fun-fact">📎 秦朝博士官多达70人，包括伏生等著名儒生，他们后来保存了《尚书》。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E7%A7%A6%E5%A7%8B%E7%9A%87" target="_blank" rel="noopener">秦始皇</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%84%9A%E4%B9%A6%E5%9D%91%E5%84%92" target="_blank" rel="noopener">焚书坑儒</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%9D%8E%E6%96%AF" target="_blank" rel="noopener">李斯</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8F%B2%E8%AE%B0" target="_blank" rel="noopener">史记</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8D%9A%E5%A3%AB" target="_blank" rel="noopener">博士</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8D%A2%E7%94%9F" target="_blank" rel="noopener">卢生</a>
+      
+      <a href="https://baike.baidu.com/item/%E4%BE%AF%E7%94%9F" target="_blank" rel="noopener">侯生</a>
+      
+    </div>
     
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number story">5</span>
-      <span class="card-title">范仲淹划粥断齑</span>
+      <span class="card-title">古代奇葩法律：汉代的‘腹诽罪’</span>
     </div>
     <div class="card-meta">
-      <span class="tag dynasty">北宋</span>
-      <span class="tag category">唐诗宋词背后的故事</span>
-      <span class="tag">《宋史·范仲淹传》、彭乘《墨客挥犀》</span>
+      <span class="tag dynasty">西汉</span>
+      <span class="tag category">历史趣考</span>
+      <span class="tag">《汉书·食货志》</span>
     </div>
-    <div class="story-content">范仲淹少年时家贫，寄居在寺庙读书。他每日煮一锅粥，等粥凝固后划成四块，早晚各取两块，撒上碎咸菜（齑）充饥，这就是'划粥断齑'的故事。他曾在城南书院苦读五年，冬天困倦时用冷水洗脸，甚至因营养不良而面黄肌瘦。后来他考中进士，官至参知政事，主持'庆历新政'，写下《岳阳楼记》中'先天下之忧而忧，后天下之乐而乐'的千古名句，成为宋代士大夫的楷模。</div>
+    <div class="story-content">汉武帝时期，大臣颜异因与客人议论朝政时，嘴唇微动而未说话，被酷吏张汤指控为“腹诽”，即心中诽谤皇帝，最终被处死。这一罪名开创了中国历史上以意念定罪的先河。据《汉书》记载，颜异当时只是对一项货币改革表示沉默，张汤却说他“不入言而腹非”，汉武帝批准处决。此后，“腹诽”成为政治迫害的工具，直到唐代才被废除。这一事件反映了专制皇权下言论自由的脆弱。</div>
     
     <div class="lesson">
-      <span class="lesson-label">💡 寓意：</span>艰苦环境能磨砺意志，真正的伟大源于对理想的坚守与对人民的担当。
+      <span class="lesson-label">💡 寓意：</span>法律若沦为权力工具，则人人自危，社会失去活力。
     </div>
     
     
-    <div class="fun-fact">📎 范仲淹晚年捐出全部积蓄创办范氏义庄，是中国最早的家族慈善基金。</div>
+    <div class="fun-fact">📎 “腹诽”一词后来演变为成语，指心中不满但未说出口。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E6%B1%89%E6%AD%A6%E5%B8%9D" target="_blank" rel="noopener">汉武帝</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%85%B9%E8%AF%BD" target="_blank" rel="noopener">腹诽</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%BC%A0%E6%B1%A4" target="_blank" rel="noopener">张汤</a>
+      
+      <a href="https://baike.baidu.com/item/%E9%A2%9C%E5%BC%82" target="_blank" rel="noopener">颜异</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%B1%89%E4%B9%A6" target="_blank" rel="noopener">汉书</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8F%A4%E4%BB%A3%E5%A5%87%E8%91%A9%E6%B3%95%E5%BE%8B%EF%BC%9A%E6%B1%89%E4%BB%A3%E7%9A%84%E2%80%98%E8%85%B9%E8%AF%BD%E7%BD%AA%E2%80%99" target="_blank" rel="noopener">古代奇葩法律：汉代的‘腹诽罪’</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%B1%89%E4%B9%A6%C2%B7%E9%A3%9F%E8%B4%A7%E5%BF%97" target="_blank" rel="noopener">汉书·食货志</a>
+      
+    </div>
     
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number story">6</span>
-      <span class="card-title">毕昇发明活字印刷</span>
+      <span class="card-title">古代黑科技：曾侯乙编钟的声学奇迹</span>
     </div>
     <div class="card-meta">
-      <span class="tag dynasty">北宋</span>
-      <span class="tag category">古代科技发明故事</span>
-      <span class="tag">沈括《梦溪笔谈·技艺》</span>
+      <span class="tag dynasty">战国</span>
+      <span class="tag category">历史趣考</span>
+      <span class="tag">《考古》1979年曾侯乙墓发掘报告</span>
     </div>
-    <div class="story-content">北宋庆历年间（1041-1048年），平民毕昇在雕版印刷基础上发明了活字印刷术。他用胶泥刻字，火烧使硬，制成一个个单字。排版时，将活字排列在铁板上，用松脂和蜡固定。印刷后拆下活字可重复使用。沈括在《梦溪笔谈》中详细记录了这项发明，称其'若止印三二本，未为简易；若印数十百千本，则极为神速'。活字印刷比德国古登堡的铅活字早400多年，大大降低了书籍成本，推动了文化传播。</div>
+    <div class="story-content">1978年湖北随州出土的曾侯乙编钟，由65件青铜钟组成，总重2567公斤。令人惊叹的是，每件钟能发出两个不同音高的乐音，且音律精确，跨越五个八度。据《考工记》记载，战国工匠已掌握合金比例（铜锡铅配比）和热处理技术，使钟壁厚度影响音色。编钟的“一钟双音”设计，源于钟体合瓦形结构，敲击正鼓部和侧鼓部可产生不同振动模式。这一技术失传千年，直到现代声学才被破解，堪称古代黑科技。</div>
     
     <div class="lesson">
-      <span class="lesson-label">💡 寓意：</span>技术创新往往来自对现有工艺的改进，小人物也能改变世界。
+      <span class="lesson-label">💡 寓意：</span>古代工匠的智慧远超想象，科技史需要不断重新认识。
     </div>
     
     
-    <div class="fun-fact">📎 毕昇的泥活字没有实物留存，但韩国发现的《直指》是现存最早金属活字本。</div>
+    <div class="fun-fact">📎 曾侯乙编钟比钢琴早2000年实现十二平均律，音准误差小于5音分。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E6%9B%BE%E4%BE%AF%E4%B9%99%E7%BC%96%E9%92%9F" target="_blank" rel="noopener">曾侯乙编钟</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%88%98%E5%9B%BD" target="_blank" rel="noopener">战国</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%80%83%E5%B7%A5%E8%AE%B0" target="_blank" rel="noopener">考工记</a>
+      
+      <a href="https://baike.baidu.com/item/%E4%B8%80%E9%92%9F%E5%8F%8C%E9%9F%B3" target="_blank" rel="noopener">一钟双音</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%A3%B0%E5%AD%A6" target="_blank" rel="noopener">声学</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%9B%BE%E4%BE%AF%E4%B9%99" target="_blank" rel="noopener">曾侯乙</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8F%A4%E4%BB%A3%E5%B7%A5%E5%8C%A0" target="_blank" rel="noopener">古代工匠</a>
+      
+    </div>
     
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number story">7</span>
-      <span class="card-title">徐霞客探长江源</span>
+      <span class="card-title">二十八星宿的由来：东方苍龙七宿</span>
     </div>
     <div class="card-meta">
-      <span class="tag dynasty">明代</span>
+      <span class="tag dynasty">先秦</span>
       <span class="tag category">古代天文地理</span>
-      <span class="tag">《徐霞客游记·溯江纪源》</span>
+      <span class="tag">《史记·天官书》《尚书·尧典》</span>
     </div>
-    <div class="story-content">明代地理学家徐霞客不信古人'岷山导江'的说法，决心亲自探明长江源头。崇祯十一年（1638年），年过半百的他深入云南，在瘴气和盗匪出没的荒野中跋涉数月。他追循金沙江，发现其长度远超岷江，最终在《溯江纪源》中科学论证：长江正源是金沙江，而非岷江。这一结论比西方地理学家的认知早200多年。徐霞客在旅途中写下60万字游记，成为世界最早系统考察中国地貌的学者。</div>
+    <div class="story-content">二十八星宿是中国古代天文学的核心，将黄道附近恒星分为28组，用于标记日月运行。其中东方苍龙七宿（角、亢、氐、房、心、尾、箕）象征一条巨龙。据《尚书·尧典》记载，尧帝命羲和观测星象，以定农时。苍龙七宿的角宿一（即室女座α星）是春季标志星，古人发现当它黄昏时出现在东方，春耕开始。这一体系比巴比伦星宿早数百年，且与印度星宿有渊源，体现了古代天文观测的精准。</div>
     
     <div class="lesson">
-      <span class="lesson-label">💡 寓意：</span>实践出真知，勇于质疑权威才能发现真理。
+      <span class="lesson-label">💡 寓意：</span>仰望星空，脚踏实地，天文观测是农耕文明的基石。
     </div>
     
     
-    <div class="fun-fact">📎 现代考察确认长江正源为青藏高原的沱沱河，徐霞客的推论方向正确。</div>
+    <div class="fun-fact">📎 苍龙七宿中的心宿二（大火星）是古代“火历”核心，用于确定夏至。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E4%BA%8C%E5%8D%81%E5%85%AB%E6%98%9F%E5%AE%BF" target="_blank" rel="noopener">二十八星宿</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%8B%8D%E9%BE%99%E4%B8%83%E5%AE%BF" target="_blank" rel="noopener">苍龙七宿</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%B0%9A%E4%B9%A6" target="_blank" rel="noopener">尚书</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8F%B2%E8%AE%B0" target="_blank" rel="noopener">史记</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%A4%A9%E5%AE%98%E4%B9%A6" target="_blank" rel="noopener">天官书</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8F%A4%E4%BA%BA%E8%A7%82%E6%98%9F%E8%80%85" target="_blank" rel="noopener">古人观星者</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%B0%A7%E5%B8%9D" target="_blank" rel="noopener">尧帝</a>
+      
+    </div>
     
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number story">8</span>
-      <span class="card-title">张骞凿空西域</span>
+      <span class="card-title">二十四节气：从太阳历到农耕指南</span>
     </div>
     <div class="card-meta">
       <span class="tag dynasty">西汉</span>
       <span class="tag category">古代天文地理</span>
-      <span class="tag">《史记·大宛列传》、《汉书·张骞传》</span>
+      <span class="tag">《淮南子·天文训》</span>
     </div>
-    <div class="story-content">汉武帝为联合大月氏夹击匈奴，派张骞出使西域。建元二年（前139年），张骞率百余人从长安出发，途中被匈奴扣留十余年。他始终持汉节不失，后趁机逃脱，穿越葱岭，到达大宛、康居、大月氏等国。虽未能达成军事同盟，却带回了西域的地理、物产、风俗资料。元狩四年（前119年），张骞再次出使，与乌孙等国建交，打通了丝绸之路。司马迁称此举为'凿空'，意为开辟通道。</div>
+    <div class="story-content">二十四节气是中国独创的太阳历体系，最早完整记载于西汉《淮南子·天文训》。它根据太阳在黄道上的位置，将一年分为24等份，每份15天。例如，春分和秋分时昼夜等长，夏至和冬至时极昼极夜。刘安及其门客通过圭表测影，发现正午日影长度变化规律，从而精确定位节气。这一体系指导农耕数千年，如“清明前后，种瓜点豆”至今沿用。比古希腊的阴阳历更实用，堪称古代气象学杰作。</div>
     
     <div class="lesson">
-      <span class="lesson-label">💡 寓意：</span>勇敢的探索者即使未能完成原定目标，也可能带来意想不到的文明贡献。
+      <span class="lesson-label">💡 寓意：</span>顺应自然规律，科学指导生产，是古人智慧的结晶。
     </div>
     
     
-    <div class="fun-fact">📎 张骞带回了葡萄、苜蓿、石榴、胡桃等物种，丰富了中原的餐桌。</div>
+    <div class="fun-fact">📎 二十四节气于2016年被列入联合国教科文组织人类非物质文化遗产。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E4%BA%8C%E5%8D%81%E5%9B%9B%E8%8A%82%E6%B0%94" target="_blank" rel="noopener">二十四节气</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%B7%AE%E5%8D%97%E5%AD%90" target="_blank" rel="noopener">淮南子</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%88%98%E5%AE%89" target="_blank" rel="noopener">刘安</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%9C%AD%E8%A1%A8" target="_blank" rel="noopener">圭表</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%86%9C%E8%80%95" target="_blank" rel="noopener">农耕</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8F%A4%E4%BB%A3%E5%8E%86%E6%B3%95%E5%AE%B6" target="_blank" rel="noopener">古代历法家</a>
+      
+      <a href="https://baike.baidu.com/item/%E4%BA%8C%E5%8D%81%E5%9B%9B%E8%8A%82%E6%B0%94%EF%BC%9A%E4%BB%8E%E5%A4%AA%E9%98%B3%E5%8E%86%E5%88%B0%E5%86%9C%E8%80%95%E6%8C%87%E5%8D%97" target="_blank" rel="noopener">二十四节气：从太阳历到农耕指南</a>
+      
+    </div>
     
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number story">9</span>
-      <span class="card-title">李冰父子修都江堰</span>
+      <span class="card-title">都江堰的岁修制度：李冰的千年智慧</span>
     </div>
     <div class="card-meta">
-      <span class="tag dynasty">战国（秦国）</span>
-      <span class="tag category">古代科技发明故事</span>
-      <span class="tag">《史记·河渠书》、《华阳国志·蜀志》</span>
+      <span class="tag dynasty">战国</span>
+      <span class="tag category">古代天文地理</span>
+      <span class="tag">《水经注·江水》</span>
     </div>
-    <div class="story-content">秦昭襄王时期，蜀郡守李冰携子二郎主持修建都江堰。他们利用岷江出山口的地形，采用'鱼嘴'分水、'飞沙堰'溢洪、'宝瓶口'引水的巧妙设计，实现了无坝引水、自动分流。李冰还刻制三石人立于水中，作为观测水位的标尺。都江堰建成后，成都平原'水旱从人，不知饥馑'，成为'天府之国'。历经2200多年，都江堰至今仍灌溉着千万亩良田，是世界水利工程的奇迹。</div>
+    <div class="story-content">都江堰不仅是一项水利工程，更有一套完善的岁修制度。据《水经注》记载，李冰规定每年冬季枯水期，必须清理河道淤积，修复堤坝。他发明了“石人水则”——用石人测量水位，水位低于石人脚则需疏浚。岁修时，用“杩槎”（三角木架）截流，人工掏挖泥沙。这一制度延续2200年，至今仍在使用。1974年出土的李冰石像，证实了岁修传统。都江堰不设闸门，利用鱼嘴分水、飞沙堰排沙，堪称古代生态工程典范。</div>
     
     <div class="lesson">
-      <span class="lesson-label">💡 寓意：</span>顺应自然规律而非对抗自然，才能实现永续发展。
+      <span class="lesson-label">💡 寓意：</span>好的制度比工程本身更持久，可持续发展是核心。
     </div>
     
     
-    <div class="fun-fact">📎 都江堰的'深淘滩，低作堰'六字诀，至今仍是水利工程的经典原则。</div>
+    <div class="fun-fact">📎 都江堰岁修时，有“深淘滩，低作堰”六字诀，刻在石壁上。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E6%9D%8E%E5%86%B0" target="_blank" rel="noopener">李冰</a>
+      
+      <a href="https://baike.baidu.com/item/%E9%83%BD%E6%B1%9F%E5%A0%B0" target="_blank" rel="noopener">都江堰</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%B0%B4%E7%BB%8F%E6%B3%A8" target="_blank" rel="noopener">水经注</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%B2%81%E4%BF%AE" target="_blank" rel="noopener">岁修</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%9F%B3%E4%BA%BA%E6%B0%B4%E5%88%99" target="_blank" rel="noopener">石人水则</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8F%A4%E4%BB%A3%E5%B7%A5%E5%8C%A0" target="_blank" rel="noopener">古代工匠</a>
+      
+      <a href="https://baike.baidu.com/item/%E9%83%BD%E6%B1%9F%E5%A0%B0%E7%9A%84%E5%B2%81%E4%BF%AE%E5%88%B6%E5%BA%A6%EF%BC%9A%E6%9D%8E%E5%86%B0%E7%9A%84%E5%8D%83%E5%B9%B4%E6%99%BA%E6%85%A7" target="_blank" rel="noopener">都江堰的岁修制度：李冰的千年智慧</a>
+      
+    </div>
     
   </div>
   
   <div class="card">
     <div class="card-header">
       <span class="card-number story">10</span>
-      <span class="card-title">管仲射钩与齐桓公称霸</span>
+      <span class="card-title">《禹贡地域图》：中国最早的地图集</span>
+    </div>
+    <div class="card-meta">
+      <span class="tag dynasty">西晋</span>
+      <span class="tag category">古代天文地理</span>
+      <span class="tag">《晋书·裴秀传》</span>
+    </div>
+    <div class="story-content">西晋地图学家裴秀主持编绘《禹贡地域图》18篇，是中国最早的地图集。据《晋书》记载，他提出了“制图六体”——分率（比例尺）、准望（方位）、道里（距离）、高下（地形）、方邪（坡度）、迂直（曲直），奠定了古代地图学基础。他通过实地测量和文献考证，将《禹贡》中的九州地理转化为精确地图。可惜原图失传，但其理论影响了后世。裴秀被誉为“中国地图学之父”，比欧洲托勒密地图晚数百年，但制图六体更系统。</div>
+    
+    <div class="lesson">
+      <span class="lesson-label">💡 寓意：</span>理论与实践结合，才能创造传世之作。
+    </div>
+    
+    
+    <div class="fun-fact">📎 裴秀的制图六体直到明代才被利玛窦的世界地图超越。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E8%A3%B4%E7%A7%80" target="_blank" rel="noopener">裴秀</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%A6%B9%E8%B4%A1%E5%9C%B0%E5%9F%9F%E5%9B%BE" target="_blank" rel="noopener">禹贡地域图</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%88%B6%E5%9B%BE%E5%85%AD%E4%BD%93" target="_blank" rel="noopener">制图六体</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%99%8B%E4%B9%A6" target="_blank" rel="noopener">晋书</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%9C%B0%E5%9B%BE%E5%AD%A6" target="_blank" rel="noopener">地图学</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8F%B8%E9%A9%AC%E6%98%AD" target="_blank" rel="noopener">司马昭</a>
+      
+      <a href="https://baike.baidu.com/item/%E3%80%8A%E7%A6%B9%E8%B4%A1%E5%9C%B0%E5%9F%9F%E5%9B%BE%E3%80%8B%EF%BC%9A%E4%B8%AD%E5%9B%BD%E6%9C%80%E6%97%A9%E7%9A%84%E5%9C%B0%E5%9B%BE%E9%9B%86" target="_blank" rel="noopener">《禹贡地域图》：中国最早的地图集</a>
+      
+    </div>
+    
+  </div>
+  
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number story">11</span>
+      <span class="card-title">田单火牛阵：以弱胜强的兵法奇迹</span>
+    </div>
+    <div class="card-meta">
+      <span class="tag dynasty">战国</span>
+      <span class="tag category">兵法谋略故事</span>
+      <span class="tag">《史记·田单列传》</span>
+    </div>
+    <div class="story-content">公元前279年，燕国名将乐毅攻齐，连下70余城，唯即墨未克。守将田单用反间计使燕惠王撤换乐毅，随后收集城中千余头牛，在牛角绑尖刀、牛尾捆浸油芦苇。夜半点燃牛尾，牛群冲向燕军，五千壮士紧随其后。燕军大乱，死伤无数，田单乘胜收复失地。此战以弱胜强，关键在于利用动物制造恐慌，配合心理战。田单后来被齐襄王封为安平君，火牛阵成为经典战例。</div>
+    
+    <div class="lesson">
+      <span class="lesson-label">💡 寓意：</span>绝境中创新战术，利用敌人弱点，可扭转战局。
+    </div>
+    
+    
+    <div class="fun-fact">📎 火牛阵在《资治通鉴》中也有记载，后世多次模仿但鲜有成功。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E7%94%B0%E5%8D%95" target="_blank" rel="noopener">田单</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%81%AB%E7%89%9B%E9%98%B5" target="_blank" rel="noopener">火牛阵</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8D%B3%E5%A2%A8" target="_blank" rel="noopener">即墨</a>
+      
+      <a href="https://baike.baidu.com/item/%E4%B9%90%E6%AF%85" target="_blank" rel="noopener">乐毅</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8F%B2%E8%AE%B0" target="_blank" rel="noopener">史记</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%87%95%E6%98%AD%E7%8E%8B" target="_blank" rel="noopener">燕昭王</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%87%95%E6%83%A0%E7%8E%8B" target="_blank" rel="noopener">燕惠王</a>
+      
+    </div>
+    
+  </div>
+  
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number story">12</span>
+      <span class="card-title">围魏救赵：孙膑的避实击虚</span>
+    </div>
+    <div class="card-meta">
+      <span class="tag dynasty">战国</span>
+      <span class="tag category">兵法谋略故事</span>
+      <span class="tag">《史记·孙子吴起列传》</span>
+    </div>
+    <div class="story-content">公元前354年，魏国庞涓率军围攻赵国邯郸，赵求救于齐。齐将田忌欲直赴邯郸，军师孙膑却建议：“魏国精锐尽出，国内空虚，不如直捣大梁（魏都），迫使庞涓回援。”田忌采纳，齐军佯攻大梁，庞涓果然撤军回救。孙膑在桂陵设伏，大败魏军，擒获庞涓。此战未直接解邯郸之围，却通过攻其必救实现战略目标。孙膑的“避实击虚”思想，成为后世兵法圭臬。</div>
+    
+    <div class="lesson">
+      <span class="lesson-label">💡 寓意：</span>解决问题不一定正面硬碰，迂回策略往往更高效。
+    </div>
+    
+    
+    <div class="fun-fact">📎 围魏救赵是三十六计之一，但孙膑并未在桂陵之战杀死庞涓，后者死于马陵之战。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E5%AD%99%E8%86%91" target="_blank" rel="noopener">孙膑</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%9B%B4%E9%AD%8F%E6%95%91%E8%B5%B5" target="_blank" rel="noopener">围魏救赵</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%BA%9E%E6%B6%93" target="_blank" rel="noopener">庞涓</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%94%B0%E5%BF%8C" target="_blank" rel="noopener">田忌</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%A1%82%E9%99%B5%E4%B9%8B%E6%88%98" target="_blank" rel="noopener">桂陵之战</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%B5%B5%E6%88%90%E4%BE%AF" target="_blank" rel="noopener">赵成侯</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%9B%B4%E9%AD%8F%E6%95%91%E8%B5%B5%EF%BC%9A%E5%AD%99%E8%86%91%E7%9A%84%E9%81%BF%E5%AE%9E%E5%87%BB%E8%99%9A" target="_blank" rel="noopener">围魏救赵：孙膑的避实击虚</a>
+      
+    </div>
+    
+  </div>
+  
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number story">13</span>
+      <span class="card-title">背水一战：韩信的绝地求生</span>
+    </div>
+    <div class="card-meta">
+      <span class="tag dynasty">西汉</span>
+      <span class="tag category">兵法谋略故事</span>
+      <span class="tag">《史记·淮阴侯列传》</span>
+    </div>
+    <div class="story-content">公元前204年，韩信率3万汉军攻赵，赵军20万在井陉口据守。韩信背靠泜水列阵，赵军嘲笑他不懂兵法。交战时，韩信佯败，诱赵军追击，同时派奇兵偷袭赵营，换上汉旗。赵军见大营失守，阵脚大乱，被汉军两面夹击，大败。战后，部将问为何背水列阵，韩信说：“兵法云‘陷之死地而后生’，士卒无退路，必死战。”此战以少胜多，展现了韩信对心理和地形的极致运用。</div>
+    
+    <div class="lesson">
+      <span class="lesson-label">💡 寓意：</span>绝境激发潜能，但需精准计算风险，不可盲目冒险。
+    </div>
+    
+    
+    <div class="fun-fact">📎 井陉口是太行八陉之一，韩信利用了狭窄地形限制赵军兵力优势。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E9%9F%A9%E4%BF%A1" target="_blank" rel="noopener">韩信</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%83%8C%E6%B0%B4%E4%B8%80%E6%88%98" target="_blank" rel="noopener">背水一战</a>
+      
+      <a href="https://baike.baidu.com/item/%E4%BA%95%E9%99%89%E5%8F%A3" target="_blank" rel="noopener">井陉口</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%B5%B5%E5%86%9B" target="_blank" rel="noopener">赵军</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8F%B2%E8%AE%B0" target="_blank" rel="noopener">史记</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%BC%A0%E8%80%B3" target="_blank" rel="noopener">张耳</a>
+      
+      <a href="https://baike.baidu.com/item/%E9%99%88%E4%BD%99" target="_blank" rel="noopener">陈余</a>
+      
+    </div>
+    
+  </div>
+  
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number story">14</span>
+      <span class="card-title">七夕节的由来：牛郎织女与星宿崇拜</span>
+    </div>
+    <div class="card-meta">
+      <span class="tag dynasty">先秦至汉</span>
+      <span class="tag category">传统节日传说</span>
+      <span class="tag">《诗经·小雅·大东》《古诗十九首》</span>
+    </div>
+    <div class="story-content">七夕节起源于古人对牛郎星（河鼓二）和织女星（织女一）的观测。早在《诗经》中就有“跂彼织女，终日七襄”的记载，但当时只是星名。汉代《古诗十九首》首次将二星拟人化为情侣：“迢迢牵牛星，皎皎河汉女。”至南北朝，民间传说演变为牛郎织女被银河分隔，每年七月初七鹊桥相会。据《荆楚岁时记》记载，妇女于此夜乞巧，穿针引线，祈求巧艺。七夕节融合了天文、爱情和民俗，成为中国传统情人节。</div>
+    
+    <div class="lesson">
+      <span class="lesson-label">💡 寓意：</span>爱情需要坚守，但现实中的分离更需珍惜相聚。
+    </div>
+    
+    
+    <div class="fun-fact">📎 牛郎星和织女星相距16光年，即使以光速也要16年才能相会。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E4%B8%83%E5%A4%95" target="_blank" rel="noopener">七夕</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%89%9B%E9%83%8E%E7%BB%87%E5%A5%B3" target="_blank" rel="noopener">牛郎织女</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%AF%97%E7%BB%8F" target="_blank" rel="noopener">诗经</a>
+      
+      <a href="https://baike.baidu.com/item/%E4%B9%9E%E5%B7%A7" target="_blank" rel="noopener">乞巧</a>
+      
+      <a href="https://baike.baidu.com/item/%E9%93%B6%E6%B2%B3" target="_blank" rel="noopener">银河</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%89%9B%E9%83%8E" target="_blank" rel="noopener">牛郎</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%BB%87%E5%A5%B3" target="_blank" rel="noopener">织女</a>
+      
+    </div>
+    
+  </div>
+  
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number story">15</span>
+      <span class="card-title">清明节的寒食传说：介子推的故事</span>
     </div>
     <div class="card-meta">
       <span class="tag dynasty">春秋</span>
-      <span class="tag category">历史故事</span>
-      <span class="tag">《史记·齐太公世家》、《左传·庄公九年》</span>
+      <span class="tag category">传统节日传说</span>
+      <span class="tag">《左传·僖公二十四年》《史记·晋世家》</span>
     </div>
-    <div class="story-content">齐国内乱，公子小白与公子纠争位。管仲辅佐公子纠，在小白归国途中射箭，射中其衣带钩。小白诈死骗过管仲，抢先回国即位，是为齐桓公。桓公欲报一箭之仇，但鲍叔牙力荐管仲之才，称'欲成霸王之业，非管仲不可'。桓公不计前嫌，重用管仲为相。管仲推行'尊王攘夷'、改革内政、发展工商，助齐国九合诸侯、一匡天下，成为春秋首霸。齐桓公因此被誉为'春秋五霸'之首。</div>
+    <div class="story-content">清明节前一天是寒食节，传说与介子推有关。春秋时，晋公子重耳流亡19年，介子推曾割股奉君。重耳回国即位为晋文公，大封功臣，却忘了介子推。介子推携母隐居绵山。晋文公后悔，派人搜山，介子推不出。文公下令放火烧山，逼其出山，但介子推抱树而死。文公悲痛，下令每年这天禁火寒食，以表纪念。据《左传》记载，介子推确实隐居而死，但寒食节起源更早，与周代禁火习俗有关。后世将二者融合，清明节由此兼具祭祖与踏青之意。</div>
     
     <div class="lesson">
-      <span class="lesson-label">💡 寓意：</span>成大事者不拘小怨，善于用人的君主才能成就霸业。
+      <span class="lesson-label">💡 寓意：</span>功成身退是高尚，但忘恩负义终会留下遗憾。
     </div>
     
     
-    <div class="fun-fact">📎 管仲临终前劝齐桓公远离易牙、竖刁等小人，桓公不听，最终饿死宫中。</div>
+    <div class="fun-fact">📎 寒食节在唐代被官方定为节日，全国禁火三日，后并入清明节。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E4%BB%8B%E5%AD%90%E6%8E%A8" target="_blank" rel="noopener">介子推</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%99%8B%E6%96%87%E5%85%AC" target="_blank" rel="noopener">晋文公</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%AF%92%E9%A3%9F%E8%8A%82" target="_blank" rel="noopener">寒食节</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%B8%85%E6%98%8E%E8%8A%82" target="_blank" rel="noopener">清明节</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%BB%B5%E5%B1%B1" target="_blank" rel="noopener">绵山</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%99%8B%E6%96%87%E5%85%AC%E9%87%8D%E8%80%B3" target="_blank" rel="noopener">晋文公重耳</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%99%8B%E7%8C%AE%E5%85%AC" target="_blank" rel="noopener">晋献公</a>
+      
+    </div>
+    
+  </div>
+  
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number story">16</span>
+      <span class="card-title">端午节：屈原投江与龙舟竞渡</span>
+    </div>
+    <div class="card-meta">
+      <span class="tag dynasty">战国</span>
+      <span class="tag category">传统节日传说</span>
+      <span class="tag">《史记·屈原贾生列传》《续齐谐记》</span>
+    </div>
+    <div class="story-content">端午节源于纪念楚国诗人屈原。公元前278年，秦军攻破郢都，屈原悲愤交加，于五月初五投汨罗江而死。据《续齐谐记》记载，当地百姓划船打捞，投粽子喂鱼，以防鱼虾食其尸。这一习俗演变为龙舟竞渡和吃粽子。但考据发现，端午节早在屈原前就已存在，与夏至和驱瘟有关。屈原的传说为其注入了爱国精神。唐代以后，端午节成为官方节日，赛龙舟、挂艾草、饮雄黄酒等习俗流传至今。</div>
+    
+    <div class="lesson">
+      <span class="lesson-label">💡 寓意：</span>爱国情怀可以穿越时空，但需警惕过度神化。
+    </div>
+    
+    
+    <div class="fun-fact">📎 汨罗江位于湖南，屈原投江处有屈子祠，至今仍举行祭祀。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E5%B1%88%E5%8E%9F" target="_blank" rel="noopener">屈原</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%AB%AF%E5%8D%88%E8%8A%82" target="_blank" rel="noopener">端午节</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%B1%A8%E7%BD%97%E6%B1%9F" target="_blank" rel="noopener">汨罗江</a>
+      
+      <a href="https://baike.baidu.com/item/%E9%BE%99%E8%88%9F" target="_blank" rel="noopener">龙舟</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%A5%9A%E8%BE%9E" target="_blank" rel="noopener">楚辞</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%A5%9A%E6%80%80%E7%8E%8B" target="_blank" rel="noopener">楚怀王</a>
+      
+      <a href="https://baike.baidu.com/item/%E9%A1%B7%E8%A5%84%E7%8E%8B" target="_blank" rel="noopener">顷襄王</a>
+      
+    </div>
+    
+  </div>
+  
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number story">17</span>
+      <span class="card-title">中秋节的起源：嫦娥奔月与月宫传说</span>
+    </div>
+    <div class="card-meta">
+      <span class="tag dynasty">先秦至唐</span>
+      <span class="tag category">传统节日传说</span>
+      <span class="tag">《淮南子·览冥训》《酉阳杂俎》</span>
+    </div>
+    <div class="story-content">中秋节源于周代秋分祭月，但嫦娥奔月传说使其更具浪漫色彩。据《淮南子》记载，后羿射日后，西王母赐其不死药，嫦娥偷服后飞升月宫。唐代《酉阳杂俎》补充了吴刚伐桂的故事：吴刚因学仙犯错，被罚砍月宫桂树，树随砍随合。唐明皇李隆基曾梦游月宫，得《霓裳羽衣曲》。中秋节在宋代成为全民节日，赏月、吃月饼、团圆成为核心习俗。月饼最初是祭月供品，后演变为节日食品。</div>
+    
+    <div class="lesson">
+      <span class="lesson-label">💡 寓意：</span>团圆是中秋永恒的主题，科技再发达也替代不了亲情。
+    </div>
+    
+    
+    <div class="fun-fact">📎 月饼在明代成为中秋必备，据《酌中志》记载，宫廷月饼直径达二尺。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E4%B8%AD%E7%A7%8B%E8%8A%82" target="_blank" rel="noopener">中秋节</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%AB%A6%E5%A8%A5" target="_blank" rel="noopener">嫦娥</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%90%8E%E7%BE%BF" target="_blank" rel="noopener">后羿</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%9C%88%E9%A5%BC" target="_blank" rel="noopener">月饼</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%90%B4%E5%88%9A" target="_blank" rel="noopener">吴刚</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%94%90%E6%98%8E%E7%9A%87" target="_blank" rel="noopener">唐明皇</a>
+      
+      <a href="https://baike.baidu.com/item/%E4%B8%AD%E7%A7%8B%E8%8A%82%E7%9A%84%E8%B5%B7%E6%BA%90%EF%BC%9A%E5%AB%A6%E5%A8%A5%E5%A5%94%E6%9C%88%E4%B8%8E%E6%9C%88%E5%AE%AB%E4%BC%A0%E8%AF%B4" target="_blank" rel="noopener">中秋节的起源：嫦娥奔月与月宫传说</a>
+      
+    </div>
+    
+  </div>
+  
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number story">18</span>
+      <span class="card-title">重阳节的登高：桓景避灾的传说</span>
+    </div>
+    <div class="card-meta">
+      <span class="tag dynasty">东汉</span>
+      <span class="tag category">传统节日传说</span>
+      <span class="tag">《续齐谐记》</span>
+    </div>
+    <div class="story-content">重阳节（九月初九）源于桓景避灾的传说。据《续齐谐记》记载，东汉时汝南人桓景随费长房学道。费长房预言桓景家九月九日有大灾，让他带家人登高、佩茱萸、饮菊花酒以避祸。桓景照做，傍晚回家，发现家中鸡犬牛羊全部暴毙。从此，重阳登高成为习俗。这一传说融合了道教避灾思想和秋季养生智慧。唐代王维“遥知兄弟登高处，遍插茱萸少一人”更使其深入人心。</div>
+    
+    <div class="lesson">
+      <span class="lesson-label">💡 寓意：</span>敬畏自然，提前防范，可化险为夷。
+    </div>
+    
+    
+    <div class="fun-fact">📎 茱萸是一种中药，有驱虫避瘟之效，古人认为能辟邪。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E9%87%8D%E9%98%B3%E8%8A%82" target="_blank" rel="noopener">重阳节</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%A1%93%E6%99%AF" target="_blank" rel="noopener">桓景</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%B4%B9%E9%95%BF%E6%88%BF" target="_blank" rel="noopener">费长房</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%8C%B1%E8%90%B8" target="_blank" rel="noopener">茱萸</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%8F%8A%E8%8A%B1%E9%85%92" target="_blank" rel="noopener">菊花酒</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%98%9F%E9%AD%94" target="_blank" rel="noopener">瘟魔</a>
+      
+      <a href="https://baike.baidu.com/item/%E9%87%8D%E9%98%B3%E8%8A%82%E7%9A%84%E7%99%BB%E9%AB%98%EF%BC%9A%E6%A1%93%E6%99%AF%E9%81%BF%E7%81%BE%E7%9A%84%E4%BC%A0%E8%AF%B4" target="_blank" rel="noopener">重阳节的登高：桓景避灾的传说</a>
+      
+    </div>
+    
+  </div>
+  
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number story">19</span>
+      <span class="card-title">元宵节的起源：汉文帝与‘平吕’纪念</span>
+    </div>
+    <div class="card-meta">
+      <span class="tag dynasty">西汉</span>
+      <span class="tag category">传统节日传说</span>
+      <span class="tag">《史记·吕太后本纪》《汉书·文帝纪》</span>
+    </div>
+    <div class="story-content">元宵节（正月十五）起源于汉文帝时期。公元前180年，吕后去世，吕氏家族谋反，被周勃、陈平等人平定。汉文帝刘恒继位，为庆祝太平，将正月十五定为“与民同乐日”，夜不宵禁，张灯结彩。据《史记》记载，这一夜称为“元宵”，意为“元夜”（正月之夜）。汉武帝时，元宵节祭祀太一神，成为官方节日。唐代以后，灯会、猜灯谜、吃元宵等习俗盛行。元宵节也是古代唯一允许女性夜间外出的节日。</div>
+    
+    <div class="lesson">
+      <span class="lesson-label">💡 寓意：</span>和平来之不易，庆祝节日更应铭记历史。
+    </div>
+    
+    
+    <div class="fun-fact">📎 元宵节在宋代成为狂欢节，放灯五夜，甚至皇帝与民同乐。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E5%85%83%E5%AE%B5%E8%8A%82" target="_blank" rel="noopener">元宵节</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%B1%89%E6%96%87%E5%B8%9D" target="_blank" rel="noopener">汉文帝</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%91%A8%E5%8B%83" target="_blank" rel="noopener">周勃</a>
+      
+      <a href="https://baike.baidu.com/item/%E9%99%88%E5%B9%B3" target="_blank" rel="noopener">陈平</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%81%AF%E4%BC%9A" target="_blank" rel="noopener">灯会</a>
+      
+      <a href="https://baike.baidu.com/item/%E6%B1%89%E6%96%87%E5%B8%9D%E5%88%98%E6%81%92" target="_blank" rel="noopener">汉文帝刘恒</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%90%95%E5%90%8E" target="_blank" rel="noopener">吕后</a>
+      
+    </div>
+    
+  </div>
+  
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number story">20</span>
+      <span class="card-title">除夕的由来：年兽传说与岁末驱邪</span>
+    </div>
+    <div class="card-meta">
+      <span class="tag dynasty">先秦至汉</span>
+      <span class="tag category">传统节日传说</span>
+      <span class="tag">《荆楚岁时记》《吕氏春秋·季冬纪》</span>
+    </div>
+    <div class="story-content">除夕（农历最后一天）源于驱邪避害的习俗。传说“年”是一种怪兽，每到岁末出来伤人，人们发现它怕红色、火光和巨响，于是贴红对联、燃爆竹、守岁以驱赶。据《吕氏春秋》记载，周代有“大傩”仪式，用面具和鼓乐驱逐疫鬼。南北朝《荆楚岁时记》详细记录了除夕习俗：家人团聚、饮屠苏酒、燃爆竹。守岁习俗在唐代定型，杜甫有“守岁阿戎家”诗句。除夕是中国人最重要的团圆时刻，承载着辞旧迎新的希望。</div>
+    
+    <div class="lesson">
+      <span class="lesson-label">💡 寓意：</span>传统习俗是文化根脉，团圆与希望是永恒主题。
+    </div>
+    
+    
+    <div class="fun-fact">📎 爆竹最早是烧竹子发出声响，宋代发明火药后才改为鞭炮。</div>
+    
+    
+    <div class="story-links">
+      <span class="links-label">🔗 深入了解：</span>
+      
+      <a href="https://baike.baidu.com/item/%E9%99%A4%E5%A4%95" target="_blank" rel="noopener">除夕</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%B9%B4%E5%85%BD" target="_blank" rel="noopener">年兽</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%AE%88%E5%B2%81" target="_blank" rel="noopener">守岁</a>
+      
+      <a href="https://baike.baidu.com/item/%E7%88%86%E7%AB%B9" target="_blank" rel="noopener">爆竹</a>
+      
+      <a href="https://baike.baidu.com/item/%E8%8D%86%E6%A5%9A%E5%B2%81%E6%97%B6%E8%AE%B0" target="_blank" rel="noopener">荆楚岁时记</a>
+      
+      <a href="https://baike.baidu.com/item/%E5%8F%A4%E4%BA%BA" target="_blank" rel="noopener">古人</a>
+      
+      <a href="https://baike.baidu.com/item/%E9%99%A4%E5%A4%95%E7%9A%84%E7%94%B1%E6%9D%A5%EF%BC%9A%E5%B9%B4%E5%85%BD%E4%BC%A0%E8%AF%B4%E4%B8%8E%E5%B2%81%E6%9C%AB%E9%A9%B1%E9%82%AA" target="_blank" rel="noopener">除夕的由来：年兽传说与岁末驱邪</a>
+      
+    </div>
     
   </div>
   
@@ -584,7 +1221,7 @@
 <!-- Footer -->
 <div class="footer">
   <p>📬 每日自动推送 · 基于 AI 智能生成 · <a href="https://github.com">GitHub Actions</a> 驱动</p>
-  <p style="margin-top:4px;">如有内容偏差，欢迎反馈纠偏 | Generated at 2026-06-30 11:03:22 北京时间</p>
+  <p style="margin-top:4px;">如有内容偏差，欢迎反馈纠偏 | Generated at 2026-06-30 11:21:39 北京时间</p>
 </div>
 
 </body>
