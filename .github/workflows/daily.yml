@@ -7,7 +7,7 @@ on:
   workflow_dispatch:      # 允许手动触发
   push:
     branches:
-      - main
+      - master
     paths:
       - 'config.yml'       # 配置变更时触发
 
