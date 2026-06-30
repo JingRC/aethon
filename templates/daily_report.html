@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>每日双拼日报 | {{ date }}</title>
+<style>
+  :root {
+    --bg: #fafaf9;
+    --card-bg: #ffffff;
+    --text: #292524;
+    --text-secondary: #57534e;
+    --border: #e7e5e4;
+    --accent-ai: #7c3aed;
+    --accent-story: #b45309;
+    --tag-bg: #f5f5f4;
+    --score-color: #f59e0b;
+    --divider: #e7e5e4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1917;
+      --card-bg: #292524;
+      --text: #e7e5e4;
+      --text-secondary: #a8a29e;
+      --border: #44403c;
+      --tag-bg: #44403c;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+      "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 0;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: linear-gradient(135deg, #7c3aed 0%, #b45309 100%);
+    color: white;
+    text-align: center;
+    padding: 48px 20px 40px;
+  }
+  .header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .header .subtitle {
+    font-size: 16px;
+    opacity: .85;
+  }
+  .header .date-badge {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 6px 20px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.2);
+    font-size: 14px;
+    backdrop-filter: blur(4px);
+  }
+
+  /* ── Container ── */
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+  }
+
+  /* ── Section Heading ── */
+  .section-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 36px 0 20px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--border);
+  }
+  .section-heading .icon { font-size: 28px; }
+  .section-heading h2 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .section-heading .count {
+    margin-left: auto;
+    font-size: 13px;
+    color: var(--text-secondary);
+    background: var(--tag-bg);
+    padding: 3px 12px;
+    border-radius: 12px;
+  }
+  .section-heading.ai { border-bottom-color: var(--accent-ai); }
+  .section-heading.story { border-bottom-color: var(--accent-story); }
+
+  /* ── Card ── */
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    transition: box-shadow .15s;
+  }
+  .card:hover { box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+
+  .card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .card-number {
+    flex-shrink: 0;
+    width: 28px; height: 28px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700; color: white;
+  }
+  .card-number.ai { background: var(--accent-ai); }
+  .card-number.story { background: var(--accent-story); }
+
+  .card-title {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.4;
+    flex: 1;
+  }
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .card-title a:hover { text-decoration: underline; }
+
+  /* ── Meta tags ── */
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .tag {
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    background: var(--tag-bg);
+    color: var(--text-secondary);
+  }
+  .tag.source { background: #ede9fe; color: #6d28d9; }
+  .tag.dynasty { background: #fef3c7; color: #92400e; }
+  .tag.category { background: #fef3c7; color: #92400e; }
+
+  /* ── Score stars ── */
+  .score { color: var(--score-color); font-size: 14px; white-space: nowrap; }
+
+  /* ── Summary ── */
+  .summary {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+  }
+  .story-content {
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--text);
+  }
+  .lesson {
+    margin-top: 12px;
+    padding: 10px 14px;
+    background: #fef3c7;
+    border-radius: 8px;
+    font-size: 14px;
+    border-left: 3px solid #f59e0b;
+  }
+  .lesson .lesson-label {
+    font-weight: 700;
+    color: #92400e;
+    margin-right: 4px;
+  }
+  .fun-fact {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-top: 6px;
+    font-style: italic;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+  }
+  .footer a { color: var(--accent-ai); }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>📬 每日双拼日报</h1>
+  <div class="subtitle">AI 快讯 · 洞察科技前沿 &nbsp;|&nbsp; 古代故事 · 品味千年智慧</div>
+  <div class="date-badge">{{ date }}</div>
+</div>
+
+<div class="container">
+
+  <!-- ═══════════ AI 快讯 ═══════════ -->
+  <div class="section-heading ai">
+    <span class="icon">🤖</span>
+    <h2>AI 快讯 · 今日必读</h2>
+    <span class="count">{{ ai_news|length }} 条精选</span>
+  </div>
+
+  {% for item in ai_news %}
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number ai">{{ loop.index }}</span>
+      <span class="card-title">
+        <a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
+      </span>
+      <span class="score">{{ '★' * (item.score or 3)|int }}{{ '☆' * (5 - (item.score or 3)|int) }}</span>
+    </div>
+    <div class="card-meta">
+      <span class="tag source">{{ item.source }}</span>
+    </div>
+    <div class="summary">{{ item.summary_zh }}</div>
+  </div>
+  {% endfor %}
+
+  <!-- ═══════════ 中国古代故事 · 典故 · 天文地理 · 科技发明 ═══════════ -->
+  <div class="section-heading story">
+    <span class="icon">🏯</span>
+    <h2>中国古代故事 · 典故 · 天文地理 · 科技发明</h2>
+    <span class="count">{{ stories|length }} 则故事</span>
+  </div>
+
+  {% for story in stories %}
+  <div class="card">
+    <div class="card-header">
+      <span class="card-number story">{{ loop.index }}</span>
+      <span class="card-title">{{ story.title }}</span>
+    </div>
+    <div class="card-meta">
+      <span class="tag dynasty">{{ story.dynasty }}</span>
+      <span class="tag category">{{ story.category }}</span>
+      <span class="tag">{{ story.source }}</span>
+    </div>
+    <div class="story-content">{{ story.story_zh }}</div>
+    {% if story.lesson %}
+    <div class="lesson">
+      <span class="lesson-label">💡 寓意：</span>{{ story.lesson }}
+    </div>
+    {% endif %}
+    {% if story.fun_fact %}
+    <div class="fun-fact">📎 {{ story.fun_fact }}</div>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>📬 每日自动推送 · 基于 AI 智能生成 · <a href="https://github.com">GitHub Actions</a> 驱动</p>
+  <p style="margin-top:4px;">如有内容偏差，欢迎反馈纠偏 | Generated at {{ generated_at }}</p>
+</div>
+
+</body>
+</html>

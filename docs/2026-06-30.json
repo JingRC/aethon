@@ -1,0 +1,68 @@
+{
+  "date": "2026-06-30",
+  "ai_news_count": 0,
+  "stories_count": 10,
+  "ai_news": [],
+  "stories": [
+    {
+      "title": "旗亭画壁",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《集异记》"
+    },
+    {
+      "title": "苏东坡与赤壁赋",
+      "dynasty": "北宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《东坡志林》《赤壁赋》"
+    },
+    {
+      "title": "李清照赌书泼茶",
+      "dynasty": "南宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《金石录后序》"
+    },
+    {
+      "title": "李白醉写吓蛮书",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《唐才子传》《李太白全集》"
+    },
+    {
+      "title": "辛弃疾活捉张安国",
+      "dynasty": "南宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《宋史·辛弃疾传》"
+    },
+    {
+      "title": "郭守敬编《授时历》",
+      "dynasty": "元",
+      "category": "古代天文地理",
+      "source": "《元史·郭守敬传》"
+    },
+    {
+      "title": "张衡与地动仪",
+      "dynasty": "东汉",
+      "category": "古代科技发明故事",
+      "source": "《后汉书·张衡传》"
+    },
+    {
+      "title": "郑和七下西洋",
+      "dynasty": "明",
+      "category": "古代天文地理",
+      "source": "《明史·郑和传》"
+    },
+    {
+      "title": "冯谖客孟尝君",
+      "dynasty": "战国",
+      "category": "历史故事",
+      "source": "《战国策·齐策》"
+    },
+    {
+      "title": "贾思勰与《齐民要术》",
+      "dynasty": "北魏",
+      "category": "古代科技发明故事",
+      "source": "《齐民要术》序言"
+    }
+  ]
+}
