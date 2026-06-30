@@ -59,6 +59,12 @@ email:
   recipient_email: "${RECIPIENT_EMAIL}"
   subject_template: "📬 每日双拼日报 | AI快讯×古代故事 | {date}"
 
+# --- Notion 同步配置 ---
+notion:
+  enabled: true                    # 是否启用
+  token: "${NOTION_TOKEN}"         # Notion Internal Integration Secret
+  database_id: "${NOTION_DATABASE_ID}"  # 数据库 ID（从 URL 获取）
+
 # --- 调度配置 ---
 schedule:
   timezone: "Asia/Shanghai"

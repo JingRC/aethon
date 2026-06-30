@@ -499,6 +499,21 @@ def main():
         if not success:
             logger.warning("邮件发送失败，但日报已保存到 docs/ 目录")
 
+    # ── 5. 同步到 Notion ──
+    notion_config = config.get("notion", {})
+    if notion_config.get("enabled", False):
+        logger.info("=" * 50)
+        logger.info("📝 同步到 Notion...")
+        from modules.notion_sync import create_daily_page
+        notion_url = create_daily_page(
+            token=notion_config.get("token", ""),
+            database_id=notion_config.get("database_id", ""),
+            ai_news=ai_news,
+            stories=stories,
+        )
+        if notion_url:
+            logger.info(f"📝 Notion 页面: {notion_url}")
+
     logger.info("=" * 50)
     logger.info(f"✅ 完成！AI快讯 {len(ai_news)} 条 + 古代故事 {len(stories)} 则")
     logger.info(f"📂 输出目录: {DOCS_DIR}")
