@@ -2,8 +2,15 @@ name: Daily Dual Digest
 
 on:
   schedule:
-    # Beijing 8:13 AM daily (UTC 0:13, odd minute avoids peak congestion)
-    - cron: '13 0 * * *'
+    # Retry window: Beijing 8:00 AM → 8:30 AM, every 5 minutes
+    # Cache sentinel ensures only one email per day
+    - cron: '0 0 * * *'    # Beijing 8:00
+    - cron: '5 0 * * *'    # Beijing 8:05
+    - cron: '10 0 * * *'   # Beijing 8:10
+    - cron: '15 0 * * *'   # Beijing 8:15
+    - cron: '20 0 * * *'   # Beijing 8:20
+    - cron: '25 0 * * *'   # Beijing 8:25
+    - cron: '30 0 * * *'   # Beijing 8:30
   workflow_dispatch:
   push:
     branches:
@@ -23,17 +30,39 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Get today's date (Beijing time)
+        id: date
+        run: echo "today=$(TZ='Asia/Shanghai' date +%Y-%m-%d)" >> $GITHUB_OUTPUT
+
+      # Cache-based sentinel: restore at start, auto-save at end of job
+      - name: Email sentinel cache
+        id: sentinel
+        uses: actions/cache@v4
+        with:
+          path: .email-sentinel
+          key: daily-email-${{ steps.date.outputs.today }}
+
+      # Schedule: skip if email already sent today
+      # Manual dispatch: always run (bypass cache)
+      - name: Skip — email already sent today
+        if: steps.sentinel.outputs.cache-hit == 'true' && github.event_name == 'schedule'
+        run: |
+          echo "📬 Email already sent on ${{ steps.date.outputs.today }}, all done!"
+
       - uses: actions/setup-python@v5
+        if: steps.sentinel.outputs.cache-hit != 'true' || github.event_name != 'schedule'
         with:
           python-version: '3.11'
           cache: 'pip'
 
       - name: Install dependencies
+        if: steps.sentinel.outputs.cache-hit != 'true' || github.event_name != 'schedule'
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Generate daily digest
+        if: steps.sentinel.outputs.cache-hit != 'true' || github.event_name != 'schedule'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
@@ -43,7 +72,15 @@ jobs:
           NOTION_PAGE_ID: ${{ secrets.NOTION_PAGE_ID }}
         run: python main.py
 
+      - name: Mark email as sent
+        if: success() && (steps.sentinel.outputs.cache-hit != 'true' || github.event_name != 'schedule')
+        run: |
+          mkdir -p .email-sentinel
+          echo "${{ steps.date.outputs.today }}" > .email-sentinel/date
+          echo "✅ Marked as sent — later cron runs will skip"
+
       - name: Deploy to GitHub Pages
+        if: steps.sentinel.outputs.cache-hit != 'true' || github.event_name != 'schedule'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

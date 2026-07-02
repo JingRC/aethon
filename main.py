@@ -240,10 +240,8 @@ def generate_ancient_stories(config: dict) -> list[dict]:
 
     logger.info(f"✅ 古代故事: {len(stories)} 则")
 
-    # ── 保存到历史记录 ──
-    if stories:
-        save_to_history(stories)
-
+    # History is saved after email success (in main()), so failed retries
+    # don't waste new stories on lost emails.
     return stories[:count]
 
 
@@ -483,11 +481,12 @@ def main():
     save_output(html_content, md_content, ai_news, stories)
 
     # ── 4. 发送邮件 ──
+    email_sent = args.no_email  # --no-email mode: skip sending, treat as "done"
     if not args.no_email and config.get("email", {}).get("enabled", False):
         logger.info("=" * 50)
         logger.info("📧 发送邮件...")
         email_config = config["email"]
-        success = send_daily_email(
+        email_sent = send_daily_email(
             html_content=html_content,
             smtp_server=email_config["smtp_server"],
             smtp_port=email_config["smtp_port"],
@@ -496,8 +495,15 @@ def main():
             recipient_email=email_config["recipient_email"],
             subject=email_config.get("subject_template", "").replace("{date}", datetime.now().strftime("%Y-%m-%d")),
         )
-        if not success:
-            logger.warning("邮件发送失败，但日报已保存到 docs/ 目录")
+        if not email_sent:
+            logger.warning("邮件发送失败，日报已保存到 docs/，将在下次 cron 重试")
+
+    # ── 只有邮件成功发送后才保存故事历史（去重库） ──
+    #     这样如果邮件失败，下一轮 cron 重试时 LLM 还能生成同样的故事
+    if stories and email_sent:
+        save_to_history(stories)
+    elif stories and not email_sent:
+        logger.info("📋 邮件未成功，暂不更新去重库（等待重试）")
 
     # ── 5. 同步到 Notion ──
     notion_config = config.get("notion", {})
