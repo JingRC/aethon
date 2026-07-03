@@ -1,0 +1,193 @@
+{
+  "date": "2026-07-03",
+  "ai_news_count": 10,
+  "stories_count": 19,
+  "ai_news": [
+    {
+      "title": "Anthropic与三星洽谈定制AI芯片",
+      "summary_zh": "Anthropic正在与三星讨论开发定制AI芯片，此举紧跟OpenAI与博通合作推出自研芯片之后。这表明顶级AI公司正加速摆脱对英伟达的依赖，通过自研芯片优化成本与性能，定制化硬件将成为AI军备竞赛的下一个关键战场。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/",
+      "score": 5
+    },
+    {
+      "title": "OpenAI提议将5%股权捐赠给美国主权财富基金",
+      "summary_zh": "OpenAI CEO Sam Altman提议将公司5%的股权捐赠给美国主权财富基金，重新引发关于让公众分享AI繁荣收益的讨论。此举既是对监管压力的回应，也可能改变AI行业的利益分配格局，具有深远的政策与商业影响。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/",
+      "score": 5
+    },
+    {
+      "title": "扎克伯格承认AI代理进展不及预期",
+      "summary_zh": "Meta CEO马克·扎克伯格在内部会议上承认，AI代理的研发进展未达预期。这一罕见表态揭示了当前AI行业面临的瓶颈：尽管大模型能力不断提升，但可靠、自主的AI代理在现实场景中仍难以落地，对行业信心构成警示。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/",
+      "score": 5
+    },
+    {
+      "title": "Claude Sonnet 5正式上线，Anthropic发布更便宜新模型",
+      "summary_zh": "在大规模封号风波后，Anthropic发布Claude Sonnet 5及更经济的新模型。此举旨在降低使用门槛、扩大用户基础，同时回应市场对成本控制的关注。新模型在性能与价格间取得平衡，可能推动AI应用进一步普及。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1670577?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
+    },
+    {
+      "title": "Meta低调发布AI游戏创作应用Pocket",
+      "summary_zh": "Meta推出实验性AI应用Pocket，用户可通过文本提示生成并分享互动小游戏。这是Meta在AI创意工具领域的最新尝试，延续了其“vibe coding”理念，可能开辟新的UGC游戏生态，但也面临与现有平台竞争的挑战。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket/",
+      "score": 4
+    },
+    {
+      "title": "谷歌和亚马逊AI成本威胁净零排放承诺",
+      "summary_zh": "AI的能源消耗正严重威胁谷歌和亚马逊的净零排放目标。随着AI模型规模激增，算力需求导致碳排放飙升，科技巨头在平衡AI发展与环保承诺上面临严峻挑战。这为整个行业敲响警钟，可持续AI成为迫切议题。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/02/a-warning-sign-about-ais-real-cost-courtesy-of-google-and-amazon/",
+      "score": 4
+    },
+    {
+      "title": "Hugging Face与Cerebras推出实时语音AI：Gemma 4",
+      "summary_zh": "Hugging Face联合Cerebras发布基于Gemma 4的实时语音AI，结合Cerebras的硬件加速能力，实现低延迟语音交互。这一合作展示了专用硬件与开源模型结合的巨大潜力，将推动语音助手和实时翻译等应用的性能跃升。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
+      "score": 4
+    },
+    {
+      "title": "Bounded Morality: 定义道德计算的边界",
+      "summary_zh": "arXiv新论文提出“有界道德”框架，将道德认知建模为计算问题，而非固定伦理规则。该研究为AI系统的道德决策提供了形式化基础，可能影响未来AI伦理治理和可解释性设计，是AI安全领域的重要理论进展。",
+      "source": "cs.AI updates on arXiv.org",
+      "url": "https://arxiv.org/abs/2607.00002",
+      "score": 3
+    },
+    {
+      "title": "Seed2.0模型发布：迈向真实世界复杂任务",
+      "summary_zh": "arXiv发布Seed2.0模型系列，专注于解决复杂真实世界任务。该模型通过识别用户真实需求并构建前瞻性评估系统，在多个基准上取得突破。Seed2.0代表了从实验室基准到实际应用的转变，对AI落地具有指导意义。",
+      "source": "cs.AI updates on arXiv.org",
+      "url": "https://arxiv.org/abs/2607.00248",
+      "score": 3
+    },
+    {
+      "title": "Chrome DevTools MCP：为编码代理提供浏览器调试能力",
+      "summary_zh": "Chrome DevTools团队发布MCP（Model Context Protocol）工具，让AI编码代理能直接使用Chrome开发者工具进行调试。这显著增强了AI代理的自主开发能力，有望加速AI辅助编程的实用化进程，是开发工具与AI融合的重要一步。",
+      "source": "GitHub Trending",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "score": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "鲁班造木鸢：古代无人机的雏形",
+      "dynasty": "春秋",
+      "category": "历史趣考",
+      "source": "《墨子·鲁问》"
+    },
+    {
+      "title": "秦始皇的‘驰道’：古代高速公路网",
+      "dynasty": "秦",
+      "category": "历史趣考",
+      "source": "《汉书·贾山传》"
+    },
+    {
+      "title": "汉武帝的‘汗血宝马’：大宛国的天马外交",
+      "dynasty": "西汉",
+      "category": "历史趣考",
+      "source": "《史记·大宛列传》"
+    },
+    {
+      "title": "北魏孝文帝的‘迁都’与‘汉化’：一场自上而下的文化革命",
+      "dynasty": "北魏",
+      "category": "历史趣考",
+      "source": "《魏书·高祖纪》"
+    },
+    {
+      "title": "宋代‘交子’：世界上最早的纸币",
+      "dynasty": "北宋",
+      "category": "历史趣考",
+      "source": "《宋史·食货志》"
+    },
+    {
+      "title": "郑和宝船：比哥伦布船大四倍的海上巨无霸",
+      "dynasty": "明",
+      "category": "古代天文地理",
+      "source": "《郑和航海图》《明史·郑和传》"
+    },
+    {
+      "title": "《山海经》中的‘䑏疏’：古代对犀牛的记载",
+      "dynasty": "先秦",
+      "category": "古代天文地理",
+      "source": "《山海经·中山经》"
+    },
+    {
+      "title": "七夕节：牛郎织女与星宿崇拜",
+      "dynasty": "汉代",
+      "category": "传统节日传说",
+      "source": "《诗经·小雅·大东》《古诗十九首·迢迢牵牛星》"
+    },
+    {
+      "title": "墨子救宋：一场辩论阻止的战争",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《墨子·公输》"
+    },
+    {
+      "title": "庄周梦蝶：物我两忘的哲学寓言",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《庄子·齐物论》"
+    },
+    {
+      "title": "韩非子‘买椟还珠’：包装过度的讽刺",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《韩非子·外储说左上》"
+    },
+    {
+      "title": "郑人买履：宁信度无自信的教条主义",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《韩非子·外储说左上》"
+    },
+    {
+      "title": "曹刿论战：一鼓作气的军事智慧",
+      "dynasty": "春秋",
+      "category": "历史趣考",
+      "source": "《左传·庄公十年》"
+    },
+    {
+      "title": "晏子使楚：以弱胜强的外交智慧",
+      "dynasty": "春秋",
+      "category": "诸子百家寓言",
+      "source": "《晏子春秋·内篇杂下》"
+    },
+    {
+      "title": "邹忌讽齐王纳谏：以自身为镜的治国之道",
+      "dynasty": "战国",
+      "category": "历史趣考",
+      "source": "《战国策·齐策一》"
+    },
+    {
+      "title": "廉颇蔺相如：将相和的千古佳话",
+      "dynasty": "战国",
+      "category": "历史趣考",
+      "source": "《史记·廉颇蔺相如列传》"
+    },
+    {
+      "title": "张良拾履：忍辱负重的成功密码",
+      "dynasty": "秦末",
+      "category": "历史趣考",
+      "source": "《史记·留侯世家》"
+    },
+    {
+      "title": "班超投笔从戎：书生建功西域的传奇",
+      "dynasty": "东汉",
+      "category": "历史趣考",
+      "source": "《后汉书·班超传》"
+    },
+    {
+      "title": "岳飞‘精忠报国’：母亲刺字的真相",
+      "dynasty": "南宋",
+      "category": "历史趣考",
+      "source": "《宋史·岳飞传》《金佗粹编》"
+    }
+  ]
+}
