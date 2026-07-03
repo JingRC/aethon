@@ -66,6 +66,7 @@ notion:
   page_id: "${NOTION_PAGE_ID}"     # 父页面 ID（日报作为子页面创建在下面）
 
 # --- 调度配置 ---
+# GitHub Actions cron: see .github/workflows/daily.yml
 schedule:
   timezone: "Asia/Shanghai"
-  hour: 8                        # 北京时间早上8点发送
+  hour: 8
