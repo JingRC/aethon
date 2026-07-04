@@ -1,0 +1,199 @@
+{
+  "date": "2026-07-04",
+  "ai_news_count": 10,
+  "stories_count": 20,
+  "ai_news": [
+    {
+      "title": "Anthropic与三星讨论定制AI芯片",
+      "summary_zh": "Anthropic正在与三星讨论开发定制AI芯片，这标志着AI公司加速自研芯片的趋势。此前OpenAI刚宣布与博通合作开发自有芯片。此举旨在减少对英伟达GPU的依赖，降低推理成本，并为未来模型训练提供专用硬件支持，对AI产业链格局影响深远。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/",
+      "score": 5
+    },
+    {
+      "title": "扎克伯格承认Meta AI智能体进展不及预期",
+      "summary_zh": "Meta CEO马克·扎克伯格在内部会议上承认，公司的AI智能体开发进展未达到预期。这一坦率表态反映了整个行业在构建可靠、可用的AI Agent方面面临的挑战，也暗示Meta可能调整其AI战略方向，对业界预期和投资风向产生警示作用。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/",
+      "score": 5
+    },
+    {
+      "title": "Anthropic发布Claude Science，进军药物研发",
+      "summary_zh": "Anthropic推出Claude Science，一个专为科学家设计的AI工作台，将分散的工具和数据集整合到统一环境中，并具备生成图表和可视化功能。此举标志着AI公司从通用对话模型向垂直科学领域的重大拓展，尤其在药物研发领域具有颠覆性潜力。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
+      "score": 5
+    },
+    {
+      "title": "谷歌和亚马逊揭示AI的真实成本：净零承诺受威胁",
+      "summary_zh": "AI的能源消耗和碳排放正严重威胁谷歌和亚马逊的净零排放承诺。随着AI模型规模持续扩大，训练和推理所需的电力激增，科技巨头在环保目标与AI投资之间面临两难。这一警示对全球AI可持续发展政策具有重要参考价值。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/02/a-warning-sign-about-ais-real-cost-courtesy-of-google-and-amazon/",
+      "score": 4
+    },
+    {
+      "title": "Meta低调发布AI游戏生成应用Pocket",
+      "summary_zh": "Meta悄然推出实验性AI应用Pocket，允许用户通过文本提示生成和分享互动迷你游戏。这代表了'vibe coding'理念从编程到游戏创作的延伸，也是Meta在AI娱乐领域的重要布局，可能改变用户生成内容(UGC)的游戏生态。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket/",
+      "score": 4
+    },
+    {
+      "title": "Midjourney医疗扫描仪幕后视频引发质疑",
+      "summary_zh": "Midjourney发布了其未来主义医疗超声波扫描仪的幕后视频，但未提供有效性的实质证据。这家以图像生成闻名的AI初创公司计划将设备部署于水疗中心，希望用AI改变医疗诊断。该发布因缺乏临床验证而引发广泛质疑。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/961265/midjourney-medical-ultrasound-scanner-behind-the-scenes-video",
+      "score": 4
+    },
+    {
+      "title": "阿里内部全面禁用Claude Code，整合三大AI智能体产品",
+      "summary_zh": "阿里巴巴内部全面禁用Anthropic的Claude Code开发工具，同时整合三大AI智能体产品，由92年出生的钉钉CEO陈宇森统一领导。此举显示中国科技巨头在AI开发工具自主可控和产品战略集中化方面的决心，对国内AI生态有重要影响。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1670957",
+      "score": 4
+    },
+    {
+      "title": "Claude发布更便宜的新模型，大规模封号后调整策略",
+      "summary_zh": "在经历大规模封号事件后，Anthropic突然发布更便宜的新Claude模型，旨在扩大用户覆盖面和降低使用门槛。此举既是对封号风波的市场回应，也反映了AI模型定价竞争的白热化，可能引发新一轮价格战。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1670577",
+      "score": 4
+    },
+    {
+      "title": "OpenAI发布Codex插件，支持从Claude Code调用",
+      "summary_zh": "OpenAI发布了Codex插件，允许开发者从Anthropic的Claude Code工具中直接调用OpenAI的Codex进行代码审查或任务委托。这一跨平台合作打破了AI公司的封闭生态，展示了模型互操作性的新趋势，对开发者工具有深远影响。",
+      "source": "GitHub Trending",
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "score": 3
+    },
+    {
+      "title": "Hugging Face与Cerebras推出实时语音AI，集成Gemma 4",
+      "summary_zh": "Hugging Face与Cerebras合作推出基于Gemma 4的实时语音AI解决方案，将大语言模型与低延迟推理硬件结合，实现接近实时的语音交互。这一技术突破将推动语音助手、实时翻译等应用的发展，并展示了专用硬件在AI推理中的优势。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
+      "score": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "曹丕学驴叫：建安文人的另类葬礼",
+      "dynasty": "三国·魏",
+      "category": "历史趣考",
+      "source": "《世说新语·伤逝》"
+    },
+    {
+      "title": "古代‘身份证’：商鞅发明的照身帖与连坐制",
+      "dynasty": "战国·秦",
+      "category": "历史趣考",
+      "source": "《史记·商君列传》《商君书》"
+    },
+    {
+      "title": "《山海经》里的‘外星人’：贯胸国与奇肱国",
+      "dynasty": "先秦",
+      "category": "古代科技发明故事",
+      "source": "《山海经·海外南经》《山海经·海外西经》"
+    },
+    {
+      "title": "墨子救宋：一场用‘沙盘推演’阻止的战争",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《墨子·公输》"
+    },
+    {
+      "title": "李愬雪夜入蔡州：奇袭战术的巅峰",
+      "dynasty": "唐",
+      "category": "兵法谋略故事",
+      "source": "《资治通鉴·唐纪》《旧唐书·李愬传》"
+    },
+    {
+      "title": "古代‘广告牌’：张择端《清明上河图》中的商业奇观",
+      "dynasty": "北宋",
+      "category": "历史趣考",
+      "source": "《清明上河图》画卷、孟元老《东京梦华录》"
+    },
+    {
+      "title": "沈括与《梦溪笔谈》：一位宋代科学家的‘百科全书’",
+      "dynasty": "北宋",
+      "category": "古代科技发明故事",
+      "source": "《梦溪笔谈》"
+    },
+    {
+      "title": "孔子见老子：两位圣人的‘世纪对话’",
+      "dynasty": "春秋",
+      "category": "诸子百家寓言",
+      "source": "《史记·老子韩非列传》《礼记·曾子问》"
+    },
+    {
+      "title": "田忌赛马：孙膑的‘博弈论’与资源优化",
+      "dynasty": "战国·齐",
+      "category": "兵法谋略故事",
+      "source": "《史记·孙子吴起列传》"
+    },
+    {
+      "title": "古代‘马拉松’：元代急递铺的‘六百里加急’",
+      "dynasty": "元",
+      "category": "历史趣考",
+      "source": "《元史·兵志》《马可·波罗游记》"
+    },
+    {
+      "title": "范雎‘远交近攻’：改变秦国国策的谋士",
+      "dynasty": "战国·秦",
+      "category": "兵法谋略故事",
+      "source": "《史记·范雎蔡泽列传》"
+    },
+    {
+      "title": "苏秦刺股：从‘游说失败’到‘六国相印’的逆袭",
+      "dynasty": "战国",
+      "category": "历史趣考",
+      "source": "《战国策·秦策一》《史记·苏秦列传》"
+    },
+    {
+      "title": "赵匡胤‘杯酒释兵权’：一场没有流血的权力交接",
+      "dynasty": "北宋",
+      "category": "历史趣考",
+      "source": "《续资治通鉴长编》《宋史·石守信传》"
+    },
+    {
+      "title": "刘晏‘漕运改革’：唐代的‘物流革命’",
+      "dynasty": "唐",
+      "category": "古代科技发明故事",
+      "source": "《旧唐书·刘晏传》《资治通鉴·唐纪》"
+    },
+    {
+      "title": "晏子使楚：外交家如何用‘身高’反击侮辱",
+      "dynasty": "春秋·齐",
+      "category": "诸子百家寓言",
+      "source": "《晏子春秋·内篇杂下》"
+    },
+    {
+      "title": "郑和宝船：古代‘航母’的建造之谜",
+      "dynasty": "明",
+      "category": "古代科技发明故事",
+      "source": "《明史·郑和传》《瀛涯胜览》《西洋番国志》"
+    },
+    {
+      "title": "周幽王‘烽火戏诸侯’：一个被误读千年的故事",
+      "dynasty": "西周",
+      "category": "历史趣考",
+      "source": "《史记·周本纪》《清华简·系年》"
+    },
+    {
+      "title": "甘德与石申：战国时代的‘天文双子星’",
+      "dynasty": "战国",
+      "category": "古代科技发明故事",
+      "source": "《史记·天官书》《甘石星经》"
+    },
+    {
+      "title": "孟尝君‘鸡鸣狗盗’：门客的‘歪才’救了命",
+      "dynasty": "战国·齐",
+      "category": "诸子百家寓言",
+      "source": "《史记·孟尝君列传》"
+    },
+    {
+      "title": "郭嘉‘十胜十败’：曹操官渡之战的‘心理战’",
+      "dynasty": "东汉末",
+      "category": "兵法谋略故事",
+      "source": "《三国志·魏书·郭嘉传》"
+    }
+  ]
+}
