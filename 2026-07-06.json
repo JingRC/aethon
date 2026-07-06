@@ -1,0 +1,199 @@
+{
+  "date": "2026-07-06",
+  "ai_news_count": 10,
+  "stories_count": 20,
+  "ai_news": [
+    {
+      "title": "微软裁员4800人，AI取代工作担忧加剧",
+      "summary_zh": "微软宣布裁员约4800人，占全球员工总数的2.1%，主要影响Xbox和商业销售部门。这是今年一系列以AI为因素的裁员中的最新一例，加剧了AI取代人类工作的担忧。此次重组还涉及四家Xbox工作室的剥离。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/",
+      "score": 5
+    },
+    {
+      "title": "Hugging Face与Cerebras合作推出Gemma 4实时语音AI",
+      "summary_zh": "Hugging Face与芯片公司Cerebras合作，将Google的Gemma 4模型应用于实时语音AI。该合作利用Cerebras的晶圆级芯片实现低延迟推理，有望推动语音助手和实时翻译等应用的性能突破，标志着开源模型在边缘AI领域的重要进展。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
+      "score": 5
+    },
+    {
+      "title": "智能眼镜公司Even Realities获1.5亿美元融资，估值达10亿",
+      "summary_zh": "由前苹果团队创立的智能眼镜公司Even Realities完成1.5亿美元融资，由美团和腾讯领投，估值达10亿美元。该公司主打无摄像头设计，专注于AI驱动的增强现实体验，这笔融资将加速其产品迭代和全球扩张。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/06/smart-glasses-maker-even-realities-hits-1b-valuation-with-150m-funding-led-by-meituan-tencent/",
+      "score": 5
+    },
+    {
+      "title": "大量系统提示词泄露：涉及Anthropic、OpenAI、Google等AI模型",
+      "summary_zh": "GitHub上出现大规模系统提示词泄露事件，涉及Anthropic的Claude Fable 5、OpenAI的ChatGPT 5.5 Thinking、Google的Gemini 3.5 Flash等多个顶级AI模型的内部提示。这些提示词揭示了模型的行为规则和安全机制，可能引发安全与竞争方面的担忧。",
+      "source": "GitHub Trending",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "score": 4
+    },
+    {
+      "title": "Reddit利用LLM对抗AI生成的垃圾信息",
+      "summary_zh": "Reddit宣布使用大语言模型（LLM）来检测和清除平台上的垃圾信息，这些垃圾信息很大程度上是由AI生成的。此举体现了平台以AI对抗AI的趋势，但同时也引发了关于内容审核自动化及其对社区影响的新讨论。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/06/reddit-is-using-llms-to-solve-a-problem-llms-largely-created/",
+      "score": 4
+    },
+    {
+      "title": "Agility Robotics通过SPAC上市，CEO警告机器人进家庭尚需时日",
+      "summary_zh": "人形机器人公司Agility Robotics宣布通过SPAC上市，但CEO表示短期内机器人不会进入家庭。公司专注于物流和工业场景，强调执行力和务实策略，与追求高估值的同行形成对比。这标志着人形机器人商业化进入新阶段。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/05/this-humanoid-robotics-company-is-going-public-but-its-ceo-isnt-promising-a-robot-in-your-home-anytime-soon/",
+      "score": 4
+    },
+    {
+      "title": "Vercel CEO讨论模型与代理分离的行业趋势",
+      "summary_zh": "Vercel CEO Guillermo Rauch在接受TechCrunch采访时指出，在生产环境中，价格/性能比至关重要，因此行业正推动将AI模型与代理分离。这一观点反映了AI应用部署中的关键挑战，即如何优化成本和效率，而非单纯追求模型能力。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agents/",
+      "score": 3
+    },
+    {
+      "title": "Hugging Face发布LeRobot v0.6.0：机器人学习框架重大更新",
+      "summary_zh": "Hugging Face发布LeRobot v0.6.0版本，新增想象、评估和改进模块，旨在简化机器人学习流程。该框架支持模拟和真实机器人实验，有望降低机器人AI开发门槛，推动开源机器人社区的发展。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/lerobot-release-v060",
+      "score": 3
+    },
+    {
+      "title": "腾讯Hy3正式版发布，AI能力对标GLM-5.2",
+      "summary_zh": "腾讯发布Hy3正式版，在多项基准测试中表现与GLM-5.2相当，标志着其在大模型领域的重大突破。Hy3的发布显示腾讯在AI下半场的竞争中加速追赶，可能改变国内AI大模型市场格局。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1671041?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 3
+    },
+    {
+      "title": "OpenAI推出Codex插件，支持从Claude Code调用",
+      "summary_zh": "OpenAI发布Codex插件，允许用户从Claude Code中调用Codex进行代码审查或任务委托。这一跨平台协作工具打破了AI助手之间的壁垒，展示了AI工具生态走向互操作性的趋势，可能提升开发者的工作效率。",
+      "source": "GitHub Trending",
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "score": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "寒食节的起源：介子推与绵山",
+      "dynasty": "春秋",
+      "category": "传统节日传说",
+      "source": "《左传·僖公二十四年》《庄子·盗跖》"
+    },
+    {
+      "title": "重阳节的登高：桓景避灾",
+      "dynasty": "东汉",
+      "category": "传统节日传说",
+      "source": "《续齐谐记》"
+    },
+    {
+      "title": "元宵节的起源：汉文帝平吕",
+      "dynasty": "西汉",
+      "category": "传统节日传说",
+      "source": "《史记·吕太后本纪》《汉书·文帝纪》"
+    },
+    {
+      "title": "腊八节的传说：朱元璋与杂粮粥",
+      "dynasty": "明",
+      "category": "传统节日传说",
+      "source": "《明史·太祖本纪》及民间传说"
+    },
+    {
+      "title": "小年的祭灶：灶神上天言事",
+      "dynasty": "先秦至清",
+      "category": "传统节日传说",
+      "source": "《礼记·祭法》《后汉书·阴识传》"
+    },
+    {
+      "title": "管鲍之交：鲍叔牙的知人之明",
+      "dynasty": "春秋",
+      "category": "古代名人逸事",
+      "source": "《史记·管晏列传》《列子·力命》"
+    },
+    {
+      "title": "张良拾履：黄石公授书",
+      "dynasty": "秦末",
+      "category": "古代名人逸事",
+      "source": "《史记·留侯世家》"
+    },
+    {
+      "title": "司马迁著《史记》：忍辱负重",
+      "dynasty": "西汉",
+      "category": "古代名人逸事",
+      "source": "《汉书·司马迁传》《报任安书》"
+    },
+    {
+      "title": "黄道婆革新棉纺织技术",
+      "dynasty": "元",
+      "category": "古代科技发明故事",
+      "source": "《辍耕录》《南村辍耕录》"
+    },
+    {
+      "title": "宋应星与《天工开物》",
+      "dynasty": "明",
+      "category": "古代科技发明故事",
+      "source": "《天工开物》序言及《明史》"
+    },
+    {
+      "title": "鲁班造木鸢：最早的飞行器传说",
+      "dynasty": "春秋",
+      "category": "古代科技发明故事",
+      "source": "《墨子·鲁问》《论衡·儒增》"
+    },
+    {
+      "title": "马钧改进织绫机与翻车",
+      "dynasty": "三国·魏",
+      "category": "古代科技发明故事",
+      "source": "《三国志·魏书·方技传》《傅子》"
+    },
+    {
+      "title": "隋炀帝开凿大运河",
+      "dynasty": "隋",
+      "category": "古代科技发明故事",
+      "source": "《隋书·炀帝纪》《资治通鉴》"
+    },
+    {
+      "title": "诸葛亮木牛流马：古代物流黑科技",
+      "dynasty": "三国·蜀",
+      "category": "古代科技发明故事",
+      "source": "《三国志·蜀书·诸葛亮传》《宋史》"
+    },
+    {
+      "title": "秦始皇统一文字与度量衡",
+      "dynasty": "秦",
+      "category": "历史趣考",
+      "source": "《史记·秦始皇本纪》及出土秦简"
+    },
+    {
+      "title": "汉代的‘举孝廉’：当官先看品德",
+      "dynasty": "西汉",
+      "category": "历史趣考",
+      "source": "《汉书·武帝纪》《后汉书·百官志》"
+    },
+    {
+      "title": "唐代‘不良人’：古代的便衣警察",
+      "dynasty": "唐",
+      "category": "历史趣考",
+      "source": "《唐六典》《资治通鉴》"
+    },
+    {
+      "title": "宋代‘交子’：世界上最早的纸币",
+      "dynasty": "北宋",
+      "category": "历史趣考",
+      "source": "《宋史·食货志》《文献通考》"
+    },
+    {
+      "title": "明代‘一条鞭法’：张居正的财政改革",
+      "dynasty": "明",
+      "category": "历史趣考",
+      "source": "《明史·食货志》《张居正传》"
+    },
+    {
+      "title": "清代‘火耗归公’：雍正的反腐妙招",
+      "dynasty": "清",
+      "category": "历史趣考",
+      "source": "《清史稿·世宗本纪》《雍正传》"
+    }
+  ]
+}
