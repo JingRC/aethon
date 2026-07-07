@@ -1,0 +1,199 @@
+{
+  "date": "2026-07-07",
+  "ai_news_count": 10,
+  "stories_count": 20,
+  "ai_news": [
+    {
+      "title": "Meta发布Muse AI图像生成模型",
+      "summary_zh": "Meta推出由Superintelligence Labs部门开发的首个AI图像生成模型Muse，现已集成至Meta AI、Instagram和WhatsApp的图像工具中。该模型支持广告、装饰和创作者场景，可拉取其他Instagram用户生成AI照片，标志着Meta在AI图像领域的重大突破。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
+      "score": 5
+    },
+    {
+      "title": "Anthropic将Claude Cowork扩展至移动和网页端",
+      "summary_zh": "Anthropic的AI平台Claude Cowork首次扩展至移动和网页端，用户可跨设备无缝完成任务：从桌面启动、手机查看状态更新、在笔记本关闭后获取输出。该功能先向Max订阅者开放，随后覆盖其他计划用户，推动了编码AI代理向办公协作的扩展。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/",
+      "score": 5
+    },
+    {
+      "title": "微软加入AI成本削减趋势，更多依赖自有模型",
+      "summary_zh": "微软成为最新一家削减AI支出的大型科技公司，通过更多依赖自有模型来降低成本。此举反映了AI行业在巨额投入后的成本优化趋势，可能影响第三方模型合作关系，对AI生态格局产生深远影响。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models/",
+      "score": 4
+    },
+    {
+      "title": "AI法律初创公司Norm获1.2亿美元融资，估值达独角兽",
+      "summary_zh": "AI法律初创公司Norm完成1.2亿美元C轮融资，由Khosla Ventures领投，估值达12亿美元。该公司利用AI技术革新法律服务，此次融资标志着AI在垂直行业应用的加速落地，并凸显了法律科技领域的投资热度。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/",
+      "score": 4
+    },
+    {
+      "title": "Figma收购vibe-coding应用背后的团队",
+      "summary_zh": "设计工具公司Figma收购了Y Combinator支持的vibe-coding平台团队，该团队此前开发了AI编码应用和代理创建产品。这一收购强化了Figma在AI辅助设计和开发领域的布局，反映了AI编码工具与设计工具融合的趋势。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/07/figma-acquires-team-behind-a-vibe-coding-app/",
+      "score": 4
+    },
+    {
+      "title": "Discord承认AI审核系统错误封禁8000多个账户",
+      "summary_zh": "Discord确认其AI安全系统存在漏洞，自5月以来错误封禁了超过8000个账户。问题源于系统对包含网格图案（如棋盘、游戏纹理）的“良性”图像误判，直到团队识别并修复后才停止。这暴露了AI内容审核的局限性。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/games/962156/discord-accidental-bans-grid-images",
+      "score": 4
+    },
+    {
+      "title": "Hugging Face与Cerebras合作将Gemma 4用于实时语音AI",
+      "summary_zh": "Hugging Face与Cerebras合作，将Gemma 4模型集成到实时语音AI应用中。该合作利用Cerebras的硬件加速能力，提升了语音AI的实时处理性能，为语音交互和智能助手领域带来新的技术可能性。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
+      "score": 3
+    },
+    {
+      "title": "腾讯Hy3正式版实测：性能比肩GLM-5.2",
+      "summary_zh": "腾讯发布Hy3正式版大模型，实测显示其性能比肩GLM-5.2。该模型在多项AI基准测试中表现优异，标志着腾讯在AI下半场的竞争中取得关键进展，对国内大模型生态产生重要影响。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1671041",
+      "score": 3
+    },
+    {
+      "title": "OpenAI Codex推出Token节省技巧",
+      "summary_zh": "OpenAI的Codex模型推出了一键节省Token的实用技巧，经测试可有效降低使用成本。虽然节省幅度有限，但这一优化对开发者社区具有实用价值，有助于降低AI编码工具的运营成本，推动更广泛的应用。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1669952",
+      "score": 3
+    },
+    {
+      "title": "苹果、博通延长合作至2031年，共同开发AI定制芯片",
+      "summary_zh": "苹果与博通宣布延长合作协议至2031年，将共同开发AI定制芯片。这一长期合作旨在提升苹果在AI领域的硬件能力，为未来设备提供更强大的AI处理性能，对芯片行业和AI硬件生态产生深远影响。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1671116",
+      "score": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "退避三舍",
+      "dynasty": "春秋",
+      "category": "兵法谋略故事",
+      "source": "《左传·僖公二十三年》"
+    },
+    {
+      "title": "弦高犒师",
+      "dynasty": "春秋",
+      "category": "兵法谋略故事",
+      "source": "《左传·僖公三十三年》"
+    },
+    {
+      "title": "卧薪尝胆",
+      "dynasty": "春秋",
+      "category": "兵法谋略故事",
+      "source": "《史记·越王勾践世家》"
+    },
+    {
+      "title": "减灶诱敌",
+      "dynasty": "战国",
+      "category": "兵法谋略故事",
+      "source": "《史记·孙子吴起列传》"
+    },
+    {
+      "title": "空城计（真实版）",
+      "dynasty": "春秋",
+      "category": "兵法谋略故事",
+      "source": "《左传·庄公二十八年》"
+    },
+    {
+      "title": "暗度陈仓",
+      "dynasty": "西汉",
+      "category": "兵法谋略故事",
+      "source": "《史记·高祖本纪》"
+    },
+    {
+      "title": "晋文公退避三舍的真相：真的是守信吗",
+      "dynasty": "春秋",
+      "category": "历史趣考",
+      "source": "《左传·僖公二十八年》《史记·晋世家》"
+    },
+    {
+      "title": "古代‘身份证’：鱼符与虎符的玄机",
+      "dynasty": "隋唐",
+      "category": "历史趣考",
+      "source": "《隋书·礼仪志》《新唐书·车服志》"
+    },
+    {
+      "title": "‘指鹿为马’的真相：赵高的权力测试",
+      "dynasty": "秦",
+      "category": "历史趣考",
+      "source": "《史记·秦始皇本纪》"
+    },
+    {
+      "title": "庖丁解牛：游刃有余的养生之道",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《庄子·养生主》"
+    },
+    {
+      "title": "愚公移山：北山愚公的执着与智慧",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《列子·汤问》"
+    },
+    {
+      "title": "井底之蛙：视野决定境界",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《庄子·秋水》"
+    },
+    {
+      "title": "鲁班造木鹊：古代飞行器的奇想",
+      "dynasty": "春秋",
+      "category": "古代科技发明故事",
+      "source": "《墨子·鲁问》《韩非子·外储说左上》"
+    },
+    {
+      "title": "张衡造浑天仪：星辰在掌中运行",
+      "dynasty": "东汉",
+      "category": "古代科技发明故事",
+      "source": "《后汉书·张衡传》"
+    },
+    {
+      "title": "蔡伦改进造纸术：从丝帛到纸张的飞跃",
+      "dynasty": "东汉",
+      "category": "古代科技发明故事",
+      "source": "《后汉书·蔡伦传》"
+    },
+    {
+      "title": "李时珍与《本草纲目》：尝遍百草写医典",
+      "dynasty": "明",
+      "category": "古代科技发明故事",
+      "source": "《明史·李时珍传》《本草纲目》序言"
+    },
+    {
+      "title": "王阳明龙场悟道：心学的诞生",
+      "dynasty": "明",
+      "category": "诸子百家寓言",
+      "source": "《明史·王守仁传》《传习录》"
+    },
+    {
+      "title": "郑和宝船：明朝的‘海上巨无霸’",
+      "dynasty": "明",
+      "category": "古代科技发明故事",
+      "source": "《明史·郑和传》《瀛涯胜览》"
+    },
+    {
+      "title": "黄道婆与纺织革命：棉布改变中国",
+      "dynasty": "元",
+      "category": "古代科技发明故事",
+      "source": "《南村辍耕录》《松江府志》"
+    },
+    {
+      "title": "大禹治水：从堵到疏的智慧转变",
+      "dynasty": "上古（约公元前21世纪）",
+      "category": "古代科技发明故事",
+      "source": "《尚书·禹贡》《史记·夏本纪》"
+    }
+  ]
+}
