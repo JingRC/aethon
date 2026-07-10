@@ -1,0 +1,199 @@
+{
+  "date": "2026-07-10",
+  "ai_news_count": 10,
+  "stories_count": 20,
+  "ai_news": [
+    {
+      "title": "苹果起诉OpenAI窃取商业机密",
+      "summary_zh": "苹果公司正式起诉OpenAI，指控其工程师窃取苹果硬件机密以推进AI初创公司的硬件计划。诉讼称OpenAI高级管理层（包括一名前苹果长期员工）直接指导了侵权行为。此案涉及苹果与OpenAI之间日益紧张的关系，对AI行业的人才流动和知识产权保护具有重大影响。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+      "score": 5
+    },
+    {
+      "title": "SK海力士创美国史上最大外资IPO，筹资265亿美元",
+      "summary_zh": "AI芯片热潮催生华尔街里程碑事件：SK海力士以265亿美元募资额创美国史上最大外资IPO，上市首日市值突破万亿美元。作为英伟达最大的RAM供应商，SK海力士此举凸显AI基础设施投资热度。美国政府同时敦促其与三星在美建厂，加速半导体本土化。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
+      "score": 5
+    },
+    {
+      "title": "OpenAI指定GPT-5.6为微软Copilot首选模型",
+      "summary_zh": "OpenAI正式确认最新模型GPT-5.6将为微软Copilot 365提供支持，回应了关于双方可能分手的传闻。这一合作巩固了OpenAI在办公AI领域的领先地位，同时表明微软在AI产品上仍深度依赖OpenAI技术。GPT-5.6的全量上线标志着AI大模型竞争进入新阶段。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
+      "score": 5
+    },
+    {
+      "title": "Hugging Face CEO：企业不再“租用”AI",
+      "summary_zh": "Hugging Face CEO Clem Delangue指出，开源AI正蓬勃发展，企业不再满足于租用闭源模型。Hugging Face已发展为AI界的GitHub，被约半数财富500强企业使用。这一趋势反映了AI行业从封闭API向开放生态的重大转变，企业更倾向于拥有和控制自己的AI基础设施。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/",
+      "score": 4
+    },
+    {
+      "title": "欧盟威胁对Meta的“成瘾性”功能处以罚款",
+      "summary_zh": "欧盟委员会认定Meta违反《数字服务法》，因其在Facebook和Instagram上采用无限滚动、自动播放、推送通知和高度个性化推荐算法等“成瘾性”功能。此举标志着欧盟对AI驱动推荐系统的监管升级，可能迫使Meta大幅调整其核心产品设计，对全球社交媒体的AI应用模式产生示范效应。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/10/eu-threatens-meta-with-fines-over-addictive-features-on-facebook-and-instagram/",
+      "score": 4
+    },
+    {
+      "title": "Oratomic融资3亿美元构建实用量子计算机",
+      "summary_zh": "量子计算初创公司Oratomic完成3亿美元巨额融资，由ARCH Venture Partners、Spark Capital和Khosla Ventures联合领投。公司声称只需2万个量子比特即可构建实用量子计算机，远低于传统预期。这一突破性进展可能加速量子计算在AI等领域的实际应用落地。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/10/oratomic-raises-300m-to-build-a-viable-quantum-computer-that-needs-only-20k-qubits/",
+      "score": 4
+    },
+    {
+      "title": "Hugging Face与Cerebras联手推出实时语音AI",
+      "summary_zh": "Hugging Face与AI芯片公司Cerebras合作，将Google的Gemma 4模型部署于实时语音AI应用。Cerebras的晶圆级芯片为语音交互提供低延迟推理能力，这一合作展示了专用AI硬件在实时应用中的优势，可能推动语音助手和实时翻译等场景的技术革新。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
+      "score": 4
+    },
+    {
+      "title": "百度推出新Agent框架，定义AI“托付半径”",
+      "summary_zh": "百度发布全新AI Agent框架“百度搭子”，重新定义智能体的“托付半径”概念。该框架强调Agent的交付能力与人机边界，旨在让AI代理能够处理更复杂、更长期的任务委托。此举标志着中国科技巨头在AI Agent赛道的战略布局，聚焦于提升AI的实用性和可信赖度。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1671618?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 3
+    },
+    {
+      "title": "GitHub热门项目：Agent Skills——AI编码代理的生产级技能",
+      "summary_zh": "GitHub上多个与AI编码代理技能相关的项目（如agent-skills、superpowers等）成为热门趋势。这些项目旨在为AI编码代理提供生产级工程技能，标志着AI辅助编程从简单代码生成向专业化、工程化方向演进。开发者社区正积极探索如何让AI代理更有效地参与复杂软件开发流程。",
+      "source": "GitHub Trending",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "score": 3
+    },
+    {
+      "title": "新研究：AgentLens——生产环境评估的代码代理基准",
+      "summary_zh": "arXiv发表新研究AgentLens，提出一种基于生产环境评估的交互式代码代理基准。与传统仅关注任务通过率的评测不同，AgentLens评估代理的完整执行轨迹，包括其如何与用户交互。这项研究为更真实地衡量AI编码代理的实际效用提供了新方法论。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2607.06624",
+      "score": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "鲁人徙越",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《韩非子·说林上》"
+    },
+    {
+      "title": "邯郸学步",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《庄子·秋水》"
+    },
+    {
+      "title": "楚王好细腰",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《墨子·兼爱中》"
+    },
+    {
+      "title": "疑邻盗斧",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《列子·说符》"
+    },
+    {
+      "title": "掩耳盗铃",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《吕氏春秋·自知》"
+    },
+    {
+      "title": "孙膑围魏救赵",
+      "dynasty": "战国",
+      "category": "兵法谋略故事",
+      "source": "《史记·孙子吴起列传》"
+    },
+    {
+      "title": "李愬雪夜入蔡州",
+      "dynasty": "唐",
+      "category": "兵法谋略故事",
+      "source": "《资治通鉴·唐纪》"
+    },
+    {
+      "title": "王勃滕王阁即兴赋序",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《唐摭言》"
+    },
+    {
+      "title": "贾岛推敲",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《唐才子传》"
+    },
+    {
+      "title": "宋太祖雪夜访赵普",
+      "dynasty": "宋",
+      "category": "历史趣考",
+      "source": "《宋史·赵普传》"
+    },
+    {
+      "title": "曹刿论战",
+      "dynasty": "春秋",
+      "category": "诸子百家寓言",
+      "source": "《左传·庄公十年》"
+    },
+    {
+      "title": "晏子使楚",
+      "dynasty": "春秋",
+      "category": "诸子百家寓言",
+      "source": "《晏子春秋·内篇杂下》"
+    },
+    {
+      "title": "伯牙绝弦",
+      "dynasty": "春秋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《吕氏春秋·本味》"
+    },
+    {
+      "title": "孔子学琴",
+      "dynasty": "春秋",
+      "category": "诸子百家寓言",
+      "source": "《史记·孔子世家》"
+    },
+    {
+      "title": "汉文帝霸陵薄葬",
+      "dynasty": "西汉",
+      "category": "历史趣考",
+      "source": "《史记·孝文本纪》《汉书·文帝纪》"
+    },
+    {
+      "title": "司马迁忍辱著《史记》",
+      "dynasty": "西汉",
+      "category": "历史趣考",
+      "source": "《汉书·司马迁传》"
+    },
+    {
+      "title": "范蠡三散千金",
+      "dynasty": "春秋",
+      "category": "诸子百家寓言",
+      "source": "《史记·货殖列传》"
+    },
+    {
+      "title": "张良圯桥进履",
+      "dynasty": "秦末",
+      "category": "兵法谋略故事",
+      "source": "《史记·留侯世家》"
+    },
+    {
+      "title": "东方朔割肉遗妻",
+      "dynasty": "西汉",
+      "category": "历史趣考",
+      "source": "《史记·滑稽列传》"
+    },
+    {
+      "title": "周处除三害",
+      "dynasty": "西晋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《世说新语·自新》"
+    }
+  ]
+}
