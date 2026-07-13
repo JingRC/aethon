@@ -4,89 +4,77 @@
   "stories_count": 20,
   "ai_news": [
     {
-      "title": "SK海力士创美国史上最大外国IPO，筹资265亿美元，被敦促建新厂",
-      "summary_zh": "AI芯片热潮催生华尔街里程碑事件。SK海力士以265亿美元完成美国史上最大外国公司IPO，随后被美国政府敦促建设本土工厂。此举凸显AI基础设施建设的资本密集度及地缘政治影响，标志着半导体供应链向美国转移的关键一步。",
+      "title": "苹果起诉OpenAI：前员工窃取机密文件跳槽",
+      "summary_zh": "苹果起诉OpenAI，指控一名前员工在离职加入OpenAI后，利用罕见漏洞长期非法下载苹果机密文件。诉讼文件披露了员工间关于非法访问系统的玩笑，以及要求求职者携带苹果硬件参加面试等惊人细节，凸显AI人才争夺中的商业机密保护危机。",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
+      "url": "https://techcrunch.com/2026/07/13/apple-says-former-employee-exploited-rare-bug-to-download-confidential-files-after-leaving-for-openai/",
       "score": 5
     },
     {
-      "title": "苹果起诉OpenAI涉嫌窃取商业秘密",
-      "summary_zh": "苹果公司正式起诉OpenAI，指控其高级领导层（包括一名前长期员工）指导了商业秘密窃取行为。此案是科技巨头间围绕AI人才和核心技术展开的激烈竞争缩影，可能重塑行业合作与保密协议，对AI研发格局产生深远影响。",
+      "title": "Satya Nadella警告企业使用AI的风险",
+      "summary_zh": "微软CEO纳德拉发出惊人警告，指出销售专有模型的AI巨头如同特洛伊木马，企业使用其服务可能面临深层风险。这一言论加剧了硅谷关于AI安全与供应商锁定的辩论，引发业界对大型AI实验室商业模式的广泛质疑。",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+      "url": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/",
       "score": 5
     },
     {
-      "title": "OpenAI押注家庭场景：ChatGPT深入家庭",
-      "summary_zh": "OpenAI正通过招聘专门的产品经理，为家庭、照护者和老年人打造ChatGPT体验，推动AI向家庭场景深度渗透。此举标志着ChatGPT从办公工具向家庭伴侣转型的战略升级，有望开辟新的用户增长和市场空间。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
-      "score": 4
-    },
-    {
-      "title": "苹果M7 Ultra芯片曝光：最高支持1.5TB内存，源自自动驾驶项目遗产",
-      "summary_zh": "最新爆料显示，苹果M7 Ultra芯片将支持高达1.5TB内存，其高性能AI处理能力源于已取消的自动驾驶汽车项目。该项目虽未成功造车，但催生了强大的芯片技术，为苹果在AI算力领域奠定了硬件基础，或将对市场产生冲击。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1671746?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 4
-    },
-    {
-      "title": "Meta因争议移除Instagram AI功能",
-      "summary_zh": "Meta迫于用户强烈反对，移除了Instagram上一项有争议的AI功能。该功能允许AI引用用户的公开内容进行创作，但被批评“未达预期”。此举反映了公众对AI滥用个人数据的敏感度上升，以及科技公司在AI伦理与创新间平衡的挑战。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
-      "score": 4
-    },
-    {
-      "title": "Hugging Face与Cerebras合作推出实时语音AI：Gemma 4",
-      "summary_zh": "Hugging Face与Cerebras合作，将Gemma 4模型应用于实时语音AI领域。该合作利用Cerebras的专用硬件加速推理，有望大幅降低语音AI的延迟，推动智能语音助手、实时翻译等应用的发展，是模型与芯片深度协同的重要案例。",
+      "title": "Hugging Face与Cerebras合作推出实时语音AI",
+      "summary_zh": "Hugging Face与Cerebras联手，将Gemma 4模型部署于实时语音AI场景。这一合作结合了Cerebras的专用芯片算力与Hugging Face的模型生态，为语音交互提供低延迟、高性能的解决方案，标志着AI语音应用进入新阶段。",
       "source": "Hugging Face - Blog",
       "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
       "score": 4
     },
     {
-      "title": "宇树G1机器人完成两例活体手术，登上《自然》",
-      "summary_zh": "中国机器人公司宇树科技的G1人形机器人成功完成两例活体手术，相关成果发表在顶级期刊《自然》上。这标志着AI机器人在医疗领域的应用取得重大突破，展示了其在精密操作和自主决策方面的潜力，为手术机器人市场带来新变量。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1671746?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "title": "Anthropic为印度市场本地化Claude定价",
+      "summary_zh": "Anthropic开始为印度用户提供卢比计价的Claude订阅方案，印度是其美国之外最大市场。此举体现了AI公司针对新兴市场进行本地化定价策略的趋势，旨在扩大用户基础并应对竞争，可能引发其他AI服务商跟进。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/",
       "score": 4
     },
     {
-      "title": "GPT-5.6正式上线，与Codex整合为ChatGPT Work",
-      "summary_zh": "OpenAI正式发布GPT-5.6模型，并将其与Codex能力整合，推出名为ChatGPT Work的新产品。此举将强大的代码执行与对话能力结合，直接面向企业级工作流，标志着AI助手从聊天工具向全能工作平台的进化，竞争压力直指Claude等对手。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1671521?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 5
+      "title": "iOS 27公测版发布：Siri AI重大升级",
+      "summary_zh": "苹果发布iOS 27公测版，核心亮点是延迟已久的Siri AI升级。新版Siri实际可用，能提供简洁回答，并改变用户与iPhone的交互方式。同时，watchOS 27的Siri AI让Apple Watch真正成为腕上电脑，标志着苹果AI战略的关键转折。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/964307/apple-public-betas-ios-27-siri-ai",
+      "score": 4
     },
     {
-      "title": "腾讯WorkBuddy入门指南：更适合国人体质的Codex",
-      "summary_zh": "腾讯推出AI助手WorkBuddy，定位为“更懂国人”的Codex替代品。它不旨在取代用户，而是作为协同工作的“搭子”，通过拆解和推进任务来提升效率。该产品反映了中国科技巨头在企业AI助手领域的本土化竞争策略，直接对标国际产品。",
+      "title": "Uber与Waymo在华盛顿展开Robotaxi游说大战",
+      "summary_zh": "Uber加大在华盛顿的游说力度，推动有利于其Robotaxi业务的监管政策，与Waymo的立场形成直接冲突。两大巨头围绕自动驾驶出租车规则的竞争白热化，可能影响美国未来交通法规的走向，成为行业焦点。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/13/ubers-robotaxi-lobbying-effort-has-put-it-on-a-collision-course-with-waymo/",
+      "score": 4
+    },
+    {
+      "title": "腾讯WorkBuddy入门指南：国产AI编程助手",
+      "summary_zh": "腾讯推出WorkBuddy AI编程助手，定位为适合国人体质的Codex替代品。它并非替代用户，而是作为协作伙伴，帮助拆解问题、推进任务。该工具展示了中国AI在生产力领域的创新，有望在开发者和办公场景中广泛应用。",
       "source": "爱范儿",
       "url": "https://www.ifanr.com/1671739?utm_source=rss&utm_medium=rss&utm_campaign=",
       "score": 4
     },
     {
-      "title": "AI数据中心之争才刚刚开始",
-      "summary_zh": "随着AI热潮推动数据中心大规模建设，围绕其能源消耗、环境影响和社区反对的争议日益激烈。本文深入分析了这场斗争的起源与现状，指出在AI算力需求暴增的背景下，数据中心选址与运营将面临越来越大的社会和政治阻力，成为行业发展的关键挑战。",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/column/963346/ai-data-centers-fight",
+      "title": "英伟达AIPC中国首秀：笔记本中装下曼哈顿",
+      "summary_zh": "英伟达在中国首次展示其AIPC概念，通过定义AI PC标准来抢占更大市场。该产品将强大算力集成于笔记本，旨在推动AI应用在个人计算领域的普及，可能重塑PC产业格局，对竞争对手形成压力。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1671945?utm_source=rss&utm_medium=rss&utm_campaign=",
       "score": 4
+    },
+    {
+      "title": "Waze新增AI功能：由Gemini驱动",
+      "summary_zh": "Waze引入由Google Gemini AI助手驱动的新功能，包括个性化定制更新。此举是谷歌将Gemini整合进其产品生态的一部分，同时帮助Waze更好地与Apple Maps等竞争对手抗衡，体现了AI在导航领域的应用深化。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates/",
+      "score": 3
+    },
+    {
+      "title": "宇树G1机器人完成活体手术登上《自然》",
+      "summary_zh": "宇树科技的G1机器人成功完成两例活体手术，相关成果登上《自然》期刊。这标志着人形机器人在医疗手术领域取得重大突破，展示了AI与机器人技术在精准医疗中的巨大潜力，为未来手术自动化奠定基础。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1671746?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
     }
   ],
   "stories": [
-    {
-      "title": "甘棠遗爱",
-      "dynasty": "西周",
-      "category": "成语典故",
-      "source": "《诗经·召南·甘棠》"
-    },
-    {
-      "title": "悬梁刺股",
-      "dynasty": "战国/东汉",
-      "category": "成语典故",
-      "source": "《战国策·秦策一》《汉书》"
-    },
     {
       "title": "请君入瓮",
       "dynasty": "唐",
@@ -94,8 +82,20 @@
       "source": "《资治通鉴·唐纪》"
     },
     {
+      "title": "一字千金",
+      "dynasty": "战国·秦",
+      "category": "成语典故",
+      "source": "《史记·吕不韦列传》"
+    },
+    {
+      "title": "胸有成竹",
+      "dynasty": "宋",
+      "category": "成语典故",
+      "source": "《文与可画筼筜谷偃竹记》苏轼"
+    },
+    {
       "title": "破镜重圆",
-      "dynasty": "南北朝",
+      "dynasty": "南北朝·隋",
       "category": "成语典故",
       "source": "《本事诗·情感》"
     },
@@ -106,22 +106,34 @@
       "source": "《晋书·谢安传》"
     },
     {
-      "title": "秦观与《鹊桥仙》",
-      "dynasty": "北宋",
-      "category": "唐诗宋词背后的故事",
-      "source": "《淮海集》"
+      "title": "洛阳纸贵",
+      "dynasty": "西晋",
+      "category": "成语典故",
+      "source": "《晋书·左思传》"
     },
     {
-      "title": "辛弃疾的‘万字平戎策’",
-      "dynasty": "南宋",
-      "category": "唐诗宋词背后的故事",
-      "source": "《宋史·辛弃疾传》《美芹十论》"
+      "title": "画龙点睛",
+      "dynasty": "南北朝·梁",
+      "category": "成语典故",
+      "source": "《历代名画记》张彦远"
     },
     {
-      "title": "张衡与浑天仪",
-      "dynasty": "东汉",
+      "title": "白居易与《琵琶行》",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《琵琶行》序、白居易自述"
+    },
+    {
+      "title": "苏轼与《水调歌头》",
+      "dynasty": "宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《水调歌头·明月几时有》序"
+    },
+    {
+      "title": "黄道婆与纺织革命",
+      "dynasty": "元",
       "category": "古代科技发明故事",
-      "source": "《后汉书·张衡传》"
+      "source": "《南村辍耕录》陶宗仪、《松江府志》"
     },
     {
       "title": "蔡伦改进造纸术",
@@ -130,70 +142,58 @@
       "source": "《后汉书·蔡伦传》"
     },
     {
-      "title": "空城计的真实主角：曹操vs吕布",
-      "dynasty": "东汉末年",
+      "title": "空城计：并非诸葛亮的专利",
+      "dynasty": "春秋",
       "category": "兵法谋略故事",
-      "source": "《三国志·魏书·武帝纪》注引《魏书》"
+      "source": "《左传·庄公二十八年》"
     },
     {
       "title": "李愬雪夜入蔡州",
       "dynasty": "唐",
       "category": "兵法谋略故事",
-      "source": "《资治通鉴·唐纪》《旧唐书·李愬传》"
+      "source": "《资治通鉴·唐纪》"
     },
     {
-      "title": "班超投笔从戎",
+      "title": "杨贵妃与荔枝：古代物流的极限挑战",
+      "dynasty": "唐",
+      "category": "历史趣考",
+      "source": "《新唐书·杨贵妃传》、杜牧《过华清宫》"
+    },
+    {
+      "title": "朱元璋的‘剥皮实草’：明朝反贪有多狠",
+      "dynasty": "明",
+      "category": "历史趣考",
+      "source": "《明史·刑法志》《大诰》"
+    },
+    {
+      "title": "秦朝‘书同文’：统一文字背后的政治智慧",
+      "dynasty": "秦",
+      "category": "历史趣考",
+      "source": "《史记·秦始皇本纪》、睡虎地秦简"
+    },
+    {
+      "title": "张仲景与《伤寒杂病论》",
       "dynasty": "东汉",
-      "category": "成语典故",
+      "category": "古代科技发明故事",
+      "source": "《后汉书·张仲景传》《伤寒杂病论》序"
+    },
+    {
+      "title": "郑国渠：韩国‘疲秦计’反成强秦之基",
+      "dynasty": "战国·秦",
+      "category": "古代科技发明故事",
+      "source": "《史记·河渠书》"
+    },
+    {
+      "title": "班超投笔从戎：书生定西域",
+      "dynasty": "东汉",
+      "category": "兵法谋略故事",
       "source": "《后汉书·班超传》"
     },
     {
-      "title": "《山海经》中的‘夸父逐日’新解",
-      "dynasty": "先秦",
-      "category": "古代天文地理类",
-      "source": "《山海经·海外北经》"
-    },
-    {
-      "title": "《水经注》与郦道元的地理考察",
-      "dynasty": "北魏",
-      "category": "古代天文地理类",
-      "source": "《水经注》"
-    },
-    {
-      "title": "马王堆汉墓的千年女尸",
-      "dynasty": "西汉",
-      "category": "历史趣考类",
-      "source": "《长沙马王堆一号汉墓发掘简报》"
-    },
-    {
-      "title": "宋代‘交子’：世界上最早的纸币",
-      "dynasty": "北宋",
-      "category": "历史趣考类",
-      "source": "《宋史·食货志》"
-    },
-    {
-      "title": "范蠡三聚三散：商圣的财富智慧",
-      "dynasty": "春秋",
-      "category": "成语典故",
-      "source": "《史记·越王勾践世家》"
-    },
-    {
-      "title": "汉文帝废除肉刑：缇萦救父",
-      "dynasty": "西汉",
-      "category": "历史趣考类",
-      "source": "《史记·扁鹊仓公列传》《汉书·刑法志》"
-    },
-    {
-      "title": "黄道婆改进棉纺织技术",
-      "dynasty": "元",
-      "category": "古代科技发明故事",
-      "source": "《南村辍耕录》"
-    },
-    {
-      "title": "赵氏孤儿：历史的真相与传说",
-      "dynasty": "春秋",
-      "category": "历史趣考类",
-      "source": "《左传》《史记·赵世家》"
+      "title": "王羲之与《兰亭集序》",
+      "dynasty": "东晋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《晋书·王羲之传》《兰亭集序》"
     }
   ]
 }
