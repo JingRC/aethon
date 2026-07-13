@@ -520,6 +520,71 @@ def main():
         if notion_url:
             logger.info(f"📝 Notion 页面: {notion_url}")
 
+    # ── 6. 生成小红书内容（卡片 + 文案） ──
+    xhs_config = config.get("xhs", {})
+    if xhs_config.get("enabled", False) and (ai_news or stories):
+        try:
+            logger.info("=" * 50)
+            logger.info("📱 生成小红书内容...")
+
+            max_news = xhs_config.get("max_news", 3)
+            max_stories = xhs_config.get("max_stories", 3)
+
+            # 6a. LLM 生成爆款文案
+            from modules.xhs_content import build_xhs_prompt
+            xhs_prompt = build_xhs_prompt(ai_news, stories, max_news, max_stories)
+            logger.info("🤖 调用 LLM 生成小红书爆款文案...")
+            xhs_response = call_llm(
+                xhs_prompt, config,
+                system_prompt="你是小红书顶级内容运营专家，擅长创作爆款笔记。只返回JSON，不要markdown代码块。"
+            )
+            xhs_content = parse_json_response(xhs_response)
+            if isinstance(xhs_content, dict) and xhs_content:
+                logger.info(f"📝 标题: {xhs_content.get('title', '')}")
+                logger.info(f"🏷️ 标签: {', '.join(xhs_content.get('hashtags', []))}")
+            else:
+                logger.warning("LLM 未返回有效的小红书文案，使用默认内容")
+                xhs_content = {
+                    "title": f"📬 每日双拼日报 | {datetime.now().strftime('%m月%d日')}",
+                    "body": "今天的内容已生成，扫码查看完整日报 👇",
+                    "hashtags": ["#每日AI快讯", "#科技前沿", "#古代智慧", "#国学经典", "#历史冷知识"],
+                    "news_captions": [],
+                    "story_captions": [],
+                }
+
+            # 6b. 渲染图片卡片
+            from modules.xhs_renderer import render_xhs_cards
+            xhs_output_dir = xhs_config.get("output_dir", "docs/xhs")
+            card_paths = render_xhs_cards(
+                ai_news, stories,
+                output_dir=xhs_output_dir,
+                max_news=max_news,
+                max_stories=max_stories,
+            )
+
+            # 6c. 保存 XHS 发布清单（供自动发布脚本使用）
+            xhs_manifest = {
+                "date": datetime.now().strftime("%Y-%m-%d"),
+                "title": xhs_content.get("title", ""),
+                "body": xhs_content.get("body", ""),
+                "hashtags": xhs_content.get("hashtags", []),
+                "news_captions": xhs_content.get("news_captions", []),
+                "story_captions": xhs_content.get("story_captions", []),
+                "cards": card_paths,
+            }
+            manifest_path = DOCS_DIR / "xhs" / "manifest.json"
+            manifest_path.parent.mkdir(parents=True, exist_ok=True)
+            import json as json_mod
+            with open(manifest_path, "w", encoding="utf-8") as f:
+                json_mod.dump(xhs_manifest, f, ensure_ascii=False, indent=2)
+            logger.info(f"📋 发布清单: {manifest_path}")
+            logger.info(f"📱 小红书内容生成完成: {len(card_paths)} 张卡片")
+
+        except Exception as e:
+            logger.error(f"小红书内容生成失败: {e}")
+            import traceback
+            traceback.print_exc()
+
     logger.info("=" * 50)
     logger.info(f"✅ 完成！AI快讯 {len(ai_news)} 条 + 古代故事 {len(stories)} 则")
     logger.info(f"📂 输出目录: {DOCS_DIR}")

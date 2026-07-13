@@ -25,5 +25,8 @@ markdown>=3.4
 # 日期时间
 python-dateutil>=2.8
 
+# 图片处理（小红书卡片渲染）
+Pillow>=10.0
+
 # 可选：语音合成（如需播客功能）
 # edge-tts>=6.1.0

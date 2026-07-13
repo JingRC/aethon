@@ -26,7 +26,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
       - uses: actions/checkout@v4
@@ -49,6 +49,13 @@ jobs:
         if: steps.sentinel.outputs.cache-hit == 'true' && github.event_name == 'schedule'
         run: |
           echo "📬 Email already sent on ${{ steps.date.outputs.today }}, all done!"
+
+      - name: Install CJK fonts (for XHS image cards)
+        if: steps.sentinel.outputs.cache-hit != 'true' || github.event_name != 'schedule'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk 2>&1 | tail -1
+          fc-list :lang=zh | head -3
 
       - uses: actions/setup-python@v5
         if: steps.sentinel.outputs.cache-hit != 'true' || github.event_name != 'schedule'
