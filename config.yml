@@ -75,8 +75,5 @@ schedule:
 # --- 小红书 (Xiaohongshu) 配置 ---
 xhs:
   enabled: true                    # 是否生成小红书卡片
-  max_news: 3                      # 精选AI快讯卡片数
-  max_stories: 3                   # 精选故事卡片数
+  max_news: 10                     # AI快讯卡片数（每张一条）
   output_dir: "docs/xhs"           # 卡片图片输出目录
-  card_width: 1080                 # 卡片宽度 (px)
-  card_height: 1440                # 卡片高度 (px, 3:4比例)
