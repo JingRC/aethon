@@ -5,195 +5,195 @@
   "ai_news": [
     {
       "title": "视频生成初创公司PixVerse融资4.39亿美元，估值超20亿美元",
-      "summary_zh": "视频生成AI初创公司PixVerse完成4.39亿美元融资，估值突破20亿美元。该公司计划利用新资金扩展其世界模型产品并拓展全球市场。此轮巨额融资表明投资者对AI视频生成赛道的持续看好，同时也凸显了该领域日益激烈的竞争格局。",
+      "summary_zh": "视频生成AI初创公司PixVerse完成4.39亿美元融资，估值突破20亿美元。该公司计划利用新资金扩展其世界模型产品并覆盖全球更多地区客户。此轮融资规模巨大，反映出资本对AI视频生成赛道的持续狂热。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
       "score": 5
     },
     {
-      "title": "苹果起诉OpenAI，指控前员工窃取商业机密",
-      "summary_zh": "苹果公司对OpenAI提起诉讼，指控一名前员工在跳槽至OpenAI后，利用罕见漏洞长期下载机密文件。诉讼还包含员工开玩笑谈论未经授权访问苹果系统等惊人指控。此案凸显AI人才争夺战中的知识产权保护问题，可能影响行业竞争规则。",
+      "title": "苹果起诉OpenAI：前员工利用漏洞窃取机密文件",
+      "summary_zh": "苹果公司起诉OpenAI，指控一名前员工在离职加入OpenAI后，利用罕见漏洞从苹果网络下载大量机密文件。诉讼中包含员工开玩笑称未经授权访问苹果系统等惊人指控，凸显科技巨头间人才与商业秘密争夺的白热化。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/13/apple-says-former-employee-exploited-rare-bug-to-download-confidential-files-after-leaving-for-openai/",
       "score": 5
     },
     {
-      "title": "纳德拉警告：使用AI可能面临“特洛伊木马”风险",
-      "summary_zh": "微软CEO萨提亚·纳德拉发出惊人警告，称使用大型AI实验室的专有模型可能像“特洛伊木马”一样带来风险。这一观点引发硅谷AI社区激烈讨论，反映出业界对依赖封闭模型供应商的深层担忧，以及开源与闭源AI路线之争的升级。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/",
-      "score": 5
-    },
-    {
-      "title": "Nous Research洽谈融资，估值达15亿美元",
-      "summary_zh": "AI智能体开发商Nous Research正进行新一轮融资谈判，估值达15亿美元，计划筹集至少7500万美元。该公司以Hermes智能体闻名，此轮融资由Robot Ventures领投。这标志着AI智能体领域持续获得资本青睐，市场对自主AI系统的期待日益高涨。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/",
-      "score": 4
-    },
-    {
-      "title": "Anthropic为印度市场本地化Claude定价",
-      "summary_zh": "Anthropic开始为印度用户提供以卢比计价的Claude订阅方案，印度是其美国以外最大市场。此举表明AI公司正在积极拓展新兴市场，通过本地化定价策略降低使用门槛，以在全球AI服务竞争中抢占用户份额。",
+      "title": "Anthropic在印度推出Claude本地化定价",
+      "summary_zh": "Anthropic开始为印度用户提供以卢比计价的Claude订阅方案。印度是其美国之外的最大市场，此举旨在通过本地化定价降低用户门槛，扩大Claude在印度市场的渗透率，应对日益激烈的全球AI助手竞争。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/",
       "score": 4
     },
     {
-      "title": "苹果发布iOS 27公开测试版，Siri AI正式亮相",
-      "summary_zh": "苹果发布iOS 27及其他主要操作系统更新的公开测试版，最大亮点是延迟已久的Siri AI升级。据测试者反馈，新版Siri确实可用且表现简洁高效。这一更新标志着苹果在AI助手领域迈出关键一步，有望重塑用户与设备的交互方式。",
+      "title": "苹果发布iOS 27公测版，Siri AI大升级",
+      "summary_zh": "苹果发布iOS 27及watchOS 27等系统公测版，核心亮点是大幅升级的Siri AI。新版Siri支持更复杂的任务处理，并深度集成设备功能。实测表明Siri AI表现可靠，让Apple Watch终于像一台真正的腕上电脑。",
       "source": "The Verge",
       "url": "https://www.theverge.com/tech/964307/apple-public-betas-ios-27-siri-ai",
+      "score": 5
+    },
+    {
+      "title": "英伟达在中国首秀AIPC，笔记本内集成强大算力",
+      "summary_zh": "英伟达在中国首次展示其AIPC产品，将曼哈顿级别的计算能力集成到笔记本中。此举旨在通过定义AIPC标准来抢占未来更大市场份额，标志着PC端AI算力竞争进入新阶段，对移动AI应用生态影响深远。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1671945",
       "score": 4
     },
     {
       "title": "腾讯混元Hy3登顶OpenRouter周榜，单周处理Token超6万亿",
-      "summary_zh": "腾讯混元大模型Hy3登顶OpenRouter平台周榜，单周处理Token超过6万亿。这一成绩显示国产大模型在推理效率和应用规模上已达到国际领先水平，也反映出中国AI企业在全球大模型服务市场的竞争力正在快速提升。",
+      "summary_zh": "腾讯混元大模型Hy3登顶OpenRouter周榜，单周处理Token量超过6万亿。这一成绩展示了国产大模型在推理效率和用户规模上的快速进步，表明腾讯在AI基础模型领域的投入正获得显著市场反馈。",
       "source": "爱范儿",
       "url": "https://www.ifanr.com/1671983",
       "score": 4
     },
     {
-      "title": "Hugging Face与Cerebras合作，将Gemma 4用于实时语音AI",
-      "summary_zh": "Hugging Face与Cerebras合作，将Google的Gemma 4模型部署于实时语音AI应用。这一合作结合了Cerebras的专用硬件加速与Hugging Face的模型生态，为低延迟语音交互场景提供高性能解决方案，推动AI语音技术向实时化、低成本方向发展。",
-      "source": "Hugging Face - Blog",
-      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
-      "score": 3
-    },
-    {
-      "title": "英伟达AIPC中国首秀，笔记本中集成强大AI算力",
-      "summary_zh": "英伟达在中国首次展示其AIPC概念，将相当于“一座曼哈顿”的AI算力集成于笔记本中。此举旨在定义AIPC标准并抢占未来市场份额，标志着AI计算从云端向终端设备迁移的趋势加速，对个人计算产业格局产生深远影响。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1671945",
-      "score": 3
-    },
-    {
       "title": "宇树G1机器人完成两例活体手术，登上《自然》",
-      "summary_zh": "宇树科技的G1机器人成功完成两例活体手术，相关成果发表于《自然》杂志。这一突破展示了人形机器人在精密医疗操作中的潜力，标志着具身智能从实验室走向实际临床应用的重要里程碑，对医疗机器人行业具有示范意义。",
+      "summary_zh": "宇树科技的人形机器人G1成功完成两例活体手术，相关成果登上顶级期刊《自然》。这是人形机器人在医疗精密操作领域的重大技术突破，展示了具身智能在现实世界高精度任务中的巨大潜力。",
       "source": "爱范儿",
       "url": "https://www.ifanr.com/1671746",
-      "score": 3
+      "score": 5
+    },
+    {
+      "title": "腾讯WorkBuddy入门指南：更适合国人体质的Codex",
+      "summary_zh": "腾讯推出AI编程与工作助手WorkBuddy，被评价为更适合国人体质的Codex。它并非替代用户，而是作为协作搭子，帮助拆解和推进任务。这标志着国产AI工具在提升工作流程智能化方面迈出重要一步。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1671739",
+      "score": 4
+    },
+    {
+      "title": "Hugging Face与Cerebras合作，为Gemma 4带来实时语音AI",
+      "summary_zh": "Hugging Face与芯片公司Cerebras合作，基于Gemma 4模型实现实时语音AI。该合作利用Cerebras的专用硬件加速推理，显著降低语音交互延迟，为构建下一代实时语音助手和对话式AI应用奠定了基础。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
+      "score": 4
+    },
+    {
+      "title": "数据智能体：NVIDIA开源数据工作流用于AI Agent",
+      "summary_zh": "NVIDIA在Hugging Face发布开源数据工作流，旨在为AI Agent提供高质量数据。该项目解决了Agent开发中数据获取和处理的痛点，通过标准化流程加速Agent的训练与迭代，对推动Agent生态发展具有重要参考价值。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/nvidia/open-data-for-agents",
+      "score": 4
     }
   ],
   "stories": [
     {
-      "title": "田忌赛马：孙膑的博弈智慧",
-      "dynasty": "战国",
-      "category": "古代名人逸事",
-      "source": "《史记·孙子吴起列传》"
-    },
-    {
-      "title": "张良拾履：黄石公的考验",
-      "dynasty": "秦末",
-      "category": "古代名人逸事",
-      "source": "《史记·留侯世家》"
-    },
-    {
-      "title": "管仲与鲍叔牙：千古知己",
-      "dynasty": "春秋",
-      "category": "古代名人逸事",
-      "source": "《史记·管晏列传》"
-    },
-    {
-      "title": "王羲之东床坦腹：真名士自风流",
+      "title": "王羲之东床坦腹",
       "dynasty": "东晋",
       "category": "古代名人逸事",
       "source": "《世说新语·雅量》"
     },
     {
-      "title": "狄仁杰毁庙：智斗恶神的县令",
-      "dynasty": "唐",
+      "title": "陶渊明不为五斗米折腰",
+      "dynasty": "东晋",
       "category": "古代名人逸事",
-      "source": "《旧唐书·狄仁杰传》"
+      "source": "《晋书·陶潜传》"
     },
     {
-      "title": "请君入瓮：以彼之道还施彼身",
-      "dynasty": "唐",
-      "category": "成语典故",
-      "source": "《资治通鉴·唐纪》"
+      "title": "周亚夫细柳屯兵",
+      "dynasty": "西汉",
+      "category": "古代名人逸事",
+      "source": "《史记·绛侯周勃世家》"
     },
     {
-      "title": "破釜沉舟：项羽的决死一战",
+      "title": "闵子骞芦衣顺母",
+      "dynasty": "春秋",
+      "category": "古代名人逸事",
+      "source": "《论语·先进》"
+    },
+    {
+      "title": "张良圯桥进履",
       "dynasty": "秦末",
-      "category": "成语典故",
-      "source": "《史记·项羽本纪》"
+      "category": "古代名人逸事",
+      "source": "《史记·留侯世家》"
     },
     {
-      "title": "寒食节的传说：介子推的忠与隐",
+      "title": "一鸣惊人",
+      "dynasty": "春秋",
+      "category": "成语典故",
+      "source": "《史记·滑稽列传》"
+    },
+    {
+      "title": "管鲍之交",
+      "dynasty": "春秋",
+      "category": "成语典故",
+      "source": "《史记·管晏列传》"
+    },
+    {
+      "title": "端午节：曹娥投江寻父",
+      "dynasty": "东汉",
+      "category": "传统节日传说",
+      "source": "《后汉书·列女传》"
+    },
+    {
+      "title": "清明节的起源：重耳与介子推",
       "dynasty": "春秋",
       "category": "传统节日传说",
       "source": "《左传·僖公二十四年》"
     },
     {
-      "title": "上巳节的曲水流觞：王羲之的兰亭雅集",
-      "dynasty": "东晋",
-      "category": "传统节日传说",
-      "source": "《晋书·王羲之传》及《兰亭集序》"
-    },
-    {
-      "title": "空城计：诸葛亮的心理战（非《三国演义》版本）",
-      "dynasty": "三国",
+      "title": "孙膑减灶诱敌",
+      "dynasty": "战国",
       "category": "兵法谋略故事",
-      "source": "《三国志·蜀书·诸葛亮传》裴松之注引郭冲三事"
+      "source": "《史记·孙子吴起列传》"
     },
     {
-      "title": "李愬雪夜入蔡州：奇袭的典范",
+      "title": "李愬雪夜入蔡州",
       "dynasty": "唐",
       "category": "兵法谋略故事",
-      "source": "《旧唐书·李愬传》"
+      "source": "《资治通鉴·唐纪》"
     },
     {
-      "title": "宋慈与《洗冤集录》：法医学鼻祖",
-      "dynasty": "南宋",
-      "category": "古代名人逸事",
-      "source": "《宋史·宋慈传》及《洗冤集录》"
-    },
-    {
-      "title": "郑和下西洋与海图：牵星过洋的航海术",
-      "dynasty": "明",
-      "category": "古代天文地理类",
-      "source": "《郑和航海图》（《武备志》收录）"
-    },
-    {
-      "title": "郭守敬与四海测验：元朝的大地测量",
-      "dynasty": "元",
-      "category": "古代天文地理类",
-      "source": "《元史·郭守敬传》"
-    },
-    {
-      "title": "《山海经》中的地理神话：精卫填海与夸父逐日",
-      "dynasty": "先秦",
-      "category": "古代天文地理类",
-      "source": "《山海经·北山经》及《山海经·海外北经》"
-    },
-    {
-      "title": "古代‘冰箱’：曾侯乙墓的青铜冰鉴",
+      "title": "廉颇负荆请罪",
       "dynasty": "战国",
-      "category": "历史趣考类",
-      "source": "《周礼·天官·凌人》及曾侯乙墓考古报告"
+      "category": "古代名人逸事",
+      "source": "《史记·廉颇蔺相如列传》"
     },
     {
-      "title": "古代‘高铁’：秦朝的驰道与直道",
-      "dynasty": "秦",
-      "category": "历史趣考类",
-      "source": "《史记·秦始皇本纪》及考古发现"
+      "title": "范雎远交近攻",
+      "dynasty": "战国",
+      "category": "兵法谋略故事",
+      "source": "《史记·范雎蔡泽列传》"
     },
     {
-      "title": "古代‘高考’：科举制度的诞生与演变",
-      "dynasty": "隋唐至明清",
-      "category": "历史趣考类",
-      "source": "《新唐书·选举志》及《明史·选举志》"
+      "title": "班超投笔从戎",
+      "dynasty": "东汉",
+      "category": "古代名人逸事",
+      "source": "《后汉书·班超传》"
     },
     {
-      "title": "古代‘外卖’：宋代市民的便捷生活",
-      "dynasty": "宋",
-      "category": "历史趣考类",
-      "source": "《东京梦华录》及《清明上河图》"
+      "title": "赵氏孤儿",
+      "dynasty": "春秋",
+      "category": "古代名人逸事",
+      "source": "《史记·赵世家》"
     },
     {
-      "title": "古代‘身份证’：虎符与鱼符的演变",
-      "dynasty": "战国至唐",
-      "category": "历史趣考类",
-      "source": "《史记·魏公子列传》及《新唐书·车服志》"
+      "title": "韩信胯下之辱",
+      "dynasty": "秦末",
+      "category": "古代名人逸事",
+      "source": "《史记·淮阴侯列传》"
+    },
+    {
+      "title": "项羽破釜沉舟",
+      "dynasty": "秦末",
+      "category": "兵法谋略故事",
+      "source": "《史记·项羽本纪》"
+    },
+    {
+      "title": "苏武牧羊北海",
+      "dynasty": "西汉",
+      "category": "古代名人逸事",
+      "source": "《汉书·苏武传》"
+    },
+    {
+      "title": "勾践卧薪尝胆",
+      "dynasty": "春秋",
+      "category": "古代名人逸事",
+      "source": "《史记·越王勾践世家》"
+    },
+    {
+      "title": "萧何月下追韩信",
+      "dynasty": "秦末",
+      "category": "古代名人逸事",
+      "source": "《史记·淮阴侯列传》"
     }
   ]
 }
