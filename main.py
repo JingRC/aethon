@@ -130,32 +130,43 @@ def call_llm(prompt: str, config: dict, system_prompt: str = "", max_tokens: int
 
 def parse_json_response(text: str) -> list[dict]:
     """从 LLM 返回文本中提取 JSON 数组"""
-    # 去除 markdown 代码块
     text = text.strip()
-    if text.startswith("```"):
-        # 找到第一个换行后的内容
-        lines = text.split("\n")
-        text = "\n".join(lines[1:]) if len(lines) > 1 else text
-        if text.endswith("```"):
-            text = text[:-3]
 
-    # 尝试直接解析
+    # 1. 去除 markdown 代码块 (```json ... ``` 或 ``` ... ```)
+    import re
+    md_match = re.search(r"```(?:json)?\s*\n?(.*?)\n?```", text, re.DOTALL)
+    if md_match:
+        text = md_match.group(1).strip()
+
+    # 2. 尝试直接解析
     try:
-        return json.loads(text)
+        result = json.loads(text)
+        if isinstance(result, list):
+            return result
     except json.JSONDecodeError:
         pass
 
-    # 尝试提取 JSON 数组
-    import re
-    match = re.search(r"\[\s*\{.*?\}\s*\]", text, re.DOTALL)
+    # 3. 尝试提取 JSON 数组（贪婪匹配，跨多行）
+    match = re.search(r"\[\s*\{.*\}\s*\]", text, re.DOTALL)
     if match:
         try:
-            return json.loads(match.group(0))
+            result = json.loads(match.group(0))
+            if isinstance(result, list):
+                return result
         except json.JSONDecodeError:
             pass
 
-    # 尝试逐行修复
-    logger.error(f"无法解析 LLM 响应为 JSON:\n{text[:500]}")
+    # 4. 尝试修复常见 JSON 错误：未转义换行、尾部逗号
+    try:
+        cleaned = re.sub(r'(?<!\\)"\s*\n\s*"', r'"\n"', text)  # bad newlines in strings
+        cleaned = re.sub(r',\s*\]', ']', cleaned)  # trailing comma
+        result = json.loads(cleaned)
+        if isinstance(result, list):
+            return result
+    except (json.JSONDecodeError, Exception):
+        pass
+
+    logger.error(f"无法解析 LLM 响应为 JSON，前500字:\n{text[:500]}")
     return []
 
 
@@ -552,29 +563,49 @@ def main():
                 }
 
             # 6b. LLM 为每条新闻生成「关键洞察 + 详细解读」
-            # 分两批调用，每批5条 → 每批有充裕的 8192 token（≈4000中文字）
+            # 分两批调用，每批5条 → 每批有充裕的 8192 token
+            import time as _time
             from modules.xhs_content import build_enrich_prompt
+            ENRICH_SYSTEM = (
+                "你是资深AI科技分析师。"
+                "严格返回纯JSON数组，禁止markdown标记，禁止代码块。"
+                "JSON字符串内不得包含未转义的双引号、换行符或反斜杠。"
+                "每条新闻返回 index(整数)、insight_zh(30-50字)、detail_zh(400-600字)。"
+            )
             batch_size = 5
             all_enriched = []
             for batch_start in range(0, max_news, batch_size):
                 batch_end = min(batch_start + batch_size, max_news)
                 batch = ai_news[batch_start:batch_end]
-                logger.info(f"🤖 补充洞察/详解 第{batch_start//batch_size + 1}批 ({batch_start+1}-{batch_end}/{max_news})...")
-                enrich_prompt = build_enrich_prompt(batch, len(batch))
-                enrich_response = call_llm(
-                    enrich_prompt, config,
-                    system_prompt="你是资深AI科技分析师。只返回JSON数组，不要markdown代码块。每条新闻补充一针见血的洞察和详细解读。",
-                    max_tokens=8192,
-                )
-                enriched = parse_json_response(enrich_response)
-                if isinstance(enriched, list):
-                    # Offset indices for batch 2+
-                    offset = batch_start
-                    for e in enriched:
-                        if isinstance(e, dict) and "index" in e:
-                            e = dict(e)  # don't mutate original
-                            e["index"] = e["index"] + offset
-                        all_enriched.append(e)
+                batch_no = batch_start // batch_size + 1
+                enriched = []
+                for attempt in range(2):  # retry once if parse fails
+                    logger.info(f"🤖 补充洞察/详解 第{batch_no}批 ({batch_start+1}-{batch_end}/{max_news}){' 重试' if attempt else ''}...")
+                    enrich_prompt = build_enrich_prompt(batch, len(batch))
+                    try:
+                        enrich_response = call_llm(
+                            enrich_prompt, config,
+                            system_prompt=ENRICH_SYSTEM,
+                            max_tokens=8192,
+                        )
+                        enriched = parse_json_response(enrich_response)
+                        if isinstance(enriched, list) and len(enriched) > 0:
+                            break  # success
+                        logger.warning(f"  第{batch_no}批解析结果为空或非列表，原始响应前200字: {enrich_response[:200]}")
+                    except Exception as ex:
+                        logger.error(f"  第{batch_no}批调用失败: {ex}")
+                    if attempt == 0:
+                        _time.sleep(2)  # brief pause before retry
+                if not enriched:
+                    logger.error(f"  第{batch_no}批最终失败，跳过")
+                    continue
+                # Offset indices: batch 2 items numbered 1-5 in prompt → map to 6-10
+                offset = batch_start
+                for e in enriched:
+                    if isinstance(e, dict) and "index" in e:
+                        e = dict(e)
+                        e["index"] = e["index"] + offset
+                    all_enriched.append(e)
             if all_enriched:
                 enrich_map = {e.get("index", -1): e for e in all_enriched if isinstance(e, dict)}
                 for i, item in enumerate(ai_news[:max_news]):
