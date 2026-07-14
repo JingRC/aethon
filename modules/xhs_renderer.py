@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 CARD_W = 1080
 CARD_H = 1440
 
-# ── Curated Unsplash photos ──
+# ── Curated Unsplash photos (16 = no repeats across 10 cards) ──
 UNSPLASH_BG = [
     "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=2160&q=80",
     "https://images.unsplash.com/photo-1518770660439-4636190af475?w=2160&q=80",
@@ -35,6 +35,14 @@ UNSPLASH_BG = [
     "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=2160&q=80",
     "https://images.unsplash.com/photo-1639322537228-f740dce8b2c3?w=2160&q=80",
     "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=2160&q=80",
+    "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=2160&q=80",
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=2160&q=80",
+    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=2160&q=80",
+    "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=2160&q=80",
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=2160&q=80",
+    "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=2160&q=80",
+    "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=2160&q=80",
+    "https://images.unsplash.com/photo-1561736778-92e52a7769ef?w=2160&q=80",
 ]
 
 # ── Color palettes ──
@@ -159,9 +167,9 @@ def _extract_fields(item: dict) -> tuple:
 # Layout 0 — Editorial: full-bleed photo + bold overlay typography
 # ═══════════════════════════════════════════════════════════════
 
-def _layout_editorial(item: dict, idx: int, total: int, pal_index: int) -> str:
+def _layout_editorial(item: dict, idx: int, total: int, pal_index: int, photo_index: int = 0) -> str:
     p = _palette(pal_index)
-    photo = _photo(pal_index)
+    photo = _photo(photo_index)
     css = _build_shared_css(p).replace("PHOTO_URL_PLACEHOLDER", photo)
     title, source, score, stars, summary, insight, detail, url, url_display = _extract_fields(item)
     photo_h = int(CARD_H * PHOTO_RATIOS[0])
@@ -192,9 +200,9 @@ def _layout_editorial(item: dict, idx: int, total: int, pal_index: int) -> str:
 # Layout 1 — Split: max-text, smallest photo
 # ═══════════════════════════════════════════════════════════════
 
-def _layout_split(item: dict, idx: int, total: int, pal_index: int) -> str:
+def _layout_split(item: dict, idx: int, total: int, pal_index: int, photo_index: int = 0) -> str:
     p = _palette(pal_index)
-    photo = _photo(pal_index)
+    photo = _photo(photo_index)
     css = _build_shared_css(p).replace("PHOTO_URL_PLACEHOLDER", photo)
     title, source, score, stars, summary, insight, detail, url, url_display = _extract_fields(item)
     photo_h = int(CARD_H * PHOTO_RATIOS[1])
@@ -225,9 +233,9 @@ def _layout_split(item: dict, idx: int, total: int, pal_index: int) -> str:
 # Layout 2 — Swiss: balanced, photo + bold number
 # ═══════════════════════════════════════════════════════════════
 
-def _layout_swiss(item: dict, idx: int, total: int, pal_index: int) -> str:
+def _layout_swiss(item: dict, idx: int, total: int, pal_index: int, photo_index: int = 0) -> str:
     p = _palette(pal_index)
-    photo = _photo(pal_index)
+    photo = _photo(photo_index)
     css = _build_shared_css(p).replace("PHOTO_URL_PLACEHOLDER", photo)
     title, source, score, stars, summary, insight, detail, url, url_display = _extract_fields(item)
     photo_h = int(CARD_H * PHOTO_RATIOS[2])
@@ -258,9 +266,9 @@ def _layout_swiss(item: dict, idx: int, total: int, pal_index: int) -> str:
 # Layout 3 — Frame: accent border, text-heavy
 # ═══════════════════════════════════════════════════════════════
 
-def _layout_frame(item: dict, idx: int, total: int, pal_index: int) -> str:
+def _layout_frame(item: dict, idx: int, total: int, pal_index: int, photo_index: int = 0) -> str:
     p = _palette(pal_index)
-    photo = _photo(pal_index)
+    photo = _photo(photo_index)
     css = _build_shared_css(p).replace("PHOTO_URL_PLACEHOLDER", photo)
     title, source, score, stars, summary, insight, detail, url, url_display = _extract_fields(item)
     photo_h = int(CARD_H * PHOTO_RATIOS[3])
@@ -298,19 +306,20 @@ def _build_cover_html(date_str: str, count: int, pal_index: int) -> str:
     photo = _photo(pal_index)
     css = _build_shared_css(p).replace("PHOTO_URL_PLACEHOLDER", photo)
     return f"""<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">{css}</head><body>
-<div class="photo-section" style="height:100%;opacity:0.5;"></div>
+<div class="photo-section" style="height:100%;opacity:0.35;"></div>
+<div style="position:absolute;inset:0;background:linear-gradient(180deg,{p['bg']}88 0%,{p['bg']}cc 100%);z-index:1;"></div>
 <div class="content" style="align-items:center;justify-content:center;text-align:center;padding:100px 80px;">
-  <div class="meta" style="margin-bottom:60px;">D A I L Y &nbsp; D I G E S T</div>
-  <div style="font-size:120px;font-weight:900;color:{p['accent']};opacity:0.85;letter-spacing:-6px;line-height:1;margin-bottom:32px;">{count}</div>
-  <div class="title" style="font-size:56px;margin-bottom:20px;">今日 AI 快讯精选</div>
-  <div class="source-tag" style="font-size:28px;">{date_str}</div>
-  <div class="accent-line" style="margin-top:48px;width:120px;"></div>
-  <div style="display:flex;gap:60px;margin-top:56px;">
-    <div style="text-align:center;"><div style="font-size:40px;font-weight:900;color:{p['accent']};">10</div><div class="source-tag" style="font-size:22px;">数据源</div></div>
-    <div style="text-align:center;"><div style="font-size:40px;font-weight:900;color:{p['accent']};">{count}</div><div class="source-tag" style="font-size:22px;">条精选</div></div>
-    <div style="text-align:center;"><div style="font-size:40px;font-weight:900;color:{p['accent']};">✦✦✦✦✦</div><div class="source-tag" style="font-size:22px;">LLM 评分</div></div>
+  <div class="meta" style="margin-bottom:40px;font-size:28px;letter-spacing:8px;">D A I L Y &nbsp; A I</div>
+  <div style="font-size:140px;font-weight:900;color:{p['accent']};opacity:0.9;letter-spacing:-8px;line-height:0.85;margin-bottom:28px;text-shadow:0 0 80px {p['accent']}30;">{count}</div>
+  <div class="title" style="font-size:64px;margin-bottom:16px;">今日 AI 快讯精选</div>
+  <div class="source-tag" style="font-size:30px;">{date_str}</div>
+  <div class="accent-line" style="margin-top:56px;width:160px;height:4px;"></div>
+  <div style="display:flex;gap:80px;margin-top:64px;">
+    <div style="text-align:center;"><div style="font-size:48px;font-weight:900;color:{p['accent']};">10</div><div class="source-tag" style="font-size:24px;">数据源</div></div>
+    <div style="text-align:center;"><div style="font-size:48px;font-weight:900;color:{p['accent']};">{count}</div><div class="source-tag" style="font-size:24px;">条精选</div></div>
+    <div style="text-align:center;"><div style="font-size:48px;font-weight:900;color:{p['accent']};">✦✦✦✦✦</div><div class="source-tag" style="font-size:24px;">LLM 评分</div></div>
   </div>
-  <div class="brand" style="margin-top:80px;">每日双拼日报</div>
+  <div class="brand" style="margin-top:88px;font-size:22px;letter-spacing:6px;">每日AI日报</div>
 </div></body></html>"""
 
 
@@ -337,7 +346,7 @@ def _build_summary_html(news: list[dict], date_str: str) -> str:
   <div class="hairline" style="margin-top:16px;"></div>
   <div style="display:flex;justify-content:space-between;padding-top:20px;">
     <div class="source-tag">HuggingFace · TechCrunch · The Verge · 36Kr · GitHub · arXiv</div>
-    <div class="brand">每日双拼日报</div>
+    <div class="brand">每日AI日报</div>
   </div>
 </div></body></html>"""
 
@@ -345,14 +354,17 @@ def _build_summary_html(news: list[dict], date_str: str) -> str:
 def _build_news_card_html(item: dict, idx: int, total: int) -> str:
     layout = idx % 4
     pal_index = idx % len(PALETTES)
+    # Use separate photo index — 16 photos, 10 cards = no repeats
+    photo_index = (idx - 1) % len(UNSPLASH_BG)
+    override = {"pal_index": pal_index, "photo_index": photo_index}
     if layout == 0:
-        return _layout_editorial(item, idx, total, pal_index)
+        return _layout_editorial(item, idx, total, **override)
     elif layout == 1:
-        return _layout_split(item, idx, total, pal_index)
+        return _layout_split(item, idx, total, **override)
     elif layout == 2:
-        return _layout_swiss(item, idx, total, pal_index)
+        return _layout_swiss(item, idx, total, **override)
     else:
-        return _layout_frame(item, idx, total, pal_index)
+        return _layout_frame(item, idx, total, **override)
 
 
 # ── Chrome finder ─────────────────────────────────────────

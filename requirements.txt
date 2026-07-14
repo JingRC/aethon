@@ -28,5 +28,8 @@ python-dateutil>=2.8
 # 图片处理（小红书卡片渲染）
 Pillow>=10.0
 
+# Word 文档生成（小红书发布文案）
+python-docx>=1.0
+
 # 可选：语音合成（如需播客功能）
 # edge-tts>=6.1.0

@@ -611,7 +611,13 @@ def main():
             with open(manifest_path, "w", encoding="utf-8") as f:
                 json.dump(xhs_manifest, f, ensure_ascii=False, indent=2)
             logger.info(f"📋 发布清单: {manifest_path}")
-            logger.info(f"📱 小红书内容: {len(card_paths)} 张卡片 + 爆款文案")
+
+            # 6e. 生成 Word 发布文档（标题+正文+链接摘要）
+            from modules.xhs_docx import generate_xhs_docx
+            docx_path = manifest_dir / "发布文案.docx"
+            generate_xhs_docx(ai_news, xhs_content, str(docx_path))
+            logger.info(f"📄 Word文档: {docx_path}")
+            logger.info(f"📱 小红书内容: {len(card_paths)} 张卡片 + Word文案")
 
         except Exception as e:
             logger.error(f"小红书内容生成失败: {e}")
