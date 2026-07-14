@@ -144,15 +144,14 @@ def _extract_fields(item: dict) -> tuple:
         insight = summary[:80]
     if not detail:
         detail = summary[80:] if len(summary) > 80 else summary
-    # Cap detail at 500 chars to prevent link overflow
-    if len(detail) > 500:
-        # Cut at last complete sentence before 500
-        cut = detail[:500].rstrip("，。！？；：、,")
-        last_period = max(cut.rfind("。"), cut.rfind("！"), cut.rfind("？"), cut.rfind("；"))
-        if last_period > 300:
+    # Safety cap at 480 chars to prevent link overflow
+    if len(detail) > 480:
+        cut = detail[:480].rstrip("，。！？；：、,")
+        last_period = max(cut.rfind("。"), cut.rfind("！"), cut.rfind("？"))
+        if last_period > 350:
             detail = cut[:last_period + 1]
         else:
-            detail = cut
+            detail = cut[:450]  # hard fallback
     url = item.get("url", "")
     url_display = ""
     if url:
@@ -259,7 +258,7 @@ def _layout_swiss(item: dict, idx: int, total: int, pal_index: int, photo_index:
   </div>
   <div class="title" style="font-size:46px;margin-bottom:20px;">{title}</div>
   <div class="insight-box" style="padding:20px 30px;margin-bottom:20px;">
-    <div class="insight-label">K E Y &nbsp; I N S I G H T</div>
+    <div class="insight-label">⟡ 关键洞察</div>
     <div class="insight-text" style="margin-top:8px;font-size:25px;">{insight}</div>
   </div>
   <div class="detail-text" style="flex:1;font-size:25px;">{detail}</div>
