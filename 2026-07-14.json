@@ -1,193 +1,181 @@
 {
   "date": "2026-07-14",
   "ai_news_count": 10,
-  "stories_count": 19,
+  "stories_count": 17,
   "ai_news": [
     {
       "title": "视频生成初创公司PixVerse融资4.39亿美元，估值超20亿美元",
-      "summary_zh": "总部位于新加坡的视频生成初创公司PixVerse宣布完成4.39亿美元的C轮扩展融资，估值突破20亿美元。该公司拥有1500万月活跃用户，此次融资标志着AI视频生成领域持续受到资本热捧，进一步巩固了其在行业中的领先地位。",
+      "summary_zh": "视频生成AI初创公司PixVerse完成4.39亿美元融资，估值突破20亿美元。公司将利用这笔资金扩展其世界模型产品，并拓展全球客户。这是AI视频生成领域近期最大的一笔融资，标志着该赛道持续火热。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
       "score": 5
     },
     {
       "title": "苹果起诉OpenAI，指控前员工窃取机密文件",
-      "summary_zh": "苹果公司对OpenAI提起商业秘密诉讼，指控一名前员工在离职加入OpenAI后，利用罕见漏洞从苹果网络下载敏感文件。诉讼文件包含惊人指控，如员工开玩笑称可未经授权访问苹果系统，以及求职者被要求携带苹果硬件参加面试。",
+      "summary_zh": "苹果公司对OpenAI提起商业秘密诉讼，指控一名前员工利用罕见的系统漏洞，在离职加入OpenAI后仍长期下载苹果机密文件。诉讼中还包含员工调侃非法访问系统、求职者被要求携带苹果硬件面试等惊人指控。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/13/apple-says-former-employee-exploited-rare-bug-to-download-confidential-files-after-leaving-for-openai/",
       "score": 5
     },
     {
-      "title": "微软CEO纳德拉警告企业使用AI的风险",
-      "summary_zh": "微软首席执行官萨提亚·纳德拉发出严厉警告，称大型AI实验室销售专有模型的行为如同特洛伊木马，可能导致企业过度依赖单一供应商。这一担忧在硅谷AI爱好者中引发热议，凸显了AI行业在商业模式和安全性方面的深层矛盾。",
+      "title": "纳德拉警告：使用AI的公司需警惕模型供应商的“特洛伊木马”",
+      "summary_zh": "微软CEO萨提亚·纳德拉对使用AI的公司发出惊人警告，指出那些销售专有模型的巨型AI实验室可能像特洛伊木马一样，在提供AI能力的同时获取企业核心数据，引发硅谷AI界对数据安全和依赖单一供应商的广泛担忧。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/",
       "score": 5
     },
     {
-      "title": "Anthropic为印度市场本地化Claude定价",
-      "summary_zh": "Anthropic开始为印度用户提供以印度卢比计价的Claude订阅计划。印度是其美国以外最大的市场，此次本地化定价策略旨在降低用户门槛，扩大在关键新兴市场的覆盖，反映了AI公司全球化布局的加速。",
+      "title": "苹果发布iOS 27等系统公测版，Siri AI重大升级",
+      "summary_zh": "苹果正式发布iOS 27、watchOS 27等系统公测版，最大亮点是Siri AI的全面升级。新版Siri终于实现AI驱动，功能大幅提升，被评测者称为“真正可用”。watchOS 27让Apple Watch首次拥有类似腕上电脑的体验。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/964307/apple-public-betas-ios-27-siri-ai",
+      "score": 5
+    },
+    {
+      "title": "Anthropic在印度推出本地化Claude定价",
+      "summary_zh": "Anthropic开始为印度用户提供以卢比计价的Claude订阅计划，这是其在美国之外的最大市场。此举表明Anthropic正积极拓展全球市场，通过本地化定价策略降低AI服务门槛，与OpenAI等竞争对手争夺新兴市场用户。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/",
       "score": 4
     },
     {
-      "title": "Agent制造商Nous Research估值15亿美元洽谈新融资",
-      "summary_zh": "知名AI Agent公司Nous Research正进行新一轮融资谈判，估值达15亿美元，计划筹集至少7500万美元。本轮由Robot Ventures领投，USV等知名机构参投。该公司以Hermes系列Agent模型闻名，此次融资凸显了AI Agent赛道的热度。",
+      "title": "Hermes智能体制造商Nous Research寻求融资，估值15亿美元",
+      "summary_zh": "AI智能体公司Nous Research正进行新一轮融资谈判，由Robot Ventures领投，USV等知名机构参投，至少融资7500万美元，估值达15亿美元。该公司以开发Hermes智能体闻名，此次融资显示AI智能体赛道持续吸引资本关注。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/",
       "score": 4
     },
     {
-      "title": "苹果发布iOS 27公测版，Siri AI成为亮点",
-      "summary_zh": "苹果发布了iOS 27公测版，其中最引人注目的是Siri AI——经过AI强化的Siri终于开始展现实际效果。测试者反馈Siri AI能提供简洁有效的回答，改变了iPhone的使用方式。该更新预计今年秋季正式推出，标志着苹果在AI助手领域的重大突破。",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/964307/apple-public-betas-ios-27-siri-ai",
+      "title": "Hugging Face与Cerebras合作，将Gemma 4带入实时语音AI",
+      "summary_zh": "Hugging Face与Cerebras宣布合作，将谷歌的Gemma 4模型部署于Cerebras的AI加速器上，实现实时语音AI应用。这一合作展示了专用硬件与开源模型结合的可能性，为低延迟语音交互场景提供了新的技术方案。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
       "score": 4
     },
     {
-      "title": "腾讯混元Hy3登顶OpenRouter周榜",
-      "summary_zh": "腾讯混元Hy3模型登顶OpenRouter周榜，单周处理Token超6万亿。这一成绩展示了国产大模型在推理效率和应用规模上的显著进步，标志着中国AI企业在全球开源模型生态中的竞争力持续提升。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1671983?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 4
-    },
-    {
-      "title": "英伟达AIPC中国首秀，定义下一代AI计算",
-      "summary_zh": "英伟达在中国首次展示AIPC产品，旨在通过定义AI PC本身来抢占未来更大市场份额。该产品将强大的AI计算能力集成到笔记本中，相当于在便携设备中装下一座曼哈顿的算力，标志着AI硬件向个人计算领域的深度渗透。",
+      "title": "英伟达AIPC中国首秀：笔记本中装下“曼哈顿”",
+      "summary_zh": "英伟达在中国首次展示其AIPC概念，通过新一代GPU和AI加速技术，在笔记本中实现堪比超级计算机的AI算力。此举旨在定义AIPC标准，抢占未来AI个人计算市场，对PC产业格局产生深远影响。",
       "source": "爱范儿",
       "url": "https://www.ifanr.com/1671945?utm_source=rss&utm_medium=rss&utm_campaign=",
       "score": 4
     },
     {
-      "title": "宇树G1机器人完成两例活体手术，登上《自然》",
-      "summary_zh": "宇树科技的G1机器人成功完成两例活体手术，相关成果登上顶级期刊《自然》。这一突破展示了人形机器人在医疗领域的巨大潜力，标志着具身智能从实验室走向实际临床应用的重大进展。",
+      "title": "腾讯混元Hy3登顶OpenRouter周榜，单周处理Token超6万亿",
+      "summary_zh": "腾讯混元大模型Hy3登顶OpenRouter平台周榜，单周处理Token量超过6万亿，成为最受欢迎的开源模型之一。这一成绩显示国产大模型在全球开源社区中的影响力持续提升，与Llama等国际模型形成有力竞争。",
       "source": "爱范儿",
-      "url": "https://www.ifanr.com/1671746?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "url": "https://www.ifanr.com/1671983?utm_source=rss&utm_medium=rss&utm_campaign=",
       "score": 4
     },
     {
-      "title": "Hugging Face与Cerebras合作推出Gemma 4实时语音AI",
-      "summary_zh": "Hugging Face与芯片公司Cerebras合作，将Google的Gemma 4模型部署于实时语音AI应用。这一合作结合了Cerebras的高性能计算平台与Hugging Face的模型生态，为低延迟语音交互提供了新的解决方案，推动AI语音技术实用化。",
-      "source": "Hugging Face - Blog",
-      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
+      "title": "Waze推出AI新功能，整合谷歌Gemini提升导航体验",
+      "summary_zh": "导航应用Waze推出多项AI新功能，由谷歌Gemini AI助手驱动。新功能包括更智能的路线规划、实时路况预测和个性化建议，旨在提升与Apple Maps等竞品的竞争力，也体现了谷歌将Gemini整合到旗下产品的战略。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates/",
       "score": 3
     }
   ],
   "stories": [
     {
-      "title": "鲍叔牙荐管仲：知己与国士",
-      "dynasty": "春秋",
-      "category": "古代名人逸事",
-      "source": "《史记·管晏列传》"
-    },
-    {
-      "title": "季札挂剑：千金一诺的君子风范",
-      "dynasty": "春秋",
-      "category": "古代名人逸事",
-      "source": "《史记·吴太伯世家》"
-    },
-    {
-      "title": "范雎入秦：从死里逃生到远交近攻",
+      "title": "范雎入秦：远交近攻的谋略",
       "dynasty": "战国",
       "category": "古代名人逸事",
       "source": "《史记·范雎蔡泽列传》"
     },
     {
       "title": "张良拾履：圯上老人的考验",
-      "dynasty": "秦末",
+      "dynasty": "西汉",
       "category": "古代名人逸事",
       "source": "《史记·留侯世家》"
     },
     {
-      "title": "王羲之东床坦腹：率真即风流",
+      "title": "管宁割席：道不同不相为谋",
+      "dynasty": "东汉末",
+      "category": "古代名人逸事",
+      "source": "《世说新语·德行》"
+    },
+    {
+      "title": "陶渊明不为五斗米折腰",
       "dynasty": "东晋",
       "category": "古代名人逸事",
-      "source": "《世说新语·雅量》"
+      "source": "《晋书·陶潜传》"
     },
     {
-      "title": "破釜沉舟：巨鹿之战的绝地反击",
-      "dynasty": "秦末",
-      "category": "成语典故",
-      "source": "《史记·项羽本纪》"
-    },
-    {
-      "title": "牛郎织女：七夕鹊桥的星空传说",
-      "dynasty": "汉代",
-      "category": "传统节日传说",
-      "source": "《古诗十九首》《荆楚岁时记》"
-    },
-    {
-      "title": "李愬雪夜入蔡州：奇袭破敌的经典战例",
+      "title": "陈子昂摔琴：千金买名的一鸣惊人",
       "dynasty": "唐",
-      "category": "兵法谋略故事",
+      "category": "古代名人逸事",
+      "source": "《独异志》"
+    },
+    {
+      "title": "一鸣惊人：楚庄王的韬光养晦",
+      "dynasty": "春秋",
+      "category": "成语典故",
+      "source": "《史记·楚世家》"
+    },
+    {
+      "title": "请君入瓮：以其人之道还治其人之身",
+      "dynasty": "唐",
+      "category": "成语典故",
       "source": "《资治通鉴·唐纪》"
     },
     {
-      "title": "赵氏孤儿：忠义与复仇的千古绝唱",
-      "dynasty": "春秋",
-      "category": "古代名人逸事",
-      "source": "《史记·赵世家》"
+      "title": "元宵节的传说：东方朔与元宵姑娘",
+      "dynasty": "西汉",
+      "category": "传统节日传说",
+      "source": "《汉书·东方朔传》及民间传说"
     },
     {
-      "title": "完璧归赵：蔺相如的智勇双全",
-      "dynasty": "战国",
-      "category": "成语典故",
-      "source": "《史记·廉颇蔺相如列传》"
+      "title": "重阳节的传说：桓景斩瘟魔",
+      "dynasty": "东汉",
+      "category": "传统节日传说",
+      "source": "《续齐谐记》"
     },
     {
-      "title": "商鞅徙木立信：变法从取信于民开始",
+      "title": "田忌赛马：孙膑的博弈智慧",
       "dynasty": "战国",
-      "category": "成语典故",
+      "category": "兵法谋略故事",
+      "source": "《史记·孙子吴起列传》"
+    },
+    {
+      "title": "李靖夜袭定襄：千里奔袭的闪电战",
+      "dynasty": "唐",
+      "category": "兵法谋略故事",
+      "source": "《旧唐书·李靖传》"
+    },
+    {
+      "title": "张衡制作浑天仪：古代宇宙模型的巅峰",
+      "dynasty": "东汉",
+      "category": "天文地理类",
+      "source": "《后汉书·张衡传》"
+    },
+    {
+      "title": "商鞅徙木立信：秦国的信用建设",
+      "dynasty": "战国（秦）",
+      "category": "历史趣考类",
       "source": "《史记·商君列传》"
     },
     {
-      "title": "纸上谈兵：赵括的惨痛教训",
-      "dynasty": "战国",
-      "category": "成语典故",
-      "source": "《史记·廉颇蔺相如列传》"
+      "title": "诸葛亮‘木牛流马’：古代黑科技之谜",
+      "dynasty": "三国（蜀汉）",
+      "category": "历史趣考类",
+      "source": "《三国志·诸葛亮传》"
     },
     {
-      "title": "韩信胯下之辱：忍小辱以成大谋",
-      "dynasty": "秦末",
+      "title": "狄仁杰断案：大理寺的‘神探’真相",
+      "dynasty": "唐",
+      "category": "历史趣考类",
+      "source": "《旧唐书·狄仁杰传》"
+    },
+    {
+      "title": "陆羽著《茶经》：茶文化的奠基人",
+      "dynasty": "唐",
       "category": "古代名人逸事",
-      "source": "《史记·淮阴侯列传》"
+      "source": "《新唐书·陆羽传》"
     },
     {
-      "title": "萧何月下追韩信：伯乐的慧眼",
-      "dynasty": "秦末",
+      "title": "黄道婆革新纺织：从黎族学艺到衣被天下",
+      "dynasty": "元",
       "category": "古代名人逸事",
-      "source": "《史记·淮阴侯列传》"
-    },
-    {
-      "title": "凿壁偷光：匡衡的苦读精神",
-      "dynasty": "西汉",
-      "category": "成语典故",
-      "source": "《西京杂记》"
-    },
-    {
-      "title": "张骞通西域：丝绸之路的开拓者",
-      "dynasty": "西汉",
-      "category": "古代名人逸事",
-      "source": "《史记·大宛列传》"
-    },
-    {
-      "title": "班超投笔从戎：书生报国的豪情",
-      "dynasty": "东汉",
-      "category": "古代名人逸事",
-      "source": "《后汉书·班超传》"
-    },
-    {
-      "title": "苏武牧羊：十九年的坚守与气节",
-      "dynasty": "西汉",
-      "category": "古代名人逸事",
-      "source": "《汉书·苏武传》"
-    },
-    {
-      "title": "诸葛亮空城计：绝境中的心理博弈",
-      "dynasty": "三国",
-      "category": "兵法谋略故事",
-      "source": "《三国志·诸葛亮传》裴松之注引郭冲五事"
+      "source": "《南村辍耕录》及地方志"
     }
   ]
 }
