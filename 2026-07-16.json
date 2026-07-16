@@ -1,0 +1,163 @@
+{
+  "date": "2026-07-16",
+  "ai_news_count": 10,
+  "stories_count": 14,
+  "ai_news": [
+    {
+      "title": "微软被曝训练销售团队贬低OpenAI和Anthropic，力推自研AI模型",
+      "summary_zh": "微软正在训练其销售团队，在向客户推销时强调其自研AI模型比OpenAI和Anthropic的模型更高效、更具成本效益。此举表明微软正在积极将其内部AI能力商业化，并与曾经的合作伙伴展开直接竞争，对AI行业格局产生重大影响。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
+      "score": 5
+    },
+    {
+      "title": "Thinking Machines发布首个开源模型Inkling，挑战通用AI范式",
+      "summary_zh": "经过一年半的隐秘建设，Thinking Machines发布了其首个公开成果——开源模型Inkling。该模型旨在挑战当前“一刀切”的通用AI模式，标志着公司对更专业化、定制化AI路径的坚定押注，为开源AI社区注入新活力。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
+      "score": 5
+    },
+    {
+      "title": "微软利用AI发现创纪录的570个安全漏洞，Patch Tuesday修复量创新高",
+      "summary_zh": "微软在7月的Patch Tuesday中修复了创纪录的570个安全漏洞，公司表示这得益于AI技术的辅助发现。这一里程碑事件凸显了AI在提升网络安全防御能力方面的巨大潜力，但也意味着攻击面可能随之扩大，对行业具有警示意义。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/",
+      "score": 5
+    },
+    {
+      "title": "OpenAI在硬件法律纠纷中发布Codex专用键盘，售价230美元",
+      "summary_zh": "在与苹果就硬件贸易秘密窃取指控进行法律斗争之际，OpenAI发布了一款售价230美元的发光键盘，专为其智能编程应用Codex设计。此举标志着OpenAI正式进军硬件领域，尽管面临法律挑战，仍试图通过专用外设增强其AI编程工具的体验和粘性。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/",
+      "score": 4
+    },
+    {
+      "title": "xAI起诉用户利用Grok生成儿童性虐待深度伪造内容",
+      "summary_zh": "埃隆·马斯克旗下xAI公司起诉一名南卡罗来纳州男子，指控其故意利用Grok AI聊天机器人绕过安全措施，生成儿童性虐待材料（CSAM）。此案是AI公司首次就此类滥用行为采取法律行动，凸显了生成式AI在内容安全方面的严峻挑战。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam",
+      "score": 4
+    },
+    {
+      "title": "黑客入侵AI音乐生成器Suno，揭示其使用YouTube数据训练",
+      "summary_zh": "一名黑客利用员工凭证入侵了AI音乐生成公司Suno的源代码，发现该公司从YouTube等平台抓取了数十年的音频数据进行模型训练。这一事件再次引发了关于AI训练数据版权和伦理的激烈讨论，可能面临法律诉讼风险。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/",
+      "score": 4
+    },
+    {
+      "title": "Hugging Face与Cerebras合作，将Gemma 4带入实时语音AI",
+      "summary_zh": "Hugging Face与芯片公司Cerebras宣布合作，将Google的Gemma 4模型部署于Cerebras的硬件上，用于实时语音AI应用。此举旨在解决语音AI的延迟问题，展示了专用硬件与开源模型结合在实时交互领域的巨大潜力。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
+      "score": 4
+    },
+    {
+      "title": "星尘智能发布具身基座模型Lumo-2，提升机器人动作精准度",
+      "summary_zh": "中国AI机器人公司星尘智能发布了具身智能基座模型Lumo-2，该模型通过概率预测使机器人动作更快更准。这一技术突破标志着具身智能从实验室走向实际应用的重要一步，有望加速机器人在工业和服务场景的落地。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1672067",
+      "score": 4
+    },
+    {
+      "title": "英伟达AIPC中国首秀，定义新一代AI笔记本标准",
+      "summary_zh": "英伟达在中国首次展示其AIPC（AI个人电脑）方案，意图通过定义AI PC的硬件和软件标准来抢占未来市场。此举将推动笔记本端侧AI算力的大幅提升，对消费级AI应用生态产生深远影响。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1671945",
+      "score": 3
+    },
+    {
+      "title": "苹果国行AI确认搭载千问模型，加速中国市场布局",
+      "summary_zh": "据报道，苹果为中国市场定制的AI功能将搭载阿里巴巴的通义千问大模型，这标志着苹果AI服务正式进入中国。此举是苹果在全球AI战略中的重要一步，同时也为国内AI厂商提供了与国际巨头合作的范例。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1672097",
+      "score": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "贾岛推敲",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《唐才子传》《苕溪渔隐丛话》"
+    },
+    {
+      "title": "王安石变法与‘三不足’",
+      "dynasty": "北宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《宋史·王安石传》《续资治通鉴长编》"
+    },
+    {
+      "title": "苏轼与佛印‘八风吹不动’",
+      "dynasty": "北宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《东坡志林》《五灯会元》"
+    },
+    {
+      "title": "李清照‘人比黄花瘦’",
+      "dynasty": "北宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《李清照集》《嫏嬛记》"
+    },
+    {
+      "title": "柳永‘奉旨填词’的真相",
+      "dynasty": "北宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《能改斋漫录》《避暑录话》"
+    },
+    {
+      "title": "庄子‘濠梁观鱼’",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《庄子·秋水》"
+    },
+    {
+      "title": "孟子‘五十步笑百步’",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《孟子·梁惠王上》"
+    },
+    {
+      "title": "韩信‘胯下之辱’",
+      "dynasty": "西汉",
+      "category": "成语典故",
+      "source": "《史记·淮阴侯列传》"
+    },
+    {
+      "title": "班超‘投笔从戎’",
+      "dynasty": "东汉",
+      "category": "成语典故",
+      "source": "《后汉书·班超传》"
+    },
+    {
+      "title": "孙膑‘围魏救赵’的姊妹篇：桂陵之战",
+      "dynasty": "战国",
+      "category": "兵法谋略故事",
+      "source": "《史记·孙子吴起列传》《战国策·齐策》"
+    },
+    {
+      "title": "李靖‘定襄之战’：三千骑兵破突厥",
+      "dynasty": "唐",
+      "category": "兵法谋略故事",
+      "source": "《旧唐书·李靖传》《资治通鉴》"
+    },
+    {
+      "title": "岳飞‘郾城大捷’与‘十二道金牌’",
+      "dynasty": "南宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《宋史·岳飞传》《金佗粹编》"
+    },
+    {
+      "title": "文天祥‘过零丁洋’与《正气歌》",
+      "dynasty": "南宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《宋史·文天祥传》《文山先生全集》"
+    },
+    {
+      "title": "郭守敬编《授时历》：古代历法的巅峰",
+      "dynasty": "元",
+      "category": "古代天文地理类",
+      "source": "《元史·郭守敬传》《授时历》"
+    }
+  ]
+}
