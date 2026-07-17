@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-每日双拼日报 — 主程序
+Aethon — Daily AI Intelligence
 ──────────────────────────
 功能：AI快讯聚合 + 中国古代故事典故生成 + Email推送 + 静态站点发布
 触发：GitHub Actions 每日定时 / 手动运行
@@ -34,7 +34,7 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
     datefmt="%H:%M:%S",
 )
-logger = logging.getLogger("daily-digest")
+logger = logging.getLogger("aethon")
 
 # ── 路径 ──────────────────────────────────────────────
 ROOT_DIR = Path(__file__).parent
@@ -313,7 +313,7 @@ def generate_story_links(story: dict) -> list[tuple[str, str]]:
 def render_markdown(ai_news: list[dict], stories: list[dict]) -> str:
     """渲染 Markdown 日报（用于 GitHub Pages）"""
     today = datetime.now().strftime("%Y年%m月%d日")
-    md = f"""# 📬 每日双拼日报 — {today}
+    md = f"""# 📬 Aethon — {today}
 
 > AI 快讯 · 洞察科技前沿 &nbsp;|&nbsp; 古代故事 · 品味千年智慧
 
@@ -420,7 +420,7 @@ def save_output(html_content: str, md_content: str, ai_news: list[dict], stories
 
 
 def main():
-    parser = argparse.ArgumentParser(description="每日双拼日报生成器")
+    parser = argparse.ArgumentParser(description="Aethon — Daily AI Intelligence")
     parser.add_argument("--news-only", action="store_true", help="仅生成AI快讯")
     parser.add_argument("--stories-only", action="store_true", help="仅生成古代故事")
     parser.add_argument("--no-email", action="store_true", help="跳过邮件发送")
@@ -449,7 +449,7 @@ def main():
         print()
         return
 
-    logger.info("🚀 每日双拼日报 启动")
+    logger.info("🚀 Aethon 启动")
     logger.info(f"⏰ {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
     # 加载配置

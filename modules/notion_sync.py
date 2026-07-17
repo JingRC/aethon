@@ -69,7 +69,7 @@ def create_daily_page(
                     "title": [
                         {
                             "text": {
-                                "content": f"📬 {today_cn} 每日双拼日报"
+                                "content": f"📬 {today_cn} Aethon"
                             }
                         }
                     ]

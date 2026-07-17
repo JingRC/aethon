@@ -1,5 +1,5 @@
 """
-Email 推送模块 —— 发送 HTML 格式的每日双拼日报
+Email 推送模块 —— 发送 HTML 格式的Aethon
 支持 Gmail SMTP 和其他 SMTP 服务（如 Resend）
 """
 import logging
@@ -29,7 +29,7 @@ def send_daily_email(
 
     today = datetime.now().strftime("%Y-%m-%d")
     if subject is None:
-        subject = f"📬 每日双拼日报 | AI快讯 × 古代故事 | {today}"
+        subject = f"📬 Aethon | AI快讯 × 古代故事 | {today}"
 
     # 构建邮件
     msg = MIMEMultipart("alternative")

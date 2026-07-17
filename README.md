@@ -1,4 +1,4 @@
-# 📬 每日双拼日报
+# 🔥 Aethon — Daily AI Intelligence
 
 > **AI 快讯 · 洞察科技前沿** &nbsp;|&nbsp; **古代故事 · 品味千年智慧**
 
@@ -43,7 +43,7 @@
 
 ### 3. 启用 GitHub Actions
 
-进入仓库 **Actions** 标签页，启用 Workflow，然后手动触发一次 `每日双拼日报` → **Run workflow**。
+进入仓库 **Actions** 标签页，启用 Workflow，然后手动触发一次 `Aethon` → **Run workflow**。
 
 ---
 

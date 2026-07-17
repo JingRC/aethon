@@ -1,5 +1,5 @@
 # ============================================
-# 每日双拼日报配置 (AI快讯 + 中国古代故事)
+# Aethon配置 (AI快讯 + 中国古代故事)
 # Cron now fires at UTC 22:00-22:30 to account for ~2h scheduler delay
 # ============================================
 
@@ -58,7 +58,7 @@ email:
   sender_email: "${GMAIL_USER}"
   sender_password: "${GMAIL_APP_PASSWORD}"  # Gmail应用专用密码
   recipient_email: "${RECIPIENT_EMAIL}"
-  subject_template: "📬 每日双拼日报 | AI快讯×古代故事 | {date}"
+  subject_template: "📬 Aethon | AI快讯×古代故事 | {date}"
 
 # --- Notion 同步配置 ---
 notion:

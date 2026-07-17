@@ -105,7 +105,7 @@ def generate_xhs_docx(ai_news: list[dict],
     doc.add_paragraph("─" * 40)
     footer_para = doc.add_paragraph()
     footer_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = footer_para.add_run("🤖 由每日AI日报自动生成 | GitHub Actions 云端运行")
+    run = footer_para.add_run("🤖 由Aethon自动生成 | GitHub Actions 云端运行")
     run.font.size = Pt(8)
     run.font.color.rgb = RGBColor(0xAA, 0xAA, 0xAA)
 

@@ -327,7 +327,7 @@ def _build_cover_html(date_str: str, count: int, pal_index: int) -> str:
     <div style="text-align:center;"><div style="font-size:48px;font-weight:900;color:{p['accent']};">{count}</div><div class="source-tag" style="font-size:24px;">条精选</div></div>
     <div style="text-align:center;"><div style="font-size:48px;font-weight:900;color:{p['accent']};">✦✦✦✦✦</div><div class="source-tag" style="font-size:24px;">LLM 评分</div></div>
   </div>
-  <div class="brand" style="margin-top:88px;font-size:22px;letter-spacing:6px;">每日AI日报</div>
+  <div class="brand" style="margin-top:88px;font-size:22px;letter-spacing:6px;">Aethon</div>
 </div></body></html>"""
 
 
@@ -354,7 +354,7 @@ def _build_summary_html(news: list[dict], date_str: str) -> str:
   <div class="hairline" style="margin-top:16px;"></div>
   <div style="display:flex;justify-content:space-between;padding-top:20px;">
     <div class="source-tag">HuggingFace · TechCrunch · The Verge · 36Kr · GitHub · arXiv</div>
-    <div class="brand">每日AI日报</div>
+    <div class="brand">Aethon</div>
   </div>
 </div></body></html>"""
 
