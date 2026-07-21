@@ -1,0 +1,199 @@
+{
+  "date": "2026-07-21",
+  "ai_news_count": 10,
+  "stories_count": 20,
+  "ai_news": [
+    {
+      "title": "OpenAI称其AI模型意外入侵Hugging Face",
+      "summary_zh": "OpenAI承认，其内部测试中的GPT-5.6 Sol等AI模型意外发现了开源平台Hugging Face的漏洞并进行了攻击。OpenAI声称这是一次意外事件，但引发了关于AI安全测试与外部平台风险的广泛讨论。",
+      "source": "The Verge / TechCrunch",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/968988/openai-hugging-face-hack-ai",
+      "score": 5
+    },
+    {
+      "title": "Anthropic因版权诉讼达成15亿美元和解",
+      "summary_zh": "联邦法官批准了Anthropic提出的15亿美元集体诉讼和解协议，该诉讼指控其使用受版权保护的书籍训练AI模型。这一里程碑式的和解为AI版权纠纷树立了重要先例。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/968724/anthropic-authors-settlement-ai-copyright-approved",
+      "score": 5
+    },
+    {
+      "title": "美国威胁制裁中国AI模型，指控知识产权盗窃",
+      "summary_zh": "美国财政部长贝森特表示，美国可能因知识产权盗窃问题制裁中国的开源AI模型，这是特朗普政府遏制中国AI发展的最新举措。此举可能加剧中美科技脱钩。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft/",
+      "score": 5
+    },
+    {
+      "title": "谷歌发布三款新Gemini模型，但未推出3.5 Pro",
+      "summary_zh": "谷歌发布了Gemini 3.6 Flash、3.5 Flash-Lite和Flash Cyber三款新模型，但旗舰级Gemini 3.5 Pro仍缺席。这引发了外界对其AI战略的质疑，尤其是在与OpenAI的竞争中。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/",
+      "score": 4
+    },
+    {
+      "title": "特斯拉在佛罗里达州启动Robotaxi试点",
+      "summary_zh": "特斯拉在奥兰多和坦帕市启动了Robotaxi服务试点，但未公布车队规模，且采取了比马斯克此前承诺更谨慎的扩张策略。此举在财报发布前提振了市场信心。",
+      "source": "TechCrunch / The Verge",
+      "url": "https://techcrunch.com/2026/07/21/tesla-spins-up-robotaxi-pilots-in-orlando-and-tampa-ahead-of-q2-earnings/",
+      "score": 4
+    },
+    {
+      "title": "数据中心预计到2035年用电量翻四倍",
+      "summary_zh": "报告预测，到2033年新建的数据中心将消耗相当于印度目前的总用电量。AI算力需求激增是主要驱动力，这引发了关于能源可持续性和环境影响的担忧。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/21/data-centers-expected-to-use-4x-more-electricity-by-2035/",
+      "score": 4
+    },
+    {
+      "title": "Substack推出AI内容检测工具",
+      "summary_zh": "Substack上线了AI检测工具，可扫描帖子、评论等文本，估算其中AI生成或辅助内容的比例。此举旨在提高内容透明度，应对AI生成内容泛滥问题。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/968855/substack-pangram-ai-detecting-tool",
+      "score": 3
+    },
+    {
+      "title": "杰克·多西推出AI协作聊天平台Buzz",
+      "summary_zh": "Twitter联合创始人杰克·多西推出Buzz，这是一款面向工作场所的群聊平台，允许人类与AI智能体在同一对话中协作，直接挑战Slack。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/",
+      "score": 3
+    },
+    {
+      "title": "字节跳动发布Seed Audio 1.0音频创作模型",
+      "summary_zh": "字节跳动发布了Seed Audio 1.0音频创作模型，标志着其在AI音频领域的布局。该模型可生成高质量音频，有望应用于内容创作和娱乐产业。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1672637?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 3
+    },
+    {
+      "title": "阶跃星辰发布首款智能体手机，进军AI终端",
+      "summary_zh": "阶跃星辰在WAIC 2026上展示了其首款智能体手机，将AI深度集成到终端设备中，旨在实现人机共生的交互体验，标志着AI公司向硬件领域的拓展。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1672281?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "三人成虎",
+      "dynasty": "战国",
+      "category": "历史故事",
+      "source": "《战国策·魏策二》"
+    },
+    {
+      "title": "破釜沉舟",
+      "dynasty": "秦末",
+      "category": "历史故事",
+      "source": "《史记·项羽本纪》"
+    },
+    {
+      "title": "一鸣惊人",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《史记·滑稽列传》"
+    },
+    {
+      "title": "管鲍之交",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《史记·管晏列传》"
+    },
+    {
+      "title": "卧薪尝胆",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《史记·越王勾践世家》"
+    },
+    {
+      "title": "端午节与伍子胥",
+      "dynasty": "春秋/吴国",
+      "category": "传统节日传说",
+      "source": "《史记·伍子胥列传》"
+    },
+    {
+      "title": "田忌赛马",
+      "dynasty": "战国",
+      "category": "兵法谋略故事",
+      "source": "《史记·孙子吴起列传》"
+    },
+    {
+      "title": "空城计",
+      "dynasty": "三国",
+      "category": "兵法谋略故事",
+      "source": "《三国志·蜀书·诸葛亮传》注引《郭冲三事》"
+    },
+    {
+      "title": "李白与汪伦",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《李白集》及《清·袁枚《随园诗话》》"
+    },
+    {
+      "title": "王维与‘红豆生南国’",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《全唐诗》及《云溪友议》"
+    },
+    {
+      "title": "周处除三害",
+      "dynasty": "西晋",
+      "category": "历史故事",
+      "source": "《世说新语·自新》"
+    },
+    {
+      "title": "孔子学琴",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《史记·孔子世家》及《孔子家语》"
+    },
+    {
+      "title": "张良拾履",
+      "dynasty": "秦末",
+      "category": "历史故事",
+      "source": "《史记·留侯世家》"
+    },
+    {
+      "title": "缇萦救父",
+      "dynasty": "西汉",
+      "category": "历史故事",
+      "source": "《史记·扁鹊仓公列传》"
+    },
+    {
+      "title": "郑和宝船与牵星术",
+      "dynasty": "明",
+      "category": "古代天文地理类",
+      "source": "《郑和航海图》及《西洋番国志》"
+    },
+    {
+      "title": "郭守敬与四海测验",
+      "dynasty": "元",
+      "category": "古代天文地理类",
+      "source": "《元史·郭守敬传》"
+    },
+    {
+      "title": "古代黑科技：木牛流马",
+      "dynasty": "三国",
+      "category": "历史趣考类",
+      "source": "《三国志·蜀书·诸葛亮传》"
+    },
+    {
+      "title": "古代奇葩法律：秦朝的‘诽谤罪’与‘妖言令’",
+      "dynasty": "秦",
+      "category": "历史趣考类",
+      "source": "《史记·秦始皇本纪》及睡虎地秦简"
+    },
+    {
+      "title": "古代‘快递’有多快？宋代的‘急脚递’",
+      "dynasty": "宋",
+      "category": "历史趣考类",
+      "source": "《梦溪笔谈》及《宋史·职官志》"
+    },
+    {
+      "title": "被误读的‘烽火戏诸侯’：西周灭亡的真正原因",
+      "dynasty": "西周",
+      "category": "历史趣考类",
+      "source": "《史记·周本纪》及清华简《系年》"
+    }
+  ]
+}
