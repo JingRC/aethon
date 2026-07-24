@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-24",
+  "title": "历史卡片 · 每日典故",
+  "story_count": 10,
+  "cards": [
+    "docs/xhs/2026-07-24/历史故事/01_cover.png",
+    "docs/xhs/2026-07-24/历史故事/02_story_01.png",
+    "docs/xhs/2026-07-24/历史故事/03_story_02.png",
+    "docs/xhs/2026-07-24/历史故事/04_story_03.png",
+    "docs/xhs/2026-07-24/历史故事/05_story_04.png",
+    "docs/xhs/2026-07-24/历史故事/06_story_05.png",
+    "docs/xhs/2026-07-24/历史故事/07_story_06.png",
+    "docs/xhs/2026-07-24/历史故事/08_story_07.png",
+    "docs/xhs/2026-07-24/历史故事/09_story_08.png",
+    "docs/xhs/2026-07-24/历史故事/10_story_09.png",
+    "docs/xhs/2026-07-24/历史故事/11_story_10.png"
+  ],
+  "stories": [
+    {
+      "title": "寒食节的起源：介子推与绵山忠魂",
+      "dynasty": "春秋",
+      "category": "传统节日传说"
+    },
+    {
+      "title": "上巳节的浪漫：曲水流觞与兰亭雅集",
+      "dynasty": "东晋",
+      "category": "传统节日传说"
+    },
+    {
+      "title": "冬至吃饺子的传说：张仲景与娇耳汤",
+      "dynasty": "东汉",
+      "category": "传统节日传说"
+    },
+    {
+      "title": "腊八节的由来：朱元璋与老鼠洞",
+      "dynasty": "明",
+      "category": "传统节日传说"
+    },
+    {
+      "title": "祭灶神的传说：张郎休妻与灶君上天",
+      "dynasty": "先秦",
+      "category": "传统节日传说"
+    },
+    {
+      "title": "孟子论‘舍生取义’：鱼与熊掌的抉择",
+      "dynasty": "战国",
+      "category": "诸子百家寓言"
+    },
+    {
+      "title": "庄子论‘无用之用’：栎社树与匠石",
+      "dynasty": "战国",
+      "category": "诸子百家寓言"
+    },
+    {
+      "title": "蔡伦改进造纸术：从简帛到纸张的革命",
+      "dynasty": "东汉",
+      "category": "古代科技发明故事"
+    },
+    {
+      "title": "沈括与《梦溪笔谈》：北宋的科学百科全书",
+      "dynasty": "北宋",
+      "category": "古代科技发明故事"
+    },
+    {
+      "title": "孙膑‘围魏救赵’的实战：桂陵之战",
+      "dynasty": "战国",
+      "category": "兵法谋略故事"
+    }
+  ]
+}
