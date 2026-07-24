@@ -80,7 +80,20 @@ jobs:
           NOTION_PAGE_ID: ${{ secrets.NOTION_PAGE_ID }}
           APIHZ_KEY: ${{ secrets.APIHZ_KEY }}
           APIHZ_ID: ${{ secrets.APIHZ_ID }}
-        run: python main.py
+          PYTHONUNBUFFERED: "1"
+        run: |
+          echo "=== Python $(python --version) ==="
+          echo "=== Chrome $(google-chrome --version 2>/dev/null || chromium-browser --version 2>/dev/null || echo 'not found') ==="
+          set +e
+          python main.py
+          EXIT=$?
+          echo "=== python main.py exit code: $EXIT ==="
+          if [ $EXIT -ne 0 ]; then
+            echo "=== Checking for core dumps ==="
+            ls -la core* 2>/dev/null || true
+            dmesg 2>/dev/null | tail -20 || true
+          fi
+          exit $EXIT
 
       - name: Mark email as sent
         if: success() && (steps.sentinel.outputs.cache-hit != 'true' || github.event_name != 'schedule')
