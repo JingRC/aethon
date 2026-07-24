@@ -79,3 +79,17 @@ xhs:
   output_dir: "docs/xhs"           # 卡片图片输出目录
   category: "科技报"               # 卡片分类（每天独立文件夹: YYYY-MM-DD/分类/）
                                     # 后续可扩展: 历史故事、财经报 等
+
+# --- 古代故事古风卡片配置 ---
+ancient_cards:
+  enabled: true                    # 是否生成古风历史卡片
+  max_stories: 10                  # 从每日20则中选取10则制作卡片
+  output_dir: "docs/xhs"           # 卡片图片输出目录（与科技报同目录）
+  category: "历史故事"             # 卡片分类（docs/xhs/日期/历史故事/）
+
+# --- 图片搜索配置（接口盒子 / 百度图片搜索）---
+image_search:
+  enabled: true                    # 是否自动搜索故事配图
+  api_id: "10018440"               # 接口盒子用户 ID（apihz.cn 注册获取）
+  api_key: "${APIHZ_KEY}"          # 接口盒子通讯密钥（建议放环境变量）
+

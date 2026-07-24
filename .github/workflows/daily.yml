@@ -78,6 +78,8 @@ jobs:
           RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_PAGE_ID: ${{ secrets.NOTION_PAGE_ID }}
+          APIHZ_KEY: ${{ secrets.APIHZ_KEY }}
+          APIHZ_ID: ${{ secrets.APIHZ_ID }}
         run: python main.py
 
       - name: Mark email as sent
@@ -92,7 +94,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add docs/xhs/
+          git add docs/xhs/ docs/ancient_cards/
           if git diff --cached --quiet; then
             echo "No card changes to commit"
           else

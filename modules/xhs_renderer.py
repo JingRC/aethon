@@ -413,7 +413,7 @@ def render_html_to_png(html: str, png_path: str,
         f"--screenshot={abs_png}",
         abs_html,
     ]
-    subprocess.run(cmd, check=True, capture_output=True, timeout=30,
+    subprocess.run(cmd, check=True, capture_output=True, timeout=45,
                    env={**os.environ, "DISPLAY": ":99"})
     try:
         os.remove(html_path)

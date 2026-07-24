@@ -655,6 +655,26 @@ def main():
             import traceback
             traceback.print_exc()
 
+    # ── 7. 生成古风历史卡片 ──
+    ancient_cards_config = config.get("ancient_cards", {})
+    if ancient_cards_config.get("enabled", False) and stories:
+        try:
+            logger.info("=" * 50)
+            logger.info("🏯 生成古风历史卡片...")
+
+            from modules.ancient_cards import render_ancient_cards
+            ancient_card_paths = render_ancient_cards(
+                stories,
+                output_dir=ancient_cards_config.get("output_dir", "docs/ancient_cards"),
+                max_stories=ancient_cards_config.get("max_stories", 10),
+                category=ancient_cards_config.get("category", "历史卡片"),
+            )
+            logger.info(f"🏯 历史卡片: {len(ancient_card_paths)} 张 -> docs/ancient_cards/")
+        except Exception as e:
+            logger.error(f"历史卡片生成失败: {e}")
+            import traceback
+            traceback.print_exc()
+
     logger.info("=" * 50)
     logger.info(f"✅ 完成！AI快讯 {len(ai_news)} 条 + 古代故事 {len(stories)} 则")
     logger.info(f"📂 输出目录: {DOCS_DIR}")
