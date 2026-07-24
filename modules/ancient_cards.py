@@ -566,9 +566,9 @@ def _build_card_html(story: dict, idx: int, img_path: str = "") -> str:
 
 
 def render_ancient_cards(stories: list[dict],
-                         output_dir: str = "docs/ancient_cards",
+                         output_dir: str = "docs/xhs",
                          max_stories: int = 10,
-                         category: str = "历史卡片") -> list[str]:
+                         category: str = "历史故事") -> list[str]:
     project_root = Path(__file__).resolve().parent.parent
     today = date.today()
     date_dir = project_root / output_dir / today.strftime("%Y-%m-%d") / category

@@ -664,11 +664,11 @@ def main():
             from modules.ancient_cards import render_ancient_cards
             ancient_card_paths = render_ancient_cards(
                 stories,
-                output_dir=ancient_cards_config.get("output_dir", "docs/ancient_cards"),
+                output_dir=ancient_cards_config.get("output_dir", "docs/xhs"),
                 max_stories=ancient_cards_config.get("max_stories", 10),
-                category=ancient_cards_config.get("category", "历史卡片"),
+                category=ancient_cards_config.get("category", "历史故事"),
             )
-            logger.info(f"🏯 历史卡片: {len(ancient_card_paths)} 张 -> docs/ancient_cards/")
+            logger.info(f"🏯 历史卡片: {len(ancient_card_paths)} 张 -> docs/xhs/历史故事/")
         except Exception as e:
             logger.error(f"历史卡片生成失败: {e}")
             traceback.print_exc()
