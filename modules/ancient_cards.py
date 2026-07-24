@@ -201,7 +201,7 @@ def _layout_scroll(f: dict, p: dict, n: int, img: str = "") -> str:
   {meta}<div class="divider" style="margin:24px 0;"></div>
   <div class="body" style="flex:1;">{f["story_zh"]}</div>
   {wisdom}{fun}{src}
-  <div style="margin-top:auto;text-align:center;"><div class="brand">Aethon · 历史卡片 · 每日典故</div></div>
+  
 </div></body></html>"""
 
 
@@ -305,7 +305,7 @@ def _layout_ink_wash(f: dict, p: dict, n: int, img: str = "") -> str:
   <div class="divider"></div>
   <div class="body" style="flex:1;">{f["story_zh"]}</div>
   {wisdom}{src}
-  <div style="margin-top:auto;"><div class="brand">Aethon · 历史卡片</div></div>
+  
 </div></body></html>"""
 
 
@@ -381,7 +381,7 @@ def _layout_bamboo(f: dict, p: dict, n: int, img: str = "") -> str:
   {meta}<div class="divider" style="margin:16px 0 20px 0;"></div>
   <div class="body" style="flex:1;">{f["story_zh"]}</div>
   {wisdom}{src}
-  <div style="text-align:center;margin-top:10px;"><div class="brand">Aethon · 历史卡片</div></div>
+  
 </div></body></html>"""
 
 
@@ -469,8 +469,7 @@ def _layout_palace(f: dict, p: dict, n: int, img: str = "") -> str:
   {wisdom}{src}
   <div style="margin-top:auto;text-align:center;">
     <div class="divider" style="margin:14px 0;"></div>
-    <div class="brand">Aethon · 历史卡片 · 每日典故</div>
-  </div>
+      </div>
 </div></body></html>"""
 
 
@@ -521,11 +520,7 @@ body::before {{ content:''; position:absolute; inset:0;
     <div class="cover-title">历史卡片</div>
     <div class="cover-flourish" style="bottom:-20px;left:50%;margin-left:-100px;"></div>
   </div>
-  <div class="cover-subtitle">每日典故 · 古风集</div>
   <div class="cover-count">十则精选 · 古今博览</div>
-  <div style="position:absolute;bottom:50px;width:100%;text-align:center;">
-    <div class="brand" style="font-size:20px;">Aethon · 每日自动生成</div>
-  </div>
 </div>
 <div style="position:absolute;top:50%;left:50%;">{seal_html}</div>
 </body></html>"""
@@ -623,7 +618,7 @@ def render_ancient_cards(stories: list[dict],
     # manifest
     manifest = {
         "date": today.strftime("%Y-%m-%d"),
-        "title": "历史卡片 · 每日典故",
+        "title": "历史故事",
         "story_count": total,
         "cards": [str(Path(p).relative_to(project_root)).replace("\\", "/") for p in rendered],
         "stories": [
