@@ -407,14 +407,23 @@ def render_html_to_png(html: str, png_path: str,
 
     cmd = [
         chrome, "--headless=new", "--disable-gpu", "--no-sandbox",
-        "--disable-setuid-sandbox",
+        "--disable-setuid-sandbox", "--disable-dev-shm-usage",
+        "--disable-extensions", "--disable-background-networking",
+        "--disable-sync", "--no-first-run",
         f"--window-size={width},{height}",
         "--force-device-scale-factor=2",
         f"--screenshot={abs_png}",
         abs_html,
     ]
-    subprocess.run(cmd, check=True, capture_output=True, timeout=45,
-                   env={**os.environ, "DISPLAY": ":99"})
+    try:
+        result = subprocess.run(cmd, capture_output=True, timeout=45,
+                                env={**os.environ, "DISPLAY": ":99"})
+        if result.returncode != 0:
+            stderr_tail = result.stderr.decode("utf-8", errors="replace")[-500:]
+            raise RuntimeError(
+                f"Chrome 退出码 {result.returncode} for {abs_png.name}\n{stderr_tail}")
+    except subprocess.TimeoutExpired:
+        raise RuntimeError(f"Chrome 超时 45s: {abs_png.name}")
     try:
         os.remove(html_path)
     except OSError:
