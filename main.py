@@ -661,14 +661,44 @@ def main():
             logger.info("=" * 50)
             logger.info("🏯 生成古风历史卡片...")
 
+            # 7a. LLM 生成历史故事 XHS 爆款文案
+            xhs_copy = {}
+            headline = ""
+            try:
+                from modules.ancient_docx import build_history_xhs_prompt
+                copy_prompt = build_history_xhs_prompt(stories, ancient_cards_config.get("max_stories", 10))
+                logger.info("🤖 调用 LLM 生成历史故事 XHS 文案...")
+                copy_response = call_llm(copy_prompt, config,
+                                         system_prompt="你是小红书历史类万粉博主，擅长用网感语言包装传统文化。只返回JSON格式。")
+                xhs_copy = parse_json_response(copy_response)
+                if isinstance(xhs_copy, list):
+                    xhs_copy = xhs_copy[0] if xhs_copy else {}
+                headline = xhs_copy.get("headline", "")
+                logger.info(f"   标题: {xhs_copy.get('title', 'N/A')}")
+            except Exception as e:
+                logger.warning(f"   XHS 文案生成失败: {e}")
+
+            # 7b. 渲染卡片
             from modules.ancient_cards import render_ancient_cards
             ancient_card_paths = render_ancient_cards(
                 stories,
                 output_dir=ancient_cards_config.get("output_dir", "docs/xhs"),
                 max_stories=ancient_cards_config.get("max_stories", 10),
                 category=ancient_cards_config.get("category", "历史故事"),
+                headline=headline,
             )
-            logger.info(f"🏯 历史卡片: {len(ancient_card_paths)} 张 -> docs/xhs/历史故事/")
+            logger.info(f"🏯 历史卡片: {len(ancient_card_paths)} 张")
+
+            # 7c. 生成 Word 发布文案
+            if xhs_copy and ancient_card_paths:
+                try:
+                    from modules.ancient_docx import generate_ancient_docx
+                    docx_path = str(Path(ancient_card_paths[0]).parent / "发布文案.docx")
+                    generate_ancient_docx(stories, xhs_copy, docx_path)
+                    logger.info(f"📄 历史故事文案: {docx_path}")
+                except Exception as e:
+                    logger.warning(f"   Word 文档生成失败: {e}")
+
         except Exception as e:
             logger.error(f"历史卡片生成失败: {e}")
             traceback.print_exc()

@@ -477,7 +477,8 @@ def _layout_palace(f: dict, p: dict, n: int, img: str = "") -> str:
 # 封面
 # ═══════════════════════════════════════════════════════════
 
-def _build_cover_html(count: int, today: date, p: dict) -> str:
+def _build_cover_html(count: int, today: date, p: dict, img: str = "", headline: str = "") -> str:
+    """封面卡：全幅图片背景 + 吸睛大字标题。"""
     cn = "零一二三四五六七八九十"
     y, m, d = today.year, today.month, today.day
 
@@ -491,38 +492,41 @@ def _build_cover_html(count: int, today: date, p: dict) -> str:
     elif d == 30: cn_date += "三十日"
     else: cn_date += "三十一日"
 
-    noise = _noise_svg(0.08)
-    seal_html = _seal("古风史鉴", p, size=100, top="50%", left="50%", extra_style="margin-top:-50px;margin-left:-50px;")
+    title = headline if headline else "历史故事"
+    seal_html = _seal("古今博览", p, size=72, top="60px", right="60px")
+
+    # 图片背景层（opacity 更高，做全幅封面）
+    img_bg = f'<div style="position:absolute;inset:0;background:url({img}) center/cover;opacity:0.35;filter:sepia(0.2) brightness(0.7);z-index:0;"></div>' if img else ""
+    img_overlay = '<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.25) 40%,rgba(0,0,0,0.45) 100%);z-index:0;"></div>' if img else ""
+
+    # 装饰线
+    flourish = f'<div style="width:160px;height:2px;background:linear-gradient(to right,transparent,{p["gold"]}cc,transparent);margin:24px auto;"></div>'
+
+    noise = _noise_svg(0.05)
 
     return f"""<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><style>
 {_base_css(p, 0)}
 body::before {{ content:''; position:absolute; inset:0;
   background:url("data:image/svg+xml,{noise}") center/cover; pointer-events:none; z-index:99; }}
-.cover-date-cn {{ font-size:48px; font-weight:400; color:{p["accent"]}; letter-spacing:8px; margin-bottom:10px; }}
-.cover-date-en {{ font-size:32px; font-weight:300; color:{p["muted"]}; letter-spacing:4px; }}
-.cover-title {{ font-size:96px; font-weight:900; color:{p["text"]}; letter-spacing:14px; line-height:1.1; }}
-.cover-subtitle {{ font-size:36px; font-weight:400; color:{p["muted"]}; letter-spacing:8px; margin-top:20px; }}
-.cover-count {{ font-size:32px; font-weight:400; color:{p["accent"]}; letter-spacing:6px; margin-top:24px; }}
-.cover-divider {{ width:140px; height:3px;
-  background:linear-gradient(to right,transparent,{p["accent"]},transparent); margin:28px auto; }}
-.cover-flourish {{ position:absolute; width:200px; height:2px; background:{p["gold"]}88; }}
-.cover-flourish::before, .cover-flourish::after {{ content:''; position:absolute; top:-3px;
-  width:8px; height:8px; background:{p["gold"]}; transform:rotate(45deg); }}
-.cover-flourish::before {{ left:-12px; }} .cover-flourish::after {{ right:-12px; }}
+.cover-date-cn {{ font-size:44px; font-weight:400; color:{p["gold"]}; letter-spacing:8px; margin-bottom:8px; text-shadow:0 2px 8px rgba(0,0,0,0.5); }}
+.cover-date-en {{ font-size:28px; font-weight:300; color:{p["surface"]}; letter-spacing:4px; text-shadow:0 1px 4px rgba(0,0,0,0.5); }}
+.cover-title {{ font-size:96px; font-weight:900; color:#fff; letter-spacing:10px; line-height:1.1; text-shadow:0 4px 20px rgba(0,0,0,0.6); }}
+.cover-meta {{ font-size:28px; font-weight:400; color:{p["surface"]}; letter-spacing:6px; margin-top:16px; text-shadow:0 1px 6px rgba(0,0,0,0.5); }}
 </style></head><body>
-<div style="position:relative;z-index:2;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;height:100%;text-align:center;padding:60px;">
+{img_bg}
+{img_overlay}
+{seal_html}
+<div style="position:relative;z-index:3;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;height:100%;text-align:center;padding:80px 60px;">
   <div class="cover-date-cn">{cn_date}</div>
   <div class="cover-date-en">{today.strftime('%Y · %m · %d')}</div>
-  <div class="cover-divider"></div>
-  <div style="position:relative;display:inline-block;">
-    <div class="cover-flourish" style="top:-20px;left:50%;margin-left:-100px;"></div>
-    <div class="cover-title">历史卡片</div>
-    <div class="cover-flourish" style="bottom:-20px;left:50%;margin-left:-100px;"></div>
+  {flourish}
+  <div class="cover-title">{title}</div>
+  <div class="cover-meta">{count} 则精选故事</div>
+  <div style="position:absolute;bottom:40px;font-size:20px;font-weight:300;color:{p["surface"]}99;letter-spacing:3px;text-shadow:0 1px 3px rgba(0,0,0,0.3);">
+    每天一个故事，穿越千年时光
   </div>
-  <div class="cover-count">十则精选 · 古今博览</div>
 </div>
-<div style="position:absolute;top:50%;left:50%;">{seal_html}</div>
 </body></html>"""
 
 
@@ -563,7 +567,8 @@ def _build_card_html(story: dict, idx: int, img_path: str = "") -> str:
 def render_ancient_cards(stories: list[dict],
                          output_dir: str = "docs/xhs",
                          max_stories: int = 10,
-                         category: str = "历史故事") -> list[str]:
+                         category: str = "历史故事",
+                         headline: str = "") -> list[str]:
     project_root = Path(__file__).resolve().parent.parent
     today = date.today()
     date_dir = project_root / output_dir / today.strftime("%Y-%m-%d") / category
@@ -579,7 +584,6 @@ def render_ancient_cards(stories: list[dict],
     img_map: dict[int, str] = {}
     try:
         from modules.image_fetcher import fetch_images_for_stories
-        # API key 优先从环境变量读
         import os
         api_id = os.environ.get("APIHZ_ID", "10018440")
         api_key = os.environ.get("APIHZ_KEY", "")
@@ -591,9 +595,10 @@ def render_ancient_cards(stories: list[dict],
     except Exception as e:
         logger.warning(f"   图片获取失败: {e}")
 
-    # 封面
+    # 封面 — 用第一张故事图片做背景
     cover_p = PALETTES[0]
-    cover_html = _build_cover_html(total, today, cover_p)
+    cover_img = img_map.get(0, "")
+    cover_html = _build_cover_html(total, today, cover_p, img=cover_img, headline=headline)
     cover_path = date_dir / "01_cover.png"
     try:
         render_html_to_png(cover_html, str(cover_path))
