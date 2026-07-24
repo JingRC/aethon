@@ -1,0 +1,199 @@
+{
+  "date": "2026-07-24",
+  "ai_news_count": 10,
+  "stories_count": 20,
+  "ai_news": [
+    {
+      "title": "AMD推出Helios AI机架系统挑战Nvidia",
+      "summary_zh": "AMD发布Helios AI机架系统，直接挑战其芯片竞争对手Nvidia。该系统将于今年晚些时候开始向客户发货，标志着AMD在AI基础设施领域迈出重要一步，有望打破Nvidia在AI训练和推理硬件市场的主导地位。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/",
+      "score": 5
+    },
+    {
+      "title": "Anthropic为Claude Opus和Sonnet更新语音模式",
+      "summary_zh": "Anthropic将Claude的语音模式扩展至更强大的Opus和Sonnet模型，此前仅限Haiku。新语音模式支持日程管理和邮件起草等任务，并集成Gmail、Slack和Canva等应用，显著提升了Claude的实用性和用户体验。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/",
+      "score": 4
+    },
+    {
+      "title": "OpenAI向所有美国用户开放ChatGPT Health",
+      "summary_zh": "OpenAI宣布ChatGPT Health向所有美国用户开放，允许用户连接Apple Health、MyFitnessPal等个人健康数据。公司声称其模型现在具备医疗级能力，此举可能改变数字健康管理格局，但也引发隐私和准确性担忧。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims",
+      "score": 5
+    },
+    {
+      "title": "Runway推出AI模型路由器应对生成式媒体竞争",
+      "summary_zh": "Runway发布Media Router工具，可自动为图像、视频或音频生成请求选择最佳AI模型，基于质量、速度或成本优先级。该工具旨在帮助开发者在日益拥挤的生成式媒体市场中高效选择模型，优化资源利用。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/",
+      "score": 4
+    },
+    {
+      "title": "前Google安全高管创立的AegisAI获3600万美元融资",
+      "summary_zh": "由前Google安全高管创立的AegisAI获得3600万美元融资，开发AI代理抵御AI驱动的鱼叉式钓鱼攻击。其技术能像人类一样分析每条消息的微小异常，针对日益复杂的AI生成钓鱼威胁提供新一代网络安全解决方案。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
+      "score": 4
+    },
+    {
+      "title": "亚马逊Alexa Plus更新AI功能支持复杂智能家居指令",
+      "summary_zh": "亚马逊为Alexa Plus推出AI更新，增强与Bosch、iRobot等品牌的智能家居设备联动能力。更新后的Alexa Plus能处理更复杂的指令，标志着智能助手在家庭自动化领域的重大进步，提升用户控制体验。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices",
+      "score": 4
+    },
+    {
+      "title": "Hugging Face与SkyPilot推出零出口AI存储方案",
+      "summary_zh": "Hugging Face与SkyPilot合作推出零出口存储方案，允许AI工作负载在任何云上运行而数据存储在Hugging Face。该方案解决了多云环境下的数据迁移成本问题，为AI开发者提供更灵活高效的基础设施选择。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/skypilot-hf-storage",
+      "score": 4
+    },
+    {
+      "title": "Mobileye CEO将卸任，公司转向自动驾驶出租车和机器人",
+      "summary_zh": "Mobileye宣布CEO Amnon Shashua将卸任并转任董事长，公司战略重心转向自动驾驶出租车和机器人领域。这一领导层变动反映了自动驾驶行业从辅助驾驶向完全无人驾驶服务的转型趋势。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/23/mobileye-ceo-amnon-shashua-to-step-aside-as-company-pushes-into-robotaxis-robotics/",
+      "score": 4
+    },
+    {
+      "title": "AI护栏阻碍网络安全研究人员工作",
+      "summary_zh": "TechCrunch报道称，OpenAI和Anthropic的AI护栏正在阻碍进攻性网络安全研究人员的工作。这些研究人员需要寻找未知漏洞和开发利用工具，但AI模型的限制影响了他们的研究效率，引发对AI安全政策平衡的讨论。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/",
+      "score": 3
+    },
+    {
+      "title": "Tesla机器人出租车里程下降36%",
+      "summary_zh": "尽管扩展到新城市，特斯拉第二季度付费机器人出租车里程数下降36%。CEO马斯克在财报电话会议上仍持乐观态度，但数据与承诺形成鲜明对比，凸显自动驾驶出租车商业化面临的现实挑战。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/23/teslas-robotaxis-are-moving-in-reverse/",
+      "score": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "寒食节的真相：介子推的忠与怨",
+      "dynasty": "春秋",
+      "category": "传统节日传说",
+      "source": "《左传·僖公二十四年》"
+    },
+    {
+      "title": "端午节的另一面：伍子胥的怒潮",
+      "dynasty": "春秋",
+      "category": "传统节日传说",
+      "source": "《史记·伍子胥列传》"
+    },
+    {
+      "title": "元宵节的传说：东方朔与元宵姑娘",
+      "dynasty": "西汉",
+      "category": "传统节日传说",
+      "source": "《汉书·东方朔传》及民间传说"
+    },
+    {
+      "title": "重阳节的起源：桓景斩瘟魔",
+      "dynasty": "东汉",
+      "category": "传统节日传说",
+      "source": "《续齐谐记》"
+    },
+    {
+      "title": "腊八节的传说：朱元璋与老鼠洞",
+      "dynasty": "明",
+      "category": "传统节日传说",
+      "source": "《明史·太祖本纪》及民间传说"
+    },
+    {
+      "title": "诸子百家寓言：庖丁解牛",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《庄子·养生主》"
+    },
+    {
+      "title": "诸子百家寓言：邯郸学步",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《庄子·秋水》"
+    },
+    {
+      "title": "古代科技发明故事：蔡伦改进造纸术",
+      "dynasty": "东汉",
+      "category": "古代科技发明故事",
+      "source": "《后汉书·蔡伦传》"
+    },
+    {
+      "title": "古代科技发明故事：黄道婆与棉纺织革新",
+      "dynasty": "元",
+      "category": "古代科技发明故事",
+      "source": "《南村辍耕录》"
+    },
+    {
+      "title": "古代科技发明故事：祖冲之与大明历",
+      "dynasty": "南北朝",
+      "category": "古代科技发明故事",
+      "source": "《宋书·律历志》"
+    },
+    {
+      "title": "兵法谋略故事：减灶诱敌——孙膑的智谋",
+      "dynasty": "战国",
+      "category": "兵法谋略故事",
+      "source": "《史记·孙子吴起列传》"
+    },
+    {
+      "title": "兵法谋略故事：李愬雪夜入蔡州",
+      "dynasty": "唐",
+      "category": "兵法谋略故事",
+      "source": "《资治通鉴·唐纪》"
+    },
+    {
+      "title": "历史趣考：曹植七步诗的真相——本是同根生，相煎何太急",
+      "dynasty": "三国",
+      "category": "历史趣考",
+      "source": "《世说新语·文学》"
+    },
+    {
+      "title": "历史趣考：秦始皇真的‘焚书坑儒’了吗？",
+      "dynasty": "秦",
+      "category": "历史趣考",
+      "source": "《史记·秦始皇本纪》"
+    },
+    {
+      "title": "历史趣考：古代‘高考’——科举考试的奇葩事",
+      "dynasty": "唐",
+      "category": "历史趣考",
+      "source": "《唐摭言》"
+    },
+    {
+      "title": "历史趣考：古代‘快递’有多快？八百里加急",
+      "dynasty": "唐",
+      "category": "历史趣考",
+      "source": "《唐六典》"
+    },
+    {
+      "title": "历史趣考：古代‘冰箱’——冰鉴与藏冰制度",
+      "dynasty": "周",
+      "category": "历史趣考",
+      "source": "《周礼·天官·凌人》"
+    },
+    {
+      "title": "历史趣考：古代‘身份证’——虎符与鱼符",
+      "dynasty": "战国",
+      "category": "历史趣考",
+      "source": "《史记·魏公子列传》"
+    },
+    {
+      "title": "历史趣考：古代‘黑科技’——木牛流马真的存在吗？",
+      "dynasty": "三国",
+      "category": "历史趣考",
+      "source": "《三国志·诸葛亮传》"
+    },
+    {
+      "title": "历史趣考：古代‘奥运会’——角抵与蹴鞠",
+      "dynasty": "汉",
+      "category": "历史趣考",
+      "source": "《汉书·武帝纪》"
+    }
+  ]
+}
