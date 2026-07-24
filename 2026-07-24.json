@@ -5,81 +5,87 @@
   "ai_news": [
     {
       "title": "AMD发布Helios AI机架系统挑战英伟达",
-      "summary_zh": "AMD推出全新Helios AI机架系统，直接对标英伟达在AI基础设施领域的统治地位。该系统将于今年晚些时候开始向客户发货，标志着AMD在AI硬件赛道上的重大战略升级，有望改变当前AI芯片市场格局。",
+      "summary_zh": "AMD推出名为Helios的AI机架级系统，旨在与英伟达在AI硬件领域展开竞争。该系统将于今年晚些时候开始向客户发货，标志着AMD在AI基础设施市场的重要布局，可能改变当前由英伟达主导的AI计算格局。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/",
       "score": 5
     },
     {
-      "title": "OpenAI向全美用户开放ChatGPT Health",
-      "summary_zh": "OpenAI正式向所有美国用户开放ChatGPT Health功能，允许用户连接Apple Health、MyFitnessPal等平台的个人健康数据。OpenAI宣称其模型已具备医疗级分析能力，但此前有牧师起诉称ChatGPT的健康建议险些致命，引发安全争议。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/",
+      "title": "OpenAI向所有美国用户推出ChatGPT Health",
+      "summary_zh": "OpenAI宣布ChatGPT Health向所有美国用户开放，允许用户连接Apple Health、MyFitnessPal等服务中的个人健康数据。该功能旨在利用AI分析医疗记录和健康追踪信息，但此前有牧师起诉称其健康建议险些致命，引发对AI医疗安全性的关注。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims",
       "score": 5
     },
     {
-      "title": "Anthropic为Claude语音模式升级更强模型",
-      "summary_zh": "Anthropic将Claude语音模式从仅支持Haiku扩展到Opus和Sonnet模型，并集成Gmail、Slack、Canva等应用。新语音模式可执行日程调整、邮件起草等复杂任务，大幅提升语音AI的实用性和交互深度。",
+      "title": "Anthropic为Claude Opus和Sonnet升级语音模式",
+      "summary_zh": "Anthropic将Claude的语音模式扩展至更强大的Opus和Sonnet模型，此前仅支持Haiku。新版本支持日程调整、邮件撰写等功能，并集成Gmail、Slack和Canva等应用，显著提升语音交互的实用性和智能化水平。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/",
-      "score": 5
+      "score": 4
     },
     {
-      "title": "Runway推出AI模型路由器应对生成媒体拥挤赛道",
-      "summary_zh": "Runway发布Media Router工具，可自动为图像、视频或音频生成请求选择最优AI模型，根据开发者对质量、速度或成本的优先级进行智能路由。此举旨在解决生成式AI媒体领域模型过多、选择困难的问题。",
+      "title": "Runway推出AI媒体路由器应对生成式内容竞争",
+      "summary_zh": "Runway发布Media Router工具，可自动为图像、视频或音频生成任务选择最佳AI模型，基于质量、速度或成本优先级进行路由。随着生成式媒体领域日益拥挤，该路由器旨在帮助开发者优化资源利用，提高创作效率。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/",
       "score": 4
     },
     {
-      "title": "AegisAI获3600万美元融资防御AI驱动的鱼叉式钓鱼攻击",
-      "summary_zh": "由前Google安全高管创立的AegisAI获得3600万美元融资，其开发的AI代理能像人类一样分析每条消息的细微异常，有效识别AI生成的鱼叉式钓鱼攻击。随着AI生成钓鱼邮件日益猖獗，该技术对网络安全行业具有重大意义。",
+      "title": "前谷歌安全高管创立AegisAI获3600万美元融资",
+      "summary_zh": "由前谷歌安全高管创立的AegisAI获得3600万美元融资，开发AI代理防御AI驱动的鱼叉式网络钓鱼攻击。该技术能像人类一样分析每条消息中的细微异常，以检测复杂钓鱼攻击，反映AI安全领域的投资热潮。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
       "score": 4
     },
     {
-      "title": "AI安全护栏阻碍网络安全研究人员工作",
-      "summary_zh": "多位网络安全研究人员反映，OpenAI和Anthropic的AI安全护栏严重阻碍了其发现漏洞和开发渗透工具的工作。这些本用于防止AI滥用的限制措施，反而让安全专家难以利用AI进行合法的攻击性安全研究。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/",
-      "score": 4
-    },
-    {
       "title": "菲尔兹奖得主加盟OpenAI",
-      "summary_zh": "最新菲尔兹奖得主宣布加入OpenAI，标志着全球顶尖数学家集体向AI领域流动的趋势。这一人才动向凸显了AI基础理论研究对数学人才的迫切需求，以及学术界与产业界在AI前沿探索上的深度融合。",
+      "summary_zh": "最新菲尔兹奖得主宣布加入OpenAI，标志着顶尖数学家集体转向AI研究。这一趋势显示AI领域对基础数学人才的渴求，有助于推动大模型理论突破，如优化算法和推理能力提升。",
       "source": "爱范儿",
       "url": "https://www.ifanr.com/1673003",
       "score": 4
     },
     {
-      "title": "Mobileye CEO将卸任，公司转向机器人出租车和机器人领域",
-      "summary_zh": "Mobileye CEO Amnon Shashua将卸任并受邀担任董事会主席。公司战略重心转向机器人出租车和机器人技术，这一高层变动预示着自动驾驶行业正经历重大转型，从辅助驾驶向全自动驾驶和通用机器人领域拓展。",
+      "title": "Meta因加速天然气投资退出清洁能源协议",
+      "summary_zh": "Meta因过去一年大幅投资天然气基础设施而退出主要可再生能源行业协议。此举引发对AI公司环保承诺的质疑，尤其是AI计算需求激增导致能源消耗上升的背景下，Meta的能源策略面临争议。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/23/meta-drops-out-of-a-major-clean-energy-pact-as-its-natural-gas-buildout-accelerates/",
+      "score": 3
+    },
+    {
+      "title": "Mobileye CEO卸任，公司转向自动驾驶和机器人",
+      "summary_zh": "Mobileye CEO Amnon Shashua将卸任并转任董事会主席，公司战略重心转向Robotaxi和机器人领域。这一高层变动反映自动驾驶行业正从辅助驾驶向全无人驾驶和物理AI应用转型。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/23/mobileye-ceo-amnon-shashua-to-step-aside-as-company-pushes-into-robotaxis-robotics/",
-      "score": 4
+      "score": 3
     },
     {
-      "title": "特斯拉机器人出租车里程逆势下滑36%",
-      "summary_zh": "尽管扩展到新城市，特斯拉付费机器人出租车里程在第二季度却下降了36%。这一数据与马斯克的乐观言论形成鲜明对比，引发市场对特斯拉自动驾驶商业化进程的质疑，凸显了其与Waymo等竞争对手的差距。",
+      "title": "AI护栏阻碍网络安全研究人员工作",
+      "summary_zh": "TechCrunch报道称，OpenAI和Anthropic的AI安全护栏正在阻碍进攻性网络安全研究人员的工作。这些研究人员需要发现未知漏洞和开发利用工具，但AI模型的限制影响了他们的研究效率，引发关于AI安全与实用平衡的讨论。",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/23/teslas-robotaxis-are-moving-in-reverse/",
-      "score": 4
+      "url": "https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/",
+      "score": 3
     },
     {
-      "title": "Hugging Face发布Nunchaku 4-bit扩散模型推理方案",
-      "summary_zh": "Hugging Face在Diffusers库中集成Nunchaku 4-bit量化扩散模型推理方案，大幅降低扩散模型的推理成本和内存占用。这一技术突破将使高质量图像生成在消费级硬件上成为可能，加速AI内容创作工具的普及。",
+      "title": "Hugging Face与SkyPilot推出零出口AI存储方案",
+      "summary_zh": "Hugging Face与SkyPilot合作推出零出口费用AI存储方案，允许用户在任意云上运行工作负载并直接存储至Hugging Face。此举旨在降低AI开发者的云锁定和迁移成本，促进多云AI工作流普及。",
       "source": "Hugging Face - Blog",
-      "url": "https://huggingface.co/blog/nunchaku-diffusers",
-      "score": 4
+      "url": "https://huggingface.co/blog/skypilot-hf-storage",
+      "score": 3
     }
   ],
   "stories": [
     {
-      "title": "寒食节的起源：介子推与绵山忠魂",
+      "title": "寒食节的真相：介子推与清明节的千年纠葛",
       "dynasty": "春秋",
       "category": "传统节日传说",
       "source": "《左传·僖公二十四年》"
+    },
+    {
+      "title": "腊八节的起源：朱元璋与老鼠洞的奇遇",
+      "dynasty": "明",
+      "category": "传统节日传说",
+      "source": "《明史·太祖本纪》及民间传说"
     },
     {
       "title": "上巳节的浪漫：曲水流觞与兰亭雅集",
@@ -88,112 +94,106 @@
       "source": "《晋书·王羲之传》及《兰亭集序》"
     },
     {
-      "title": "冬至吃饺子的传说：张仲景与娇耳汤",
-      "dynasty": "东汉",
+      "title": "中元节的传说：目连救母与盂兰盆会",
+      "dynasty": "南北朝",
       "category": "传统节日传说",
-      "source": "《伤寒杂病论》序及相关民间传说"
+      "source": "《佛说盂兰盆经》及《梁书·武帝本纪》"
     },
     {
-      "title": "腊八节的由来：朱元璋与老鼠洞",
-      "dynasty": "明",
+      "title": "小年的传说：灶王爷的‘年终述职’",
+      "dynasty": "汉代",
       "category": "传统节日传说",
-      "source": "《明史·太祖本纪》及民间传说"
+      "source": "《礼记·祭法》及《后汉书·阴识传》"
     },
     {
-      "title": "祭灶神的传说：张郎休妻与灶君上天",
-      "dynasty": "先秦",
-      "category": "传统节日传说",
-      "source": "《庄子·达生》及《抱朴子·微旨》"
-    },
-    {
-      "title": "孟子论‘舍生取义’：鱼与熊掌的抉择",
+      "title": "拔苗助长：孟子对‘速成’的千年警告",
       "dynasty": "战国",
       "category": "诸子百家寓言",
-      "source": "《孟子·告子上》"
+      "source": "《孟子·公孙丑上》"
     },
     {
-      "title": "庄子论‘无用之用’：栎社树与匠石",
+      "title": "邯郸学步：燕国少年的‘迷失自我’",
       "dynasty": "战国",
       "category": "诸子百家寓言",
-      "source": "《庄子·人间世》"
+      "source": "《庄子·秋水》"
     },
     {
-      "title": "蔡伦改进造纸术：从简帛到纸张的革命",
+      "title": "鲁班的‘木鸢’：古代飞行器的神秘传说",
+      "dynasty": "春秋",
+      "category": "古代科技发明故事",
+      "source": "《墨子·鲁问》及《论衡·儒增》"
+    },
+    {
+      "title": "蔡伦造纸：从‘简帛时代’到‘纸寿千年’",
       "dynasty": "东汉",
       "category": "古代科技发明故事",
       "source": "《后汉书·蔡伦传》"
     },
     {
-      "title": "沈括与《梦溪笔谈》：北宋的科学百科全书",
-      "dynasty": "北宋",
-      "category": "古代科技发明故事",
-      "source": "《梦溪笔谈》"
-    },
-    {
-      "title": "孙膑‘围魏救赵’的实战：桂陵之战",
-      "dynasty": "战国",
-      "category": "兵法谋略故事",
-      "source": "《史记·孙子吴起列传》"
-    },
-    {
-      "title": "李靖‘以弱胜强’：三千骑破东突厥",
-      "dynasty": "唐",
-      "category": "兵法谋略故事",
-      "source": "《旧唐书·李靖传》"
-    },
-    {
-      "title": "孟母三迁与断机教子：母教典范",
-      "dynasty": "战国",
-      "category": "古代教育故事",
-      "source": "《列女传·母仪传》"
-    },
-    {
-      "title": "赵氏孤儿：程婴与公孙杵臼的忠义传奇",
-      "dynasty": "春秋",
-      "category": "历史故事",
-      "source": "《史记·赵世家》"
-    },
-    {
-      "title": "张良拾履：圯上老人与《太公兵法》",
-      "dynasty": "秦末",
-      "category": "历史故事",
-      "source": "《史记·留侯世家》"
-    },
-    {
-      "title": "马援‘马革裹尸’：老当益壮的将军",
+      "title": "张衡的‘浑天仪’：东汉科学家的宇宙模型",
       "dynasty": "东汉",
-      "category": "历史故事",
-      "source": "《后汉书·马援传》"
+      "category": "古代科技发明故事",
+      "source": "《后汉书·张衡传》及《晋书·天文志》"
     },
     {
-      "title": "嵇康与《广陵散》：魏晋风骨的最后绝响",
-      "dynasty": "三国·魏",
-      "category": "历史故事",
-      "source": "《晋书·嵇康传》及《世说新语》"
+      "title": "空城计：不是诸葛亮的专利，而是赵云的智谋",
+      "dynasty": "三国",
+      "category": "兵法谋略故事",
+      "source": "《三国志·赵云传》注引《云别传》"
     },
     {
-      "title": "陶渊明‘不为五斗米折腰’：归去来兮",
-      "dynasty": "东晋",
-      "category": "历史故事",
-      "source": "《晋书·陶潜传》及《归去来兮辞》"
-    },
-    {
-      "title": "狄仁杰‘桃李满天下’：一代贤相的选才之道",
+      "title": "李愬雪夜入蔡州：奇袭的极致典范",
       "dynasty": "唐",
-      "category": "历史故事",
-      "source": "《旧唐书·狄仁杰传》"
+      "category": "兵法谋略故事",
+      "source": "《旧唐书·李愬传》及《资治通鉴·唐纪》"
     },
     {
-      "title": "苏武牧羊：汉节十九年的坚守",
+      "title": "郑国渠的‘阴谋’：韩国疲秦计反成强国之基",
+      "dynasty": "战国（秦）",
+      "category": "古代科技发明故事",
+      "source": "《史记·河渠书》及《资治通鉴》"
+    },
+    {
+      "title": "张骞的‘凿空’之旅：开辟丝绸之路的孤胆英雄",
       "dynasty": "西汉",
-      "category": "历史故事",
-      "source": "《汉书·苏武传》"
+      "category": "古代科技发明故事",
+      "source": "《史记·大宛列传》及《汉书·张骞传》"
     },
     {
-      "title": "郑板桥‘难得糊涂’：扬州八怪的清醒人生",
-      "dynasty": "清",
-      "category": "历史故事",
-      "source": "《清史稿·郑燮传》及郑板桥题字"
+      "title": "指南车的传说：黄帝与蚩尤的‘黑科技’之战",
+      "dynasty": "传说时代",
+      "category": "古代科技发明故事",
+      "source": "《太平御览》引《志林》及《宋史·舆服志》"
+    },
+    {
+      "title": "齐桓公的‘管鲍之交’：从仇人到盟友的智慧",
+      "dynasty": "春秋",
+      "category": "历史趣考类",
+      "source": "《史记·齐太公世家》及《左传·庄公九年》"
+    },
+    {
+      "title": "赵氏孤儿：历史与文学的双重演绎",
+      "dynasty": "春秋",
+      "category": "历史趣考类",
+      "source": "《左传·成公八年》及《史记·赵世家》"
+    },
+    {
+      "title": "汉武帝的‘推恩令’：不动刀兵的削藩妙计",
+      "dynasty": "西汉",
+      "category": "历史趣考类",
+      "source": "《汉书·主父偃传》及《资治通鉴·汉纪》"
+    },
+    {
+      "title": "苏轼的‘河东狮吼’：怕老婆的典故从何而来",
+      "dynasty": "北宋",
+      "category": "历史趣考类",
+      "source": "苏轼《寄吴德仁兼简陈季常》诗及《容斋随笔》"
+    },
+    {
+      "title": "古代‘身份证’：鱼符与腰牌的历史演变",
+      "dynasty": "唐至明清",
+      "category": "历史趣考类",
+      "source": "《新唐书·车服志》及《明史·舆服志》"
     }
   ]
 }
