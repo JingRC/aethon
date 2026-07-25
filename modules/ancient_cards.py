@@ -478,7 +478,7 @@ def _layout_palace(f: dict, p: dict, n: int, img: str = "") -> str:
 # ═══════════════════════════════════════════════════════════
 
 def _build_cover_html(count: int, today: date, p: dict, img: str = "", headline: str = "") -> str:
-    """封面卡：全幅图片背景 + 吸睛大字标题。"""
+    """封面卡 v3：XHS 爆款风格 — 暗底 + 金色大字 + 发光 + 金框 + 互动钩子。"""
     cn = "零一二三四五六七八九十"
     y, m, d = today.year, today.month, today.day
 
@@ -492,39 +492,143 @@ def _build_cover_html(count: int, today: date, p: dict, img: str = "", headline:
     elif d == 30: cn_date += "三十日"
     else: cn_date += "三十一日"
 
-    title = headline if headline else "历史故事"
-    seal_html = _seal("古今博览", p, size=72, top="60px", right="60px")
+    title = (headline.strip() or "历史故事")[:10]
+    seal_html = _seal("国风雅集", p, size=80, top="52px", right="56px", extra_style="z-index:10;")
 
-    # 图片背景层（opacity 更高，做全幅封面）
-    img_bg = f'<div style="position:absolute;inset:0;background:url({img}) center/cover;opacity:0.35;filter:sepia(0.2) brightness(0.7);z-index:0;"></div>' if img else ""
-    img_overlay = '<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.25) 40%,rgba(0,0,0,0.45) 100%);z-index:0;"></div>' if img else ""
+    # ── 背景层 ──
+    dark_bg = f'<div style="position:absolute;inset:0;background:#141009;z-index:0;"></div>'
 
-    # 装饰线
-    flourish = f'<div style="width:160px;height:2px;background:linear-gradient(to right,transparent,{p["gold"]}cc,transparent);margin:24px auto;"></div>'
+    # 图片层（降低透明度 + 深色滤镜，营造氛围）
+    img_layer = ""
+    if img:
+        img_layer = (
+            f'<div style="position:absolute;inset:0;'
+            f'background:url({img}) center/cover;'
+            f'opacity:0.28;filter:sepia(0.3) brightness(0.5) saturate(0.6);'
+            f'z-index:1;transform:scale(1.05);"></div>'
+        )
 
-    noise = _noise_svg(0.05)
+    # 径向渐暗 vignette — 四角最深，中央稍亮
+    vignette = (
+        '<div style="position:absolute;inset:0;z-index:2;'
+        'background:radial-gradient(ellipse 55% 45% at 50% 48%,'
+        'rgba(0,0,0,0.05) 0%,'
+        'rgba(0,0,0,0.35) 50%,'
+        'rgba(0,0,0,0.72) 85%,'
+        'rgba(0,0,0,0.88) 100%);"></div>'
+    )
+
+    # 金色微光 — 标题区域有一团暖光
+    gold_glow = (
+        '<div style="position:absolute;inset:0;z-index:2;pointer-events:none;'
+        'background:radial-gradient(ellipse 50% 30% at 50% 52%,'
+        f'rgba(200,150,50,0.12) 0%,'
+        f'rgba(180,120,30,0.04) 40%,'
+        'transparent 70%);"></div>'
+    )
+
+    # ── 金框 ──
+    gold_frame = (
+        f'<div style="position:absolute;inset:38px;z-index:3;pointer-events:none;'
+        f'border:1px solid {_pc(p,"gold",0.45)};'
+        f'box-shadow:inset 0 0 0 6px {_pc(p,"border",0.08)}, '
+        f'0 0 30px {_pc(p,"gold",0.08)};"></div>'
+    )
+
+    # 四角装饰
+    corner_size = 48
+    corner = (
+        f'<div style="position:absolute;top:{38 - 4}px;left:{38 - 4}px;'
+        f'width:{corner_size}px;height:{corner_size}px;z-index:4;pointer-events:none;'
+        f'border-top:3px solid {_pc(p,"gold",0.7)};'
+        f'border-left:3px solid {_pc(p,"gold",0.7)};"></div>'
+        f'<div style="position:absolute;top:{38 - 4}px;right:{38 - 4}px;'
+        f'width:{corner_size}px;height:{corner_size}px;z-index:4;pointer-events:none;'
+        f'border-top:3px solid {_pc(p,"gold",0.7)};'
+        f'border-right:3px solid {_pc(p,"gold",0.7)};"></div>'
+        f'<div style="position:absolute;bottom:{38 - 4}px;left:{38 - 4}px;'
+        f'width:{corner_size}px;height:{corner_size}px;z-index:4;pointer-events:none;'
+        f'border-bottom:3px solid {_pc(p,"gold",0.7)};'
+        f'border-left:3px solid {_pc(p,"gold",0.7)};"></div>'
+        f'<div style="position:absolute;bottom:{38 - 4}px;right:{38 - 4}px;'
+        f'width:{corner_size}px;height:{corner_size}px;z-index:4;pointer-events:none;'
+        f'border-bottom:3px solid {_pc(p,"gold",0.7)};'
+        f'border-right:3px solid {_pc(p,"gold",0.7)};"></div>'
+    )
+
+    # ── 装饰线 ──
+    gold_line = (
+        f'<div style="width:200px;height:2px;'
+        f'background:linear-gradient(to right,transparent,{p["gold"]}99,{p["gold"]}dd,{p["gold"]}99,transparent);'
+        f'margin:0 auto;"></div>'
+    )
+
+    # ── 装饰菱形 ──
+    diamond = (
+        f'<div style="width:14px;height:14px;background:{p["gold"]}cc;'
+        f'transform:rotate(45deg);margin:20px auto;'
+        f'box-shadow:0 0 14px {_pc(p,"gold",0.5)};"></div>'
+    )
+
+    # ── 互动钩子文案 ──
+    hooks = [
+        f"📖 读完{min(3, max(1, count // 3))}个算你厉害",
+        "🔥 老祖宗的顶级智慧",
+        "✨ 每一页都是千年",
+        "👀 向左滑动解锁故事",
+        "🏯 古人的操作有多绝",
+        "💡 10个改变认知的典故",
+    ]
+    hook_text = hooks[count % len(hooks)]
+
+    noise = _noise_svg(0.04)
 
     return f"""<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><style>
 {_base_css(p, 0)}
 body::before {{ content:''; position:absolute; inset:0;
-  background:url("data:image/svg+xml,{noise}") center/cover; pointer-events:none; z-index:99; }}
-.cover-date-cn {{ font-size:44px; font-weight:400; color:{p["gold"]}; letter-spacing:8px; margin-bottom:8px; text-shadow:0 2px 8px rgba(0,0,0,0.5); }}
-.cover-date-en {{ font-size:28px; font-weight:300; color:{p["surface"]}; letter-spacing:4px; text-shadow:0 1px 4px rgba(0,0,0,0.5); }}
-.cover-title {{ font-size:96px; font-weight:900; color:#fff; letter-spacing:10px; line-height:1.1; text-shadow:0 4px 20px rgba(0,0,0,0.6); }}
-.cover-meta {{ font-size:28px; font-weight:400; color:{p["surface"]}; letter-spacing:6px; margin-top:16px; text-shadow:0 1px 6px rgba(0,0,0,0.5); }}
+  background:url("data:image/svg+xml,{noise}") center/cover; pointer-events:none; z-index:98; }}
+.cover-date {{ font-size:36px; font-weight:400; color:{_pc(p,"gold",0.85)};
+  letter-spacing:8px; text-shadow:0 2px 10px rgba(0,0,0,0.6); }}
+.cover-title {{ font-size:120px; font-weight:900; color:#f5d080;
+  letter-spacing:16px; line-height:1.15;
+  text-shadow:
+    0 0 50px rgba(255,200,50,0.45),
+    0 0 100px rgba(255,170,30,0.25),
+    0 4px 24px rgba(0,0,0,0.7),
+    0 8px 40px rgba(0,0,0,0.4); }}
+.cover-hook {{ font-size:48px; font-weight:700; color:{_pc(p,"surface",0.92)};
+  letter-spacing:6px; text-shadow:0 2px 12px rgba(0,0,0,0.5); }}
+.cover-cta {{ font-size:34px; font-weight:600; color:{_pc(p,"gold",0.8)};
+  letter-spacing:4px; text-shadow:0 1px 8px rgba(0,0,0,0.5); }}
+.cover-meta {{ font-size:26px; font-weight:400; color:{_pc(p,"muted",0.7)};
+  letter-spacing:5px; text-shadow:0 1px 4px rgba(0,0,0,0.4); }}
 </style></head><body>
-{img_bg}
-{img_overlay}
+{dark_bg}
+{img_layer}
+{vignette}
+{gold_glow}
+{gold_frame}
+{corner}
 {seal_html}
-<div style="position:relative;z-index:3;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;height:100%;text-align:center;padding:80px 60px;">
-  <div class="cover-date-cn">{cn_date}</div>
-  <div class="cover-date-en">{today.strftime('%Y · %m · %d')}</div>
-  {flourish}
+<div style="position:relative;z-index:5;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;height:100%;text-align:center;
+  padding:80px 80px 70px 80px;">
+  <!-- 日期 -->
+  <div class="cover-date">{cn_date}</div>
+  <!-- 装饰线 + 菱形 -->
+  <div style="margin:26px 0 8px 0;">{gold_line}</div>
+  {diamond}
+  <!-- 主标题 -->
   <div class="cover-title">{title}</div>
-  <div class="cover-meta">{count} 则精选故事</div>
-  <div style="position:absolute;bottom:40px;font-size:20px;font-weight:300;color:{p["surface"]}99;letter-spacing:3px;text-shadow:0 1px 3px rgba(0,0,0,0.3);">
-    每天一个故事，穿越千年时光
+  <!-- 副标题钩子 -->
+  <div class="cover-hook" style="margin-top:12px;">{count}则精选典故 · 每日更新</div>
+  <!-- 装饰线 -->
+  <div style="margin:28px 0 0 0;">{gold_line}</div>
+  <!-- 互动引导 -->
+  <div class="cover-cta" style="margin-top:40px;">{hook_text}</div>
+  <!-- 底部标签 -->
+  <div class="cover-meta" style="position:absolute;bottom:48px;">
+    每天{count}则故事 · 穿越千年时光
   </div>
 </div>
 </body></html>"""
