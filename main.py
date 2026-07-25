@@ -689,12 +689,16 @@ def main():
             )
             logger.info(f"🏯 历史卡片: {len(ancient_card_paths)} 张")
 
-            # 7c. 生成 Word 发布文案
-            if xhs_copy and ancient_card_paths:
+            # 7c. 生成 Word 发布文案（LLM 正常则用爆款文案，失败则 fallback）
+            if ancient_card_paths:
                 try:
-                    from modules.ancient_docx import generate_ancient_docx
+                    from modules.ancient_docx import generate_ancient_docx, generate_ancient_docx_fallback
                     docx_path = str(Path(ancient_card_paths[0]).parent / "发布文案.docx")
-                    generate_ancient_docx(stories, xhs_copy, docx_path)
+                    if xhs_copy and xhs_copy.get("body"):
+                        generate_ancient_docx(stories, xhs_copy, docx_path)
+                    else:
+                        logger.info("   LLM 文案缺失，使用 fallback 模式生成 docx")
+                        generate_ancient_docx_fallback(stories, docx_path)
                     logger.info(f"📄 历史故事文案: {docx_path}")
                 except Exception as e:
                     logger.warning(f"   Word 文档生成失败: {e}")

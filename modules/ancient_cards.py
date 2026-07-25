@@ -627,7 +627,14 @@ def render_ancient_cards(stories: list[dict],
         "story_count": total,
         "cards": [str(Path(p).relative_to(project_root)).replace("\\", "/") for p in rendered],
         "stories": [
-            {"title": s.get("title", ""), "dynasty": s.get("dynasty", ""), "category": s.get("category", "")}
+            {
+                "title": s.get("title", ""),
+                "dynasty": s.get("dynasty", ""),
+                "category": s.get("category", ""),
+                "story_zh": s.get("story_zh", ""),
+                "lesson": s.get("lesson", ""),
+                "source": s.get("source", ""),
+            }
             for s in selected
         ],
     }

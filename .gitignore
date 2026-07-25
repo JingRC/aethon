@@ -25,3 +25,7 @@ Thumbs.db
 tmp/
 temp/
 .image_cache/
+
+# XHS 浏览器 profile / debug
+.aethon-xhs-profile/
+.xhs-debug/

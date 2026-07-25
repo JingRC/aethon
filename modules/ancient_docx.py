@@ -144,3 +144,77 @@ def generate_ancient_docx(stories: list[dict],
     doc.save(output_path)
     logger.info(f"[DOCX] 历史故事文案: {output_path}")
     return output_path
+
+
+def generate_ancient_docx_fallback(stories: list[dict], output_path: str) -> str:
+    """LLM 文案缺失时的 fallback：仅用故事数据生成基础 Word 文档。"""
+    from docx import Document
+    from docx.shared import Pt, RGBColor, Cm
+    from docx.enum.text import WD_ALIGN_PARAGRAPH
+    from datetime import datetime
+
+    doc = Document()
+
+    section = doc.sections[0]
+    section.page_width = Cm(21)
+    section.page_height = Cm(29.7)
+    section.left_margin = Cm(2.5)
+    section.right_margin = Cm(2.5)
+
+    style = doc.styles["Normal"]
+    style.font.name = "Microsoft YaHei"
+    style.font.size = Pt(11)
+    style.paragraph_format.space_after = Pt(6)
+
+    # ── 标题 ──
+    h = doc.add_heading("历史故事精选", level=1)
+    h.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    for run in h.runs:
+        run.font.color.rgb = RGBColor(0xCC, 0x33, 0x33)
+
+    # ── 日期 ──
+    date_para = doc.add_paragraph()
+    date_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = date_para.add_run(datetime.now().strftime("%Y年%m月%d日"))
+    run.font.size = Pt(10)
+    run.font.color.rgb = RGBColor(0x99, 0x99, 0x99)
+
+    doc.add_paragraph()
+
+    # ── 正文占位 ──
+    doc.add_heading("📝 正文描述", level=2)
+    note = doc.add_paragraph("⚠️ LLM 文案生成失败，以下是本期故事速览。发布时请手动撰写文案。")
+    note.paragraph_format.line_spacing = 1.6
+
+    # ── 话题标签占位 ──
+    doc.add_heading("🏷️ 话题标签", level=2)
+    tags_para = doc.add_paragraph("#历史故事 #国学智慧 #成语典故 #古人智慧 #每天学点历史 #传统文化")
+    for run in tags_para.runs:
+        run.font.color.rgb = RGBColor(0xCC, 0x33, 0x33)
+
+    # ── 故事速览 ──
+    doc.add_heading("📜 故事速览", level=2)
+    for i, s in enumerate(stories[:10], 1):
+        title = s.get("title", "")
+        dynasty = s.get("dynasty", "")
+        category = s.get("category", "")
+        story_zh = s.get("story_zh", "")
+        lesson = s.get("lesson", "")
+
+        h3 = doc.add_heading(f"#{i}  {dynasty} · {title}  [{category}]", level=3)
+        for run in h3.runs:
+            run.font.size = Pt(12)
+
+        if story_zh:
+            p = doc.add_paragraph(story_zh[:300])
+            p.paragraph_format.line_spacing = 1.4
+
+        if lesson:
+            p = doc.add_paragraph(f"💡 {lesson}")
+            p.paragraph_format.line_spacing = 1.4
+
+        doc.add_paragraph()
+
+    doc.save(output_path)
+    logger.info(f"[DOCX fallback] 历史故事基础文案: {output_path}")
+    return output_path
