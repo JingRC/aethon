@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-25",
+  "title": "历史故事",
+  "story_count": 10,
+  "cards": [
+    "docs/xhs/2026-07-25/历史故事/01_cover.png",
+    "docs/xhs/2026-07-25/历史故事/02_story_01.png",
+    "docs/xhs/2026-07-25/历史故事/03_story_02.png",
+    "docs/xhs/2026-07-25/历史故事/04_story_03.png",
+    "docs/xhs/2026-07-25/历史故事/05_story_04.png",
+    "docs/xhs/2026-07-25/历史故事/06_story_05.png",
+    "docs/xhs/2026-07-25/历史故事/07_story_06.png",
+    "docs/xhs/2026-07-25/历史故事/08_story_07.png",
+    "docs/xhs/2026-07-25/历史故事/09_story_08.png",
+    "docs/xhs/2026-07-25/历史故事/10_story_09.png",
+    "docs/xhs/2026-07-25/历史故事/11_story_10.png"
+  ],
+  "stories": [
+    {
+      "title": "烽火戏诸侯：亡国的谎言？",
+      "dynasty": "西周",
+      "category": "历史趣考"
+    },
+    {
+      "title": "唐代“放妻书”：最早的离婚协议",
+      "dynasty": "唐",
+      "category": "历史趣考"
+    },
+    {
+      "title": "鲁班造锯：一场美丽的谎言？",
+      "dynasty": "春秋/新石器时代",
+      "category": "历史趣考"
+    },
+    {
+      "title": "和氏璧：失踪千年的传国玉玺",
+      "dynasty": "春秋至五代",
+      "category": "历史趣考"
+    },
+    {
+      "title": "唐代“人造冰”：硝石制冰的冷饮革命",
+      "dynasty": "唐",
+      "category": "历史趣考"
+    },
+    {
+      "title": "徐福东渡：仙药、探险还是殖民？",
+      "dynasty": "秦",
+      "category": "历史趣考"
+    },
+    {
+      "title": "王羲之东床坦腹",
+      "dynasty": "东晋",
+      "category": "古代名人逸事"
+    },
+    {
+      "title": "潘岳掷果盈车",
+      "dynasty": "西晋",
+      "category": "古代名人逸事"
+    },
+    {
+      "title": "温峤燃犀照水怪",
+      "dynasty": "东晋",
+      "category": "古代名人逸事"
+    },
+    {
+      "title": "谢安折屐",
+      "dynasty": "东晋",
+      "category": "古代名人逸事"
+    }
+  ]
+}
