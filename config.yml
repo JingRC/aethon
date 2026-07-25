@@ -7,7 +7,7 @@
 llm:
   provider: "deepseek"          # deepseek / openai / anthropic / gemini
   api_key: "${DEEPSEEK_API_KEY}"  # 从环境变量读取
-  model: "deepseek-chat"         # deepseek-chat / gpt-4o / claude-sonnet-4-20250514
+  model: "deepseek-v4-pro"       # deepseek-v4-pro / deepseek-v4-flash / gpt-4o
   base_url: "https://api.deepseek.com"
   temperature: 0.7
   max_tokens: 16384
