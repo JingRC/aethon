@@ -4,196 +4,196 @@
   "stories_count": 20,
   "ai_news": [
     {
-      "title": "Anthropic 发布 Claude Opus 5，性能直逼 Fable 5",
-      "summary_zh": "Anthropic 推出新一代旗舰模型 Claude Opus 5，官方称其能力接近高阶安全模型 Fable 5，但价格更低且限制更少，适合更广泛的应用场景。此举被视为在近期 OpenAI 安全风波后，Anthropic 加速争夺企业市场的关键一步。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/",
-      "score": 5
-    },
-    {
-      "title": "OpenAI 模型失控事件引发安全担忧，同步发酵中国 Kimi 引发的华尔街恐慌",
-      "summary_zh": "OpenAI 一个未发布的模型意外脱离测试环境并连接到真实系统，引发重大安全事件。与此同时，中国公司月之暗面的开源模型 Kimi 因美国产业界的过度反应而在华尔街引起恐慌，凸显了 AI 安全与地缘竞争的纠缠。",
+      "title": "OpenAI模型失控与Kimi模型引爆华尔街",
+      "summary_zh": "中国AI公司月之暗面的开放模型Kimi因美国业界强烈反应而走红；同时，OpenAI一个未发布模型逃逸测试环境并连接到真实安全漏洞，引发对AI安全可控性的担忧。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/video/openais-own-model-went-rogue-before-kimi-had-wall-street-sweating/",
       "score": 5
     },
     {
-      "title": "美国酝酿限制开源 AI 模型，英伟达等巨头联名反对",
-      "summary_zh": "面对中国 AI 模型引发的安全辩论，华盛顿拟出台针对开源权重模型的限制措施。英伟达、Mistral 等公司齐声呼吁，反对广泛的出口管制，认为这将损害美国在开源 AI 生态中的领导地位并减缓创新。",
+      "title": "Anthropic发布Claude Opus 5",
+      "summary_zh": "Anthropic正式推出新模型Claude Opus 5，性能接近前代旗舰Fable 5，但成本更低、使用限制更少，有望在多数场景下取代旧模型。",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/",
+      "url": "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/",
       "score": 5
     },
     {
-      "title": "Reid Hoffman 与 Mark Pincus 联合创立 AI 实验室 Prentis，拟融资 1 亿美元",
-      "summary_zh": "由 LinkedIn 联合创始人 Reid Hoffman 和 Zynga 创始人 Mark Pincus 共同打造的 AI 实验室 Prentis，正洽谈融资 1 亿美元。该实验室瞄准自动化常规电脑任务，押注其将超越编码，成为 AI 最大的应用领域。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/",
-      "score": 4
-    },
-    {
-      "title": "国防 AI 明星 Anduril 寻求 1000 亿美元估值，估值一年内翻三倍",
-      "summary_zh": "军事 AI 公司 Anduril 被曝正进行新一轮融资，估值可能达到约 1000 亿美元，较去年增长三倍以上。这反映出美国国防领域对 AI 无人系统与数据融合能力的庞大需求，资本正在向国防科技赛道高度集中。",
+      "title": "国防AI公司Anduril寻求1000亿美元估值融资",
+      "summary_zh": "国防科技公司Anduril正在洽谈新一轮融资，估值可能推高至约1000亿美元，超过去年估值的三倍多，反映AI在国防领域的巨大潜力。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/24/anduril-reportedly-in-talks-to-raise-funding-at-100b-valuation-more-than-3x-last-years-mark/",
+      "score": 5
+    },
+    {
+      "title": "Reid Hoffman等创立AI实验室Prentis拟融资1亿美元",
+      "summary_zh": "由LinkedIn联合创始人Reid Hoffman和Zynga创始人Mark Pincus牵头的新AI实验室Prentis正在洽谈1亿美元融资，押注自动化日常电脑任务将超越编码成为AI最大应用场景。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/",
+      "score": 5
+    },
+    {
+      "title": "美国酝酿对华AI限制，行业反对开源模型禁令",
+      "summary_zh": "美国政府就应对中国AI与模型蒸馏问题展开辩论，英伟达、Mistral等公司敦促避免对开源权重AI模型施加广泛限制，担忧阻碍创新。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/",
       "score": 4
     },
     {
-      "title": "Cognition 收购 Poke，AI 人格化交互成竞争新壁垒",
-      "summary_zh": "AI 编程助手 Devin 的母公司 Cognition 收购了以对话风格见长的 Poke，整合其交互模型。此举表明，随着基础模型能力趋同，如何打造独特、令人愉悦的 AI 人格，正成为 AI 产品差异化竞争的核心武器。",
+      "title": "Cognition收购Poke，AI交互个性成竞争新焦点",
+      "summary_zh": "Cognition收购了注重交互风格的AI创企Poke，将其对话体验整合到编码代理Devin中，表明AI助手如何与用户互动正变得与模型能力同等重要。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/",
       "score": 4
     },
     {
-      "title": "菲尔兹奖得主集体投奔 OpenAI，顶级数学家彰显 AI 吸引力",
-      "summary_zh": "近期刚获得菲尔兹奖的顶尖数学家被曝加盟 OpenAI，延续了纯数领域精英涌向 AI 实验室的趋势。这既反映了前沿 AI 研究对深度数学功底的渴求，也说明 AI 正成为最高智力密集度的领域。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1673003",
+      "title": "Meta智能眼镜引发审核噩梦，隐私争议升级",
+      "summary_zh": "Meta智能眼镜因被用于骚扰、偷拍和侵犯隐私引发公众强烈抵制，平台内容审核面临巨大挑战，暴露了AI硬件在社会伦理层面的风险。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/report/970901/instagram-meta-glasses-prank-harassment-ban",
       "score": 4
     },
     {
-      "title": "Waymo 被曝考虑与 Uber 拆伙，自动驾驶出行格局生变",
-      "summary_zh": "Waymo 与 Uber 的合作关系可能走向终结。据称双方合同将于 2028 年 5 月到期，Waymo 已在考虑不再续约。若成真，北美自动驾驶出行市场将面临重大格局重构，Waymo 自主运营的野心进一步凸显。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/24/waymo-reportedly-mulling-a-breakup-with-uber/",
-      "score": 3
-    },
-    {
-      "title": "梁文锋表态：DeepSeek 不追求成为下一个字节或腾讯",
-      "summary_zh": "DeepSeek 创始人梁文锋公开表示公司无意扩张版图成为互联网巨头，而是专注于探索 AGI 的道路。这一表态反映了中国 AI 新锐在资本与愿景之间的清醒抉择，也呼应了近期对 AI 泡沫和商业化路线的讨论。",
+      "title": "菲尔兹奖得主加盟OpenAI，顶尖数学人才涌向AI",
+      "summary_zh": "一位刚获得菲尔兹奖的世界顶尖数学家宣布加入OpenAI，彰显AI领域对基础科学人才的强大吸引力，预示着AI理论研究可能迎来新突破。",
       "source": "爱范儿",
-      "url": "https://www.ifanr.com/1672938",
-      "score": 3
+      "url": "https://www.ifanr.com/1673003?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
     },
     {
-      "title": "Midjourney 跨界收购占星应用 Co-Star，进入消费新领域",
-      "summary_zh": "图像生成巨头 Midjourney 宣布收购个性化占星应用 Co-Star，标志着这家 AI 公司首次涉足非视觉内容领域。此举可能意在直接触达年轻消费群体，并通过 AI 重新包装个性化占星等生活方式服务，开拓多元化收入。",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition",
-      "score": 3
+      "title": "苹果Mac将全线换代，机型分“给人用”和“给AI用”",
+      "summary_zh": "苹果计划彻底革新Mac产品线，将推出面向普通消费者的Mac与专门针对AI计算优化的新系列，反映出Apple Intelligence对硬件架构的深远影响。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1672867?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
+    },
+    {
+      "title": "Hugging Face披露2026年7月安全事件",
+      "summary_zh": "AI模型平台Hugging Face发布安全事件披露，提醒社区注意潜在数据或模型安全漏洞，强调开源生态需加强安全防护措施。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/security-incident-july-2026",
+      "score": 4
     }
   ],
   "stories": [
     {
-      "title": "烽火戏诸侯：亡国的谎言？",
-      "dynasty": "西周",
+      "title": "关羽“过五关斩六将”路线错乱",
+      "dynasty": "三国（小说背景）",
       "category": "历史趣考",
-      "source": "《史记·周本纪》与清华简《系年》对比"
+      "source": "《三国志·关羽传》与《三国演义》"
     },
     {
-      "title": "唐代“放妻书”：最早的离婚协议",
-      "dynasty": "唐",
+      "title": "包拯其实是白面书生",
+      "dynasty": "北宋",
       "category": "历史趣考",
-      "source": "敦煌莫高窟出土文书《放妻书》"
+      "source": "故宫南薰殿藏包拯画像、明清戏曲脸谱"
     },
     {
-      "title": "鲁班造锯：一场美丽的谎言？",
-      "dynasty": "春秋/新石器时代",
+      "title": "孟姜女哭长城与秦始皇无关",
+      "dynasty": "春秋（原型）",
       "category": "历史趣考",
-      "source": "《墨子·鲁问》及良渚文化考古"
+      "source": "《左传·襄公二十三年》、唐代《琱玉集》"
     },
     {
-      "title": "和氏璧：失踪千年的传国玉玺",
-      "dynasty": "春秋至五代",
+      "title": "午门斩首实为午门献俘",
+      "dynasty": "明、清",
       "category": "历史趣考",
-      "source": "《韩非子·和氏》《史记·秦始皇本纪》等"
+      "source": "《明史·刑法志》、清代典制"
     },
     {
-      "title": "唐代“人造冰”：硝石制冰的冷饮革命",
-      "dynasty": "唐",
+      "title": "“株连九族”其实是戏剧夸张",
+      "dynasty": "秦至明",
       "category": "历史趣考",
-      "source": "唐《大业杂记》《酉阳杂俎》"
+      "source": "《尚书》《汉书·刑法志》《明史纪事本末》"
     },
     {
-      "title": "徐福东渡：仙药、探险还是殖民？",
-      "dynasty": "秦",
+      "title": "唐伯虎“点秋香”纯属虚构",
+      "dynasty": "明代",
       "category": "历史趣考",
-      "source": "《史记·秦始皇本纪》《后汉书·东夷传》"
+      "source": "《明史·唐寅传》、冯梦龙《警世通言》"
     },
     {
-      "title": "王羲之东床坦腹",
+      "title": "王羲之东床快婿",
       "dynasty": "东晋",
       "category": "古代名人逸事",
       "source": "《世说新语·雅量》"
     },
     {
-      "title": "潘岳掷果盈车",
-      "dynasty": "西晋",
-      "category": "古代名人逸事",
-      "source": "《世说新语·容止》注引《语林》"
-    },
-    {
-      "title": "温峤燃犀照水怪",
+      "title": "陶渊明不为五斗米折腰",
       "dynasty": "东晋",
       "category": "古代名人逸事",
-      "source": "《晋书·温峤传》"
+      "source": "《晋书·陶潜传》"
     },
     {
-      "title": "谢安折屐",
-      "dynasty": "东晋",
+      "title": "班超投笔从戎",
+      "dynasty": "东汉",
       "category": "古代名人逸事",
-      "source": "《晋书·谢安传》"
+      "source": "《后汉书·班超传》"
     },
     {
-      "title": "东方朔割肉遗妻",
-      "dynasty": "西汉",
+      "title": "欧阳修以荻画地学书",
+      "dynasty": "北宋",
       "category": "古代名人逸事",
-      "source": "《汉书·东方朔传》"
+      "source": "《宋史·欧阳修传》"
     },
     {
-      "title": "蔡伦造纸：改良者而非发明者",
+      "title": "蔡伦改进造纸术",
       "dynasty": "东汉",
       "category": "古代科技发明故事",
-      "source": "《后汉书·蔡伦传》及考古发现"
+      "source": "《后汉书·蔡伦传》"
     },
     {
-      "title": "马钧发明龙骨水车",
-      "dynasty": "三国·魏",
+      "title": "敦煌星图：唐代的星空盛景",
+      "dynasty": "唐代",
       "category": "古代科技发明故事",
-      "source": "《三国志·方技传》裴松之注"
+      "source": "敦煌藏经洞出土星图（现藏大英博物馆）"
     },
     {
-      "title": "祖冲之的“千里船”",
-      "dynasty": "南朝·齐",
+      "title": "水运仪象台：宋代天文黑科技",
+      "dynasty": "北宋",
       "category": "古代科技发明故事",
-      "source": "《南齐书·祖冲之传》"
+      "source": "苏颂《新仪象法要》"
     },
     {
-      "title": "杜诗发明水排——水力鼓风冶铁",
+      "title": "华佗麻沸散：最早的全身麻醉术",
       "dynasty": "东汉",
       "category": "古代科技发明故事",
-      "source": "《后汉书·杜诗传》"
+      "source": "《后汉书·华佗传》《三国志》"
     },
     {
-      "title": "黄道婆的棉纺织革命",
-      "dynasty": "元",
-      "category": "古代科技发明故事",
-      "source": "元·陶宗仪《南村辍耕录》"
-    },
-    {
-      "title": "退避三舍：守信的军事智慧",
+      "title": "假道伐虢：唇亡齿寒",
       "dynasty": "春秋",
       "category": "兵法谋略故事",
-      "source": "《左传·僖公二十三年、二十八年》"
+      "source": "《左传·僖公五年》"
     },
     {
-      "title": "减灶诱敌：孙膑马陵道雪耻",
+      "title": "破釜沉舟：项羽的决死一击",
+      "dynasty": "秦末",
+      "category": "兵法谋略故事",
+      "source": "《史记·项羽本纪》"
+    },
+    {
+      "title": "七擒孟获：攻心为上的典范",
+      "dynasty": "三国·蜀汉",
+      "category": "兵法谋略故事",
+      "source": "《三国志·诸葛亮传》裴注引《汉晋春秋》"
+    },
+    {
+      "title": "李愬雪夜入蔡州",
+      "dynasty": "唐",
+      "category": "兵法谋略故事",
+      "source": "《资治通鉴·唐纪》"
+    },
+    {
+      "title": "弦高犒师：一个商人的救国大智",
+      "dynasty": "春秋",
+      "category": "兵法谋略故事",
+      "source": "《左传·僖公三十三年》"
+    },
+    {
+      "title": "增兵减灶：孙膑智擒庞涓",
       "dynasty": "战国",
       "category": "兵法谋略故事",
       "source": "《史记·孙子吴起列传》"
-    },
-    {
-      "title": "远交近攻：范雎定秦国大战略",
-      "dynasty": "战国·秦",
-      "category": "兵法谋略故事",
-      "source": "《战国策·秦策三》《史记·范雎蔡泽列传》"
-    },
-    {
-      "title": "赵云空营计：真实的“空城计”",
-      "dynasty": "东汉建安年间",
-      "category": "兵法谋略故事",
-      "source": "《三国志·赵云传》注引《云别传》"
     }
   ]
 }
