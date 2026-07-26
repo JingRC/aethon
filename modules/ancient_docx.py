@@ -122,7 +122,7 @@ def generate_ancient_docx(stories: list[dict],
     # ── 正文 ──
     body = xhs_copy.get("body", "")
     doc.add_heading("📝 正文描述", level=2)
-    body_para = doc.add_paragraph(body[:800])
+    body_para = doc.add_paragraph(body[:1500])
     body_para.paragraph_format.line_spacing = 1.6
 
     # ── 话题标签 ──
@@ -166,12 +166,75 @@ def generate_ancient_docx(stories: list[dict],
 
 
 def generate_ancient_docx_fallback(stories: list[dict], output_path: str) -> str:
-    """LLM 文案缺失时的 fallback：仅用故事数据生成基础 Word 文档。"""
+    """LLM 文案缺失时的 fallback：从故事数据自动生成标题和正文。"""
     from docx import Document
     from docx.shared import Pt, RGBColor, Cm
     from docx.enum.text import WD_ALIGN_PARAGRAPH
     from datetime import datetime
 
+    count = min(len(stories), 10)
+    selected = stories[:count]
+
+    # ── 自动生成标题 ──
+    categories = list(set(s.get("category", "") for s in selected if s.get("category")))
+    category_str = categories[0] if categories else "历史典故"
+
+    title_templates = [
+        f"{count}个改变认知的{category_str}故事",
+        f"读完这{count}则{category_str}，我悟了",
+        f"历史课本不会告诉你的{count}个{category_str}",
+        f"{count}个被误读千年的{category_str}",
+        f"普通人不知道的{count}个{category_str}",
+        f"答应我，看完这{count}个{category_str}再划走",
+        f"🔥 {count}则{category_str}，老祖宗的顶级智慧",
+    ]
+    auto_title = title_templates[(count + datetime.now().day) % len(title_templates)]
+
+    # ── 自动生成正文 ──
+    # 取第 1 个故事作为开场钩子
+    intro_story = selected[0] if selected else {}
+    LQ = "“"  # 左弯引号 "
+    RQ = "”"  # 右弯引号 "
+    intro_line = (
+        f"你知道吗？{LQ}{intro_story.get('title', '')}{RQ}这个典故背后，藏着一段让人拍案叫绝的历史。"
+        if intro_story.get("title") else
+        "今天分享10个精彩的历史故事，每一条都让你拍案叫绝。"
+    )
+
+    # 选 3-4 个最精彩的故事做摘要
+    highlights = []
+    for i, s in enumerate(selected[:4]):
+        title = s.get("title", "")
+        lesson = s.get("lesson", "")
+        if lesson:
+            highlights.append(f"📖 {title}——{lesson}")
+        elif title:
+            dynasty = s.get("dynasty", "")
+            highlights.append(f"📖 {dynasty}·{title}")
+
+    # 结尾互动
+    closings = [
+        "哪一个故事最让你意外？评论区告诉我 👇",
+        "你最想穿越到哪个朝代？来聊聊～",
+        "哪个典故你一直理解错了？评论区见！",
+        "收藏起来，每天一个故事提升格局 💪",
+    ]
+    closing = closings[count % len(closings)]
+
+    auto_body = (
+        f"{intro_line}\n\n"
+        f"{chr(10).join(highlights)}\n\n"
+        f"完整{count}则故事已整理在上方卡片中，向左滑动即可逐张查看 🔥\n\n"
+        f"{closing}"
+    )
+
+    # ── 自动生成标签 ──
+    auto_tags = [
+        "#历史故事", "#国学智慧", f"#{category_str}", "#古人智慧",
+        "#每天学点历史", "#传统文化", "#冷知识", "#认知升级",
+    ]
+
+    # ── 构建文档 ──
     doc = Document()
 
     section = doc.sections[0]
@@ -186,7 +249,7 @@ def generate_ancient_docx_fallback(stories: list[dict], output_path: str) -> str
     style.paragraph_format.space_after = Pt(6)
 
     # ── 标题 ──
-    h = doc.add_heading("历史故事精选", level=1)
+    h = doc.add_heading(auto_title, level=1)
     h.alignment = WD_ALIGN_PARAGRAPH.CENTER
     for run in h.runs:
         run.font.color.rgb = RGBColor(0xCC, 0x33, 0x33)
@@ -200,20 +263,20 @@ def generate_ancient_docx_fallback(stories: list[dict], output_path: str) -> str
 
     doc.add_paragraph()
 
-    # ── 正文占位 ──
+    # ── 正文 ──
     doc.add_heading("📝 正文描述", level=2)
-    note = doc.add_paragraph("⚠️ LLM 文案生成失败，以下是本期故事速览。发布时请手动撰写文案。")
-    note.paragraph_format.line_spacing = 1.6
+    body_para = doc.add_paragraph(auto_body)
+    body_para.paragraph_format.line_spacing = 1.6
 
-    # ── 话题标签占位 ──
+    # ── 话题标签 ──
     doc.add_heading("🏷️ 话题标签", level=2)
-    tags_para = doc.add_paragraph("#历史故事 #国学智慧 #成语典故 #古人智慧 #每天学点历史 #传统文化")
+    tags_para = doc.add_paragraph("  ".join(auto_tags))
     for run in tags_para.runs:
         run.font.color.rgb = RGBColor(0xCC, 0x33, 0x33)
 
     # ── 故事速览 ──
     doc.add_heading("📜 故事速览", level=2)
-    for i, s in enumerate(stories[:10], 1):
+    for i, s in enumerate(selected, 1):
         title = s.get("title", "")
         dynasty = s.get("dynasty", "")
         category = s.get("category", "")
@@ -235,5 +298,5 @@ def generate_ancient_docx_fallback(stories: list[dict], output_path: str) -> str
         doc.add_paragraph()
 
     doc.save(output_path)
-    logger.info(f"[DOCX fallback] 历史故事基础文案: {output_path}")
+    logger.info(f"[DOCX fallback] 历史故事自动文案: {output_path}")
     return output_path

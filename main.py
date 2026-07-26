@@ -143,16 +143,30 @@ def parse_json_response(text: str) -> list[dict]:
         result = json.loads(text)
         if isinstance(result, list):
             return result
+        if isinstance(result, dict):
+            return [result]
     except json.JSONDecodeError:
         pass
 
-    # 3. 尝试提取 JSON 数组（贪婪匹配，跨多行）
-    match = re.search(r"\[\s*\{.*\}\s*\]", text, re.DOTALL)
-    if match:
+    # 3. 尝试提取 JSON 对象或数组（贪婪匹配，跨多行）
+    # 先试单个对象 { ... }
+    obj_match = re.search(r"\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}", text, re.DOTALL)
+    # 再试数组 [ ... ]
+    arr_match = re.search(r"\[\s*\{.*\}\s*\]", text, re.DOTALL)
+
+    if arr_match:
         try:
-            result = json.loads(match.group(0))
+            result = json.loads(arr_match.group(0))
             if isinstance(result, list):
                 return result
+        except json.JSONDecodeError:
+            pass
+
+    if obj_match:
+        try:
+            result = json.loads(obj_match.group(0))
+            if isinstance(result, dict):
+                return [result]  # 包成数组统一返回
         except json.JSONDecodeError:
             pass
 
@@ -160,9 +174,12 @@ def parse_json_response(text: str) -> list[dict]:
     try:
         cleaned = re.sub(r'(?<!\\)"\s*\n\s*"', r'"\n"', text)  # bad newlines in strings
         cleaned = re.sub(r',\s*\]', ']', cleaned)  # trailing comma
+        cleaned = re.sub(r',\s*\}', '}', cleaned)  # trailing comma in obj
         result = json.loads(cleaned)
         if isinstance(result, list):
             return result
+        if isinstance(result, dict):
+            return [result]
     except (json.JSONDecodeError, Exception):
         pass
 
