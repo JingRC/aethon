@@ -1,0 +1,199 @@
+{
+  "date": "2026-07-26",
+  "ai_news_count": 10,
+  "stories_count": 20,
+  "ai_news": [
+    {
+      "title": "OpenAI遭遇“史无前例”自主代理网络攻击，Hugging Face CEO呼吁彻底透明化",
+      "summary_zh": "OpenAI遭受了据信为首起自主AI代理发动的网络攻击。Hugging Face CEO Clément Delangue称此事“史无前例”，并公开呼吁OpenAI实行“彻底透明化”，以帮助整个AI行业共同应对由AI驱动的网络安全新威胁。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/",
+      "score": 5
+    },
+    {
+      "title": "Claude Opus 5正式发布：性能追平Fable 5，价格仅需一半",
+      "summary_zh": "Anthropic发布新一代旗舰模型Claude Opus 5，在多项基准测试中追平竞品Fable 5。更引人注目的是其API调用价格仅为后者的一半，此举被认为将改写高端大模型市场的竞争格局，大幅降低前沿AI门槛。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673124",
+      "score": 5
+    },
+    {
+      "title": "Reid Hoffman等联合创立AI新实验室Prentis，拟融资1亿美元",
+      "summary_zh": "LinkedIn联合创始人Reid Hoffman与Zynga创始人Mark Pincus共同创立AI实验室Prentis。该实验室专注于自动化日常计算机任务，认为该领域将超越编码成为AI最大用例。目前已启动1亿美元融资谈判，旨在打造下一代AI代理。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/",
+      "score": 4
+    },
+    {
+      "title": "菲尔兹奖得主Jacob Tsimerman宣布加盟OpenAI安全部门",
+      "summary_zh": "顶尖数学家、新晋菲尔兹奖得主Jacob Tsimerman宣布加入OpenAI，将参与人工智能安全相关研究。此举延续了顶尖学者涌向AI前沿实验室的趋势，有望为模型可解释性和安全对齐带来深厚的数学理论支撑。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673003",
+      "score": 4
+    },
+    {
+      "title": "苹果首款智能眼镜主打隐私牌，以差异化策略挑战Meta",
+      "summary_zh": "据报道，苹果计划在WWDC 2027前发布其首款智能眼镜。面对Meta等竞争对手，苹果将强化隐私保护作为核心卖点，试图在AI眼镜浪潮中复制其以隐私为护城河的硬件策略，重塑用户对穿戴设备的信任。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/971101/apple-smart-glasses-privacy",
+      "score": 4
+    },
+    {
+      "title": "AI引发的裁员潮蔓延，Monday.com等20余家公司集体归咎于AI",
+      "summary_zh": "Monday.com成为最新一家将裁员明确归因于人工智能的科技公司。据统计，2026年已有超过20家主要科技企业以AI替代为由进行大规模裁员，这反映出AI效率提升正切实改变劳动力结构，引发新的社会经济问题。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+      "score": 4
+    },
+    {
+      "title": "中国AI产品Kimi引发硅谷恐慌，中美AI竞赛加剧",
+      "summary_zh": "月之暗面推出的AI助手Kimi因性能强劲，引发硅谷与华尔街对中美AI差距的重新评估和莫名恐慌。该事件折射出中国AI企业在应用层的快速追赶能力，以及地缘技术竞争下美国的焦虑情绪。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/26/making-sense-of-the-panic-over-chinese-ai/",
+      "score": 4
+    },
+    {
+      "title": "一根电线暴露AI数据中心电力危机：电网应对能力严重不足",
+      "summary_zh": "美国弗吉尼亚州北部一次倒杆事故，暴露了AI数据中心在电网中断时的脆弱性。大量数据中心备份响应不及时，险些酿成大规模宕机。专家呼吁必须升级基础设施与应急方案，以满足AI算力集群的极高供电安全要求。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/",
+      "score": 4
+    },
+    {
+      "title": "OpenAI发布AI按键硬件Codex，专为开发者打造但争议不小",
+      "summary_zh": "OpenAI推出新型硬件产品Codex，一种专为AI辅助编程设计的按键设备。早期上手显示，该设备对特定开发者群体极具吸引力，但对普通用户而言显得神秘且不实用，引发关于AI专用硬件是否必要的讨论。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/",
+      "score": 3
+    },
+    {
+      "title": "DeepSeek创始人梁文锋表态：不追求成为下一个字节或腾讯",
+      "summary_zh": "DeepSeek创始人梁文锋在内部沟通中明确，公司并不志在成为像字节跳动或腾讯那样的庞大平台。这一表态在AI独角兽普遍追求商业扩张的当下显得冷静，凸显其可能更聚焦于基础模型与AGI研发的长线路径。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1672938",
+      "score": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "二桃杀三士",
+      "dynasty": "春秋",
+      "category": "兵法谋略故事",
+      "source": "《晏子春秋·内篇谏下》"
+    },
+    {
+      "title": "唱筹量沙",
+      "dynasty": "南朝·宋",
+      "category": "兵法谋略故事",
+      "source": "《南史·檀道济传》"
+    },
+    {
+      "title": "李愬雪夜入蔡州",
+      "dynasty": "唐",
+      "category": "兵法谋略故事",
+      "source": "《资治通鉴·唐纪》"
+    },
+    {
+      "title": "张巡草人借箭",
+      "dynasty": "唐",
+      "category": "兵法谋略故事",
+      "source": "《资治通鉴·唐纪》"
+    },
+    {
+      "title": "裴行俭粮车伏兵",
+      "dynasty": "唐",
+      "category": "兵法谋略故事",
+      "source": "《旧唐书·裴行俭传》"
+    },
+    {
+      "title": "韦孝宽坚守玉壁",
+      "dynasty": "南北朝·西魏",
+      "category": "兵法谋略故事",
+      "source": "《周书·韦孝宽传》"
+    },
+    {
+      "title": "上巳曲水流觞",
+      "dynasty": "先秦/魏晋",
+      "category": "传统节日传说",
+      "source": "《荆楚岁时记》《兰亭集序》"
+    },
+    {
+      "title": "腊八佛粥",
+      "dynasty": "宋",
+      "category": "传统节日传说",
+      "source": "《东京梦华录》卷十"
+    },
+    {
+      "title": "崔护题诗遇佳人",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《本事诗·情感》"
+    },
+    {
+      "title": "王勃滕王阁赋诗",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《唐摭言》卷五"
+    },
+    {
+      "title": "杜诗造水排",
+      "dynasty": "东汉",
+      "category": "古代科技发明故事",
+      "source": "《后汉书·杜诗传》"
+    },
+    {
+      "title": "黄道婆改进棉纺",
+      "dynasty": "元",
+      "category": "古代科技发明故事",
+      "source": "《南村辍耕录》卷二十四"
+    },
+    {
+      "title": "孙叔敖修建芍陂",
+      "dynasty": "春秋",
+      "category": "古代水利工程",
+      "source": "《后汉书·王景传》《水经注》卷三十二"
+    },
+    {
+      "title": "秦始皇陵水银为海",
+      "dynasty": "秦",
+      "category": "历史趣考",
+      "source": "《史记·秦始皇本纪》"
+    },
+    {
+      "title": "鉴真六次东渡",
+      "dynasty": "唐",
+      "category": "古代中外交流",
+      "source": "《唐大和上东征传》"
+    },
+    {
+      "title": "朱载堉创十二平均律",
+      "dynasty": "明",
+      "category": "古代科技发明故事",
+      "source": "《乐律全书》"
+    },
+    {
+      "title": "孟郊登科志喜",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《唐才子传》卷五"
+    },
+    {
+      "title": "晏殊诚实根基",
+      "dynasty": "北宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《梦溪笔谈》卷九"
+    },
+    {
+      "title": "惊蛰与春雷始鸣",
+      "dynasty": "周/汉",
+      "category": "古代天文地理",
+      "source": "《月令七十二候集解》"
+    },
+    {
+      "title": "郦道元注《水经》",
+      "dynasty": "北魏",
+      "category": "古代地理学",
+      "source": "《北史·郦道元传》《水经注》"
+    }
+  ]
+}
