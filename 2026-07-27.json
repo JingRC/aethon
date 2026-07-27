@@ -4,196 +4,196 @@
   "stories_count": 20,
   "ai_news": [
     {
-      "title": "OpenAI遭遇“史无前例”网络攻击，Hugging Face CEO呼吁彻底透明",
-      "summary_zh": "Hugging Face首席执行官Clément Delangue对OpenAI遭遇的首次自主代理网络攻击作出回应，要求AI行业建立极端透明的安全文化。此次攻击被描述为“史无前例的事件”，可能涉及AI驱动的黑客技术，引发了对AI系统脆弱性的广泛担忧。",
+      "title": "OpenAI Hugging Face 数据泄露重燃AI对齐与控制论战",
+      "summary_zh": "OpenAI 近期在 Hugging Face 平台的数据泄露事件再次引发行业对 AI 安全对齐与控制策略的激烈辩论。内部资料流出暴露了不同派系在“让 AI 更对齐”还是“更严格管控”之间的分歧，反映出强大 AI 治理路线的深层矛盾，或影响未来监管方向。",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/",
+      "url": "https://techcrunch.com/2026/07/27/openais-hugging-face-breach-has-reignited-the-debate-over-alignment-and-control/",
       "score": 5
     },
     {
-      "title": "Anthropic发布Claude Opus 5，性能追平前沿而价格减半",
-      "summary_zh": "Anthropic正式推出新一代大模型Claude Opus 5，在多项基准测试中以半价追平Fable 5等顶尖模型。该版本在推理、编码和长上下文处理上均有显著提升，巩固了Anthropic在高端模型市场的竞争力，并进一步加剧了模型推理效率与成本的军备竞赛。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1673124",
+      "title": "Ilya Sutskever 安全超级智能公司宣布与 NVIDIA 长期合作",
+      "summary_zh": "出山两年的 Ilya Sutskever 旗下安全超级智能公司 SSI 宣布与 NVIDIA 达成长期战略合作，进入规模化研发新阶段。此举将整合顶尖算力与算法人才，加速安全通用人工智能的探索，被视为 AI 安全领域最具雄心的产学研联手之一。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/",
       "score": 5
     },
     {
-      "title": "OpenAI推出Codex键盘，专为代码与AI交互设计",
-      "summary_zh": "OpenAI正式发售其首款AI硬件——Codex键盘，专为程序员与AI模型交互优化。该键盘集成了深度编码辅助功能，可直接调用模型进行代码生成与调试，被视为AI从软件向硬件延伸的标志性产品，但初期评测认为其应用场景可能较为局限。",
+      "title": "微软发布首款网络安全AI模型及智能体安全系统",
+      "summary_zh": "微软推出其首款面向网络安全的 AI 模型，并同步上线全新的智能体安全平台。该模型专为威胁检测与响应设计，结合智能体自主协调能力，标志着安全运营从规则驱动到 AI 原生代理的范式跃迁，对政企客户防护体系升级意义重大。",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/",
+      "url": "https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/",
       "score": 4
     },
     {
-      "title": "菲尔兹奖得主Jacob Tsimerman加入OpenAI，负责安全与对齐研究",
-      "summary_zh": "2026年菲尔兹奖得主、数学家Jacob Tsimerman宣布加盟OpenAI，将在安全部门工作。这一顶级学术人才的加入凸显了AI行业对基础数学与安全对齐研究的高度重视，也再次引发关于学术界与产业界人才双向流动的讨论。",
+      "title": "Google AI 搜索成主线，已覆盖 43% 搜索查询",
+      "summary_zh": "最新数据显示，Google 的 AI 概要已出现在 43% 的搜索中，正迅速成为信息获取的默认入口。这一趋势将深度改变内容生态、流量分发模式与广告格局，对依赖搜索流量的出版与电商行业带来结构性冲击。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/",
+      "score": 5
+    },
+    {
+      "title": "Claude Opus 5 发布，性能比肩顶级模型而价格减半",
+      "summary_zh": "Anthropic 推出新一代旗舰模型 Claude Opus 5，以大幅降低的推理成本达到与顶尖模型相当的性能，并砍掉超 80% 系统提示词依赖。该发布进一步抬高大模型性价比竞争门槛，也预示未来交互范式将从“提示工程”转向“意图管理”。",
       "source": "爱范儿",
-      "url": "https://www.ifanr.com/1673003",
+      "url": "https://www.ifanr.com/1673124?utm_source=rss&utm_medium=rss&utm_campaign=",
       "score": 4
     },
     {
-      "title": "AI成裁员主因：Monday.com等20余家科技公司归咎自动化",
-      "summary_zh": "项目管理平台Monday.com成为最新一家将裁员归因于AI自动化的科技公司。据统计，2026年以来已有至少20家较大规模科技企业公开表示因AI技术迭代而进行人员优化，反映出AI对白领岗位的替代效应正在加速显现。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
-      "score": 4
-    },
-    {
-      "title": "中国AI模型Kimi引发硅谷与华尔街恐慌",
-      "summary_zh": "月之暗面（Moonshot AI）推出的模型Kimi在性能上展现出强大竞争力，引发美国科技界与金融市场的剧烈反应。类似DeepSeek事件的重演显示出中国AI企业持续以高性价比模型冲击全球格局，促使投资者重新评估AI竞争态势。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/26/making-sense-of-the-panic-over-chinese-ai/",
-      "score": 4
-    },
-    {
-      "title": "美国图书馆举办“回避AI”工作坊，民众对科技巨头厌倦情绪高涨",
-      "summary_zh": "全美多地的公共图书馆开始举办“回避AI”工作坊，教授如何在日常生活中减少对人工智能的依赖，活动需求空前火爆。这一现象折射出普通民众对科技巨头、数据隐私及AI渗透过度产生的逆反心理，成为一股不可忽视的社会文化动向。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech/",
-      "score": 3
-    },
-    {
-      "title": "脑电波或成为物理AI下一突破口",
-      "summary_zh": "研究人员指出，前沿物理AI模型不再满足于视频学习，正探索引入脑电波读数等多模态信号。通过记录人类执行物理任务时的神经活动，有望赋予机器人更细腻的动作理解与规划能力，为具身智能的突破提供新路径。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/",
-      "score": 3
-    },
-    {
-      "title": "一根倒塌的电线暴露AI数据中心电网脆弱性",
-      "summary_zh": "北弗吉尼亚州一起输电线事故险些引发大规模停机，暴露出AI数据中心在电网扰动下的脆弱应对。事件促使业界讨论分布式储能、微电网等技术方案，以解决激增的AI计算需求与不稳定电力供应之间的尖锐矛盾。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/",
-      "score": 3
-    },
-    {
-      "title": "苹果将以隐私为核心差异化其智能眼镜",
-      "summary_zh": "消息称苹果计划在WWDC 2027首发智能眼镜，正竭力解决产品带来的隐私争议。与Meta等竞品不同，苹果意图通过严格的隐私保护机制和贴心的公共标识设计，将其眼镜定位为最安全的可穿戴AI设备，重塑市场规则。",
+      "title": "中国为何免费开放最强模型：开源策略冲击硅谷",
+      "summary_zh": "以月之暗面 Kimi K3 为代表的中国开源模型以极低成本比肩美国顶尖系统，引发硅谷警觉。分析指出，中国通过免费开放重量级模型快速构建全球开发者生态，正在改写 AI 竞争的地缘规则，可能迫使美国厂商重新评估闭源商业模式。",
       "source": "The Verge",
-      "url": "https://www.theverge.com/tech/971101/apple-smart-glasses-privacy",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/971444/how-chinese-open-weight-ai-models-impact-us-companies",
+      "score": 5
+    },
+    {
+      "title": "NVIDIA 发布 Cosmos-H-Dreams，将实时生成模拟引入手术机器人",
+      "summary_zh": "NVIDIA 推出 Cosmos-H-Dreams，首次实现手术机器人领域的实时生成式物理仿真。该平台可模拟软组织变形、器械交互等复杂场景，为手术训练、术前规划和机器人自主操作提供高保真虚拟环境，是具身智能与医疗 AI 融合的重要里程碑。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "score": 4
+    },
+    {
+      "title": "Claude 共享对话意外被谷歌索引，用户数据大量曝光",
+      "summary_zh": "Anthropic 的 Claude 共享聊天功能出现隐私漏洞，大量用户通过分享链接公开的对话和 Artifacts 被谷歌搜索引擎抓取并索引。该事件暴露出 AI 工具分享机制中的安全盲区，引发对生成内容二次传播风险的广泛关切。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/",
+      "score": 4
+    },
+    {
+      "title": "Hugging Face 披露七月安全事件，平台透明度受关注",
+      "summary_zh": "Hugging Face 发布安全事件披露报告，通报七月发生的一起数据访问异常。作为 AI 模型与数据集的核心托管平台，此次事件再次提醒业界开源基础设施的安全防护能力需与快速增长的模型生态同步升级，社区对透明度表示认可。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/security-incident-july-2026",
       "score": 3
+    },
+    {
+      "title": "纳德拉警告：只信任单一 AI 模型的公司恐难存活",
+      "summary_zh": "微软 CEO 纳德拉表示，缺乏自有模型或 AI 网关隔离层的企业将面临生存风险。他强调多模型策略与基础设施解耦的重要性，该观点正值企业加速 AI 部署之际，为产业生态战略提供了明确的方向指引。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/",
+      "score": 4
     }
   ],
   "stories": [
     {
-      "title": "弦高犒师",
-      "dynasty": "春秋",
-      "category": "历史故事",
-      "source": "《左传·僖公三十三年》"
-    },
-    {
-      "title": "申包胥哭秦庭",
-      "dynasty": "春秋",
-      "category": "历史故事",
-      "source": "《左传·定公四年》"
-    },
-    {
-      "title": "豫让漆身吞炭",
+      "title": "千金买马骨",
       "dynasty": "战国",
       "category": "历史故事",
-      "source": "《史记·刺客列传》"
+      "source": "《战国策·燕策一》"
     },
     {
-      "title": "侯赢北乡自刭",
+      "title": "吴起吮疽",
       "dynasty": "战国",
       "category": "历史故事",
-      "source": "《史记·魏公子列传》"
+      "source": "《史记·孙子吴起列传》"
     },
     {
-      "title": "张巡死守睢阳",
+      "title": "细柳营",
+      "dynasty": "西汉",
+      "category": "历史故事",
+      "source": "《史记·绛侯周勃世家》"
+    },
+    {
+      "title": "周瑜雅量",
+      "dynasty": "三国",
+      "category": "历史故事",
+      "source": "《三国志·周瑜传》及裴注引《江表传》"
+    },
+    {
+      "title": "雪夜访戴",
+      "dynasty": "东晋",
+      "category": "历史故事",
+      "source": "《世说新语·任诞》"
+    },
+    {
+      "title": "张巡草人借箭",
       "dynasty": "唐",
       "category": "历史故事",
-      "source": "《新唐书·忠义传》"
+      "source": "《新唐书·张巡传》"
     },
     {
-      "title": "海瑞备棺上疏",
-      "dynasty": "明",
-      "category": "历史故事",
-      "source": "《明史·海瑞传》"
-    },
-    {
-      "title": "蔡伦改进造纸术",
+      "title": "蔡伦造纸",
       "dynasty": "东汉",
-      "category": "古代科技发明故事",
+      "category": "古代科技发明",
       "source": "《后汉书·蔡伦传》"
     },
     {
-      "title": "杜诗造水排",
-      "dynasty": "东汉",
-      "category": "古代科技发明故事",
-      "source": "《后汉书·杜诗传》"
+      "title": "甘德发现木卫",
+      "dynasty": "战国",
+      "category": "古代科技发明",
+      "source": "《开元占经》引甘德《天文星占》"
     },
     {
-      "title": "鲁班造锯与鲁班锁",
-      "dynasty": "春秋",
-      "category": "古代科技发明故事",
-      "source": "《事物纪原》《墨子》"
-    },
-    {
-      "title": "黄道婆改进纺织技术",
-      "dynasty": "元",
-      "category": "古代科技发明故事",
-      "source": "陶宗仪《南村辍耕录》"
-    },
-    {
-      "title": "上巳节曲水流觞",
-      "dynasty": "先秦至晋",
-      "category": "传统节日传说",
-      "source": "《后汉书·礼仪志》《兰亭集序》"
-    },
-    {
-      "title": "中元节目连救母",
-      "dynasty": "唐",
-      "category": "传统节日传说",
-      "source": "《盂兰盆经》《荆楚岁时记》"
-    },
-    {
-      "title": "冬至张仲景祛寒娇耳汤",
+      "title": "冬至娇耳",
       "dynasty": "东汉",
       "category": "传统节日传说",
-      "source": "民间传说，载于《中国民间故事集成》"
+      "source": "民间传说及张仲景《伤寒杂病论》序"
     },
     {
-      "title": "腊八粥朱元璋落难传说",
-      "dynasty": "明",
+      "title": "兰亭修禊",
+      "dynasty": "东晋",
       "category": "传统节日传说",
-      "source": "见载于《燕京岁时记》等民俗文献"
+      "source": "《晋书·王羲之传》《兰亭集序》"
     },
     {
-      "title": "贾岛推敲",
+      "title": "人面桃花",
       "dynasty": "唐",
       "category": "唐诗宋词背后的故事",
-      "source": "《诗话总龟》《唐才子传》"
+      "source": "孟棨《本事诗·情感》"
     },
     {
-      "title": "李白搁笔黄鹤楼",
+      "title": "推敲",
       "dynasty": "唐",
       "category": "唐诗宋词背后的故事",
-      "source": "《唐才子传》《唐诗纪事》"
+      "source": "《唐才子传》《苕溪渔隐丛话》"
     },
     {
-      "title": "苏轼“河东狮吼”",
+      "title": "诸葛亮发明馒头",
+      "dynasty": "蜀汉",
+      "category": "历史趣考",
+      "source": "高承《事物纪原》"
+    },
+    {
+      "title": "刘安发明豆腐",
+      "dynasty": "西汉",
+      "category": "历史趣考",
+      "source": "李时珍《本草纲目·谷部》"
+    },
+    {
+      "title": "驴鸣送葬",
+      "dynasty": "三国",
+      "category": "历史趣考",
+      "source": "《世说新语·伤逝》"
+    },
+    {
+      "title": "商鞅弃灰于道刑",
+      "dynasty": "战国",
+      "category": "历史趣考",
+      "source": "《史记·李斯列传》《韩非子》"
+    },
+    {
+      "title": "张仲景坐堂行医",
+      "dynasty": "东汉",
+      "category": "古代医学故事",
+      "source": "《长沙府志》及医圣传说"
+    },
+    {
+      "title": "王惟一铸针灸铜人",
       "dynasty": "宋",
-      "category": "唐诗宋词背后的故事",
-      "source": "洪迈《容斋随笔》"
+      "category": "古代医学故事",
+      "source": "《宋史·方技传》《铜人腧穴针灸图经》"
     },
     {
-      "title": "李贺呕心沥血觅诗",
-      "dynasty": "唐",
-      "category": "唐诗宋词背后的故事",
-      "source": "李商隐《李贺小传》"
+      "title": "王戎识李",
+      "dynasty": "西晋",
+      "category": "历史趣考",
+      "source": "《世说新语·雅量》"
     },
     {
-      "title": "秦观《鹊桥仙》情缘",
-      "dynasty": "宋",
-      "category": "唐诗宋词背后的故事",
-      "source": "《墨庄漫录》《苕溪渔隐丛话》"
-    },
-    {
-      "title": "李白《赠汪伦》幕后",
-      "dynasty": "唐",
-      "category": "唐诗宋词背后的故事",
-      "source": "袁枚《随园诗话》"
+      "title": "谢道韫咏雪",
+      "dynasty": "东晋",
+      "category": "历史趣考",
+      "source": "《世说新语·言语》"
     }
   ]
 }
