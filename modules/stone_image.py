@@ -55,13 +55,14 @@ def _save_index(idx: dict) -> None:
 # ═══════════════════════════════════════════════════════════
 
 def _generate_cloudbase(prompt: str, seed: int = None, size: str = "1024x1024") -> str | None:
-    """调用 CloudBase 云函数 ai-proxy 生图，返回图片本地路径或 None。"""
+    """调用微信小程序云函数 ai-image 生图（混元 3.0，10万张免费额度）。"""
     if not CLOUDBASE_ENV or not CLOUDBASE_API_KEY:
         logger.debug("CloudBase 未配置，跳过")
         return None
 
-    url = f"https://{CLOUDBASE_ENV}.api.tcloudbasegateway.com/v1/functions/ai-proxy/invoke"
-    payload = {"prompt": prompt, "size": size}
+    # ai-image = 微信小程序云函数，走 小程序成长计划 10万张免费额度
+    url = f"https://{CLOUDBASE_ENV}.api.tcloudbasegateway.com/v1/functions/ai-image/invoke"
+    payload: dict = {"prompt": prompt, "size": size, "revise": True, "thinking": False}
     if seed is not None:
         payload["seed"] = seed
 
@@ -78,8 +79,7 @@ def _generate_cloudbase(prompt: str, seed: int = None, size: str = "1024x1024") 
         data = r.json()
         if data.get("success") and data.get("image_url"):
             img_url = data["image_url"]
-            logger.info(f"   CloudBase ✓ ({r.elapsed.total_seconds():.1f}s)")
-            # 下载图片
+            logger.info(f"   CloudBase混元 ✓ ({r.elapsed.total_seconds():.1f}s)")
             ir = requests.get(img_url, timeout=60)
             if ir.status_code == 200:
                 cache_key = _md5(prompt)
@@ -240,8 +240,8 @@ def generate_stone_images(prompts: list[dict], story_seed: int = 42) -> dict[int
     results: dict[int, str] = {}
     total = len(prompts)
     fallback_order = [
-        ("Pollinations", _generate_pollinations),
         ("CloudBase", _generate_cloudbase),
+        ("Pollinations", _generate_pollinations),
         ("SiliconFlow", _generate_siliconflow),
         ("Cloudflare", _generate_cloudflare),
     ]
