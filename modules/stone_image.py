@@ -264,6 +264,12 @@ def generate_stone_images(prompts: list[dict], story_seed: int = 42) -> dict[int
             image_seed = (story_seed + idx * 7) % 4294967295  # 每个场景不同种子
             path = api_func(prompt_text, seed=image_seed)
             if path:
+                # 去水印
+                try:
+                    from modules.watermark_remover import remove_watermark
+                    remove_watermark(path)
+                except Exception:
+                    pass
                 cache[cache_key] = path
                 results[idx] = path
                 break

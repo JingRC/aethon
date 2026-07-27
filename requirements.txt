@@ -26,8 +26,9 @@ markdown>=3.4
 # 日期时间
 python-dateutil>=2.8
 
-# 图片处理（小红书卡片渲染）
+# 图片处理（小红书卡片渲染 / AI 生图去水印）
 Pillow>=10.0
+opencv-python>=4.8
 
 # Word 文档生成（小红书发布文案）
 python-docx>=1.0
