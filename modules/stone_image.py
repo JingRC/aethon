@@ -170,25 +170,52 @@ def _generate_cloudflare(prompt: str, seed: int = None) -> str | None:
 
 
 # ═══════════════════════════════════════════════════════════
-# Fallback 3: Pollinations.ai（无限速率）
+# Primary: Pollinations.ai（免费无限，无需 API Key）
 # ═══════════════════════════════════════════════════════════
 
 def _generate_pollinations(prompt: str, seed: int = None) -> str | None:
-    """Pollinations.ai，完全免费。"""
-    if not POLLINATIONS_KEY:
-        return None
+    """Pollinations.ai，免费无限，POST 避免 URL 长度限制。"""
     try:
-        import urllib.parse
-        encoded = urllib.parse.quote(prompt)
-        seed_param = f"&seed={seed}" if seed else ""
-        img_url = f"https://image.pollinations.ai/prompt/{encoded}?width=1024&height=1024&nologo=true{seed_param}"
-        r = requests.get(img_url, timeout=120)
-        if r.status_code == 200 and len(r.content) > 1000:
+        payload = {
+            "prompt": prompt,
+            "width": 1024,
+            "height": 1024,
+            "nologo": True,
+            "model": "flux",
+        }
+        if seed is not None:
+            payload["seed"] = seed
+
+        # 先试 POST（更稳定，无 URL 长度限制）
+        r = requests.post(
+            "https://image.pollinations.ai/prompt",
+            json=payload,
+            timeout=120,
+        )
+        if r.status_code == 200 and len(r.content) > 5000:
             logger.info(f"   Pollinations ✓ ({r.elapsed.total_seconds():.1f}s)")
             cache_key = _md5(prompt)
             cache_path = CACHE_DIR / f"stone_{cache_key}.png"
             cache_path.write_bytes(r.content)
             return str(cache_path)
+
+        # 回退 GET
+        import urllib.parse
+        encoded = urllib.parse.quote(prompt[:400])  # 截断避免 URL 过长
+        seed_param = f"&seed={seed}" if seed else ""
+        img_url = (
+            f"https://image.pollinations.ai/prompt/{encoded}"
+            f"?width=1024&height=1024&nologo=true{seed_param}"
+        )
+        r2 = requests.get(img_url, timeout=120)
+        if r2.status_code == 200 and len(r2.content) > 5000:
+            logger.info(f"   Pollinations(GET) ✓ ({r2.elapsed.total_seconds():.1f}s)")
+            cache_key = _md5(prompt)
+            cache_path = CACHE_DIR / f"stone_{cache_key}.png"
+            cache_path.write_bytes(r2.content)
+            return str(cache_path)
+
+        logger.warning(f"   Pollinations 返回异常: POST={r.status_code}, GET={r2.status_code}")
     except Exception as e:
         logger.warning(f"   Pollinations 异常: {e}")
     return None
@@ -213,10 +240,10 @@ def generate_stone_images(prompts: list[dict], story_seed: int = 42) -> dict[int
     results: dict[int, str] = {}
     total = len(prompts)
     fallback_order = [
+        ("Pollinations", _generate_pollinations),
         ("CloudBase", _generate_cloudbase),
         ("SiliconFlow", _generate_siliconflow),
         ("Cloudflare", _generate_cloudflare),
-        ("Pollinations", _generate_pollinations),
     ]
 
     for p in prompts:
