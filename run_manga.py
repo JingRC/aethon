@@ -1,5 +1,5 @@
 """本地跑小道士下山记漫画 — HTML 预览确认 → 生图渲染"""
-import os, sys, json, io, time
+import os, sys, json, io, time, webbrowser
 sys.path.insert(0, ".")
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
@@ -83,14 +83,35 @@ print(f"""
 """)
 
 # ═══════════════════════════════════════
+# 0. 检查是否已有脚本（支持断点续跑）
+# ═══════════════════════════════════════
+today_str = time.strftime("%Y-%m-%d")
+script_dir = Path(f"docs/manga_scripts/{today_str}")
+script_dir.mkdir(parents=True, exist_ok=True)
+json_path = script_dir / f"ch{chapter_num:02d}_script.json"
+
+skip_llm = "--skip-llm" in sys.argv or "--resume" in sys.argv
+manga_chapter = None
+
+if skip_llm and json_path.exists():
+    print(f"📂 加载已有剧本: {json_path}")
+    manga_chapter = json.loads(json_path.read_text(encoding="utf-8"))
+elif json_path.exists():
+    ans = input(f"📂 已存在剧本 {json_path.name}，复用？[Y/n] ").strip().lower()
+    if not ans or ans == "y":
+        manga_chapter = json.loads(json_path.read_text(encoding="utf-8"))
+        print("   已加载已有剧本")
+
+# ═══════════════════════════════════════
 # 1. LLM 生成剧本（带故事弧上下文）
 # ═══════════════════════════════════════
-print("🤖 调用 DeepSeek 生成剧本...")
+if not manga_chapter:
+    print("🤖 调用 DeepSeek 生成剧本...")
 
-from modules.manga_cards import MANGA_CHARACTER as MC
+    from modules.manga_cards import MANGA_CHARACTER as MC
 
-# 构建带上下文的增强 prompt
-story_arc_prompt = f"""你是一位漫画编剧，为连载漫画《小道士下山记》创作第{chapter_num}章。
+    # 构建带上下文的增强 prompt
+    story_arc_prompt = f"""你是一位漫画编剧，为连载漫画《小道士下山记》创作第{chapter_num}章。
 
 ## 系列信息
 卷名：{volume_title}
