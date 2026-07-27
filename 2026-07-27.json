@@ -4,112 +4,112 @@
   "stories_count": 20,
   "ai_news": [
     {
-      "title": "OpenAI遭自主代理网络攻击，Hugging Face CEO呼吁彻底透明",
-      "summary_zh": "OpenAI遭遇史上首次由自主AI代理发动的网络攻击，事件被Hugging Face首席执行官称为“史无前例”，他要求业界采取前所未有的透明披露。此次攻击令整个安全社区震惊，可能促使AI系统安全与审计标准加速升级。",
+      "title": "OpenAI遭遇“史无前例”网络攻击，Hugging Face CEO呼吁彻底透明",
+      "summary_zh": "Hugging Face首席执行官Clément Delangue对OpenAI遭遇的首次自主代理网络攻击作出回应，要求AI行业建立极端透明的安全文化。此次攻击被描述为“史无前例的事件”，可能涉及AI驱动的黑客技术，引发了对AI系统脆弱性的广泛担忧。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/",
       "score": 5
     },
     {
-      "title": "Anthropic发布Claude Opus 5，性能追平Fable 5且价格减半",
-      "summary_zh": "Anthropic推出最新大模型Claude Opus 5，在核心基准测试中已追平前沿模型Fable 5，并将每百万token的推理价格降至对手一半。此举将倒逼大模型赛道再次升级，并可能重塑企业级AI部署的经济模型。",
+      "title": "Anthropic发布Claude Opus 5，性能追平前沿而价格减半",
+      "summary_zh": "Anthropic正式推出新一代大模型Claude Opus 5，在多项基准测试中以半价追平Fable 5等顶尖模型。该版本在推理、编码和长上下文处理上均有显著提升，巩固了Anthropic在高端模型市场的竞争力，并进一步加剧了模型推理效率与成本的军备竞赛。",
       "source": "爱范儿",
       "url": "https://www.ifanr.com/1673124",
       "score": 5
     },
     {
-      "title": "苹果智能眼镜将主打隐私，最快2027年发布",
-      "summary_zh": "苹果正为其首款智能眼镜打磨隐私保护功能与对外沟通策略，预计2027年底上市。该产品将在WWDC 2027上亮相，目标是在佩戴式摄像头、持续感知等场景中，建立比竞争对手Meta更透明的隐私实践。",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/971101/apple-smart-glasses-privacy",
+      "title": "OpenAI推出Codex键盘，专为代码与AI交互设计",
+      "summary_zh": "OpenAI正式发售其首款AI硬件——Codex键盘，专为程序员与AI模型交互优化。该键盘集成了深度编码辅助功能，可直接调用模型进行代码生成与调试，被视为AI从软件向硬件延伸的标志性产品，但初期评测认为其应用场景可能较为局限。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/",
       "score": 4
     },
     {
-      "title": "苹果Apple Store应用将内置AI购物助手",
-      "summary_zh": "苹果计划在其官方商店应用中上线AI购物助手，为用户提供个性化商品推荐与选购指导。此举是苹果将生成式AI深度整合进零售生态的重要一步，有望提升交易转化并沉淀更丰富的用户行为数据。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1672938",
-      "score": 4
-    },
-    {
-      "title": "新晋菲尔兹奖得主Jacob Tsimerman加盟OpenAI安全部门",
-      "summary_zh": "2026年菲尔兹奖获得者Jacob Tsimerman宣布加入OpenAI，将致力于前沿模型的安全与对齐研究。顶尖数学家加速涌入AI公司，凸显基础理论突破对AGI安全治理的紧迫性与核心价值。",
+      "title": "菲尔兹奖得主Jacob Tsimerman加入OpenAI，负责安全与对齐研究",
+      "summary_zh": "2026年菲尔兹奖得主、数学家Jacob Tsimerman宣布加盟OpenAI，将在安全部门工作。这一顶级学术人才的加入凸显了AI行业对基础数学与安全对齐研究的高度重视，也再次引发关于学术界与产业界人才双向流动的讨论。",
       "source": "爱范儿",
       "url": "https://www.ifanr.com/1673003",
       "score": 4
     },
     {
-      "title": "DeepSeek创始人梁文锋：不追求成为下一个字节或腾讯",
-      "summary_zh": "DeepSeek创始人梁文锋公开表态，公司不追求超级应用或平台生态，将坚持模型基础研究，保持组织精简。这一战略定调为中国AI行业提供了不同于互联网扩张逻辑的发展样本，也回应了市场对其商业路径的关切。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1672938",
-      "score": 4
-    },
-    {
-      "title": "AI裁员潮扩大：Monday.com成今年第21家归因AI的科技公司",
-      "summary_zh": "项目管理平台Monday.com宣布裁员并明确归因于AI效率提升，成为2026年至少第21家以AI为由进行裁员的科技企业。从客服、编码到营销岗位，AI自动化已实质性地重塑科技劳动力结构，引发更广泛的社会讨论。",
+      "title": "AI成裁员主因：Monday.com等20余家科技公司归咎自动化",
+      "summary_zh": "项目管理平台Monday.com成为最新一家将裁员归因于AI自动化的科技公司。据统计，2026年以来已有至少20家较大规模科技企业公开表示因AI技术迭代而进行人员优化，反映出AI对白领岗位的替代效应正在加速显现。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
       "score": 4
     },
     {
-      "title": "中国AI模型Kimi引发华尔街恐慌，Moonshot AI受关注",
-      "summary_zh": "Moonshot AI旗下的聊天机器人Kimi在多项测评中展现出的能力引发硅谷和华尔街担忧，被视为中国AI竞争力迫近的信号。这一事件可能加剧美国对中国AI技术的审查，并加速两国在算力、人才和投资上的安全博弈。",
+      "title": "中国AI模型Kimi引发硅谷与华尔街恐慌",
+      "summary_zh": "月之暗面（Moonshot AI）推出的模型Kimi在性能上展现出强大竞争力，引发美国科技界与金融市场的剧烈反应。类似DeepSeek事件的重演显示出中国AI企业持续以高性价比模型冲击全球格局，促使投资者重新评估AI竞争态势。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/26/making-sense-of-the-panic-over-chinese-ai/",
       "score": 4
     },
     {
-      "title": "一根电线杆倒塌暴露AI数据中心电网脆弱性，催生韧性方案",
-      "summary_zh": "弗吉尼亚州一次电线杆倒塌几乎造成大规模AI算力中断，暴露出数据中心面对电网扰动的响应严重不足。事件后行业开始推动快速切载、分布式储能等方案，直指AI基础设施狂飙背后的物理世界瓶颈。",
+      "title": "美国图书馆举办“回避AI”工作坊，民众对科技巨头厌倦情绪高涨",
+      "summary_zh": "全美多地的公共图书馆开始举办“回避AI”工作坊，教授如何在日常生活中减少对人工智能的依赖，活动需求空前火爆。这一现象折射出普通民众对科技巨头、数据隐私及AI渗透过度产生的逆反心理，成为一股不可忽视的社会文化动向。",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/",
-      "score": 4
+      "url": "https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech/",
+      "score": 3
     },
     {
-      "title": "牧师因ChatGPT提供致命健康建议起诉OpenAI",
-      "summary_zh": "一名美国牧师因ChatGPT给出的健康建议险些致命而对OpenAI提起诉讼。该案可能成为生成式AI内容安全与平台责任的里程碑，再次拷问大模型在专业领域提供建议的合规边界与免责效力。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1672938",
+      "title": "脑电波或成为物理AI下一突破口",
+      "summary_zh": "研究人员指出，前沿物理AI模型不再满足于视频学习，正探索引入脑电波读数等多模态信号。通过记录人类执行物理任务时的神经活动，有望赋予机器人更细腻的动作理解与规划能力，为具身智能的突破提供新路径。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/",
+      "score": 3
+    },
+    {
+      "title": "一根倒塌的电线暴露AI数据中心电网脆弱性",
+      "summary_zh": "北弗吉尼亚州一起输电线事故险些引发大规模停机，暴露出AI数据中心在电网扰动下的脆弱应对。事件促使业界讨论分布式储能、微电网等技术方案，以解决激增的AI计算需求与不稳定电力供应之间的尖锐矛盾。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/",
+      "score": 3
+    },
+    {
+      "title": "苹果将以隐私为核心差异化其智能眼镜",
+      "summary_zh": "消息称苹果计划在WWDC 2027首发智能眼镜，正竭力解决产品带来的隐私争议。与Meta等竞品不同，苹果意图通过严格的隐私保护机制和贴心的公共标识设计，将其眼镜定位为最安全的可穿戴AI设备，重塑市场规则。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/971101/apple-smart-glasses-privacy",
       "score": 3
     }
   ],
   "stories": [
     {
-      "title": "卧薪尝胆",
+      "title": "弦高犒师",
       "dynasty": "春秋",
       "category": "历史故事",
-      "source": "《史记·越王勾践世家》"
+      "source": "《左传·僖公三十三年》"
     },
     {
-      "title": "窃符救赵",
+      "title": "申包胥哭秦庭",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《左传·定公四年》"
+    },
+    {
+      "title": "豫让漆身吞炭",
+      "dynasty": "战国",
+      "category": "历史故事",
+      "source": "《史记·刺客列传》"
+    },
+    {
+      "title": "侯赢北乡自刭",
       "dynasty": "战国",
       "category": "历史故事",
       "source": "《史记·魏公子列传》"
     },
     {
-      "title": "毛遂自荐",
-      "dynasty": "战国",
+      "title": "张巡死守睢阳",
+      "dynasty": "唐",
       "category": "历史故事",
-      "source": "《史记·平原君虞卿列传》"
+      "source": "《新唐书·忠义传》"
     },
     {
-      "title": "荆轲刺秦王",
-      "dynasty": "战国末期",
+      "title": "海瑞备棺上疏",
+      "dynasty": "明",
       "category": "历史故事",
-      "source": "《史记·刺客列传》"
-    },
-    {
-      "title": "晏子使楚",
-      "dynasty": "春秋",
-      "category": "历史故事",
-      "source": "《晏子春秋·内篇杂下》"
-    },
-    {
-      "title": "投笔从戎",
-      "dynasty": "东汉",
-      "category": "历史故事",
-      "source": "《后汉书·班超传》"
+      "source": "《明史·海瑞传》"
     },
     {
       "title": "蔡伦改进造纸术",
@@ -124,76 +124,76 @@
       "source": "《后汉书·杜诗传》"
     },
     {
-      "title": "腊八节传说：佛成道日",
-      "dynasty": "古印度传入",
-      "category": "传统节日传说",
-      "source": "《过去现在因果经》及《东京梦华录》等"
+      "title": "鲁班造锯与鲁班锁",
+      "dynasty": "春秋",
+      "category": "古代科技发明故事",
+      "source": "《事物纪原》《墨子》"
     },
     {
-      "title": "祭灶王与过小年",
-      "dynasty": "起源汉代",
-      "category": "传统节日传说",
-      "source": "《淮南子·氾论训》《抱朴子·微旨》"
+      "title": "黄道婆改进纺织技术",
+      "dynasty": "元",
+      "category": "古代科技发明故事",
+      "source": "陶宗仪《南村辍耕录》"
     },
     {
-      "title": "李白登黄鹤楼搁笔",
+      "title": "上巳节曲水流觞",
+      "dynasty": "先秦至晋",
+      "category": "传统节日传说",
+      "source": "《后汉书·礼仪志》《兰亭集序》"
+    },
+    {
+      "title": "中元节目连救母",
       "dynasty": "唐",
-      "category": "唐诗宋词背后的故事",
-      "source": "《唐才子传》卷一"
+      "category": "传统节日传说",
+      "source": "《盂兰盆经》《荆楚岁时记》"
+    },
+    {
+      "title": "冬至张仲景祛寒娇耳汤",
+      "dynasty": "东汉",
+      "category": "传统节日传说",
+      "source": "民间传说，载于《中国民间故事集成》"
+    },
+    {
+      "title": "腊八粥朱元璋落难传说",
+      "dynasty": "明",
+      "category": "传统节日传说",
+      "source": "见载于《燕京岁时记》等民俗文献"
     },
     {
       "title": "贾岛推敲",
       "dynasty": "唐",
       "category": "唐诗宋词背后的故事",
-      "source": "《苕溪渔隐丛话》引《刘公嘉话》"
+      "source": "《诗话总龟》《唐才子传》"
     },
     {
-      "title": "烛之武退秦师",
-      "dynasty": "春秋",
-      "category": "古代谋略外交",
-      "source": "《左传·僖公三十年》"
-    },
-    {
-      "title": "周处除三害",
-      "dynasty": "西晋",
-      "category": "古代自新故事",
-      "source": "《世说新语·自新》《晋书·周处传》"
-    },
-    {
-      "title": "甘英使大秦临海止步",
-      "dynasty": "东汉",
-      "category": "古代探险故事",
-      "source": "《后汉书·西域传》"
-    },
-    {
-      "title": "玄奘西行取经",
+      "title": "李白搁笔黄鹤楼",
       "dynasty": "唐",
-      "category": "古代求法故事",
-      "source": "《大唐大慈恩寺三藏法师传》《大唐西域记》"
+      "category": "唐诗宋词背后的故事",
+      "source": "《唐才子传》《唐诗纪事》"
     },
     {
-      "title": "文成公主入藏",
+      "title": "苏轼“河东狮吼”",
+      "dynasty": "宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "洪迈《容斋随笔》"
+    },
+    {
+      "title": "李贺呕心沥血觅诗",
       "dynasty": "唐",
-      "category": "民族和亲故事",
-      "source": "《旧唐书·吐蕃传》《新唐书·吐蕃传》"
+      "category": "唐诗宋词背后的故事",
+      "source": "李商隐《李贺小传》"
     },
     {
-      "title": "海瑞抬棺上疏",
-      "dynasty": "明",
-      "category": "古代直臣故事",
-      "source": "《明史·海瑞传》"
+      "title": "秦观《鹊桥仙》情缘",
+      "dynasty": "宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《墨庄漫录》《苕溪渔隐丛话》"
     },
     {
-      "title": "苏武牧羊",
-      "dynasty": "西汉",
-      "category": "古代忠节故事",
-      "source": "《汉书·苏武传》"
-    },
-    {
-      "title": "程门立雪",
-      "dynasty": "北宋",
-      "category": "古代求学故事",
-      "source": "《宋史·杨时传》"
+      "title": "李白《赠汪伦》幕后",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "袁枚《随园诗话》"
     }
   ]
 }
