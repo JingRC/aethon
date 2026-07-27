@@ -90,69 +90,71 @@ if not manga_chapter:
 
     from modules.manga_cards import MANGA_CHARACTER as MC
 
-    story_arc_prompt = f"""你是顶尖漫画编剧。为《小道士下山记》创作第{chapter_num}章。
+    story_arc_prompt = f"""你是少年漫画编剧。为《小道士下山记》创作第{chapter_num}章。
 
-## ⚠️ 绝对不要写的东西
-❌ 温馨告别、师父叫弟子来、收拾行李、平静山门
-❌ "师父说……""徒儿明白了……"这类模板化对话
-❌ 每页都在讲道理——道理要藏在故事里，藏在角色的表情里
-❌ 平淡的旁白——旁白要有态度，像在跟读者交头接耳
+## 你的唯一目标
+让读者一口气翻完16页，然后骂你"怎么在这断了？！"
+不需要讲道理。不需要温馨。只需要爽。
 
-## ✅ 必须做到
-✅ 第1页就要有钩子——让人想问"发生了什么？！"
-✅ 每一页结尾制造翻页冲动
-✅ 一章内情绪变化 ≥ 3 次（笑→紧张→感动→笑→期待）
-✅ 结尾是钩子，不是总结。让读者想立刻看下一章
-✅ 对话口语化、有个性。小道士不是复读机
+## 🚫 绝对禁止
+- 旁白框超过每章3个。用画面讲故事，不用文字解释
+- "我懂了""师父说过""原来是这样"——删掉
+- 大段独白。每格对话 ≤18字
+- 磨蹭。关键角色必须在5页内出场
+
+## 🔥 必须做到
+- 第1格就砸出一个大事件或大疑问
+- 对话像真人说话：嘴硬、吐槽、说一半咽回去
+- 笑点来自角色的性格缺陷和意外反应
+- 每3页至少一个让人想截屏的格子
+- 结尾留一句让人抓狂的台词
 
 ## 系列信息
-系列简介：{arc.get('tagline','')}
+简介：{arc.get('tagline','')}
 卷名：{volume_title}
-本章标题：{current_arc_info['title']}
-本章剧情方向：{current_arc_info['theme']}
-页数：{max_pages} 页正文 + 1 封面
+本章：{current_arc_info['title']}
+剧情方向：{current_arc_info['theme']}
+页数：{max_pages} 正文 + 1 封面
 
-## 前情提要
-{previous_context if previous_context else "（第1章：故事开始）"}
+## 前情
+{previous_context if previous_context else "第1章：故事开始"}
 
-## 角色（本章按需出场）
-- 小道士 明心 ♂15：机灵但不靠谱，逞强但爱哭，背得出一百条道理但每次都用错地方
-- 师父 ♂60+：话极少，每句话要么是伏笔要么让你鼻子一酸。经典动作：闭眼喝茶，突然说一句戳穿一切的话
-- 阿九 ♀16（第3章起出场）：字灵师，毒舌能打，骂小道士最凶但帮他也最拼
-- 沉默剑客 ♂25（第8章起出场）：不说话，跟着蹭饭。不是高冷，是社恐
+## 角色
+- 明心 ♂15：嘴硬爱哭运气差。但不是废物——他有一种"用最笨的办法做最对的事"的天赋
+- 师父 ♂60+：第1章开头就失踪了。只留一张纸条和一堆谜团
+- 阿九 ♀16（{chapter_num}>=3出场）：字灵师。毒舌。战力是本作天花板。不知道为什么盯上了小道士
+- 剑客 ♂25（{chapter_num}>=8出场）：不说话。出现时已经在队伍里了。没人记得他什么时候开始跟着的
 
-## 布局节奏
-splash(1格)=开篇/高潮/收尾 · half(2格)=交锋 · trio(3格)=连续镜头
-grid4(4格)=叙事 · cinema(4格)=大场面 · stack(4格)=主+反应 · grid5(5格)=混乱
-不要连续3页同一布局
+## 排版（不要连续3页同一布局）
+splash=1(开篇/高潮) half=2(对话对峙) trio=3(连续) grid4=4(叙事) cinema=4(全景→细节) stack=4(主+反应) grid5=5(混战)
 
-## 画面描述 image_prompt（英文）
-以 "{MC}" 开头，重复角色描述保证一致。描述场景+动作+表情+镜头+光线。格间变化景别。
+## 每格画面（英文）
+以 "{MC}" 开头。描述场景+动作+表情+镜头+光线。
 
 ## 返回 JSON
 {{
-  "title": "第{chapter_num}章 · 有吸引力的标题",
-  "headline": "封面大字 4-8字",
-  "subtitle": "有悬念的一句话",
+  "title": "第{chapter_num}章 · 吸睛标题",
+  "headline": "封面字 4-8字",
+  "subtitle": "一句悬念",
   "hashtags": ["#小道士下山记","#原创漫画","#国风动漫"],
   "pages": [
     {{
       "layout": "splash",
       "panels": [{{
         "image_prompt": "{MC} ...",
-        "narration": "旁白（有态度的）",
-        "dialogue": "对话",
+        "narration": null,
+        "dialogue": "对话 ≤18字",
         "sfx": "啪！",
         "speaker": "left"
       }}]
     }}
   ]
 }}
-规则：pages 恰好 {max_pages} 个 | panels 长度匹配 layout | 所有字段不能省略"""
+{max_pages} 页 | panels 数量匹配 layout | narration 一页最多用一次 | 优先用 dialogue 不是 narration"""
 
     manga_response = call_llm(
         story_arc_prompt, config,
-        system_prompt="你是顶尖漫画编剧。创作让人停不下来的故事。只返回JSON。",
+        system_prompt="你是少年漫画编剧。不需要讲道理，只需要让读者翻到最后一页骂你怎么断了。只返回JSON。",
         max_tokens=16384,
     )
     print(f"   LLM 返回 {len(manga_response)} 字符")
