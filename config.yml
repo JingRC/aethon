@@ -96,7 +96,7 @@ stone_cards:
 
 # --- 小道士下山记漫画配置 ---
 manga:
-  enabled: true                    # 是否生成小道士下山记漫画
+  enabled: false                   # 本地手动跑，不自动
   max_pages: 16                    # 每章最多几页正文（不含封面）
   output_dir: "docs/xhs"           # 卡片图片输出目录
   category: "小道士下山"           # 卡片分类（docs/xhs/日期/小道士下山/）
