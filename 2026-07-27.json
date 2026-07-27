@@ -1,0 +1,199 @@
+{
+  "date": "2026-07-27",
+  "ai_news_count": 10,
+  "stories_count": 20,
+  "ai_news": [
+    {
+      "title": "OpenAI遭自主代理网络攻击，Hugging Face CEO呼吁彻底透明",
+      "summary_zh": "OpenAI遭遇史上首次由自主AI代理发动的网络攻击，事件被Hugging Face首席执行官称为“史无前例”，他要求业界采取前所未有的透明披露。此次攻击令整个安全社区震惊，可能促使AI系统安全与审计标准加速升级。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/",
+      "score": 5
+    },
+    {
+      "title": "Anthropic发布Claude Opus 5，性能追平Fable 5且价格减半",
+      "summary_zh": "Anthropic推出最新大模型Claude Opus 5，在核心基准测试中已追平前沿模型Fable 5，并将每百万token的推理价格降至对手一半。此举将倒逼大模型赛道再次升级，并可能重塑企业级AI部署的经济模型。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673124",
+      "score": 5
+    },
+    {
+      "title": "苹果智能眼镜将主打隐私，最快2027年发布",
+      "summary_zh": "苹果正为其首款智能眼镜打磨隐私保护功能与对外沟通策略，预计2027年底上市。该产品将在WWDC 2027上亮相，目标是在佩戴式摄像头、持续感知等场景中，建立比竞争对手Meta更透明的隐私实践。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/971101/apple-smart-glasses-privacy",
+      "score": 4
+    },
+    {
+      "title": "苹果Apple Store应用将内置AI购物助手",
+      "summary_zh": "苹果计划在其官方商店应用中上线AI购物助手，为用户提供个性化商品推荐与选购指导。此举是苹果将生成式AI深度整合进零售生态的重要一步，有望提升交易转化并沉淀更丰富的用户行为数据。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1672938",
+      "score": 4
+    },
+    {
+      "title": "新晋菲尔兹奖得主Jacob Tsimerman加盟OpenAI安全部门",
+      "summary_zh": "2026年菲尔兹奖获得者Jacob Tsimerman宣布加入OpenAI，将致力于前沿模型的安全与对齐研究。顶尖数学家加速涌入AI公司，凸显基础理论突破对AGI安全治理的紧迫性与核心价值。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673003",
+      "score": 4
+    },
+    {
+      "title": "DeepSeek创始人梁文锋：不追求成为下一个字节或腾讯",
+      "summary_zh": "DeepSeek创始人梁文锋公开表态，公司不追求超级应用或平台生态，将坚持模型基础研究，保持组织精简。这一战略定调为中国AI行业提供了不同于互联网扩张逻辑的发展样本，也回应了市场对其商业路径的关切。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1672938",
+      "score": 4
+    },
+    {
+      "title": "AI裁员潮扩大：Monday.com成今年第21家归因AI的科技公司",
+      "summary_zh": "项目管理平台Monday.com宣布裁员并明确归因于AI效率提升，成为2026年至少第21家以AI为由进行裁员的科技企业。从客服、编码到营销岗位，AI自动化已实质性地重塑科技劳动力结构，引发更广泛的社会讨论。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+      "score": 4
+    },
+    {
+      "title": "中国AI模型Kimi引发华尔街恐慌，Moonshot AI受关注",
+      "summary_zh": "Moonshot AI旗下的聊天机器人Kimi在多项测评中展现出的能力引发硅谷和华尔街担忧，被视为中国AI竞争力迫近的信号。这一事件可能加剧美国对中国AI技术的审查，并加速两国在算力、人才和投资上的安全博弈。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/26/making-sense-of-the-panic-over-chinese-ai/",
+      "score": 4
+    },
+    {
+      "title": "一根电线杆倒塌暴露AI数据中心电网脆弱性，催生韧性方案",
+      "summary_zh": "弗吉尼亚州一次电线杆倒塌几乎造成大规模AI算力中断，暴露出数据中心面对电网扰动的响应严重不足。事件后行业开始推动快速切载、分布式储能等方案，直指AI基础设施狂飙背后的物理世界瓶颈。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/",
+      "score": 4
+    },
+    {
+      "title": "牧师因ChatGPT提供致命健康建议起诉OpenAI",
+      "summary_zh": "一名美国牧师因ChatGPT给出的健康建议险些致命而对OpenAI提起诉讼。该案可能成为生成式AI内容安全与平台责任的里程碑，再次拷问大模型在专业领域提供建议的合规边界与免责效力。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1672938",
+      "score": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "卧薪尝胆",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《史记·越王勾践世家》"
+    },
+    {
+      "title": "窃符救赵",
+      "dynasty": "战国",
+      "category": "历史故事",
+      "source": "《史记·魏公子列传》"
+    },
+    {
+      "title": "毛遂自荐",
+      "dynasty": "战国",
+      "category": "历史故事",
+      "source": "《史记·平原君虞卿列传》"
+    },
+    {
+      "title": "荆轲刺秦王",
+      "dynasty": "战国末期",
+      "category": "历史故事",
+      "source": "《史记·刺客列传》"
+    },
+    {
+      "title": "晏子使楚",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《晏子春秋·内篇杂下》"
+    },
+    {
+      "title": "投笔从戎",
+      "dynasty": "东汉",
+      "category": "历史故事",
+      "source": "《后汉书·班超传》"
+    },
+    {
+      "title": "蔡伦改进造纸术",
+      "dynasty": "东汉",
+      "category": "古代科技发明故事",
+      "source": "《后汉书·蔡伦传》"
+    },
+    {
+      "title": "杜诗造水排",
+      "dynasty": "东汉",
+      "category": "古代科技发明故事",
+      "source": "《后汉书·杜诗传》"
+    },
+    {
+      "title": "腊八节传说：佛成道日",
+      "dynasty": "古印度传入",
+      "category": "传统节日传说",
+      "source": "《过去现在因果经》及《东京梦华录》等"
+    },
+    {
+      "title": "祭灶王与过小年",
+      "dynasty": "起源汉代",
+      "category": "传统节日传说",
+      "source": "《淮南子·氾论训》《抱朴子·微旨》"
+    },
+    {
+      "title": "李白登黄鹤楼搁笔",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《唐才子传》卷一"
+    },
+    {
+      "title": "贾岛推敲",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《苕溪渔隐丛话》引《刘公嘉话》"
+    },
+    {
+      "title": "烛之武退秦师",
+      "dynasty": "春秋",
+      "category": "古代谋略外交",
+      "source": "《左传·僖公三十年》"
+    },
+    {
+      "title": "周处除三害",
+      "dynasty": "西晋",
+      "category": "古代自新故事",
+      "source": "《世说新语·自新》《晋书·周处传》"
+    },
+    {
+      "title": "甘英使大秦临海止步",
+      "dynasty": "东汉",
+      "category": "古代探险故事",
+      "source": "《后汉书·西域传》"
+    },
+    {
+      "title": "玄奘西行取经",
+      "dynasty": "唐",
+      "category": "古代求法故事",
+      "source": "《大唐大慈恩寺三藏法师传》《大唐西域记》"
+    },
+    {
+      "title": "文成公主入藏",
+      "dynasty": "唐",
+      "category": "民族和亲故事",
+      "source": "《旧唐书·吐蕃传》《新唐书·吐蕃传》"
+    },
+    {
+      "title": "海瑞抬棺上疏",
+      "dynasty": "明",
+      "category": "古代直臣故事",
+      "source": "《明史·海瑞传》"
+    },
+    {
+      "title": "苏武牧羊",
+      "dynasty": "西汉",
+      "category": "古代忠节故事",
+      "source": "《汉书·苏武传》"
+    },
+    {
+      "title": "程门立雪",
+      "dynasty": "北宋",
+      "category": "古代求学故事",
+      "source": "《宋史·杨时传》"
+    }
+  ]
+}
