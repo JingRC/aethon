@@ -4,6 +4,7 @@
 # ============================================
 
 # HTTP & 数据抓取
+requests>=2.28
 httpx>=0.24
 feedparser>=6.0
 beautifulsoup4>=4.12

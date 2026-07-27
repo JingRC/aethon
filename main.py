@@ -724,6 +724,42 @@ def main():
             logger.error(f"历史卡片生成失败: {e}")
             traceback.print_exc()
 
+    # ── 8. 生成石头禅修绘本 ──
+    stone_config = config.get("stone_cards", {})
+    if stone_config.get("enabled", False):
+        try:
+            logger.info("=" * 50)
+            logger.info("🪨 生成石头禅修绘本...")
+
+            max_pages = stone_config.get("max_pages", 12)
+
+            # 8a. LLM 生成故事
+            from modules.stone_cards import build_stone_story_prompt
+            stone_prompt = build_stone_story_prompt(max_pages)
+            logger.info("🤖 调用 LLM 生成石头禅修故事...")
+            stone_response = call_llm(stone_prompt, config,
+                                      system_prompt="你是绘本作家，创作禅意治愈的石头故事。只返回JSON格式。")
+            stone_story = parse_json_response(stone_response)
+            if isinstance(stone_story, list):
+                stone_story = stone_story[0] if stone_story else {}
+            if not stone_story or "pages" not in stone_story:
+                logger.warning("   LLM 绘本故事生成失败，跳过")
+            else:
+                logger.info(f"   故事: {stone_story.get('title', '?')} ({len(stone_story.get('pages', []))} 页)")
+
+                # 8b. 渲染卡片
+                from modules.stone_cards import render_stone_cards
+                stone_card_paths = render_stone_cards(
+                    stone_story,
+                    output_dir=stone_config.get("output_dir", "docs/xhs"),
+                    category=stone_config.get("category", "石头禅修"),
+                )
+                logger.info(f"🪨 石头绘本: {len(stone_card_paths)} 张卡片")
+
+        except Exception as e:
+            logger.error(f"石头绘本生成失败: {e}")
+            traceback.print_exc()
+
     logger.info("=" * 50)
     logger.info(f"✅ 完成！AI快讯 {len(ai_news)} 条 + 古代故事 {len(stories)} 则")
     logger.info(f"📂 输出目录: {DOCS_DIR}")

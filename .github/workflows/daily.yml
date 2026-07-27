@@ -26,7 +26,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
 
     steps:
       - uses: actions/checkout@v4
@@ -80,6 +80,12 @@ jobs:
           NOTION_PAGE_ID: ${{ secrets.NOTION_PAGE_ID }}
           APIHZ_KEY: ${{ secrets.APIHZ_KEY }}
           APIHZ_ID: ${{ secrets.APIHZ_ID }}
+          CLOUDBASE_ENV: ${{ secrets.CLOUDBASE_ENV }}
+          CLOUDBASE_API_KEY: ${{ secrets.CLOUDBASE_API_KEY }}
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
           PYTHONUNBUFFERED: "1"
         run: |
           echo "=== Python $(python --version) ==="

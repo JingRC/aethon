@@ -87,6 +87,13 @@ ancient_cards:
   output_dir: "docs/xhs"           # 卡片图片输出目录（与科技报同目录）
   category: "历史故事"             # 卡片分类（docs/xhs/日期/历史故事/）
 
+# --- 石头禅修绘本配置 ---
+stone_cards:
+  enabled: true                    # 是否生成石头禅修绘本卡片
+  max_pages: 12                    # 最多生成多少页（含封面 ≤18）
+  output_dir: "docs/xhs"           # 卡片图片输出目录
+  category: "石头禅修"             # 卡片分类（docs/xhs/日期/石头禅修/）
+
 # --- 图片搜索配置（接口盒子 / 百度图片搜索）---
 image_search:
   enabled: true                    # 是否自动搜索故事配图
