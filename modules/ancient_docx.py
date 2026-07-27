@@ -129,7 +129,8 @@ def generate_ancient_docx(stories: list[dict],
     hashtags = xhs_copy.get("hashtags", [])
     if hashtags:
         doc.add_heading("🏷️ 话题标签", level=2)
-        tags_para = doc.add_paragraph("  ".join(hashtags))
+        normalized = [f"#{t.lstrip('#')}" for t in hashtags]
+        tags_para = doc.add_paragraph("  ".join(normalized))
         for run in tags_para.runs:
             run.font.color.rgb = RGBColor(0xCC, 0x33, 0x33)
 
@@ -229,10 +230,11 @@ def generate_ancient_docx_fallback(stories: list[dict], output_path: str) -> str
     )
 
     # ── 自动生成标签 ──
-    auto_tags = [
-        "#历史故事", "#国学智慧", f"#{category_str}", "#古人智慧",
-        "#每天学点历史", "#传统文化", "#冷知识", "#认知升级",
+    auto_tags_raw = [
+        "历史故事", "国学智慧", category_str, "古人智慧",
+        "每天学点历史", "传统文化", "冷知识", "认知升级",
     ]
+    auto_tags = [f"#{t.lstrip('#')}" for t in auto_tags_raw]
 
     # ── 构建文档 ──
     doc = Document()
