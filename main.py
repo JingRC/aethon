@@ -760,6 +760,55 @@ def main():
             logger.error(f"石头绘本生成失败: {e}")
             traceback.print_exc()
 
+    # ── 9. 生成小道士下山记漫画 ──
+    manga_config = config.get("manga", {})
+    if manga_config.get("enabled", False):
+        try:
+            logger.info("=" * 50)
+            logger.info("📘 生成小道士下山记漫画...")
+
+            # 章节号：从文件读取，每天递增
+            chapter_file = DOCS_DIR / "manga_chapter.txt"
+            if chapter_file.exists():
+                chapter_num = int(chapter_file.read_text().strip())
+            else:
+                chapter_num = 1
+
+            max_pages = manga_config.get("max_pages", 16)
+
+            # 9a. LLM 生成漫画剧本
+            from modules.manga_cards import build_manga_chapter_prompt
+            manga_prompt = build_manga_chapter_prompt(chapter_num, max_pages)
+            logger.info(f"🤖 调用 LLM 生成第{chapter_num}章剧本...")
+            manga_response = call_llm(manga_prompt, config,
+                                      system_prompt="你是漫画编剧，创作小道士下山记。只返回JSON格式。",
+                                      max_tokens=16384)
+            manga_chapter = parse_json_response(manga_response)
+            if isinstance(manga_chapter, list):
+                manga_chapter = manga_chapter[0] if manga_chapter else {}
+            if not manga_chapter or "pages" not in manga_chapter:
+                logger.warning("   LLM 漫画剧本生成失败，跳过")
+            else:
+                logger.info(f"   第{chapter_num}章: {manga_chapter.get('title','?')} "
+                           f"({len(manga_chapter.get('pages',[]))} 页)")
+
+                # 9b. 渲染漫画
+                from modules.manga_cards import render_manga_chapter
+                manga_paths = render_manga_chapter(
+                    manga_chapter,
+                    chapter_num=chapter_num,
+                    output_dir=manga_config.get("output_dir", "docs/xhs"),
+                    category=manga_config.get("category", "小道士下山"),
+                )
+                logger.info(f"📘 漫画: 第{chapter_num}章 {len(manga_paths)} 张")
+
+                # 章节号 +1 写入文件
+                chapter_file.write_text(str(chapter_num + 1))
+
+        except Exception as e:
+            logger.error(f"漫画生成失败: {e}")
+            traceback.print_exc()
+
     logger.info("=" * 50)
     logger.info(f"✅ 完成！AI快讯 {len(ai_news)} 条 + 古代故事 {len(stories)} 则")
     logger.info(f"📂 输出目录: {DOCS_DIR}")

@@ -94,6 +94,13 @@ stone_cards:
   output_dir: "docs/xhs"           # 卡片图片输出目录
   category: "石头禅修"             # 卡片分类（docs/xhs/日期/石头禅修/）
 
+# --- 小道士下山记漫画配置 ---
+manga:
+  enabled: true                    # 是否生成小道士下山记漫画
+  max_pages: 16                    # 每章最多几页正文（不含封面）
+  output_dir: "docs/xhs"           # 卡片图片输出目录
+  category: "小道士下山"           # 卡片分类（docs/xhs/日期/小道士下山/）
+
 # --- 图片搜索配置（接口盒子 / 百度图片搜索）---
 image_search:
   enabled: true                    # 是否自动搜索故事配图
