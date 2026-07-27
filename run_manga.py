@@ -172,12 +172,19 @@ manga_response = call_llm(
     system_prompt="你是漫画编剧，创作小道士下山记。只返回JSON格式。",
     max_tokens=16384,
 )
+print(f"   LLM 返回 {len(manga_response)} 字符")
+
 manga_chapter = parse_json_response(manga_response)
 if isinstance(manga_chapter, list):
     manga_chapter = manga_chapter[0] if manga_chapter else {}
 
 if not manga_chapter or "pages" not in manga_chapter:
-    print("❌ LLM 剧本生成失败！")
+    print(f"❌ LLM 剧本解析失败！")
+    print(f"   返回类型: {type(manga_chapter)}")
+    print(f"   前500字: {manga_response[:500]}")
+    # 保存原始响应用于调试
+    Path("docs/manga_debug_response.txt").write_text(manga_response, encoding="utf-8")
+    print(f"   原始响应已保存到 docs/manga_debug_response.txt")
     sys.exit(1)
 
 pages = manga_chapter.get("pages", [])
