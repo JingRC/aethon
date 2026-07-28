@@ -1,4 +1,4 @@
-"""山海经外卖 — 漫画章节生成器 v2"""
+"""山海经外卖 — 漫画章节生成器 v3"""
 import os, sys, json, io, time, webbrowser
 sys.path.insert(0, ".")
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
@@ -29,7 +29,8 @@ ch_num = int(ch_file.read_text().strip()) if ch_file.exists() else 1
 sum_file = Path("docs/shanhai_summaries.json")
 prev = json.loads(sum_file.read_text(encoding="utf-8")) if sum_file.exists() else {}
 
-ch_info = None
+# Find chapter info
+ch_info = {"title": f"第{ch_num}章", "desc": "继续送餐"}
 vol_title = ""
 for vol in arc.get("volumes", []):
     for ch in vol.get("chapters_detail", vol.get("chapters", [])):
@@ -38,15 +39,9 @@ for vol in arc.get("volumes", []):
             vol_title = vol["title"]
             break
 
-if not ch_info:
-    ch_info = {"title": f"第{ch_num}章", "desc": "继续送餐", "theme": "继续送餐"}
-
 prev_ctx = ""
 if prev:
-    prev_ctx = "\n".join(
-        f"第{n}章《{i.get('title','')}》：{i.get('summary','')}"
-        for n, i in sorted(prev.items())
-    )
+    prev_ctx = "\n".join(f"第{n}章：{i.get('summary','')}" for n, i in sorted(prev.items()))
 
 print(f"""
 ╔══════════════════════════════════╗
@@ -66,179 +61,103 @@ chapter = None
 
 if skip_llm and json_path.exists():
     chapter = json.loads(open(json_path, encoding="utf-8").read())
-    print(f"📂 复用已有剧本 ({len(chapter.get('pages',[]))} 页)")
 elif json_path.exists():
-    ans = input(f"📂 已有剧本，复用？[Y/n] ").strip().lower()
+    ans = input(f"已有剧本，复用？[Y/n] ").strip().lower()
     if not ans or ans == "y":
         chapter = json.loads(open(json_path, encoding="utf-8").read())
 
 if not chapter:
     print("🤖 DeepSeek 生成剧本...")
 
-    CHEN_MO = (
-        "a young Chinese delivery rider, 24 years old, tired but kind eyes, "
-        "wearing a yellow Meituan delivery jacket and helmet, slightly messy black hair, "
-        "deadpan expression, riding an electric scooter with a delivery box, "
-        "realistic anime style, warm muted colors"
-    )
-    SCENE = (
-        "modern Chinese city streets at dusk, narrow alleyways with neon signs, "
-        "wet pavement reflecting streetlights, ordinary urban setting with subtle "
-        "hints of hidden magical doorways in the background"
-    )
+    CHEN = "a young Chinese delivery rider, 24, tired eyes, yellow Meituan jacket, deadpan expression, realistic anime style"
+    SCENE = "modern Chinese city at night, neon-lit alleyways, wet pavement, hidden magical doorways"
 
-    # Chapter-specific rules
+    # Chapter-specific beat sheets
     if ch_num == 1:
-        ch_rules = """### 第1章 · 开篇高速
-- 只出场：陈默 + 穷奇。其他角色不出现
-- 节奏：第1格就接单，第2页看到穷奇原型（虎身双翼），第4页完成初次对峙
-- 穷奇在废弃电话亭里现原形等外卖。陈默的反应：不是尖叫。是\"……好的。麻辣拌要不要加醋。\"
-- 穷奇被淡定的人类整不会了：\"你……不怕我？\"陈默：\"怕。但你已经下单了。先确认收货。\"
-- 结尾钩子：手机弹出\"穷奇给您打赏50元\" + 系统消息\"山海专送第1单完成。本分区共有37位客户。\"
-- 不解释世界观。让世界通过陈默的眼睛展开。读者不需要知道所有规则——只需要知道：①手机能接隐藏订单 ②穷奇是凶兽但吃素 ③小费真的很多"""
+        beat = """第1章16页节奏表：
+1-2页：雨夜。陈默接单。订单详情特写：收货地址=废弃电话亭第三格。客户=穷奇。订单=素食麻辣拌，变态辣。备注=敢放香菜老子吃了你。（划掉）揍你。
+3-4页：找到电话亭。门拉开——不是电话亭内部，是另一个空间。虎身双翼的巨兽蜷在里面等外卖。
+5-6页：穷奇冲出来。陈默没跑。穷奇：你不怕？陈默：怕。但你已经下单了。先确认收货。
+7-8页：穷奇吃麻辣拌。变人形。坐在电话亭门口。陈默站在旁边等确认收货。两人沉默。穷奇：你为什么不尖叫。陈默：累了。
+9-10页：穷奇：你是第一个看到我不跑的人类。陈默：你是第一个给我50元小费的客户。穷奇愣住。然后大笑。
+11-12页：离开前陈默问：你住的地方只有你能进？穷奇指向电话亭——门上浮现四个字：山海入口。穷奇：你们人类也有能看见的。很少。你是一个。
+13-14页：回程路上。手机弹出「山海专送App」——退不掉。删不了。永久在线。37客户头像：虎蛇鸟龙猪……
+15-16页：叮。新订单。收货人：饕餮。内容：五十人份。备注：快。饿。四个字。陈默揉了揉太阳穴。骑入雨夜。"""
     elif ch_num == 2:
-        ch_rules = """### 第2章 · 快节奏冲突
-- 穷奇打了三星。理由荒谬：\"包装盒没摆正\"
-- 陈默冲到武馆。穷奇以为他要打架——结果陈默把外卖袋拍桌上：\"免单。改五星。\"
-- 穷奇愣住。不是不敢打——是从来没人敢跟穷奇还价
-- 两人交锋：穷奇说\"有本事打一架\"，陈默说\"我没本事。但我可以永远不接你的单。\"
-- 结尾：穷奇改了五星。附加评价：\"这个人类不怎么样。但他没跑。还行。\""""
+        beat = """第2章16页节奏表：穷奇上次打了三星评价——因为包装盒没摆正。陈默冲到武馆。把外卖袋拍桌上：免单。改五星。穷奇愣住。不是不敢打——是从来没人敢跟穷奇讨价还价。两人对峙→陈默：我可以永远不接你的单→穷奇：……你赢了→改五星。附言：这个人类不怎么样。但他没跑。还行。结尾：系统提示「穷奇已成为您的固定客户」。"""
     elif ch_num == 3:
-        ch_rules = """### 第3章 · 重量级客户
-- 饕餮首次出场。五十人份订单。陈默跑五趟。每趟饕餮都在吃上一趟的东西
-- 陈默以为是一群人拼单。到了发现只有一个两百斤的胖子。和五十个空碗
-- 饕餮憨厚老实：\"不好意思啊小哥，我就是……饿得快。\"陈默沉默三秒。在备注里加三字：\"优先送\"
-- 结尾钩子：次日饕餮又下单了。这次六十人份。备注：\"昨天没吃饱。\"陈默看着手机。揉了揉太阳穴"""
+        beat = """第3章16页节奏表：饕餮首单——五十人份。陈默跑五趟。每趟饕餮都在吃上一趟的。陈默以为一群人拼单。到了发现只有一个两百斤的胖子。五十个空碗。饕餮憨厚：不好意思啊小哥，我就是饿得快。陈默沉默三秒。在备注栏手写：此客户第一单优先送。结尾钩子：次日饕餮又下单了。六十人份。备注：昨天没吃饱。"""
     elif 4 <= ch_num <= 7:
-        ch_rules = """### 第4-7章 · 世界展开
-- 引入九尾狐、伏羲废品站、应龙茶馆
-- 每章必须有一个新的神兽彩蛋（相柳奶茶、毕方烧烤、天狗月饼、女娲黏土等）
-- 节奏比前三章稍缓，但每章结尾必须有钩子
-- 逐步揭示陈默的家庭背景和母亲病情"""
+        beat = f"""第{ch_num}章：引入新角色/新规则。每章必须有一个新神兽彩蛋。节奏比前三章稍缓但结尾必须有钩子。剧情方向：{ch_info.get('desc','')}"""
     else:
-        ch_rules = """### 第8-17章 · 主线推进
-- 猎兽人威胁逐渐升级
-- 每章推动主线的同时保持单元剧趣味
-- 最后一章收尾要有完结感+对第二部的期待"""
+        beat = f"""第{ch_num}章：主线推进。推动猎兽人剧情的同时保持单元剧趣味。剧情方向：{ch_info.get('desc','')}"""
 
-    prompt = f"""你是漫画编剧。创作《山海经外卖》第{ch_num}章。
+    prompt = f"""漫画编剧。创作《山海经外卖》第{ch_num}章。{max_pages}页正文+1封面。只返回JSON。
 
-## 世界观
-{json.dumps(arc.get('world',{}), ensure_ascii=False)}
+世界：2026年，隐藏世界与人类世界重叠。山海异兽化人生活千年。异兽化人后法力弱，不能传送不能变食物——会点外卖。隐藏入口藏城市角落。外卖平台有隐藏分区「山海专送」。陈默手机Bug让他能接隐藏订单。
+前情：{prev_ctx if prev_ctx else "第1章"}
 
-## 系列简介
-{arc.get('tagline','')}
-卷：{vol_title}
-本章：{ch_info.get('title','')}
-剧情方向：{ch_info.get('desc', ch_info.get('theme',''))}
-页数：{max_pages} 页正文 + 1 封面
+## 剧本节奏（严格遵循）
+{beat}
 
-## 前情
-{prev_ctx if prev_ctx else "第1章开始"}
+## 角色性格
+穷奇（凶兽/格斗教练）：暴躁嘴臭护短。戒了吃人。对香菜有病态执着。每句话都在骂人但动作很温柔。
+陈默（外卖骑手）：话少到极致。口头禅\"好的\"\"嗯\"\"行\"。不是冷漠——是社恐+累了。每个离谱反应都用死鱼眼回应。
 
-## 角色
-{json.dumps(arc.get('characters',{}), ensure_ascii=False)}
-
-## ⚠️ 本章规则
-
-{ch_rules}
-
-### 叙事规则（通用）
-- 每页 narration ≤1 个。用画面和对话推动故事
-- 陈默说话：极度简短。\"好的。\"\"嗯。\"\"行。\"偶尔爆冷幽默
-- 神兽说话：凶萌接地气，不像神兽像邻居
-- 笑点公式：神兽的离谱需求 + 陈默死鱼眼 + 照做了 + 更离谱
-- 每章展示一个山海世界新角落或新神兽
-- 结尾留钩子——下一章开篇就是答案
+## 必须做到
+1. 陈默每句≤12字。穷奇每句≤20字。narration全章≤3处。
+2. 笑点来自：穷奇暴躁+陈默面瘫=穷奇更暴躁
+3. 结尾留钩子——让人想立刻翻下一章
+4. {max_pages}页正文，不能少
 
 ## 画面
-- 陈默前缀："{CHEN_MO}"
-- 场景前缀："{SCENE}"
-- 隐藏世界入口：普通物体（墙/电话亭/树）打开后是另一个维度
-- 穷奇原型：虎身双翼。人形：壮汉虎牙。饕餮人形：微笑胖子。九尾狐人形：优雅美艳
+陈默：\"{CHEN}\" | 场景：\"{SCENE}\" | 穷奇原型虎身双翼，人形壮汉虎牙 | 隐藏入口打开后是异维空间
 
-## 排版
-splash(1格)=开篇/高潮 half(2格)=对峙 trio(3格)=连续 grid4(4格)=叙事
-cinema(4格)=全景 grid5(5格)=混乱 不连续3页同布局
+## JSON
+{{"title":"第{ch_num}章标题","headline":"封面4-8字","subtitle":"好奇钩子","hashtags":["#山海经外卖"],"pages":[{{"layout":"splash","panels":[{{"image_prompt":"{CHEN} ...","narration":null,"dialogue":"≤18字","sfx":"叮","speaker":"left"}}]}}]}}
+{max_pages}页 | panels=layout对应数 | 不连续3页同布局"""
 
-## 返回JSON
-{{
-  "title": "第{ch_num}章 · 吸睛标题",
-  "headline": "封面大字 4-8字",
-  "subtitle": "一句话制造好奇",
-  "hashtags": ["#山海经外卖","#原创漫画","#搞笑治愈","#国风奇幻"],
-  "pages": [
-    {{
-      "layout": "splash",
-      "panels": [{{
-        "image_prompt": "{CHEN_MO} riding electric scooter, phone screen showing strange order, night city streets, {SCENE}",
-        "narration": null,
-        "dialogue": "对话 ≤18字",
-        "sfx": "叮！",
-        "speaker": "left"
-      }}]
-    }}
-  ]
-}}
-{max_pages} 页 | panels 匹配 layout | narration ≤3 处全章 | 每句 ≤18字"""
-
-    resp = call_llm(
-        prompt, config,
-        system_prompt="你是漫画编剧。创作好笑、有逻辑、有钩子的故事。只返回JSON。",
-        max_tokens=16384,
-    )
-    print(f"   LLM 返回 {len(resp)} 字符")
+    resp = call_llm(prompt, config,
+        system_prompt="漫画编剧。故事好笑有钩子。只返回JSON。",
+        max_tokens=16384)
+    print(f"   LLM返回{len(resp)}字符")
 
     chapter = parse_json_response(resp)
-    if isinstance(chapter, list):
-        chapter = chapter[0] if chapter else {}
-
+    if isinstance(chapter, list): chapter = chapter[0] if chapter else {}
     if not chapter or "pages" not in chapter:
-        print(f"❌ 解析失败！\n{resp[:500]}")
+        print(f"❌ 解析失败\n{resp[:500]}")
         Path("docs/shanhai_debug.txt").write_text(resp, encoding="utf-8")
         sys.exit(1)
-
     json_path.write_text(json.dumps(chapter, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"📝 已保存: {json_path}")
+    print(f"📝 已保存:{json_path}")
 
 pages = chapter.get("pages", [])
 total_panels = sum(len(p.get("panels", [])) for p in pages)
-print(f"   标题: {chapter.get('title','?')}")
-print(f"   封面: {chapter.get('headline','?')}")
-print(f"   页数: {len(pages)} / 格数: {total_panels}")
+print(f"   标题:{chapter.get('title','?')}  页数:{len(pages)}/{max_pages}  格数:{total_panels}")
+if len(pages) < max_pages: print(f"   ⚠️ 只有{len(pages)}页！应该{max_pages}页")
 
-preview_path = script_dir / f"shanhai_ch{ch_num:02d}.html"
+preview = script_dir / f"shanhai_ch{ch_num:02d}.html"
 from modules.manga_preview import generate_preview_html
-generate_preview_html(chapter, ch_num, preview_path)
-print(f"🌐 预览: {preview_path}")
-webbrowser.open(preview_path.resolve().as_uri())
+generate_preview_html(chapter, ch_num, preview)
+print(f"🌐 预览:{preview}")
+webbrowser.open(preview.resolve().as_uri())
 
-print(f"""
-┌─────────────────────────────────────┐
-│  预览已打开。检查剧本。              │
-│  修改: {json_path.name}              │
-│  生图: ~{total_panels} 张 ≈ {total_panels*15//60} 分钟          │
-└─────────────────────────────────────┘
-""")
-
+print(f"\n预计生图{total_panels}张≈{total_panels*15//60}分钟")
 ans = input("确认生成？[Y/n] ").strip().lower()
-if ans and ans != "y":
-    print("已取消。--resume 可续跑。")
-    sys.exit(0)
+if ans and ans != "y": print("取消。--resume续跑"); sys.exit(0)
 
 chapter = json.loads(open(json_path, encoding="utf-8").read())
 print("\n🎨 生图+渲染...")
 from modules.manga_cards import render_manga_chapter
 paths = render_manga_chapter(chapter, chapter_num=ch_num, output_dir="docs/xhs", category="山海经外卖")
 
-print(f"\n✅ 第{ch_num}章完成！{len(paths)} 张")
-for p in paths:
-    print(f"   {Path(p).name} ({os.path.getsize(p)/1024/1024:.1f} MB)")
+print(f"\n✅ 第{ch_num}章完成 {len(paths)}张")
+for p in paths: print(f"   {Path(p).name} ({os.path.getsize(p)/1024/1024:.1f}MB)")
 print(f"\n📂 {Path(paths[0]).parent}")
 
-s = input("\n📝 摘要：").strip()
-if not s: s = ch_info.get('desc', ch_info.get('theme', ''))[:60]
+s = input("\n摘要：").strip()
+if not s: s = ch_info.get('desc','')[:60]
 prev[str(ch_num)] = {"title": chapter.get("title",""), "summary": s}
 sum_file.write_text(json.dumps(prev, ensure_ascii=False, indent=2), encoding="utf-8")
 ch_file.write_text(str(ch_num + 1))
-print(f"\n🎉 第{ch_num}章完成 → 第{ch_num+1}章")
+print(f"\n🎉 第{ch_num}章→{ch_num+1}")
