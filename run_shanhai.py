@@ -94,13 +94,15 @@ if not chapter:
 
     prompt = f"""{beat}
 
-角色：穷奇（暴躁凶兽/吃素/香菜执念/嘴臭心软）。陈默（面瘫骑手/对话越少越好/多数时候\"……\"或一个\"嗯\"/绝不主动说话）。
+穷奇（凶兽/暴躁/嘴臭/吃素/香菜死敌）。陈默（面瘫/"……"就算一句完整的话）。
 
-硬规则：①恰好{max_pages}页正文 ②陈默每句≤12字 穷奇≤20字 ③narration全章≤3 ④结尾留钩子 ⑤不连续3页同布局
+⚠️SFX必须中文！啪/轰/嗡/咚/咔/唰——禁止英文拟声！dialogue必须中文！narration必须中文！image_prompt才是唯一用英文的！
 
-画面前缀：陈默\"{CHEN}\" | 场景\"{SCENE}\"
+{max_pages}页 陈默<=5字 穷奇<=20字 narration<=2 sfx中文 结尾钩子 不连3页同布局
 
-JSON（恰好{max_pages}个page对象）：{{"title":"","headline":"4-8字","subtitle":"好奇钩子","hashtags":["#山海经外卖"],"pages":[{{"layout":"splash","panels":[{{"image_prompt":"{CHEN} ...","narration":null,"dialogue":"","sfx":"","speaker":"left"}}]}}]}}"""
+画面：陈默"{CHEN}" | 场景"{SCENE}"
+
+JSON:{{"title":"","headline":"4-8字","subtitle":"","hashtags":["#山海经外卖"],"pages":[{{"layout":"splash","panels":[{{"image_prompt":"{CHEN} ...","narration":null,"dialogue":"中文","sfx":"啪","speaker":"left"}}]}}]}}"""
 
     resp = call_llm(prompt, config,
         system_prompt="""你是漫画编剧。为《山海经外卖》创作剧本。
