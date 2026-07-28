@@ -96,7 +96,7 @@ CLOUDBASE_TIMEOUT = int(os.environ.get("CLOUDBASE_TIMEOUT", "300"))  # 默认 5 
 CLOUDBASE_RETRIES = 1  # 首次失败后重试 1 次
 
 
-def _generate_cloudbase(prompt: str, seed: int = None, size: str = "1024x1024") -> dict | None:
+def _generate_cloudbase(prompt: str, seed: int = None, size: str = "1024x1024", reference_image_path: str = None) -> dict | None:
     """调用微信小程序云函数 ai-image 生图（混元 3.0，10万张免费额度）。
 
     Returns:
@@ -115,6 +115,14 @@ def _generate_cloudbase(prompt: str, seed: int = None, size: str = "1024x1024") 
     }
     if seed is not None:
         payload["seed"] = seed
+
+    if reference_image_path:
+        try:
+            import base64 as b64
+            ref_data = Path(reference_image_path).read_bytes()
+            payload["reference_image"] = b64.b64encode(ref_data).decode("ascii")
+        except Exception as e:
+            logger.warning(f"   CloudBase 参考图加载失败: {e}")
 
     last_error = None
     for attempt in range(1 + CLOUDBASE_RETRIES):
@@ -453,3 +461,144 @@ def generate_stone_images(prompts: list[dict], story_seed: int = 42) -> dict[int
     _save_index(cache)
     logger.info(f"   完成: {len(results)}/{total} 张")
     return results
+
+
+# ═══════════════════════════════════════════════════════════
+# 图生图：角色参考图生成 + 基于参考图的面板生图
+# ═══════════════════════════════════════════════════════════
+
+def _generate_ref_image(character_desc: str, label: str = "character") -> str | None:
+    """生成角色参考图（单张，高精度，用于后续面板的图生图参考）。
+
+    返回本地路径，或 None。
+    """
+    REF_PROMPT = (
+        f"{character_desc}, character design reference sheet, "
+        "front view, full body, standing pose, simple light grey background, "
+        "clean lines, consistent proportions, no text no watermark, "
+        "professional anime character design, cel-shaded coloring"
+    )
+    logger.info(f"🎨 生成{label}参考图...")
+    result = _generate_cloudbase(REF_PROMPT, seed=42, size="1024x1024")
+    if result:
+        from modules.watermark_remover import remove_watermark
+        remove_watermark(result["path"])
+        logger.info(f"   {label}参考图: {result['path']}")
+        return result["path"]
+    return None
+
+
+def generate_stone_images_with_refs(
+    prompts: list[dict],
+    character_refs: dict[str, str],
+    story_seed: int = 42,
+) -> dict[int, str]:
+    """批量生成图像，支持角色参考图（图生图保持一致性）。
+
+    Args:
+        prompts: [{"index":0, "prompt":"...", "text":"..."}, ...]
+        character_refs: {"main": "/path/to/chenmo_ref.png", ...}
+               每个 prompt 会收到第一个匹配的参考图
+        story_seed: 故事种子
+    Returns:
+        {index: local_path}
+    """
+    cache = _load_index()
+    results: dict[int, str] = {}
+    total = len(prompts)
+
+    # 预计算
+    page_meta: dict[int, tuple[str, int, str, str | None]] = {}
+    for p in prompts:
+        idx = p["index"]
+        prompt_text = p["prompt"]
+        seed = _make_seed(story_seed, idx)
+        ck = _cache_key(prompt_text, seed)
+        # 匹配参考图
+        ref = None
+        for key, ref_path in character_refs.items():
+            if os.path.exists(ref_path):
+                ref = ref_path
+                break
+        page_meta[idx] = (prompt_text, seed, ck, ref)
+
+    # 缓存命中
+    uncached: list[int] = []
+    for idx, (prompt_text, seed, ck, _ref) in page_meta.items():
+        if ck in cache and os.path.exists(cache[ck]):
+            logger.info(f"   [{idx+1}/{total}] 缓存命中")
+            results[idx] = cache[ck]
+        else:
+            uncached.append(idx)
+
+    if not uncached:
+        logger.info(f"   全部命中缓存 ({total}/{total})")
+        return results
+
+    has_refs = any(r for _, _, _, r in page_meta.values())
+    logger.info(f"🖼️  图生图模式: {len(uncached)}/{total} 张 (参考图:{'有' if has_refs else '无'})")
+
+    executor = ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(uncached)))
+    try:
+        futures = {}
+        for idx in uncached:
+            prompt_text, seed, ck, ref = page_meta[idx]
+            future = executor.submit(
+                _generate_one_with_ref,
+                prompt=prompt_text,
+                seed=seed,
+                page_index=idx,
+                total=total,
+                cache=cache,
+                reference_image_path=ref,
+            )
+            futures[future] = (idx, ck)
+
+        for future in as_completed(futures):
+            idx, ck = futures[future]
+            try:
+                pg_idx, path = future.result()
+                if path:
+                    cache[ck] = path
+                    results[pg_idx] = path
+                else:
+                    logger.error(f"   第 {pg_idx+1} 页生图失败")
+            except Exception as e:
+                logger.error(f"   并行任务异常 (idx={idx}): {e}")
+    finally:
+        executor.shutdown(wait=False, cancel_futures=True)
+
+    _save_index(cache)
+    logger.info(f"   完成: {len(results)}/{total} 张")
+    return results
+
+
+def _generate_one_with_ref(
+    prompt: str,
+    seed: int,
+    page_index: int,
+    total: int,
+    cache: dict,
+    reference_image_path: str = None,
+) -> tuple[int, str | None]:
+    """单张生成（带参考图支持）"""
+    ck = _cache_key(prompt, seed)
+
+    fallback_order = [
+        ("CloudBase", lambda p, s: _generate_cloudbase(p, s, reference_image_path=reference_image_path)),
+        ("Pollinations", lambda p, s: _generate_pollinations(p, s)),
+        ("SiliconFlow", lambda p, s: _generate_siliconflow(p, s)),
+        ("Cloudflare", lambda p, s: _generate_cloudflare(p, s)),
+    ]
+
+    for api_name, api_func in fallback_order:
+        try:
+            result = api_func(prompt, seed)
+            if result and result.get("path"):
+                from modules.watermark_remover import remove_watermark
+                remove_watermark(result["path"])
+                return (page_index, result["path"])
+        except Exception:
+            continue
+
+    return (page_index, None)

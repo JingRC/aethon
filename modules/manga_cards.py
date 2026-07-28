@@ -518,7 +518,7 @@ def render_manga_chapter(
     logger.info(f"📘 渲染漫画: 第{chapter_num}章 ({total_pages} 页)")
 
     # ── 收集所有面板的生图 prompt ──
-    from modules.stone_image import generate_stone_images
+    from modules.stone_image import generate_stone_images_with_refs, _generate_ref_image
 
     # 强制追加漫画风格+角色一致性描述
     STYLE_TAG = (
@@ -558,7 +558,7 @@ def render_manga_chapter(
 
     import random
     story_seed = random.randint(1, 4294967295)
-    img_map = generate_stone_images(prompts, story_seed=story_seed)
+    img_map = generate_stone_images_with_refs(prompts, character_refs, story_seed=story_seed)
     logger.info(f"   获取 {len(img_map)}/{total_panels} 张格图")
 
     rendered: list[str] = []
