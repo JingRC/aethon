@@ -92,33 +92,29 @@ if not chapter:
     else:
         beat = f"""第{ch_num}章：主线推进。推动猎兽人剧情的同时保持单元剧趣味。剧情方向：{ch_info.get('desc','')}"""
 
-    prompt = f"""漫画编剧。创作《山海经外卖》第{ch_num}章。{max_pages}页正文+1封面。只返回JSON。
+    prompt = f"""{beat}
 
-世界：2026年，隐藏世界与人类世界重叠。山海异兽化人生活千年。异兽化人后法力弱，不能传送不能变食物——会点外卖。隐藏入口藏城市角落。外卖平台有隐藏分区「山海专送」。陈默手机Bug让他能接隐藏订单。
-前情：{prev_ctx if prev_ctx else "第1章"}
+角色：穷奇（暴躁凶兽/吃素/香菜执念/嘴臭心软）。陈默（面瘫骑手/话极少/\"好的\"\"嗯\"\"行\"/社恐）。
 
-## 剧本节奏（严格遵循）
-{beat}
+硬规则：①恰好{max_pages}页正文 ②陈默每句≤12字 穷奇≤20字 ③narration全章≤3 ④结尾留钩子 ⑤不连续3页同布局
 
-## 角色性格
-穷奇（凶兽/格斗教练）：暴躁嘴臭护短。戒了吃人。对香菜有病态执着。每句话都在骂人但动作很温柔。
-陈默（外卖骑手）：话少到极致。口头禅\"好的\"\"嗯\"\"行\"。不是冷漠——是社恐+累了。每个离谱反应都用死鱼眼回应。
+画面前缀：陈默\"{CHEN}\" | 场景\"{SCENE}\"
 
-## 必须做到
-1. 陈默每句≤12字。穷奇每句≤20字。narration全章≤3处。
-2. 笑点来自：穷奇暴躁+陈默面瘫=穷奇更暴躁
-3. 结尾留钩子——让人想立刻翻下一章
-4. {max_pages}页正文，不能少
-
-## 画面
-陈默：\"{CHEN}\" | 场景：\"{SCENE}\" | 穷奇原型虎身双翼，人形壮汉虎牙 | 隐藏入口打开后是异维空间
-
-## JSON
-{{"title":"第{ch_num}章标题","headline":"封面4-8字","subtitle":"好奇钩子","hashtags":["#山海经外卖"],"pages":[{{"layout":"splash","panels":[{{"image_prompt":"{CHEN} ...","narration":null,"dialogue":"≤18字","sfx":"叮","speaker":"left"}}]}}]}}
-{max_pages}页 | panels=layout对应数 | 不连续3页同布局"""
+JSON（恰好{max_pages}个page对象）：{{"title":"","headline":"4-8字","subtitle":"好奇钩子","hashtags":["#山海经外卖"],"pages":[{{"layout":"splash","panels":[{{"image_prompt":"{CHEN} ...","narration":null,"dialogue":"","sfx":"","speaker":"left"}}]}}]}}"""
 
     resp = call_llm(prompt, config,
-        system_prompt="漫画编剧。故事好笑有钩子。只返回JSON。",
+        system_prompt="""你是漫画编剧。为《山海经外卖》创作剧本。
+
+世界观：2026年，山海异兽化人生活千年。异兽化人后法力弱，不能传送不能变食物——但会点外卖。隐藏入口藏城市角落。外卖平台有隐藏分区「山海专送」。快递员陈默手机Bug让他能接隐藏订单。
+
+铁律：
+1. 必须输出恰好16页正文。每页有layout和panels。layout从splash/half/trio/grid4/cinema/grid5选。
+2. 陈默对话≤12字。穷奇对话≤20字。全章narration≤3处。
+3. 笑点公式：穷奇暴躁→陈默面瘫→穷奇更暴躁。
+4. 结尾必须是钩子——让读者想翻下一章。
+5. 画面描述用英文，以上述前缀开头。
+6. 不连续3页同一layout。
+只返回JSON。不解释。""",
         max_tokens=16384)
     print(f"   LLM返回{len(resp)}字符")
 
