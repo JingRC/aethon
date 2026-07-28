@@ -39,7 +39,7 @@ for vol in arc.get("volumes", []):
             break
 
 if not ch_info:
-    ch_info = {"title": f"第{ch_num}章", "theme": "继续送餐"}
+    ch_info = {"title": f"第{ch_num}章", "desc": "继续送餐", "theme": "继续送餐"}
 
 prev_ctx = ""
 if prev:
@@ -129,8 +129,8 @@ if not chapter:
 ## 系列简介
 {arc.get('tagline','')}
 卷：{vol_title}
-本章：{ch_info['title']}
-剧情方向：{ch_info['theme']}
+本章：{ch_info.get('title','')}
+剧情方向：{ch_info.get('desc', ch_info.get('theme',''))}
 页数：{max_pages} 页正文 + 1 封面
 
 ## 前情
@@ -237,7 +237,7 @@ for p in paths:
 print(f"\n📂 {Path(paths[0]).parent}")
 
 s = input("\n📝 摘要：").strip()
-if not s: s = ch_info['theme'][:60]
+if not s: s = ch_info.get('desc', ch_info.get('theme', ''))[:60]
 prev[str(ch_num)] = {"title": chapter.get("title",""), "summary": s}
 sum_file.write_text(json.dumps(prev, ensure_ascii=False, indent=2), encoding="utf-8")
 ch_file.write_text(str(ch_num + 1))
