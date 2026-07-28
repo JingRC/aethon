@@ -32,7 +32,7 @@ prev = json.loads(sum_file.read_text(encoding="utf-8")) if sum_file.exists() els
 ch_info = None
 vol_title = ""
 for vol in arc.get("volumes", []):
-    for ch in vol.get("chapters", []):
+    for ch in vol.get("chapters_detail", vol.get("chapters", [])):
         if ch["num"] == ch_num:
             ch_info = ch
             vol_title = vol["title"]
