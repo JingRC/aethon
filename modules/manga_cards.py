@@ -501,13 +501,25 @@ def render_manga_chapter(
     # ── 收集所有面板的生图 prompt ──
     from modules.stone_image import generate_stone_images
 
+    # 强制追加漫画风格后缀，保证全章视觉统一
+    STYLE_SUFFIX = (
+        ", professional manga panel, Japanese comic art style, "
+        "clean black linework with screentones, cel-shaded anime coloring, "
+        "sharp outlines, dramatic lighting, comic panel composition, "
+        "flat color areas with halftone shading, 1990s manga aesthetic, "
+        "consistent character design, same art style across all panels"
+    )
+
     prompts = []
     panel_idx = 0
     for page in pages:
         for panel in page.get("panels", []):
+            raw_prompt = panel.get("image_prompt", "").strip()
+            if raw_prompt:
+                raw_prompt = raw_prompt + STYLE_SUFFIX
             prompts.append({
                 "index": panel_idx,
-                "prompt": panel.get("image_prompt", ""),
+                "prompt": raw_prompt,
                 "text": panel.get("dialogue", "") or panel.get("narration", ""),
             })
             panel_idx += 1
