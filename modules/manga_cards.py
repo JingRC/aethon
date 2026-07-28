@@ -43,43 +43,46 @@ MANGA_CHARACTER = (
 # ═══════════════════════════════════════════════════════════
 
 def _speech_bubble(text: str, side: str = "left", style: str = "normal") -> str:
-    """中文对话气泡。side: left/right, style: normal/shout/think/narration."""
+    """漫画对话气泡——绝对定位浮在画面上。"""
     if not text:
         return ""
 
     if style == "narration":
         return (
-            f'<div class="narration-box">'
+            '<div class="narration-box">'
             f'<div class="narration-text">{text}</div>'
-            f'</div>'
+            '</div>'
         )
 
     if style == "shout":
-        bubble_css = "border-radius:8px; border:3px solid #e63946; background:#fff5f5;"
-        font_size = "32px"
+        bkg = "rgba(255,245,245,0.93)"
+        bdr = "3px solid #e63946"
+        fsz = "30px"
     elif style == "think":
-        bubble_css = "border-radius:50%; border:2px dashed #999; background:#fafafa;"
-        font_size = "28px"
+        bkg = "rgba(250,250,250,0.90)"
+        bdr = "2px dashed #999"
+        fsz = "26px"
     else:
-        bubble_css = "border-radius:20px; border:2px solid #333; background:#fff;"
-        font_size = "30px"
+        bkg = "rgba(255,255,255,0.92)"
+        bdr = "2px solid #333"
+        fsz = "28px"
 
-    align = "flex-end" if side == "right" else "flex-start"
+    al = "right:6px;" if side == "right" else "left:6px;"
     return (
-        f'<div style="display:flex; justify-content:{align}; margin:4px 0;">'
-        f'<div style="max-width:85%; padding:10px 16px; {bubble_css} '
-        f'font-size:{font_size}; line-height:1.5; color:#1a1a1a; '
-        f'box-shadow:0 2px 4px rgba(0,0,0,0.08);">{text}</div>'
-        f'</div>'
+        f'<div style="position:absolute;bottom:6px;{al}max-width:88%;'
+        f'padding:8px 12px;{bdr}border-radius:6px;background:{bkg};'
+        f'font-size:{fsz};font-weight:700;color:#1a1a1a;line-height:1.4;'
+        f'z-index:3;box-shadow:0 1px 3px rgba(0,0,0,0.12);">{text}</div>'
     )
 
 
 def _sfx(text: str) -> str:
-    """拟声词/效果字。"""
+    """拟声词——居中浮在画面上。"""
     return (
-        f'<div style="font-size:56px; font-weight:900; color:{MC["sfx_color"]}; '
-        f'letter-spacing:4px; opacity:0.85; transform:rotate(-8deg); '
-        f'text-shadow:2px 2px 0 rgba(0,0,0,0.1);">{text}</div>'
+        f'<div class="sfx-overlay" style="font-size:56px;font-weight:900;'
+        f'color:{MC["sfx_color"]};letter-spacing:4px;opacity:0.85;'
+        f'transform:translate(-50%,-50%) rotate(-8deg);'
+        f'text-shadow:2px 2px 0 rgba(0,0,0,0.15);">{text}</div>'
     )
 
 
@@ -132,6 +135,7 @@ def _build_page_html(
     page_num: int,
     total: int,
     panel_offset: int = 0,
+    series_name: str = "山海经外卖",
 ) -> str:
     """构建一页漫画 HTML。"""
     layout = page.get("layout", "grid4")
@@ -222,6 +226,23 @@ html, body {{
   font-weight:400; text-align:center;
 }}
 
+.speech-bubble {{
+  position:absolute; bottom:8px; left:8px; right:8px;
+  background:rgba(255,255,255,0.92); border:2px solid #333;
+  border-radius:6px; padding:6px 10px; z-index:3;
+  font-size:26px; font-weight:700; color:#1a1a1a; line-height:1.4;
+}}
+.sfx-overlay {{
+  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+  z-index:4; pointer-events:none;
+}}
+.narration-box {{
+  position:absolute; top:0; left:0; right:0;
+  background:{MC["narration_bg"]}; padding:10px 20px; z-index:5;
+}}
+.narration-text {{
+  font-size:26px; color:#fff; letter-spacing:2px; font-weight:400; text-align:center;
+}}
 .page-footer {{
   display:flex; justify-content:space-between; align-items:center;
   padding:6px 8px 0 8px; font-size:20px; color:{MC["page_num"]};
@@ -232,7 +253,7 @@ html, body {{
 <div class="page-container">
   <div class="panels">{panels_html}</div>
   <div class="page-footer">
-    <div class="chapter-title">小道士下山记</div>
+    <div class="chapter-title">{series_name}</div>
     <div class="page-num">{page_label}</div>
   </div>
 </div>
@@ -557,6 +578,7 @@ def render_manga_chapter(
             html = _build_page_html(
                 page, img_map, i + 1, total_pages,
                 panel_offset=running_panel_offset,
+                series_name=category,
             )
             running_panel_offset += len(page.get("panels", []))
             render_html_to_png(html, str(path))
