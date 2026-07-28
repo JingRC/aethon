@@ -517,20 +517,19 @@ def render_manga_chapter(
 
     logger.info(f"📘 渲染漫画: 第{chapter_num}章 ({total_pages} 页)")
 
-    # ── 收集所有面板的生图 prompt ──
+    # ── 业界验证的角色一致性方案（DoodleBook/ComicX/CharCom）──
     from modules.stone_image import generate_stone_images_with_refs, _generate_ref_image
 
-    # 强制追加漫画风格+角色一致性描述
-    STYLE_TAG = (
-        "professional manga panel, Japanese comic art, clean black linework, "
-        "cel-shaded anime coloring, sharp outlines, halftone screentones, "
-        "flat color areas, dramatic lighting, consistent character design, "
-        "all panels same art style same character appearance"
+    # 角色DNA——逐字注入每个面板prompt（来自2025年ComicX论文验证）
+    CHAR_DNA = (
+        "Same character in every panel: a 24-year-old Chinese male food delivery rider, "
+        "short messy black hair, tired half-closed eyes, thin face, yellow Meituan delivery "
+        "jacket with black collar, dark blue jeans, black sneakers, slim build 175cm tall, "
+        "always wearing a yellow helmet with '美团' logo, expressionless face, deadpan look"
     )
-
-    # 角色一致性前缀——每张图必须拥有相同的角色外观
-    CHAR_PREFIX = (
-        "In a manga panel: consistent character design, same character as other panels, "
+    STYLE_TAG = (
+        "Japanese manga panel, black and white line art with screentones, "
+        "clean sharp outlines, cel-shaded, halftone shading, comic style"
     )
 
     prompts = []
@@ -539,13 +538,7 @@ def render_manga_chapter(
         for panel in page.get("panels", []):
             raw_prompt = panel.get("image_prompt", "").strip()
             if raw_prompt:
-                # 去掉 LLM 可能加的长前缀，统一用我们的
-                raw_prompt = raw_prompt.replace(
-                    "a cute young Taoist monk boy with big expressive eyes, round face, wearing simple grey Taoist robe and cloth shoes, carrying a small cloth bag, Studio Ghibli anime style, soft cel shading, clean linework, warm lighting, kawaii character design, consistent character appearance ",
-                    ""
-                )
-                # 前加角色一致性，后加风格标签
-                raw_prompt = CHAR_PREFIX + raw_prompt + ", " + STYLE_TAG
+                raw_prompt = f"{CHAR_DNA}. {raw_prompt}. {STYLE_TAG}"
             prompts.append({
                 "index": panel_idx,
                 "prompt": raw_prompt,
@@ -555,21 +548,18 @@ def render_manga_chapter(
 
     total_panels = len(prompts)
 
-    # ── 生成主角参考图（图生图，保持角色一致）──
+    # 生成参考图（图生图锚点）
     character_refs = {}
+    BASE_SEED = 42
     try:
-        MAIN_CHAR = "a 24-year-old Chinese food delivery rider, tired eyes, yellow Meituan jacket, deadpan face, short messy black hair, slim build, anime style"
-        ref_path = _generate_ref_image(MAIN_CHAR, label="骑手")
+        ref_path = _generate_ref_image(CHAR_DNA, label="骑手")
         if ref_path:
             character_refs["main"] = ref_path
     except Exception as e:
-        logger.warning(f"   参考图生成失败，回退纯文生图: {e}")
+        logger.warning(f"   参考图生成失败: {e}")
 
-    logger.info(f"   共 {total_panels} 个漫画格 (参考图:{len(character_refs)}张)，开始生图...")
-
-    import random
-    story_seed = random.randint(1, 4294967295)
-    img_map = generate_stone_images_with_refs(prompts, character_refs, story_seed=story_seed)
+    logger.info(f"   共 {total_panels} 个漫画格 (参考图:{len(character_refs)}张 DNA+图生图)")
+    img_map = generate_stone_images_with_refs(prompts, character_refs, story_seed=BASE_SEED)
     logger.info(f"   获取 {len(img_map)}/{total_panels} 张格图")
 
     rendered: list[str] = []
