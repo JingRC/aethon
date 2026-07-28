@@ -1,0 +1,199 @@
+{
+  "date": "2026-07-28",
+  "ai_news_count": 10,
+  "stories_count": 20,
+  "ai_news": [
+    {
+      "title": "Hugging Face 披露前沿实验室 AI 代理入侵事件",
+      "summary_zh": "Hugging Face 公开了 2026 年 7 月发生的重大安全事件技术细节，攻击者通过 AI 代理系统侵入多家前沿 AI 实验室的内部网络，暴露了自主代理在安全防护上的漏洞，引发行业对 AI 系统自身安全的深度担忧。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/security-incident-july-2026",
+      "score": 5
+    },
+    {
+      "title": "OpenAI、Anthropic 等员工联名要求美国政府干预自主 AI",
+      "summary_zh": "来自 OpenAI、Anthropic、Google、Meta 等顶尖实验室的员工签署公开声明，呼吁美国政府加强对自动 AI 系统的全球协同治理，甚至支持在前沿 AI 开发上采取某种“减速”措施，反映出业内对失控风险的集体焦虑。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/972161/ai-leaders-us-government-openai-anthropic-google-meta",
+      "score": 5
+    },
+    {
+      "title": "Sam Altman 表态支持 AI 发展减速",
+      "summary_zh": "OpenAI CEO Sam Altman 在经历“第一次让他感到痛彻心扉的安全事件”后公开改变立场，表示愿意放缓 AI 前进步伐。这一转向可能深刻影响全球 AI 竞赛的节奏与监管进程。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/28/sam-altman-is-ready-to-decelerate/",
+      "score": 5
+    },
+    {
+      "title": "Claude Opus 5 发布：砍掉 80% 系统提示词，交互方式面临变革",
+      "summary_zh": "Anthropic 发布 Claude Opus 5，大胆精简了超过 80% 的系统提示词，用户在惊讶的同时也开始反思，过去大量编写提示词的做法可能在新模型上不再有效，AI 使用方式或迎来根本转变。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673165",
+      "score": 5
+    },
+    {
+      "title": "机器人检测公司 Spur 获 Insight 2 亿美元巨额融资",
+      "summary_zh": "AI 驱动的机器人流量识别公司 Spur Intelligence 完成由 Insight Partners 领投的 2 亿美元融资，这笔巨额投资凸显了在生成式 AI 时代将真实人类与虚假流量分离的迫切需求与巨大市场空间。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/28/bot-detection-startup-spur-nabs-200m-from-insight/",
+      "score": 5
+    },
+    {
+      "title": "美国宣布禁止进口外国先进机器人，剑指中国",
+      "summary_zh": "美国联邦通信委员会发布禁令，将禁止进口包括人形机器人在内的外国“先进机器人设备”及配套逆变器，被普遍认为是针对中国技术供应链的又一强硬措施，或将重塑全球机器人产业格局。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/972259/us-foreign-robots-power-inverter-ban",
+      "score": 5
+    },
+    {
+      "title": "AI 支出飙涨令华尔街恐慌：谷歌资本开支预计突破 2000 亿美元",
+      "summary_zh": "谷歌将今年的资本支出预估上调至高达 2050 亿美元，远超上季度指引，震惊投资者。市场开始担忧，科技巨头对 AI 的无止境军备竞赛正变得越来越昂贵，泡沫风险难以忽视。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/972119/ai-stock-fall-google-capex",
+      "score": 5
+    },
+    {
+      "title": "英伟达据报拟为 OpenAI 数据中心提供 2500 亿美元融资担保",
+      "summary_zh": "据爱范儿早报披露，英伟达正筹备为 OpenAI 的大型数据中心项目提供高达 2500 亿美元的融资担保，此项天量级安排凸显出 AI 基础设施竞赛已进入超大规模资本博弈阶段。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673221",
+      "score": 5
+    },
+    {
+      "title": "Waymo 等自动驾驶运营商因紧急响应不力面临新监管审查",
+      "summary_zh": "美国众议员 Kevin Mullin 提出法案，要求联邦监管机构为自动驾驶汽车运营商制定最低国家安全标准，剑指 Waymo 等公司在事故与紧急响应中的糟糕表现，Robotaxi 行业的宽松监管或将终结。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/28/waymo-robotaxi-operators-face-fresh-scrutiny-over-emergency-response-failures/",
+      "score": 4
+    },
+    {
+      "title": "Liquid AI 发布 LFM2.5 编码器，实现 CPU 上的快速长上下文推理",
+      "summary_zh": "Liquid AI 开源 LFM2.5 编码器系列模型，专门优化在纯 CPU 环境下的长上下文推理效率，大幅降低了大规模语言模型对 GPU 的依赖，为边缘部署及高效推理开辟了新路径。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
+      "score": 4
+    }
+  ],
+  "stories": [
+    {
+      "title": "蔡伦造纸",
+      "dynasty": "东汉",
+      "category": "古代科技发明故事",
+      "source": "《后汉书·蔡伦传》"
+    },
+    {
+      "title": "鲁班造云梯",
+      "dynasty": "春秋",
+      "category": "古代科技发明故事",
+      "source": "《墨子·公输》"
+    },
+    {
+      "title": "华佗麻沸散",
+      "dynasty": "东汉",
+      "category": "古代科技发明故事",
+      "source": "《后汉书·华佗传》"
+    },
+    {
+      "title": "祖冲之推行《大明历》",
+      "dynasty": "南朝宋",
+      "category": "古代科技发明故事",
+      "source": "《宋书·律历志》"
+    },
+    {
+      "title": "李春建赵州桥",
+      "dynasty": "隋",
+      "category": "古代科技发明故事",
+      "source": "张嘉贞《石桥铭序》及地方志"
+    },
+    {
+      "title": "黄道婆改良棉纺织",
+      "dynasty": "元",
+      "category": "古代科技发明故事",
+      "source": "陶宗仪《南村辍耕录》"
+    },
+    {
+      "title": "孙武吴宫教战",
+      "dynasty": "春秋",
+      "category": "兵法谋略故事",
+      "source": "《史记·孙子吴起列传》"
+    },
+    {
+      "title": "王翦请田释疑",
+      "dynasty": "秦",
+      "category": "兵法谋略故事",
+      "source": "《史记·白起王翦列传》"
+    },
+    {
+      "title": "贾岛推敲",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《唐才子传》等"
+    },
+    {
+      "title": "宋祁红杏尚书",
+      "dynasty": "北宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《宋史·宋祁传》及《苕溪渔隐丛话》"
+    },
+    {
+      "title": "落下闳太初改历",
+      "dynasty": "西汉",
+      "category": "古代天文地理",
+      "source": "《史记·历书》《汉书·律历志》"
+    },
+    {
+      "title": "郦道元注水经",
+      "dynasty": "北魏",
+      "category": "古代天文地理",
+      "source": "《北史·郦道元传》"
+    },
+    {
+      "title": "金屋藏娇原系小说",
+      "dynasty": "西汉",
+      "category": "历史趣考",
+      "source": "《汉武故事》与《汉书·孝武陈皇后传》对读"
+    },
+    {
+      "title": "赵宣伪孝生五子",
+      "dynasty": "东汉",
+      "category": "历史趣考",
+      "source": "《后汉书·陈蕃传》"
+    },
+    {
+      "title": "敦煌放妻书",
+      "dynasty": "唐",
+      "category": "历史趣考",
+      "source": "敦煌莫高窟出土文书"
+    },
+    {
+      "title": "交子的诞生",
+      "dynasty": "北宋",
+      "category": "历史趣考",
+      "source": "《宋史·食货志》及李焘《续资治通鉴长编》"
+    },
+    {
+      "title": "李广解鞍退敌",
+      "dynasty": "西汉",
+      "category": "历史趣考",
+      "source": "《史记·李将军列传》"
+    },
+    {
+      "title": "只许州官放火",
+      "dynasty": "北宋",
+      "category": "历史趣考",
+      "source": "陆游《老学庵笔记》"
+    },
+    {
+      "title": "衣冠禽兽的演变",
+      "dynasty": "明",
+      "category": "历史趣考",
+      "source": "《明史·舆服志》与明代笔记"
+    },
+    {
+      "title": "青铜冰鉴",
+      "dynasty": "战国",
+      "category": "历史趣考",
+      "source": "《周礼·天官·凌人》及出土实物"
+    }
+  ]
+}
