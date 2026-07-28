@@ -198,13 +198,12 @@ def _build_page_html(
     page_label = f"{page_num} / {total}" if page_num > 0 else ""
 
     return f"""<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&family=Ma+Shan+Zheng&display=swap');
 
 * {{ margin:0; padding:0; box-sizing:border-box; }}
 
 html, body {{
   width:{CARD_W}px; height:{CARD_H}px; overflow:hidden;
-  font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+  font-family:'Microsoft YaHei','PingFang SC','SimHei','STHeiti',sans-serif;
   background:#fafaf8; position:relative;
 }}
 
@@ -307,13 +306,12 @@ def _build_manga_cover_html(
         cn_date += "三十一日"
 
     return f"""<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Ma+Shan+Zheng&display=swap');
 
 * {{ margin:0; padding:0; box-sizing:border-box; }}
 
 html, body {{
   width:{CARD_W}px; height:{CARD_H}px; overflow:hidden;
-  font-family:'Noto Serif SC','STSong','KaiTi',serif;
+  font-family:'Microsoft YaHei','SimHei','PingFang SC','STSong','KaiTi',serif;
   background:#1a150e; position:relative;
 }}
 
@@ -522,13 +520,17 @@ def render_manga_chapter(
     # ── 收集所有面板的生图 prompt ──
     from modules.stone_image import generate_stone_images
 
-    # 强制追加漫画风格后缀，保证全章视觉统一
-    STYLE_SUFFIX = (
-        ", professional manga panel, Japanese comic art style, "
-        "clean black linework with screentones, cel-shaded anime coloring, "
-        "sharp outlines, dramatic lighting, comic panel composition, "
-        "flat color areas with halftone shading, 1990s manga aesthetic, "
-        "consistent character design, same art style across all panels"
+    # 强制追加漫画风格+角色一致性描述
+    STYLE_TAG = (
+        "professional manga panel, Japanese comic art, clean black linework, "
+        "cel-shaded anime coloring, sharp outlines, halftone screentones, "
+        "flat color areas, dramatic lighting, consistent character design, "
+        "all panels same art style same character appearance"
+    )
+
+    # 角色一致性前缀——每张图必须拥有相同的角色外观
+    CHAR_PREFIX = (
+        "In a manga panel: consistent character design, same character as other panels, "
     )
 
     prompts = []
@@ -537,7 +539,13 @@ def render_manga_chapter(
         for panel in page.get("panels", []):
             raw_prompt = panel.get("image_prompt", "").strip()
             if raw_prompt:
-                raw_prompt = raw_prompt + STYLE_SUFFIX
+                # 去掉 LLM 可能加的长前缀，统一用我们的
+                raw_prompt = raw_prompt.replace(
+                    "a cute young Taoist monk boy with big expressive eyes, round face, wearing simple grey Taoist robe and cloth shoes, carrying a small cloth bag, Studio Ghibli anime style, soft cel shading, clean linework, warm lighting, kawaii character design, consistent character appearance ",
+                    ""
+                )
+                # 前加角色一致性，后加风格标签
+                raw_prompt = CHAR_PREFIX + raw_prompt + ", " + STYLE_TAG
             prompts.append({
                 "index": panel_idx,
                 "prompt": raw_prompt,

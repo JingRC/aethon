@@ -15,7 +15,7 @@ from pathlib import Path
 logger = logging.getLogger(__name__)
 
 
-def remove_watermark(image_path: str | Path, region_w: int = 500, region_h: int = 100) -> bool:
+def remove_watermark(image_path: str | Path, region_w: int = 600, region_h: int = 150) -> bool:
     """去除图片右下角水印（原地修改）。返回 True 表示成功。"""
     image_path = Path(image_path)
     if not image_path.exists():
@@ -46,8 +46,8 @@ def remove_watermark(image_path: str | Path, region_w: int = 500, region_h: int 
         diff = cv2.absdiff(region, clean_ref)
         gray_diff = cv2.cvtColor(diff, cv2.COLOR_BGR2GRAY)
 
-        _, bright_text = cv2.threshold(gray_diff, 16, 255, cv2.THRESH_BINARY)
-        _, subtle_text = cv2.threshold(gray_diff, 10, 255, cv2.THRESH_BINARY)
+        _, bright_text = cv2.threshold(gray_diff, 8, 255, cv2.THRESH_BINARY)
+        _, subtle_text = cv2.threshold(gray_diff, 5, 255, cv2.THRESH_BINARY)
 
         kernel = np.ones((3, 3), np.uint8)
         bright_expanded = cv2.dilate(bright_text, kernel, iterations=3)
@@ -55,7 +55,7 @@ def remove_watermark(image_path: str | Path, region_w: int = 500, region_h: int 
         text_mask = cv2.dilate(text_mask, kernel, iterations=1)
 
         text_px = (text_mask > 0).sum()
-        if text_px < 20:
+        if text_px < 10:
             return False  # 没检测到水印
 
         # 3. Alpha 混合替换
