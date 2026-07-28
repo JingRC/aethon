@@ -554,7 +554,18 @@ def render_manga_chapter(
             panel_idx += 1
 
     total_panels = len(prompts)
-    logger.info(f"   共 {total_panels} 个漫画格，开始生图...")
+
+    # ── 生成主角参考图（图生图，保持角色一致）──
+    character_refs = {}
+    try:
+        MAIN_CHAR = "a 24-year-old Chinese food delivery rider, tired eyes, yellow Meituan jacket, deadpan face, short messy black hair, slim build, anime style"
+        ref_path = _generate_ref_image(MAIN_CHAR, label="骑手")
+        if ref_path:
+            character_refs["main"] = ref_path
+    except Exception as e:
+        logger.warning(f"   参考图生成失败，回退纯文生图: {e}")
+
+    logger.info(f"   共 {total_panels} 个漫画格 (参考图:{len(character_refs)}张)，开始生图...")
 
     import random
     story_seed = random.randint(1, 4294967295)
