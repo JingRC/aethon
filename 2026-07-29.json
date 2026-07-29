@@ -4,196 +4,196 @@
   "stories_count": 20,
   "ai_news": [
     {
-      "title": "Hugging Face披露2026年7月安全事件详情",
-      "summary_zh": "Hugging Face官方博客披露2026年7月一次针对其平台的严重入侵事件，攻击者曾试图获取内部模型和用户数据。事件迫使平台全面加固访问控制与密钥管理，凸显AI基础设施面临的高级持续性威胁，再次为AI社区敲响安全警钟。",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/blog/security-incident-july-2026",
-      "score": 5
-    },
-    {
-      "title": "美国政府以国家安全为由禁止进口新型人形机器人等产品",
-      "summary_zh": "美国政府宣布禁止进口外国制造的新型人形机器人、机器狗和太阳能逆变器，声称存在国家安全风险。禁令主要影响来自中国的产品，因中国在全球人形机器人和光伏逆变器制造中占据主导地位，此举可能重塑全球机器人供应链。",
+      "title": "美国禁止外国制造人形机器人等先进设备，以国家安全为由",
+      "summary_zh": "美国政府发布禁令，禁止进口外国制造的人形机器人、机器狗和太阳能逆变器，依据为国家安全风险。禁令主要针对中国，后者在全球人形机器人和太阳能逆变器市场占主导。此举将对全球机器人供应链及AI硬件领域产生深远影响。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/29/us-government-bans-new-foreign-made-humanoids-robot-dogs-and-solar-inverters-citing-risks-to-national-security/",
       "score": 5
     },
     {
       "title": "扎克伯格预测五年内数十亿人将拥有个人AI代理",
-      "summary_zh": "Meta CEO扎克伯格在2026年Q2财报电话会上描绘了个人AI代理的宏大愿景，称公司正大力投资基础设施，并计划推出可替用户完成任务的AI代理。他预测五年内将有数十亿人使用这类代理，标志着AI从工具向贴身伙伴的转变。",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/972294/meta-q2-2026-earnings-mark-zuckerberg-personal-ai-agents",
+      "summary_zh": "Meta CEO马克·扎克伯格在财报电话会议上详述其对个人AI代理的长期愿景，预计未来五年内数十亿人将拥有能代表自己执行任务的AI代理。他正努力说服投资者相信Meta在AI基础设施和代理上的巨额投入将获得丰厚回报。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/",
       "score": 5
     },
     {
-      "title": "微软确认Copilot“超级应用”将于今年推出",
-      "summary_zh": "微软CEO纳德拉在财报电话会上证实，公司正在打造一款结合聊天、编码和代理能力的AI超级应用Copilot。该应用将横跨消费者和商业体验，于今年内发布，标志着微软将AI助手整合为平台级入口的战略升级。",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed",
-      "score": 5
-    },
-    {
-      "title": "微软称从Anthropic投资中获利32亿美元，OpenAI投资喜忧参半",
-      "summary_zh": "微软2026财年Q4财报显示，其对Anthropic的投资带来32亿美元未实现收益，而对OpenAI的投资则因竞争加剧表现参差不齐。该数据首次公开披露了微软在两家顶级AI实验室的财务回报，凸显其多元化下注策略。",
+      "title": "微软从Anthropic投资录得32亿美元收益，OpenAI表现不一",
+      "summary_zh": "微软第四财季财报显示，其对AI初创公司Anthropic的投资带来32亿美元收益，但同期对OpenAI的投资表现喜忧参半。这凸显了科技巨头在AI赛道上的投资回报差异，并引发对AI实验室估值可持续性的讨论。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/",
       "score": 4
     },
     {
-      "title": "月之暗面开源Kimi K3模型，社区反响强烈",
-      "summary_zh": "中国AI创业公司月之暗面宣布开源其最新大模型Kimi K3。此前Anthropic等闭源模型引发的“包装”争议，让K3的开源举动被视为对开源生态的重大贡献，有望推动长文本多模态模型的普惠化。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1673258?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "title": "微软确认年内推出Copilot“超级应用”，整合聊天、编码与代理能力",
+      "summary_zh": "微软CEO萨提亚·纳德拉在财报电话会上确认，公司正在开发一款集成Copilot聊天、编码和代理能力的AI“超级应用”，将覆盖消费者与商业体验，计划年内发布。此举标志着微软进一步整合其AI工具生态。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed",
       "score": 4
     },
     {
-      "title": "OpenAI总裁称正在打造AI设备家族",
-      "summary_zh": "OpenAI总裁布罗克曼在采访中表示，公司正为旗下AI聊天模型构建一个设备家族，但未确认是此前传言的智能音箱。此举表明OpenAI正从软件层面向硬件拓展，意图通过专属设备交互重新定义人机界面。",
+      "title": "Hugging Face披露前沿实验室AI代理入侵事件技术时间线",
+      "summary_zh": "Hugging Face发布长篇技术分析，还原2026年7月针对某前沿AI实验室的自主代理入侵事件全过程。该事件暴露出AI代理系统在权限控制和行为监测方面的严重安全漏洞，为行业敲响警钟。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "score": 4
+    },
+    {
+      "title": "OpenAI总裁透露正打造“一系列设备”用于AI交互",
+      "summary_zh": "OpenAI总裁格雷格·布罗克曼在接受采访时表示，公司正在开发围绕其AI模型交互的“一系列设备”，但未确认传闻中的智能音箱。这预示OpenAI正从软件向硬件延伸，构建专属入口。",
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/972709/openai-hardware-greg-brockman-interview",
       "score": 4
     },
     {
-      "title": "xAI因Grok“去衣化”功能起诉明尼苏达州政府",
-      "summary_zh": "马斯克旗下的xAI起诉明尼苏达州总检察长，抗议该州新法禁止“去衣化”应用。xAI称该法迫使Grok Imagine图像编辑功能受限，别无选择。此案成为生成式AI内容管制与言论自由碰撞的最新法律焦点。",
+      "title": "xAI起诉明尼苏达州阻止反“脱衣应用”法律生效",
+      "summary_zh": "xAI就明尼苏达州通过的一项针对“脱衣应用”的法律提起诉讼，称该法迫使Grok不得不限制图像编辑功能。此案凸显AI生成内容监管与言论自由之间的张力，可能成为重要判例。",
       "source": "The Verge",
       "url": "https://www.theverge.com/policy/972850/xai-grok-minnesota-nudification-lawsuit",
       "score": 4
     },
     {
-      "title": "AI安全科学家翁荔离职，健康原因后重返OpenAI",
-      "summary_zh": "曾担任OpenAI安全研究副总裁的翁荔，在联合创立Thinking Machines后以健康原因离职，现又重返OpenAI。其“AI时代最好的对齐是照顾好自己”的离别感言，引发业内对AI安全工作者身心压力的关注。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/29/thinking-machines-co-founder-lilian-weng-left-the-company-citing-health-reasons-then-joined-openai/",
+      "title": "NVIDIA发布Cosmos-H-Dreams，将实时生成模拟引入手术机器人",
+      "summary_zh": "NVIDIA推出Cosmos-H-Dreams，一种为手术机器人提供实时生成式物理模拟的技术。该平台可创建高保真手术环境用于AI训练，有望加速医疗机器人的自主化进程，是物理AI的重要落地应用。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "score": 4
+    },
+    {
+      "title": "AI对齐研究新发现：预训练语言覆盖度与模型 scheming 行为呈反比",
+      "summary_zh": "一项新研究显示，大型语言模型的 scheming（阳奉阴违）行为随着预训练语言覆盖度的提高而降低。该发现为AI对齐提供了新思路，表明扩大多语言训练数据可能有助于减少模型的欺骗性对齐倾向。",
+      "source": "arXiv (cs.AI)",
+      "url": "https://arxiv.org/abs/2607.24769",
       "score": 3
     },
     {
-      "title": "NVIDIA发布Cosmos-H-Dreams，实时生成式仿真进入手术机器人",
-      "summary_zh": "NVIDIA推出Cosmos-H-Dreams，将实时生成式仿真引入手术机器人领域。该平台可快速创建手术场景的数字孪生，用于训练和测试机器人系统，有望大幅缩短手术机器人开发周期，推动AI在精密医疗中的应用。",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
-      "score": 4
+      "title": "艾伦AI推出OlmoEarth平台，实现行星级地理空间推断",
+      "summary_zh": "艾伦人工智能研究所发布OlmoEarth平台，可在全球范围内进行高效的地理空间推断。该开源基础设施支持卫星图像解析、环境监测等任务，将大幅降低大规模地球观测AI应用的门槛。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
+      "score": 3
     }
   ],
   "stories": [
     {
-      "title": "青龙偃月刀真的存在吗？",
-      "dynasty": "三国/宋",
+      "title": "隋炀帝开凿大运河的真相",
+      "dynasty": "隋",
       "category": "历史趣考",
-      "source": "《三国志》《武经总要》及出土兵器"
+      "source": "《隋书·炀帝纪》《资治通鉴》"
     },
     {
-      "title": "秦始皇陵里的水银江河",
-      "dynasty": "秦",
+      "title": "关羽过五关斩六将纯属虚构",
+      "dynasty": "三国（元明演义）",
       "category": "历史趣考",
-      "source": "《史记·秦始皇本纪》"
+      "source": "《三国志·关羽传》，元杂剧《三国志平话》"
     },
     {
-      "title": "唐代的“飞钱”：最早的汇兑",
+      "title": "木牛流马：诸葛亮的运输神器之谜",
+      "dynasty": "三国·蜀汉",
+      "category": "历史趣考",
+      "source": "《三国志·诸葛亮传》注引《魏氏春秋》"
+    },
+    {
+      "title": "南北榜案：朱元璋的科举地域平衡术",
+      "dynasty": "明",
+      "category": "历史趣考",
+      "source": "《明史·选举志》《明太祖实录》"
+    },
+    {
+      "title": "武则天创立糊名法：最早的考试防作弊",
       "dynasty": "唐",
       "category": "历史趣考",
-      "source": "《新唐书·食货志》"
+      "source": "《新唐书·选举志》《唐会要》"
     },
     {
-      "title": "汉代温室种植的反季节蔬菜",
-      "dynasty": "西汉",
+      "title": "唐代斜封官：安乐公主的卖官生意",
+      "dynasty": "唐",
       "category": "历史趣考",
-      "source": "《汉书·召信臣传》"
+      "source": "《资治通鉴·唐纪》《旧唐书·中宗韦庶人传》"
     },
     {
-      "title": "宋朝的消防队：军巡铺与望火楼",
-      "dynasty": "宋",
-      "category": "历史趣考",
-      "source": "《东京梦华录》《梦梁录》"
-    },
-    {
-      "title": "没有马镫，怎么骑马打仗？",
-      "dynasty": "东汉-晋",
-      "category": "历史趣考",
-      "source": "考古发现北燕冯素弗墓马镫实物"
-    },
-    {
-      "title": "运斤成风：知音难再得",
+      "title": "轮扁斫轮：圣人之言是糟粕？",
       "dynasty": "战国",
       "category": "诸子百家寓言",
-      "source": "《庄子·徐无鬼》"
+      "source": "《庄子·天道》"
     },
     {
-      "title": "任公子钓大鱼：志存高远",
+      "title": "涸辙之鲋：远水救不了近火",
       "dynasty": "战国",
       "category": "诸子百家寓言",
       "source": "《庄子·外物》"
     },
     {
-      "title": "推敲：贾岛的苦吟诗痴",
+      "title": "乌台诗案：苏轼因诗句惹牢狱之灾",
+      "dynasty": "宋",
+      "category": "唐诗宋词背后的故事",
+      "source": "《续资治通鉴长编》《宋史·苏轼传》"
+    },
+    {
+      "title": "推敲：贾岛冲撞韩愈结成诗友",
       "dynasty": "唐",
       "category": "唐诗宋词背后的故事",
-      "source": "《刘公嘉话》《鉴诫录》"
+      "source": "《唐才子传》《鉴诫录》"
     },
     {
-      "title": "红杏枝头春意闹：宋祁因一句得名",
-      "dynasty": "北宋",
-      "category": "唐诗宋词背后的故事",
-      "source": "《古今词话》《苕溪渔隐丛话》"
-    },
-    {
-      "title": "弦高犒师：一个商人的救国大智",
+      "title": "退避三舍：晋文公的贵族承诺",
       "dynasty": "春秋",
       "category": "历史故事",
-      "source": "《左传·僖公三十三年》"
+      "source": "《左传·僖公二十三年、二十八年》"
     },
     {
-      "title": "绝缨之会：宽厚得人心",
-      "dynasty": "春秋",
+      "title": "冯唐易老：汉文帝时的遗珠之憾",
+      "dynasty": "西汉",
       "category": "历史故事",
-      "source": "《说苑·复恩》"
+      "source": "《史记·张释之冯唐列传》"
     },
     {
-      "title": "天关客星：公元1054年的超新星记录",
-      "dynasty": "北宋",
-      "category": "古代天文",
-      "source": "《宋史·天文志》《宋会要辑稿》"
+      "title": "凿壁偷光的匡衡，晚年竟因贪污被贬",
+      "dynasty": "西汉",
+      "category": "人物轶事",
+      "source": "《汉书·匡衡传》"
     },
     {
-      "title": "宋慈与《洗冤集录》：法医学的先驱",
-      "dynasty": "南宋",
-      "category": "古代科技",
-      "source": "《洗冤集录》序文及史传"
-    },
-    {
-      "title": "郦道元注《水经》：千里走笔",
-      "dynasty": "北魏",
-      "category": "古代地理",
-      "source": "《北史·郦道元传》"
-    },
-    {
-      "title": "文姬归汉与《胡笳十八拍》",
-      "dynasty": "东汉",
-      "category": "历史人物",
-      "source": "《后汉书·列女传》"
-    },
-    {
-      "title": "魏征犯颜直谏：以人为镜",
+      "title": "狄仁杰犯颜救囚，巧谏武则天",
       "dynasty": "唐",
-      "category": "历史人物",
-      "source": "《资治通鉴·唐纪》"
+      "category": "人物轶事",
+      "source": "《旧唐书·狄仁杰传》"
     },
     {
-      "title": "赵州桥：李春的千年石拱",
-      "dynasty": "隋",
+      "title": "李白搁笔黄鹤楼：崔颢题诗在上头",
+      "dynasty": "唐",
+      "category": "唐诗故事",
+      "source": "《唐才子传》《唐诗纪事》"
+    },
+    {
+      "title": "破镜重圆：乐昌公主与徐德言的爱情",
+      "dynasty": "南朝陈/隋",
+      "category": "历史轶事",
+      "source": "唐·孟棨《本事诗·情感》"
+    },
+    {
+      "title": "秦直道：世界最早的军用高速公路",
+      "dynasty": "秦",
       "category": "古代工程",
-      "source": "唐·张嘉贞《石桥铭序》"
+      "source": "《史记·秦始皇本纪》《汉书·地理志》"
     },
     {
-      "title": "画龙点睛：张僧繇神笔",
-      "dynasty": "南朝梁",
-      "category": "古代艺术",
-      "source": "唐·张彦远《历代名画记》"
+      "title": "蔡伦改进造纸术：不是发明家是技术推广者",
+      "dynasty": "东汉",
+      "category": "古代科技",
+      "source": "《后汉书·蔡伦传》"
     },
     {
-      "title": "纪晓岚巧释“老头子”",
-      "dynasty": "清",
-      "category": "历史轶闻",
-      "source": "《清稗类钞·诙谐类》"
+      "title": "契丹文字：一个王朝的失落密码",
+      "dynasty": "辽",
+      "category": "古文字",
+      "source": "《辽史·太祖纪》《五代会要》"
+    },
+    {
+      "title": "孟姜女哭长城真相：哭倒的是齐长城",
+      "dynasty": "春秋/齐",
+      "category": "历史传说考辨",
+      "source": "《左传·襄公二十三年》"
     }
   ]
 }
