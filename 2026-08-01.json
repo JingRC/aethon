@@ -1,0 +1,199 @@
+{
+  "date": "2026-08-01",
+  "ai_news_count": 10,
+  "stories_count": 20,
+  "ai_news": [
+    {
+      "title": "DeepSeek V4 正式版发布，AI“智价比”之战开启",
+      "summary_zh": "DeepSeek V4 正式版上线，凭借极低的推理成本实现多项任务高效处理，实测仅需约3元即可完成五件事。该模型在性能与成本之间取得新突破，推动顶级模型竞争从单纯能力比拼转向“智价比”综合较量，引发行业对高效能AI落地的广泛关注。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673553?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
+    },
+    {
+      "title": "OpenAI 将向10万名学术研究者免费提供 GPT-5.6 Sol Pro",
+      "summary_zh": "OpenAI 宣布计划向10万名学术研究者免费开放最新的 GPT-5.6 Sol Pro 模型，旨在加速科学研究中的AI应用。这一大规模赠送举措将显著降低学术界的先进模型使用门槛，有望推动跨学科AI研究生态的快速扩展。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673460?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
+    },
+    {
+      "title": "月之暗面完成超35亿美元F轮融资，Kimi获巨额加持",
+      "summary_zh": "国内大模型独角兽月之暗面被曝已完成超35亿美元F轮融资，旗下明星产品Kimi再获强劲资金支持。本轮融资将用于加速大模型技术迭代与产品生态建设，巩固其在国产大模型竞争中的头部地位，并可能推动新一轮AI军备竞赛。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673418?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
+    },
+    {
+      "title": "Hugging Face 发布前沿实验室AI代理入侵事件技术时间线",
+      "summary_zh": "Hugging Face 详细公布了2026年7月前沿实验室AI代理入侵事件的技术时间线，深度剖析攻击链路与系统渗透手法。该事件暴露出高级AI代理在部署中的安全风险，为整个行业敲响警钟，并推动机构加强代理行为的监控与限制。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "score": 5
+    },
+    {
+      "title": "法官驳回xAI请求，明尼苏达州“nudify”应用禁令生效",
+      "summary_zh": "美国联邦法官驳回马斯克旗下xAI的申请，允许明尼苏达州禁止制作非自愿AI生成裸照的“nudify”应用。该裁决为各州监管深伪技术提供了重要法律先例，强调在AI生成内容泛滥背景下保护个人隐私与尊严的紧迫性。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
+      "score": 4
+    },
+    {
+      "title": "Google因虚假信息风险，发布一天即撤下Earth AI功能",
+      "summary_zh": "谷歌在推出可将AI生成图像叠加到真实地球地图的工具仅一天后，便紧急下架该功能。外界批评该工具极易被用于制造和传播虚假地理信息，这一迅速反转反映出科技巨头在生成式AI应用落地时面临的信息可信度与公共安全挑战。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/",
+      "score": 4
+    },
+    {
+      "title": "NVIDIA 推出 Cosmos-H-Dreams，将实时生成式模拟带入手术机器人",
+      "summary_zh": "NVIDIA发布Cosmos-H-Dreams平台，首次将实时生成式模拟技术应用于手术机器人领域。该平台可创建高保真动态场景，帮助机器人在复杂手术环境中进行感知与决策训练，显著提升手术精准度与安全性，是AI驱动医疗自动化的重要里程碑。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "score": 4
+    },
+    {
+      "title": "Liquid AI 发布 LFM2.5-Encoders，实现CPU上的快速长上下文推理",
+      "summary_zh": "Liquid AI推出LFM2.5-Encoders编码器，使得长上下文推理可以在普通CPU上高效运行，无需昂贵GPU资源。该技术突破大幅降低了部署大规模语言模型的硬件门槛，为边缘计算和资源受限场景下的高级AI应用开辟了新路径。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
+      "score": 4
+    },
+    {
+      "title": "MiniMax 发布 H3 全模态模型，革新商业视频制作流程",
+      "summary_zh": "MiniMax推出H3全模态模型，仅凭数张产品截图即可快速生成高质量商业宣传短片，实现视频制作成本与门槛的双重降低。该能力标志着多模态AI在商业创意领域的实用化突破，有望改变中小企业及品牌的视频内容生产模式。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673481?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
+    },
+    {
+      "title": "GitHub 发布 Copilot Agent SDK，加速AI代理应用集成",
+      "summary_zh": "GitHub 正式推出多平台 Copilot Agent SDK，允许开发者将 Copilot 代理能力集成到各类应用和服务中。该工具包简化了AI代理的调用与编排流程，有望推动大量开发者将智能编程与自动化功能嵌入日常工作流，提升软件开发生态整体效率。",
+      "source": "GitHub Trending",
+      "url": "https://github.com/github/copilot-sdk",
+      "score": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "老马识途",
+      "dynasty": "春秋",
+      "category": "成语典故",
+      "source": "《韩非子·说林上》"
+    },
+    {
+      "title": "曲突徙薪",
+      "dynasty": "西汉",
+      "category": "成语典故",
+      "source": "《汉书·霍光传》"
+    },
+    {
+      "title": "终军请缨",
+      "dynasty": "西汉",
+      "category": "成语典故",
+      "source": "《汉书·终军传》"
+    },
+    {
+      "title": "唾面自干",
+      "dynasty": "唐朝",
+      "category": "成语典故",
+      "source": "《新唐书·娄师德传》"
+    },
+    {
+      "title": "寄人篱下",
+      "dynasty": "南北朝",
+      "category": "成语典故",
+      "source": "《南齐书·张融传》"
+    },
+    {
+      "title": "百万买宅，千万买邻",
+      "dynasty": "南北朝",
+      "category": "成语典故",
+      "source": "《南史·吕僧珍传》"
+    },
+    {
+      "title": "庖丁解牛",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《庄子·养生主》"
+    },
+    {
+      "title": "纪昌学射",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《列子·汤问》"
+    },
+    {
+      "title": "木牛流马：诸葛亮的运粮黑科技",
+      "dynasty": "三国",
+      "category": "古代科技发明故事",
+      "source": "《三国志·蜀书·诸葛亮传》及裴松之注"
+    },
+    {
+      "title": "黄道婆改革棉纺技术",
+      "dynasty": "元朝",
+      "category": "古代科技发明故事",
+      "source": "陶宗仪《南村辍耕录》、王逢《梧溪集》"
+    },
+    {
+      "title": "唐代“斜封官”：皇帝乱发委任状的荒唐剧",
+      "dynasty": "唐朝",
+      "category": "历史趣考",
+      "source": "《资治通鉴·唐纪》"
+    },
+    {
+      "title": "明代廷杖：打屁股也有潜规则",
+      "dynasty": "明朝",
+      "category": "历史趣考",
+      "source": "《明史·刑法志》"
+    },
+    {
+      "title": "新亭对泣",
+      "dynasty": "东晋",
+      "category": "历史典故",
+      "source": "《世说新语·言语》"
+    },
+    {
+      "title": "山中宰相",
+      "dynasty": "南朝",
+      "category": "历史典故",
+      "source": "《南史·陶弘景传》"
+    },
+    {
+      "title": "谏迎佛骨",
+      "dynasty": "唐朝",
+      "category": "历史典故",
+      "source": "《旧唐书·韩愈传》"
+    },
+    {
+      "title": "兼听则明，偏信则暗",
+      "dynasty": "唐朝",
+      "category": "历史典故",
+      "source": "《资治通鉴·唐纪》"
+    },
+    {
+      "title": "半部论语治天下",
+      "dynasty": "北宋",
+      "category": "历史典故",
+      "source": "罗大经《鹤林玉露》"
+    },
+    {
+      "title": "两袖清风",
+      "dynasty": "明朝",
+      "category": "历史典故",
+      "source": "都穆《都公谭纂》、于谦《入京诗》"
+    },
+    {
+      "title": "天下兴亡，匹夫有责",
+      "dynasty": "明末清初",
+      "category": "历史典故",
+      "source": "顾炎武《日知录·正始》"
+    },
+    {
+      "title": "举案齐眉",
+      "dynasty": "东汉",
+      "category": "历史典故",
+      "source": "《后汉书·梁鸿传》"
+    }
+  ]
+}
