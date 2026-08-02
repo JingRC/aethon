@@ -63,7 +63,8 @@ def generate_xhs_docx(ai_news: list[dict],
     hashtags = xhs_content.get("hashtags", [])
     if hashtags:
         doc.add_heading("🏷️ 话题标签", level=2)
-        tags_para = doc.add_paragraph("  ".join(hashtags))
+        normalized = [f"#{t.lstrip('#')}" for t in hashtags]
+        tags_para = doc.add_paragraph("  ".join(normalized))
         for run in tags_para.runs:
             run.font.color.rgb = RGBColor(0x00, 0x88, 0xFF)
 

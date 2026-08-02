@@ -567,6 +567,8 @@ def main():
                 system_prompt="你是小红书AI科技赛道顶级博主，擅长创作爆款笔记。只返回JSON，不要markdown代码块。"
             )
             xhs_content = parse_json_response(xhs_response)
+            if isinstance(xhs_content, list):
+                xhs_content = xhs_content[0] if xhs_content else {}
             if isinstance(xhs_content, dict) and xhs_content:
                 logger.info(f"📝 XHS标题: {xhs_content.get('title', '')}")
                 logger.info(f"🏷️ 标签: {', '.join(xhs_content.get('hashtags', []))}")
