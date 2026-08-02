@@ -1,0 +1,199 @@
+{
+  "date": "2026-08-02",
+  "ai_news_count": 10,
+  "stories_count": 20,
+  "ai_news": [
+    {
+      "title": "前沿实验室智能体入侵事件技术时间线公布",
+      "summary_zh": "Hugging Face 公布2026年7月AI智能体入侵事件的完整技术时间线，详细还原了攻击者如何利用智能体系统的脆弱性实现横向移动与权限提升。该事件被视为迄今为止最严重的AI系统安全事件之一，引发行业对智能体安全架构的深刻反思。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "score": 5
+    },
+    {
+      "title": "Kimi完成超35亿美元F轮融资",
+      "summary_zh": "国内大模型独角兽月之暗面旗下Kimi完成超过35亿美元F轮融资，创下国内大模型赛道单轮融资新纪录。资金将主要用于下一代基础模型研发和通用人工智能技术探索，进一步加剧了全球大模型头部竞争的资本密度。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673418?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
+    },
+    {
+      "title": "OpenAI将向10万名学术研究者免费提供GPT-5.6 Sol Pro",
+      "summary_zh": "OpenAI宣布将向全球10万名学术研究者免费提供其最新的GPT-5.6 Sol Pro模型访问权限，旨在加速AI在科学研究中的普及与创新。这一大规模学术扶持计划可能深刻改变高校科研方式，也引发了对学术界依赖商业模型的讨论。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673460?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
+    },
+    {
+      "title": "实测DeepSeek V4正式版：AI“智价比”之战开打",
+      "summary_zh": "DeepSeek V4正式版实测表现惊艳，在极低成本下完成了多项复杂任务，将顶级模型的竞争从单纯能力对抗推向“智价比”新维度。其高效推理能力大幅拉低了应用门槛，有望引发新一轮AI应用爆发和价格战。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673553?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
+    },
+    {
+      "title": "NVIDIA Cosmos-H-Dreams将实时生成模拟带入手术机器人",
+      "summary_zh": "NVIDIA推出Cosmos-H-Dreams平台，首次实现对手术机器人场景的实时生成式物理模拟。该技术可加速手术机器人训练与算法验证，标志着生成式AI在高风险物理世界应用的重大突破，为医疗自动化开辟了新路径。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "score": 4
+    },
+    {
+      "title": "Uber打造自动驾驶帝国：与约30家无人车公司展开合作",
+      "summary_zh": "Uber在过去两年内已与约30家自动驾驶公司建立合作关系，部分还进行了直接投资。这一庞大的生态布局使其成为自动驾驶出行时代的核心连接器，正在重塑全球无人驾驶出租车行业的竞争格局。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/01/ubers-autonomous-vehicle-deal-tracker/",
+      "score": 4
+    },
+    {
+      "title": "Sam Altman呼吁放慢AI发展步伐引发行业大辩论",
+      "summary_zh": "OpenAI首席执行官Sam Altman公开呼吁行业“控制AI发展速度”，这一出人意料的表态立即引发科技界关于有效加速主义与减速主义的激烈辩论，也折射出头部AI实验室在安全与商业化之间的深层焦虑。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/",
+      "score": 4
+    },
+    {
+      "title": "AI生成歌曲首登Billboard Hot 100，是创新还是“AI惰曲”？",
+      "summary_zh": "说唱歌手Fenix Flexin凭借涉嫌AI生成的热单“Rubberz”跻身Billboard Hot 100第58位，引发音乐界对AI惰曲冲击排行榜的激烈争议。该事件成为AI深度渗透流行文化产业的标志性案例，也加剧了内容真实性讨论。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop",
+      "score": 4
+    },
+    {
+      "title": "高通与IDC：智能眼镜将成为手机之外最重要的AI设备",
+      "summary_zh": "高通联合市场研究机构IDC发布报告指出，智能眼镜有望成为智能手机之外承载AI交互的最重要终端。随着端侧AI和低功耗芯片成熟，智能眼镜或成为下一个大规模消费级AI入口，厂商已开始抢占生态位。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673429?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
+    },
+    {
+      "title": "法官驳回xAI阻止明尼苏达州“一键脱衣”应用禁令的请求",
+      "summary_zh": "明尼苏达州针对“一键脱衣”类深度伪造应用的禁令获法院支持，马斯克旗下xAI曾以第一修正案为由提起诉讼试图阻止，但被法官驳回。此裁决为AI生成的深度伪造色情内容设立了重要的法律界限，影响行业未来合规方向。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
+      "score": 4
+    }
+  ],
+  "stories": [
+    {
+      "title": "蔡伦造纸",
+      "dynasty": "东汉",
+      "category": "古代科技发明故事",
+      "source": "《后汉书·蔡伦传》"
+    },
+    {
+      "title": "杜诗水排",
+      "dynasty": "东汉",
+      "category": "古代科技发明故事",
+      "source": "《后汉书·杜诗传》"
+    },
+    {
+      "title": "秦剑镀铬之谜",
+      "dynasty": "秦朝",
+      "category": "古代科技发明故事",
+      "source": "考古发现（秦始皇陵兵马俑坑出土秦剑）"
+    },
+    {
+      "title": "黄道婆传纺艺",
+      "dynasty": "元朝",
+      "category": "古代科技发明故事",
+      "source": "陶宗仪《辍耕录》"
+    },
+    {
+      "title": "雕版《金刚经》",
+      "dynasty": "唐朝",
+      "category": "古代科技发明故事",
+      "source": "敦煌莫高窟藏经洞遗书"
+    },
+    {
+      "title": "火龙出水",
+      "dynasty": "明朝",
+      "category": "古代科技发明故事",
+      "source": "焦玉《武备志》"
+    },
+    {
+      "title": "天关客星",
+      "dynasty": "宋朝",
+      "category": "古代天文地理",
+      "source": "《宋史·天文志》"
+    },
+    {
+      "title": "马王堆古地图",
+      "dynasty": "西汉",
+      "category": "古代天文地理",
+      "source": "长沙马王堆汉墓出土文物"
+    },
+    {
+      "title": "睡虎地秦简见秦法",
+      "dynasty": "秦朝",
+      "category": "历史趣考",
+      "source": "睡虎地秦墓竹简"
+    },
+    {
+      "title": "木牛流马考辨",
+      "dynasty": "三国",
+      "category": "历史趣考",
+      "source": "《三国志·蜀书·诸葛亮传》及裴松之注引《诸葛亮集》"
+    },
+    {
+      "title": "楚庄王绝缨尽欢",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "刘向《说苑·复恩》"
+    },
+    {
+      "title": "祁奚荐贤",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《左传·襄公三年》"
+    },
+    {
+      "title": "周亚夫军细柳",
+      "dynasty": "西汉",
+      "category": "历史故事",
+      "source": "《史记·绛侯周勃世家》"
+    },
+    {
+      "title": "强项令董宣",
+      "dynasty": "东汉",
+      "category": "历史故事",
+      "source": "《后汉书·酷吏列传》"
+    },
+    {
+      "title": "孙权劝学",
+      "dynasty": "三国",
+      "category": "历史故事",
+      "source": "《资治通鉴》卷六十六"
+    },
+    {
+      "title": "王导与新亭对泣",
+      "dynasty": "东晋",
+      "category": "历史故事",
+      "source": "《晋书·王导传》"
+    },
+    {
+      "title": "魏征直言批龙鳞",
+      "dynasty": "唐朝",
+      "category": "历史故事",
+      "source": "《贞观政要·任贤》"
+    },
+    {
+      "title": "拗相公王安石",
+      "dynasty": "宋朝",
+      "category": "历史故事",
+      "source": "《宋史·王安石传》"
+    },
+    {
+      "title": "王阳明格竹",
+      "dynasty": "明朝",
+      "category": "历史故事",
+      "source": "王守仁《传习录》"
+    },
+    {
+      "title": "海瑞备棺上疏",
+      "dynasty": "明朝",
+      "category": "历史故事",
+      "source": "《明史·海瑞传》"
+    }
+  ]
+}
