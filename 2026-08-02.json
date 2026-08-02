@@ -1,85 +1,199 @@
 {
   "date": "2026-08-02",
   "ai_news_count": 10,
-  "stories_count": 1,
+  "stories_count": 20,
   "ai_news": [
     {
-      "title": "Hugging Face发布前沿实验室AI代理入侵技术时间线",
-      "summary_zh": "Hugging Face公开了2026年7月前沿AI实验室代理入侵事件的完整技术时间线，详解攻击者如何通过供应链漏洞渗透多个顶级实验室的训练基础设施。该事件引发行业对AI代理安全边界的广泛担忧，并促使各机构重新评估分布式训练与模型共享的风险管控。",
+      "title": "Hugging Face 正式披露 2026 年 7 月安全事件",
+      "summary_zh": "Hugging Face 发布官方安全事件披露，详细说明 2026 年 7 月发生的平台入侵事件。攻击者疑似利用前沿 AI 实验室的代理漏洞侵入系统，事件引发行业对 AI 代理安全性的广泛担忧，被视为迄今最严重的 AI 平台安全事故之一。",
       "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "url": "https://huggingface.co/blog/security-incident-july-2026",
       "score": 5
     },
     {
-      "title": "Kimi完成超35亿美元F轮融资，刷新大模型单笔融资纪录",
-      "summary_zh": "国内大模型公司Kimi宣布完成超过35亿美元的F轮融资，创下AI大模型领域单笔融资新高。本轮资金将主要用于通用人工智能技术研发、超大规模算力集群扩展及全球市场拓展，进一步加剧了全球头部大模型厂商的资本竞赛。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1673418?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 5
-    },
-    {
-      "title": "Sam Altman呼吁放慢AI发展速度，引发行业减速辩论",
-      "summary_zh": "OpenAI CEO Sam Altman公开呼吁行业应主动“控制AI的发展节奏”，这一表态迅速点燃了关于AI安全与发展速度的激烈辩论。支持者认为需防范失控风险，反对者则担忧过度减速将削弱竞争力并延缓技术红利，反映出前沿AI治理的核心分歧。",
+      "title": "Sam Altman 公开呼吁放缓 AI 发展速度",
+      "summary_zh": "OpenAI CEO Sam Altman 罕见表态，呼吁行业「控制 AI 发展节奏」，引发关于 AI 加速与减速的激烈辩论。此番言论正值多起 AI 代理失控事件曝光之后，凸显前沿实验室对当前安全形势的深切忧虑。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/",
       "score": 5
     },
     {
-      "title": "法官驳回xAI请求，明尼苏达州‘一键脱衣’应用禁令继续推进",
-      "summary_zh": "明尼苏达州针对利用AI生成非自愿色情内容的‘nudify’应用禁令在法律挑战中过关。联邦法官驳回了xAI要求禁制令的请求，允许该法继续生效。该裁定被视为约束深度伪造与生成式AI滥用的重要判例，可能影响全美类似立法走向。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
-      "score": 4
+      "title": "Kimi 完成超 35 亿美元 F 轮融资",
+      "summary_zh": "国内大模型独角兽 Kimi 完成超 35 亿美元 F 轮融资，创下国内 AI 大模型领域单轮融资新纪录。资金将用于通用人工智能研发与生态建设，进一步加剧全球大模型厂商的资本竞赛。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673418?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
     },
     {
-      "title": "DeepSeek V4正式版实测：3元完成5项任务，开启‘智价比’竞赛",
-      "summary_zh": "DeepSeek V4 正式版开放使用，实测显示其以极低成本完成多步推理、代码生成等复杂任务，将性价比推向新高度。这标志着顶级大模型竞争从单纯追求能力上限转向同时优化智力成本效率，推动行业进入‘智价比’内卷新时代。",
+      "title": "DeepSeek V4 正式版发布，极致性价比冲击市场",
+      "summary_zh": "DeepSeek V4 正式版上线，以极低的使用成本完成多项复杂任务，展现惊人「智价比」。新模型在推理能力和多模态理解上大幅提升，有望重塑 AI 模型市场竞争格局，推动顶级模型从拼能力转向拼效益。",
       "source": "爱范儿",
       "url": "https://www.ifanr.com/1673553?utm_source=rss&utm_medium=rss&utm_campaign=",
       "score": 5
     },
     {
-      "title": "OpenAI将向10万学术研究者免费提供GPT-5.6 Sol Pro",
-      "summary_zh": "OpenAI宣布将向全球10万名学术研究者免费开放其最新的GPT-5.6 Sol Pro模型，旨在加速科学发现与教育创新。该举措预计价值数千万美元，不仅展现其公共影响力，也反映出前沿AI实验室在人才生态与政策话语权上的战略布局。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1673460?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 4
-    },
-    {
-      "title": "NVIDIA发布Cosmos-H-Dreams：实时生成式模拟进入手术机器人",
-      "summary_zh": "NVIDIA推出Cosmos-H-Dreams平台，首次将实时生成式物理模拟引入手术机器人领域。该技术能根据术中情况动态生成高保真虚拟环境，为外科训练和术中辅助提供厘米级精度的实时反馈，有望显著提升复杂手术的安全性与成功率。",
+      "title": "NVIDIA 发布 Cosmos-H-Dreams，实现手术机器人实时生成式仿真",
+      "summary_zh": "NVIDIA 推出 Cosmos-H-Dreams 平台，首次将实时生成式仿真引入手术机器人领域。该技术可高保真模拟复杂手术场景，加速机器人训练与验证，标志着物理 AI 在医疗领域的重大实用化突破。",
       "source": "Hugging Face Blog",
       "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "score": 5
+    },
+    {
+      "title": "OpenAI 向 10 万学术研究者免费提供 GPT-5.6 Sol Pro",
+      "summary_zh": "OpenAI 宣布将向全球 10 万名学术研究者免费开放最新模型 GPT-5.6 Sol Pro。此举旨在促进 AI 科研创新，同时缓解学术界因算力成本高昂而被边缘化的危机，被视为对「AI 掏空大学」呼声的积极回应。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673460?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
+    },
+    {
+      "title": "法官驳回 xAI 请求，明尼苏达州「反裸照」应用禁令将生效",
+      "summary_zh": "联邦法官驳回 xAI 的临时禁令申请，允许明尼苏达州禁止可生成裸照的「nudify」类应用的法律继续推进。该裁定为 AI 深度伪造监管树立重要判例，将深刻影响生成式 AI 应用的合规边界。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
       "score": 4
     },
     {
-      "title": "Uber自动驾驶帝国成型：两年内与约30家公司建立合作",
-      "summary_zh": "Uber加速构建自动驾驶帝国，过去两年已与约30家自动驾驶公司建立合作或直接投资，涵盖robotaxi、物流配送等场景。通过整合多方技术与运力，Uber正从出行平台转型为全球最大的自动驾驶运营网络，重塑城市交通产业格局。",
+      "title": "Uber 构建自动驾驶帝国，已与约 30 家公司建立合作",
+      "summary_zh": "过去两年，Uber 已与约 30 家自动驾驶公司建立合作或投资关系，涵盖 Robotaxi、物流配送等场景。其平台化战略正在将自身打造成无人驾驶运营商网络中枢，重塑出行产业格局。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/01/ubers-autonomous-vehicle-deal-tracker/",
-      "score": 3
+      "score": 4
     },
     {
-      "title": "Grabette开源系统：记录机器人操作数据的开放基础设施",
-      "summary_zh": "开源社区发布Grabette，一套专为机器人操作任务设计的开源数据记录系统。它能低成本、标准化地采集力反馈、视觉和轨迹等多模态数据，旨在加速机器人灵巧操作研究的复现与协作，被视为推动具身智能数据基建民主化的重要一步。",
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/grabette",
-      "score": 3
-    },
-    {
-      "title": "高通与IDC：智能眼镜将超越手机成为最重要的AI设备",
-      "summary_zh": "高通与IDC联合发布报告，指出智能眼镜凭借第一视角感知与全天候佩戴优势，将成为手机之外最重要的AI硬件载体。该预测推动了对端侧AI芯片、轻量化模型和交互方案的投资热潮，标志AI硬件生态从单一屏幕向空间计算加速演进。",
+      "title": "苹果 AI 屏幕曝光：Siri 将接管智能家庭中枢",
+      "summary_zh": "苹果正开发一款内置 AI 的智能屏幕，以 Siri 为核心接管全屋控制。产品将深度融合大语言模型能力，提供主动建议与情境感知，被视作苹果重新定义家庭中枢、进军智慧家庭生态的关键一步。",
       "source": "爱范儿",
-      "url": "https://www.ifanr.com/1673429?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 3
+      "url": "https://www.ifanr.com/1673412?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
+    },
+    {
+      "title": "MiniMax H3 实现全模态商业视频生成，七张截图即成片",
+      "summary_zh": "MiniMax 发布 H3 视频生成模型，只需七张产品截图即可生成完整商业宣传片，实现 Seedance 级全模态控制。该突破大幅降低商业视频制作门槛，推动 AI 视频生成从创意辅助走向直接交付。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673481?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
     }
   ],
   "stories": [
     {
-      "title": "杜诗水排：东汉的水力鼓风机",
+      "title": "蔡伦造纸",
       "dynasty": "东汉",
-      "category": "古代科技发明",
+      "category": "古代科技发明故事",
+      "source": "《后汉书·蔡伦传》"
+    },
+    {
+      "title": "黄道婆革新棉纺",
+      "dynasty": "元",
+      "category": "古代科技发明故事",
+      "source": "《南村辍耕录》"
+    },
+    {
+      "title": "杜诗造水排",
+      "dynasty": "东汉",
+      "category": "古代科技发明故事",
       "source": "《后汉书·杜诗传》"
+    },
+    {
+      "title": "祖冲之与圆周率",
+      "dynasty": "南朝",
+      "category": "古代科技发明故事",
+      "source": "《南齐书·祖冲之传》《隋书·律历志》"
+    },
+    {
+      "title": "喻皓建开宝寺塔",
+      "dynasty": "宋",
+      "category": "古代科技发明故事",
+      "source": "《梦溪笔谈》"
+    },
+    {
+      "title": "李春造赵州桥",
+      "dynasty": "隋",
+      "category": "古代科技发明故事",
+      "source": "唐·张嘉贞《安济桥铭》"
+    },
+    {
+      "title": "貂蝉是虚构人物吗？",
+      "dynasty": "东汉末（小说）",
+      "category": "历史趣考",
+      "source": "《三国志》《后汉书》及元杂剧"
+    },
+    {
+      "title": "唐朝已有冰激凌“酥山”",
+      "dynasty": "唐",
+      "category": "历史趣考",
+      "source": "王泠然《苏合山赋》及章怀太子墓壁画"
+    },
+    {
+      "title": "曹操身高可能不足一米六",
+      "dynasty": "东汉末",
+      "category": "历史趣考",
+      "source": "《世说新语》《魏氏春秋》"
+    },
+    {
+      "title": "木牛流马很可能是独轮车",
+      "dynasty": "三国",
+      "category": "历史趣考",
+      "source": "《三国志·诸葛亮传》《事物纪原》"
+    },
+    {
+      "title": "宋代已有牙刷专卖店",
+      "dynasty": "宋",
+      "category": "历史趣考",
+      "source": "南宋《梦粱录》及出土文物"
+    },
+    {
+      "title": "敦煌星图：世界最古星图",
+      "dynasty": "唐",
+      "category": "古代天文地理",
+      "source": "敦煌遗书S.3326号"
+    },
+    {
+      "title": "落下闳创制太初历",
+      "dynasty": "西汉",
+      "category": "古代天文地理",
+      "source": "《史记·历书》《汉书·律历志》"
+    },
+    {
+      "title": "郭守敬创制简仪",
+      "dynasty": "元",
+      "category": "古代天文地理",
+      "source": "《元史·天文志》"
+    },
+    {
+      "title": "郦道元注《水经》",
+      "dynasty": "北魏",
+      "category": "古代天文地理",
+      "source": "《水经注》《魏书》"
+    },
+    {
+      "title": "康熙《皇舆全览图》",
+      "dynasty": "清",
+      "category": "古代天文地理",
+      "source": "《大清圣祖仁皇帝实录》"
+    },
+    {
+      "title": "弦高犒师救郑",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《左传·僖公三十三年》"
+    },
+    {
+      "title": "烛之武退秦师",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《左传·僖公三十年》"
+    },
+    {
+      "title": "西门豹治邺",
+      "dynasty": "战国",
+      "category": "历史故事",
+      "source": "《史记·滑稽列传》"
+    },
+    {
+      "title": "豫让漆身吞炭",
+      "dynasty": "战国",
+      "category": "历史故事",
+      "source": "《史记·刺客列传》"
     }
   ]
 }
