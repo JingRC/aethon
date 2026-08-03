@@ -82,6 +82,7 @@ jobs:
           APIHZ_ID: ${{ secrets.APIHZ_ID }}
           CLOUDBASE_ENV: ${{ secrets.CLOUDBASE_ENV }}
           CLOUDBASE_API_KEY: ${{ secrets.CLOUDBASE_API_KEY }}
+          STONE_FORCE_PROVIDER: cloudbase
           SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

@@ -27,6 +27,10 @@ INDEX_PATH = CACHE_DIR / "stone_index.json"
 # ── 并行生图配置 ──
 MAX_WORKERS = int(os.environ.get("STONE_IMAGE_WORKERS", "4"))
 
+# ── Provider 策略 ──
+# 设为 "cloudbase" 则全走混元，失败报错不 fallback（确保 10 万额度被使用）
+FORCE_PROVIDER = os.environ.get("STONE_FORCE_PROVIDER", "").lower()
+
 # ── 缓存线程锁 ──
 _cache_lock = threading.Lock()
 
@@ -110,7 +114,7 @@ def _validate_image(path: Path) -> bool:
 # ═══════════════════════════════════════════════════════════
 
 CLOUDBASE_TIMEOUT = int(os.environ.get("CLOUDBASE_TIMEOUT", "300"))  # 默认 5 min
-CLOUDBASE_RETRIES = 1  # 首次失败后重试 1 次
+CLOUDBASE_RETRIES = 2  # 失败后重试 2 次（共 3 次尝试）
 
 
 def _generate_cloudbase(prompt: str, seed: int = None, size: str = "1024x1024", reference_image_path: str = None) -> dict | None:
@@ -381,8 +385,17 @@ def _generate_one(
             logger.info(f"   [{page_index+1}/{total}] 缓存命中 ({_get_cache_source(cache[ck])})")
             return (page_index, cached_path, _get_cache_source(cache[ck]))
 
+    # ── 构建 API 链（受 FORCE_PROVIDER 控制）──
+    if FORCE_PROVIDER:
+        chain = [(n, f) for n, f in FALLBACK_CHAIN if n.lower() == FORCE_PROVIDER]
+        if not chain:
+            logger.error(f"   FORCE_PROVIDER={FORCE_PROVIDER} 但该 API 不可用")
+            return (page_index, None, "invalid_provider")
+    else:
+        chain = FALLBACK_CHAIN
+
     # ── 遍历 API 链 ──
-    for api_name, api_func in FALLBACK_CHAIN:
+    for api_name, api_func in chain:
         result = api_func(prompt, seed=seed)
         if result:
             path = result["path"]
@@ -398,7 +411,8 @@ def _generate_one(
 
             return (page_index, path, source)
 
-    logger.error(f"   [{page_index+1}/{total}] 所有 API 均失败: {prompt[:80]}...")
+    provider_tag = f" ({FORCE_PROVIDER} only)" if FORCE_PROVIDER else ""
+    logger.error(f"   [{page_index+1}/{total}] 所有 API 均失败{provider_tag}: {prompt[:80]}...")
     return (page_index, None, "failed")
 
 
@@ -667,8 +681,17 @@ def _generate_one_with_ref(
             logger.info(f"   [{page_index+1}/{total}] 缓存命中 ({_get_cache_source(cache[ck])})")
             return (page_index, cached_path, _get_cache_source(cache[ck]))
 
+    # ── 构建 API 链（受 FORCE_PROVIDER 控制）──
+    if FORCE_PROVIDER:
+        chain = [(n, f) for n, f in _REF_FALLBACK_CHAIN if n.lower() == FORCE_PROVIDER]
+        if not chain:
+            logger.error(f"   FORCE_PROVIDER={FORCE_PROVIDER} 但该 API 不可用")
+            return (page_index, None, "invalid_provider")
+    else:
+        chain = _REF_FALLBACK_CHAIN
+
     # ── 遍历 API 链 ──
-    for api_name, api_func in _REF_FALLBACK_CHAIN:
+    for api_name, api_func in chain:
         try:
             # CloudBase 需要额外传入参考图
             if api_name == "CloudBase":
@@ -693,5 +716,6 @@ def _generate_one_with_ref(
 
             return (page_index, path, source)
 
-    logger.error(f"   [{page_index+1}/{total}] 所有 API 均失败: {prompt[:80]}...")
+    provider_tag = f" ({FORCE_PROVIDER} only)" if FORCE_PROVIDER else ""
+    logger.error(f"   [{page_index+1}/{total}] 所有 API 均失败{provider_tag}: {prompt[:80]}...")
     return (page_index, None, "failed")
