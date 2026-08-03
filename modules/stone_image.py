@@ -51,6 +51,7 @@ def _cache_key(prompt: str, seed: int) -> str:
 
 
 def _load_index() -> dict:
+    """加载缓存索引。兼容旧格式（value 为 str）和新格式（value 为 dict）。"""
     with _cache_lock:
         if INDEX_PATH.exists():
             try:
@@ -63,6 +64,22 @@ def _load_index() -> dict:
 def _save_index(idx: dict) -> None:
     with _cache_lock:
         INDEX_PATH.write_text(json.dumps(idx, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def _get_cache_path(entry) -> str | None:
+    """从缓存条目中提取路径（兼容旧 str 格式和新 dict 格式）。"""
+    if isinstance(entry, str):
+        return entry
+    if isinstance(entry, dict):
+        return entry.get("path")
+    return None
+
+
+def _get_cache_source(entry) -> str:
+    """从缓存条目中提取来源 API 名（旧格式无此信息）。"""
+    if isinstance(entry, dict):
+        return entry.get("source", "unknown")
+    return "unknown"  # 旧格式没有 source 信息
 
 
 def _validate_image(path: Path) -> bool:
@@ -106,6 +123,7 @@ def _generate_cloudbase(prompt: str, seed: int = None, size: str = "1024x1024", 
         logger.debug("CloudBase 未配置，跳过")
         return None
 
+    logger.info(f"   CloudBase 混元生图中... (env={CLOUDBASE_ENV})")
     url = f"https://{CLOUDBASE_ENV}.api.tcloudbasegateway.com/v1/functions/ai-image/invoke"
     payload: dict = {
         "prompt": prompt,
@@ -138,8 +156,14 @@ def _generate_cloudbase(prompt: str, seed: int = None, size: str = "1024x1024", 
             )
             data = r.json()
 
-            if data.get("success") and data.get("image_url"):
-                img_url = data["image_url"]
+            # 兼容多种 API 响应格式
+            success = data.get("success", False) or data.get("code") == 0
+            img_url = data.get("image_url") or data.get("data", {}).get("image_url", "")
+            # 有些 API 返回 {"result": {"image_url": "..."}}
+            if not img_url and isinstance(data.get("result"), dict):
+                img_url = data["result"].get("image_url", "")
+
+            if success and img_url:
                 retry_tag = " [retry]" if attempt > 0 else ""
                 logger.info(f"   CloudBase混元 ✓ ({r.elapsed.total_seconds():.1f}s){retry_tag}")
 
@@ -164,9 +188,15 @@ def _generate_cloudbase(prompt: str, seed: int = None, size: str = "1024x1024", 
                 else:
                     logger.warning(f"   CloudBase 图片下载失败: HTTP {ir.status_code}")
             else:
-                err = data.get("error", data.get("message", "unknown"))[:150]
-                logger.warning(f"   CloudBase 返回失败{retry_tag if attempt > 0 else ''}: {err}")
-                last_error = err
+                # 打印完整响应（截断）方便排查
+                err = data.get("error", data.get("message", ""))
+                if not err:
+                    err = json.dumps(data, ensure_ascii=False)[:200]
+                logger.warning(
+                    f"   CloudBase 返回失败{retry_tag if attempt > 0 else ''}: "
+                    f"{err[:200]}"
+                )
+                last_error = err[:200]
         except requests.Timeout:
             logger.warning(f"   CloudBase 超时 ({CLOUDBASE_TIMEOUT}s){retry_tag if attempt > 0 else ''}")
             last_error = "timeout"
@@ -333,28 +363,30 @@ def _generate_one(
     page_index: int,
     total: int,
     cache: dict,
-) -> tuple[int, str | None]:
+) -> tuple[int, str | None, str]:
     """
     单页生图（线程安全，供 ThreadPoolExecutor 调用）。
 
     依次尝试 FALLBACK_CHAIN 中的 API，首个成功即返回。
 
     Returns:
-        (page_index, local_path_or_None)
+        (page_index, local_path_or_None, source_api_name)
     """
     ck = _cache_key(prompt, seed)
 
     # ── 缓存命中 ──
-    if ck in cache and os.path.exists(cache[ck]):
-        logger.info(f"   [{page_index+1}/{total}] 缓存命中")
-        return (page_index, cache[ck])
+    if ck in cache:
+        cached_path = _get_cache_path(cache[ck])
+        if cached_path and os.path.exists(cached_path):
+            logger.info(f"   [{page_index+1}/{total}] 缓存命中 ({_get_cache_source(cache[ck])})")
+            return (page_index, cached_path, _get_cache_source(cache[ck]))
 
     # ── 遍历 API 链 ──
     for api_name, api_func in FALLBACK_CHAIN:
         result = api_func(prompt, seed=seed)
         if result:
             path = result["path"]
-            source = result.get("source", "")
+            source = result.get("source", api_name.lower())
 
             # 非混元来源可能需要去水印
             if source.lower() not in WATERMARK_FREE_SOURCES:
@@ -364,10 +396,10 @@ def _generate_one(
                 except Exception:
                     pass
 
-            return (page_index, path)
+            return (page_index, path, source)
 
     logger.error(f"   [{page_index+1}/{total}] 所有 API 均失败: {prompt[:80]}...")
-    return (page_index, None)
+    return (page_index, None, "failed")
 
 
 def _make_seed(story_seed: int, idx: int) -> int:
@@ -415,17 +447,22 @@ def generate_stone_images(prompts: list[dict], story_seed: int = 42) -> dict[int
     # ── 缓存命中检查 ──
     uncached: list[int] = []
     for idx, (prompt_text, seed, ck) in page_meta.items():
-        if ck in cache and os.path.exists(cache[ck]):
-            logger.info(f"   [{idx+1}/{total}] 缓存命中 ✓")
-            results[idx] = cache[ck]
-        else:
-            uncached.append(idx)
+        if ck in cache:
+            cached_path = _get_cache_path(cache[ck])
+            if cached_path and os.path.exists(cached_path):
+                logger.info(f"   [{idx+1}/{total}] 缓存命中 ✓ ({_get_cache_source(cache[ck])})")
+                results[idx] = cached_path
+                continue
+        uncached.append(idx)
 
     if not uncached:
         logger.info(f"   全部命中缓存 ({total}/{total})")
         return results
 
     logger.info(f"🖼️  并行生图: {len(uncached)}/{total} 张 (max_workers={MAX_WORKERS})")
+
+    # ── 本轮 API 使用统计 ──
+    source_stats: dict[str, int] = {}
 
     # ── 并行生成（手动管理线程池，防止死锁）──
     executor = ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(uncached)))
@@ -446,17 +483,25 @@ def generate_stone_images(prompts: list[dict], story_seed: int = 42) -> dict[int
         for future in as_completed(futures):
             idx, ck = futures[future]
             try:
-                pg_idx, path = future.result()
+                pg_idx, path, source = future.result()
                 if path:
-                    cache[ck] = path
+                    cache[ck] = {"path": path, "source": source}
                     results[pg_idx] = path
+                    source_stats[source] = source_stats.get(source, 0) + 1
                 else:
-                    logger.error(f"   第 {pg_idx+1} 页生图失败")
+                    logger.error(f"   第 {pg_idx+1} 页生图失败 ({source})")
+                    source_stats["failed"] = source_stats.get("failed", 0) + 1
             except Exception as e:
                 logger.error(f"   并行任务异常 (idx={idx}): {e}")
+                source_stats["error"] = source_stats.get("error", 0) + 1
 
     finally:
         executor.shutdown(wait=False, cancel_futures=True)
+
+    # ── API 使用摘要 ──
+    if source_stats:
+        parts = [f"{src}: {cnt}" for src, cnt in sorted(source_stats.items())]
+        logger.info(f"   📊 本轮 API 用量: {', '.join(parts)}")
 
     _save_index(cache)
     logger.info(f"   完成: {len(results)}/{total} 张")
@@ -470,6 +515,7 @@ def generate_stone_images(prompts: list[dict], story_seed: int = 42) -> dict[int
 def _generate_ref_image(character_desc: str, label: str = "character") -> str | None:
     """生成角色参考图（单张，高精度，用于后续面板的图生图参考）。
 
+    优先 CloudBase 混元，失败自动 fallback。
     返回本地路径，或 None。
     """
     REF_PROMPT = (
@@ -479,12 +525,21 @@ def _generate_ref_image(character_desc: str, label: str = "character") -> str | 
         "professional anime character design, cel-shaded coloring"
     )
     logger.info(f"🎨 生成{label}参考图...")
-    result = _generate_cloudbase(REF_PROMPT, seed=42, size="1024x1024")
-    if result:
-        from modules.watermark_remover import remove_watermark
-        remove_watermark(result["path"])
-        logger.info(f"   {label}参考图: {result['path']}")
-        return result["path"]
+
+    # 遍历 fallback 链（只用 CloudBase → SiliconFlow，参考图质量要求高）
+    for api_name, api_func in FALLBACK_CHAIN:
+        result = api_func(REF_PROMPT, seed=42)
+        if result and result.get("path"):
+            if api_name.lower() not in WATERMARK_FREE_SOURCES:
+                try:
+                    from modules.watermark_remover import remove_watermark
+                    remove_watermark(result["path"])
+                except Exception:
+                    pass
+            logger.info(f"   {label}参考图 [{api_name}]: {result['path']}")
+            return result["path"]
+
+    logger.warning(f"   {label}参考图生成失败（所有 API 均失败）")
     return None
 
 
@@ -525,11 +580,13 @@ def generate_stone_images_with_refs(
     # 缓存命中
     uncached: list[int] = []
     for idx, (prompt_text, seed, ck, _ref) in page_meta.items():
-        if ck in cache and os.path.exists(cache[ck]):
-            logger.info(f"   [{idx+1}/{total}] 缓存命中")
-            results[idx] = cache[ck]
-        else:
-            uncached.append(idx)
+        if ck in cache:
+            cached_path = _get_cache_path(cache[ck])
+            if cached_path and os.path.exists(cached_path):
+                logger.info(f"   [{idx+1}/{total}] 缓存命中 ({_get_cache_source(cache[ck])})")
+                results[idx] = cached_path
+                continue
+        uncached.append(idx)
 
     if not uncached:
         logger.info(f"   全部命中缓存 ({total}/{total})")
@@ -537,6 +594,8 @@ def generate_stone_images_with_refs(
 
     has_refs = any(r for _, _, _, r in page_meta.values())
     logger.info(f"🖼️  图生图模式: {len(uncached)}/{total} 张 (参考图:{'有' if has_refs else '无'})")
+
+    source_stats: dict[str, int] = {}
 
     executor = ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(uncached)))
     try:
@@ -557,20 +616,37 @@ def generate_stone_images_with_refs(
         for future in as_completed(futures):
             idx, ck = futures[future]
             try:
-                pg_idx, path = future.result()
+                pg_idx, path, source = future.result()
                 if path:
-                    cache[ck] = path
+                    cache[ck] = {"path": path, "source": source}
                     results[pg_idx] = path
+                    source_stats[source] = source_stats.get(source, 0) + 1
                 else:
-                    logger.error(f"   第 {pg_idx+1} 页生图失败")
+                    logger.error(f"   第 {pg_idx+1} 页生图失败 ({source})")
+                    source_stats["failed"] = source_stats.get("failed", 0) + 1
             except Exception as e:
                 logger.error(f"   并行任务异常 (idx={idx}): {e}")
+                source_stats["error"] = source_stats.get("error", 0) + 1
     finally:
         executor.shutdown(wait=False, cancel_futures=True)
+
+    # ── API 使用摘要 ──
+    if source_stats:
+        parts = [f"{src}: {cnt}" for src, cnt in sorted(source_stats.items())]
+        logger.info(f"   📊 本轮 API 用量: {', '.join(parts)}")
 
     _save_index(cache)
     logger.info(f"   完成: {len(results)}/{total} 张")
     return results
+
+
+# 图生图 fallback 链（与 FALLBACK_CHAIN 对齐，CloudBase 带参考图）
+_REF_FALLBACK_CHAIN = [
+    ("CloudBase", _generate_cloudbase),       # 混元 3.0 + 参考图
+    ("SiliconFlow", _generate_siliconflow),   # FLUX.1-schnell
+    ("Cloudflare", _generate_cloudflare),     # FLUX Schnell
+    ("Pollinations", _generate_pollinations), # 免费兜底
+]
 
 
 def _generate_one_with_ref(
@@ -580,25 +656,42 @@ def _generate_one_with_ref(
     total: int,
     cache: dict,
     reference_image_path: str = None,
-) -> tuple[int, str | None]:
-    """单张生成（带参考图支持）"""
+) -> tuple[int, str | None, str]:
+    """单张生成（带参考图支持）。与 _generate_one 逻辑对齐。"""
     ck = _cache_key(prompt, seed)
 
-    fallback_order = [
-        ("CloudBase", lambda p, s: _generate_cloudbase(p, s, reference_image_path=reference_image_path)),
-        ("Pollinations", lambda p, s: _generate_pollinations(p, s)),
-        ("SiliconFlow", lambda p, s: _generate_siliconflow(p, s)),
-        ("Cloudflare", lambda p, s: _generate_cloudflare(p, s)),
-    ]
+    # ── 缓存命中 ──
+    if ck in cache:
+        cached_path = _get_cache_path(cache[ck])
+        if cached_path and os.path.exists(cached_path):
+            logger.info(f"   [{page_index+1}/{total}] 缓存命中 ({_get_cache_source(cache[ck])})")
+            return (page_index, cached_path, _get_cache_source(cache[ck]))
 
-    for api_name, api_func in fallback_order:
+    # ── 遍历 API 链 ──
+    for api_name, api_func in _REF_FALLBACK_CHAIN:
         try:
-            result = api_func(prompt, seed)
-            if result and result.get("path"):
-                from modules.watermark_remover import remove_watermark
-                remove_watermark(result["path"])
-                return (page_index, result["path"])
+            # CloudBase 需要额外传入参考图
+            if api_name == "CloudBase":
+                result = api_func(prompt, seed=seed, reference_image_path=reference_image_path)
+            else:
+                result = api_func(prompt, seed=seed)
         except Exception:
+            logger.debug(f"   {api_name} 调用异常", exc_info=True)
             continue
 
-    return (page_index, None)
+        if result and result.get("path"):
+            path = result["path"]
+            source = result.get("source", api_name.lower())
+
+            # 非混元来源可能需要去水印
+            if source.lower() not in WATERMARK_FREE_SOURCES:
+                try:
+                    from modules.watermark_remover import remove_watermark
+                    remove_watermark(path)
+                except Exception:
+                    pass
+
+            return (page_index, path, source)
+
+    logger.error(f"   [{page_index+1}/{total}] 所有 API 均失败: {prompt[:80]}...")
+    return (page_index, None, "failed")

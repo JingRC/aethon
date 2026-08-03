@@ -328,8 +328,10 @@ def render_stone_cards(
             "text": page.get("text", ""),
         })
 
-    import random
-    story_seed = random.randint(1, 4294967295)
+    # 从故事内容派生确定性种子 → 同一故事 + 相同 prompt → 缓存命中
+    import hashlib
+    story_fingerprint = story.get("title", "") + "".join(p.get("text", "") for p in pages)
+    story_seed = int(hashlib.md5(story_fingerprint.encode()).hexdigest()[:8], 16)
     img_map = generate_stone_images(prompts, story_seed=story_seed)
     logger.info(f"   获取 {len(img_map)}/{total_pages} 张图片")
 
