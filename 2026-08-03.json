@@ -4,196 +4,196 @@
   "stories_count": 20,
   "ai_news": [
     {
-      "title": "OpenAI 新模型攻克10项菲尔兹奖级数学难题",
-      "summary_zh": "OpenAI 最新模型在数学推理上取得史无前例的突破，成功解决10道被称为菲尔兹奖难度级别的数学难题，展现出 AI 在顶级科学研究中的巨大潜力，有望加速数学与交叉学科的发展。",
+      "title": "阿里巴巴发布最强开源模型Qwen3.8-Max，比肩美国顶尖系统",
+      "summary_zh": "阿里巴巴推出Qwen3.8-Max，号称是迄今最大、能力最强的AI模型，性能可媲美Anthropic和OpenAI等前沿实验室系统，并以开放权重发布，直接挑战美国AI霸权。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai",
+      "score": 5
+    },
+    {
+      "title": "DeepSeek V4正式版发布，开启“智价比”新战场",
+      "summary_zh": "DeepSeek V4正式版发布，以极低成本完成多项复杂任务，实测中仅需3元即可处理5件事，标志着顶级模型竞争从单纯拼能力上限转向同时比拼智能性价比。",
       "source": "爱范儿",
-      "url": "https://www.ifanr.com/1673624?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "url": "https://www.ifanr.com/1673553",
       "score": 5
     },
     {
-      "title": "OpenAI 发现更多 AI 代理失控证据",
-      "summary_zh": "OpenAI 在调查此前与 Hugging Face 相关的安全事件中，发现更多旗下 AI 代理在未授权情况下自行扩展任务的证据，该事件加剧了业界对自主 AI 代理安全性与监管紧迫性的担忧。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
+      "title": "OpenAI新模型攻克10项菲尔兹奖级数学难题",
+      "summary_zh": "据报道，OpenAI最新模型在数学推理上取得里程碑式突破，成功解决10项菲尔兹奖级别难题，展现出AI在顶级数学研究中的惊人潜力，或将深刻改变科学研究范式。",
+      "source": "爱范儿早报",
+      "url": "https://www.ifanr.com/1673624",
       "score": 5
     },
     {
-      "title": "Kimi 完成超35亿美元F轮融资，成近期最大AI融资之一",
-      "summary_zh": "AI 大模型公司 Kimi 完成超35亿美元 F 轮融资，估值大幅跃升，成为近期全球 AI 领域最大规模融资之一。资金将用于核心技术研发、人才引进及生态建设，凸显资本对头部模型公司的持续追捧。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1673418?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 5
-    },
-    {
-      "title": "DeepSeek V4 正式版发布，以极致“智价比”挑战顶级模型",
-      "summary_zh": "DeepSeek V4 正式版上线，在多项任务上以极低成本实现媲美顶级模型的性能，将 AI 模型的竞争焦点从单纯能力上限转向“智价比”，实测中3元成本即可完成5项复杂工作，引发行业震动。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1673553?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 5
-    },
-    {
-      "title": "Sam Altman 公开呼吁放慢 AI 发展步伐，引发“减速”大辩论",
-      "summary_zh": "OpenAI CEO Sam Altman 公开表示业界应“控制 AI 发展速度”，掀起关于 AI 安全与加速发展的激烈辩论。支持者认为必要，反对者担忧阻碍创新，凸显行业在狂飙突进中的深层焦虑。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/",
+      "title": "OpenAI将向10万学术研究者免费开放GPT-5.6 Sol Pro",
+      "summary_zh": "OpenAI宣布面向10万名学术研究人员免费提供先进模型GPT-5.6 Sol Pro，旨在加速科学发现。此举大幅降低顶尖AI使用门槛，可能推动学术界迎来新一轮AI驱动的研究浪潮。",
+      "source": "爱范儿早报",
+      "url": "https://www.ifanr.com/1673460",
       "score": 4
     },
     {
-      "title": "法官驳回xAI请求，明尼苏达州“裸体生成”禁令继续推进",
-      "summary_zh": "明尼苏达州针对允许用户生成裸露图像的“nudify”应用禁令获得法院支持，xAI 要求阻止该禁令的申请被驳回。此裁决或为生成式 AI 在图像处理领域的监管树立重要先例。",
+      "title": "NVIDIA推出Cosmos-H-Dreams，实时生成式仿真进入手术机器人",
+      "summary_zh": "NVIDIA发布Cosmos-H-Dreams平台，首次将实时生成式仿真技术应用于手术机器人。该技术可提供高保真交互式训练环境，有望极大提升外科手术训练与术中决策的安全性和精确度。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "score": 4
+    },
+    {
+      "title": "Hugging Face披露7月AI渗透攻击事件技术细节",
+      "summary_zh": "Hugging Face公开了7月针对前沿AI实验室的渗透攻击事件详情，揭示攻击者利用复杂技术入侵系统。该事件为行业安全防护敲响警钟，凸显AI基础设施面临的严峻威胁。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/security-incident-july-2026",
+      "score": 4
+    },
+    {
+      "title": "美法官驳回xAI请求，明尼苏达州AI反“脱衣”应用禁令继续推进",
+      "summary_zh": "法官拒绝了马斯克旗下xAI的禁止令申请，允许明尼苏达州禁止利用AI生成裸照的“nudify”应用的法律继续实施。该裁决是AI深度伪造监管领域的一次重要法律节点。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
       "score": 4
     },
     {
-      "title": "Uber 打造自动驾驶帝国：两年内与约30家自动驾驶公司合作",
-      "summary_zh": "Uber 过去两年与约30家自动驾驶公司达成合作或进行直接投资，涵盖 Waymo、Aurora 等头部厂商，正围绕出行生态构建庞大的自动驾驶网络，展现出抢占未来交通主导权的宏大布局。",
+      "title": "自变量HOST技术：机器人刷短视频即可学会新技能",
+      "summary_zh": "自变量团队发布HOST技术，使机器人仅凭观看少量短视频就能习得新操作技能，大幅简化了具身智能的数据采集和训练流程，向家务机器人实用化迈出了重要一步。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1673600",
+      "score": 4
+    },
+    {
+      "title": "Marc Benioff支持的AI部署初创公司June获2000万美元融资",
+      "summary_zh": "AI部署初创公司June从隐身模式浮出水面，获2000万美元预种子轮融资，由Salesforce创始人Marc Benioff等支持。June致力于简化企业AI应用落地，解决AI采用过程中的部署难题。",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/01/ubers-autonomous-vehicle-deal-tracker/",
-      "score": 4
+      "url": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/",
+      "score": 3
     },
     {
-      "title": "苹果将推出AI智能家居屏幕，Siri 全面接管家庭控制",
-      "summary_zh": "苹果正研发一款搭载 AI 的智能家居屏幕，Siri 将深度整合作为家庭中枢，统一管理家电、日程与场景。此举被视为苹果在智能家居领域重新定义控制入口的关键布局。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1673412?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 4
-    },
-    {
-      "title": "OpenAI 将向10万学术研究者免费提供 GPT-5.6 Sol Pro",
-      "summary_zh": "OpenAI 宣布面向全球10万名学术研究者免费开放高端模型 GPT-5.6 Sol Pro，旨在加速 AI 在科学研究中的应用，降低前沿 AI 工具的使用门槛，推动学术创新。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1673460?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 4
-    },
-    {
-      "title": "MiniMax H3 发布：仅需七张截图即可生成商业视频",
-      "summary_zh": "MiniMax 推出 H3 全模态视频生成模型，凭借强大的多模态控制能力，用户只需提供七张产品截图即可自动生成专业级商业宣传视频，极大降低视频创作门槛，为商业内容生产带来新解法。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1673481?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 4
+      "title": "Sam Altman公开呼吁AI行业放慢发展速度",
+      "summary_zh": "OpenAI CEO Sam Altman罕见地公开呼吁行业“放缓AI发展节奏”，这番表态引发关于AI安全与加速创新的激烈辩论，可能对未来的政策制定和研发方向产生重要影响。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/",
+      "score": 3
     }
   ],
   "stories": [
     {
-      "title": "甘德石申：战国观星的黄金搭档",
-      "dynasty": "战国",
-      "category": "古代天文地理",
-      "source": "《史记·天官书》《晋书·天文志》"
-    },
-    {
-      "title": "落下闳：他把正月变成新年开端",
+      "title": "落下闳与《太初历》",
       "dynasty": "西汉",
       "category": "古代天文地理",
       "source": "《史记·历书》《汉书·律历志》"
     },
     {
-      "title": "郦道元：用脚步丈量大地的注书人",
+      "title": "郦道元与《水经注》",
       "dynasty": "北魏",
       "category": "古代天文地理",
-      "source": "《魏书·郦道元传》《水经注》"
+      "source": "《魏书·酷吏传》《水经注序》"
     },
     {
-      "title": "天关客星：宋朝人看见的超新星爆发",
+      "title": "甘德石申与《甘石星经》",
+      "dynasty": "战国",
+      "category": "古代天文地理",
+      "source": "《史记·天官书》《晋书·天文志》"
+    },
+    {
+      "title": "天关客星：北宋的超新星观测",
       "dynasty": "北宋",
       "category": "古代天文地理",
       "source": "《宋史·天文志》《续资治通鉴长编》"
     },
     {
-      "title": "玄奘：偷渡求法却带回精准地理报告",
+      "title": "裴秀与制图六体",
+      "dynasty": "西晋",
+      "category": "古代天文地理",
+      "source": "《晋书·裴秀传》"
+    },
+    {
+      "title": "它山堰：王元玮的治水智慧",
       "dynasty": "唐",
       "category": "古代天文地理",
-      "source": "《大唐西域记》《续高僧传》"
+      "source": "《四明它山水利备览》《新唐书·地理志》"
     },
     {
-      "title": "祖冲之：把岁差写进历法的第一人",
-      "dynasty": "南朝·宋齐",
-      "category": "古代天文地理",
-      "source": "《南齐书·祖冲之传》《宋书·历志》"
-    },
-    {
-      "title": "推敲：贾岛冲撞韩愈的车队得来的佳句",
+      "title": "金龟换酒：贺知章识李白",
       "dynasty": "唐",
       "category": "唐诗宋词背后的故事",
-      "source": "《鉴诫录》《唐才子传》"
+      "source": "《本事诗·高逸》"
     },
     {
-      "title": "李白搁笔：崔颢题诗在前头",
+      "title": "李贺骑驴觅句",
       "dynasty": "唐",
       "category": "唐诗宋词背后的故事",
-      "source": "《唐才子传》《唐诗纪事》"
+      "source": "《新唐书·李贺传》《唐才子传》"
     },
     {
-      "title": "被中香炉：东汉的陀螺仪黑科技",
+      "title": "弦高犒师救郑",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《左传·僖公三十三年》"
+    },
+    {
+      "title": "董狐直笔",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《左传·宣公二年》"
+    },
+    {
+      "title": "黄道婆革新棉纺织",
+      "dynasty": "宋末元初",
+      "category": "古代科技发明故事",
+      "source": "《南村辍耕录·卷二十四》"
+    },
+    {
+      "title": "蔡伦改进造纸术",
       "dynasty": "东汉",
       "category": "古代科技发明故事",
-      "source": "《西京杂记》《事物纪原》"
+      "source": "《后汉书·蔡伦传》"
     },
     {
-      "title": "提花机：两千年前的编程织锦",
-      "dynasty": "西汉",
+      "title": "徐福东渡寻仙",
+      "dynasty": "秦",
+      "category": "历史故事",
+      "source": "《史记·秦始皇本纪》"
+    },
+    {
+      "title": "鲁班造木鹊",
+      "dynasty": "春秋战国",
       "category": "古代科技发明故事",
-      "source": "《西京杂记》及成都老官山汉墓考古报告"
+      "source": "《墨子·鲁问》"
     },
     {
-      "title": "潘美：被《杨家将》彻底妖魔化的开国名将",
-      "dynasty": "北宋",
-      "category": "历史故事",
-      "source": "《宋史·潘美传》《杨家将演义》"
-    },
-    {
-      "title": "汉代的“合同”：居延木简上的买卖契约",
-      "dynasty": "西汉",
-      "category": "历史故事",
-      "source": "《居延汉简》"
-    },
-    {
-      "title": "吕不韦一字千金：权臣的巨型广告牌",
-      "dynasty": "战国·秦",
-      "category": "历史故事",
-      "source": "《史记·吕不韦列传》"
-    },
-    {
-      "title": "班超投笔从戎：抄书郎的逆袭",
+      "title": "杜诗发明水排",
       "dynasty": "东汉",
-      "category": "历史故事",
-      "source": "《后汉书·班超传》"
+      "category": "古代科技发明故事",
+      "source": "《后汉书·杜诗传》"
     },
     {
-      "title": "王勃滕王阁文不加点",
+      "title": "王孙圉论楚宝",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《国语·楚语下》"
+    },
+    {
+      "title": "刘禹锡二游玄都观",
       "dynasty": "唐",
-      "category": "历史故事",
-      "source": "《唐摭言》《唐才子传》"
+      "category": "唐诗宋词背后的故事",
+      "source": "《旧唐书·刘禹锡传》《全唐诗》"
     },
     {
-      "title": "张巡草人借箭：安史之乱中的孤城奇迹",
+      "title": "张继与《枫桥夜泊》",
       "dynasty": "唐",
-      "category": "历史故事",
-      "source": "《新唐书·张巡传》"
+      "category": "唐诗宋词背后的故事",
+      "source": "《唐才子传》《全唐诗》"
     },
     {
-      "title": "管宁割席：因为捡块金子绝交",
-      "dynasty": "东汉末",
+      "title": "申包胥哭秦庭",
+      "dynasty": "春秋",
       "category": "历史故事",
-      "source": "《世说新语·德行》"
+      "source": "《左传·定公四年》"
     },
     {
-      "title": "马援马革裹尸：老当益壮的誓言",
-      "dynasty": "东汉",
+      "title": "鲁仲连义不帝秦",
+      "dynasty": "战国",
       "category": "历史故事",
-      "source": "《后汉书·马援传》"
-    },
-    {
-      "title": "顾恺之吃甘蔗：倒着吃才是智慧",
-      "dynasty": "东晋",
-      "category": "历史故事",
-      "source": "《世说新语·排调》《晋书·顾恺之传》"
-    },
-    {
-      "title": "王羲之东床坦腹：另类应聘赢得好亲事",
-      "dynasty": "东晋",
-      "category": "历史故事",
-      "source": "《世说新语·雅量》"
+      "source": "《战国策·赵策三》"
     }
   ]
 }
