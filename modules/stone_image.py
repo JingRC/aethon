@@ -34,12 +34,12 @@ FORCE_PROVIDER = os.environ.get("STONE_FORCE_PROVIDER", "").lower()
 # ── 缓存线程锁 ──
 _cache_lock = threading.Lock()
 
-# ── API 配置（从环境变量读取，兼容 GitHub Actions Secrets）──
-CLOUDBASE_ENV = os.environ.get("CLOUDBASE_ENV", "")
-CLOUDBASE_API_KEY = os.environ.get("CLOUDBASE_API_KEY", "")
+# ── API 配置（从环境变量读取，strip 去除不可见字符）──
+CLOUDBASE_ENV = os.environ.get("CLOUDBASE_ENV", "").strip()
+CLOUDBASE_API_KEY = os.environ.get("CLOUDBASE_API_KEY", "").strip()
 
 # Fallback APIs
-SILICONFLOW_KEY = os.environ.get("SILICONFLOW_API_KEY", "")
+SILICONFLOW_KEY = os.environ.get("SILICONFLOW_API_KEY", "").strip()
 CLOUDFLARE_ACCOUNT = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "")
 CLOUDFLARE_TOKEN = os.environ.get("CLOUDFLARE_API_TOKEN", "")
 POLLINATIONS_KEY = os.environ.get("POLLINATIONS_API_KEY", "")
@@ -148,6 +148,7 @@ def _generate_cloudbase(prompt: str, seed: int = None, size: str = "1024x1024", 
 
     last_error = None
     for attempt in range(1 + CLOUDBASE_RETRIES):
+        retry_tag = " [retry]" if attempt > 0 else ""
         try:
             r = requests.post(
                 url,
@@ -168,7 +169,6 @@ def _generate_cloudbase(prompt: str, seed: int = None, size: str = "1024x1024", 
                 img_url = data["result"].get("image_url", "")
 
             if success and img_url:
-                retry_tag = " [retry]" if attempt > 0 else ""
                 logger.info(f"   CloudBase混元 ✓ ({r.elapsed.total_seconds():.1f}s){retry_tag}")
 
                 ir = requests.get(img_url, timeout=60)
@@ -197,15 +197,15 @@ def _generate_cloudbase(prompt: str, seed: int = None, size: str = "1024x1024", 
                 if not err:
                     err = json.dumps(data, ensure_ascii=False)[:200]
                 logger.warning(
-                    f"   CloudBase 返回失败{retry_tag if attempt > 0 else ''}: "
+                    f"   CloudBase 返回失败{retry_tag}: "
                     f"{err[:200]}"
                 )
                 last_error = err[:200]
         except requests.Timeout:
-            logger.warning(f"   CloudBase 超时 ({CLOUDBASE_TIMEOUT}s){retry_tag if attempt > 0 else ''}")
+            logger.warning(f"   CloudBase 超时 ({CLOUDBASE_TIMEOUT}s){retry_tag}")
             last_error = "timeout"
         except requests.RequestException as e:
-            logger.warning(f"   CloudBase 网络异常: {e}{retry_tag if attempt > 0 else ''}")
+            logger.warning(f"   CloudBase 网络异常: {e}{retry_tag}")
             last_error = str(e)
         except Exception as e:
             logger.warning(f"   CloudBase 异常: {e}")
