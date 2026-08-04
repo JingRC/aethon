@@ -4,196 +4,196 @@
   "stories_count": 20,
   "ai_news": [
     {
-      "title": "Anthropic与AI云初创Volta签署100亿美元合作协议",
-      "summary_zh": "人工智能公司Anthropic再添重磅云合作伙伴，与AI云初创企业Volta达成高达100亿美元的交易。这是Anthropic近几个月来一系列云计算合作的最新举措，旨在确保大规模算力以支持其前沿AI模型的训练与部署，加剧了AI领域的算力竞争。",
+      "title": "Anthropic与AI云初创Volta签署百亿美元大单",
+      "summary_zh": "继近几个月的一系列云合作后，Anthropic再度出手，据报道已与AI云初创公司Volta达成价值100亿美元的协议，进一步扩大其计算基础设施布局，凸显前沿模型训练对大规模专用算力的迫切需求。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/",
       "score": 5
     },
     {
-      "title": "SpaceX季度财报：AI业务收入首超航天",
-      "summary_zh": "SpaceX首次公布季度财报显示，其向AI公司提供算力的业务收入达26亿美元，同比增长两倍多，已超过传统航天业务收入。这凸显了SpaceX作为AI基础设施提供商（Neocloud）的迅速崛起，得益于与Anthropic、Google等公司的计算交易。",
+      "title": "SpaceX AI收入首超太空业务，变身新云巨头",
+      "summary_zh": "SpaceX最新财报显示，其AI计算部门收入同比暴增三倍至26亿美元，主要来自为Anthropic等AI公司提供算力，令传统火箭和星链收入黯然失色。这一逆转标志着SpaceX正成为AI基础设施的关键玩家。",
       "source": "The Verge",
       "url": "https://www.theverge.com/science/975335/spacex-made-more-money-as-a-neocloud",
       "score": 5
     },
     {
-      "title": "英伟达主导的AI安全联盟一周内取得实质进展",
-      "summary_zh": "由英伟达牵头、成立仅一周的“开放安全AI联盟”已扩展到120余家公司，并迅速提出针对AI代理防御的具体方案。该联盟旨在构建行业安全标准，其高速推进反映了业界对AI安全问题的紧迫感，以及英伟达在AI生态中的主导力。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/",
-      "score": 5
-    },
-    {
-      "title": "报告：开源AI模型逼近前沿，安全差距犹存",
-      "summary_zh": "安全机构SaferAI最新报告指出，Z.ai的开源权重模型GLM-5.2在能力上已逼近前沿AI，但缺少关键安全防护措施。这再次引发担忧：强大的开放模型可能超前于治理和保障体系，形成重大的滥用风险，呼吁加强开源模型的安全评估。",
+      "title": "开源模型逼近前沿，安全缺口依旧堪忧",
+      "summary_zh": "SaferAI最新报告指出，Z.ai的开源模型GLM-5.2在多项能力上已接近顶尖闭源模型，却缺乏关键安全措施。此事再度引发对强大开源模型治理的激烈争论，凸显监管与技术创新之间的紧张关系。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/",
-      "score": 5
-    },
-    {
-      "title": "OpenAI新模型攻克10项菲尔兹奖级数学难题",
-      "summary_zh": "据爱范儿早报消息，OpenAI推出新模型，在数学推理上取得重大突破，成功解决10项菲尔兹奖级别难题。这标志着AI在顶级数学推理能力上迈出历史性一步，可能对科研、工程等领域产生深远影响，彰显了大语言模型在复杂逻辑推理上的巨大潜力。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1673624?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 5
-    },
-    {
-      "title": "英伟达发布Cosmos-H-Dreams：手术机器人实时生成式仿真",
-      "summary_zh": "英伟达推出Cosmos-H-Dreams平台，将实时生成式AI仿真引入手术机器人领域。该技术能够为外科手术训练和规划提供高保真动态模拟场景，有望加速医疗机器人的开发和普及，是英伟达将生成式AI落子垂直行业的又一步重棋。",
-      "source": "Hugging Face - Blog",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
       "score": 4
     },
     {
-      "title": "HuggingFace披露2026年7月AI代理入侵事件技术细节",
-      "summary_zh": "HuggingFace发布技术博文，详细说明了2026年7月前沿AI实验室遭遇的代理入侵事件。此次安全事件揭示了AI代理系统面临的潜在风险，如提示注入与工具滥用，为全行业敲响警钟，推动了对AI代理安全防护体系的深入讨论与加固。",
-      "source": "Hugging Face - Blog",
-      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "title": "Hugging Face披露7月安全事件",
+      "summary_zh": "AI模型库与社区平台Hugging Face正式公布2026年7月的安全入侵事件，承认有未经授权的访问行为。该事件引发对核心AI基础设施安全性的广泛担忧，平台已采取措施修复漏洞并加强监控。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/security-incident-july-2026",
       "score": 4
     },
     {
-      "title": "Waymo在达拉斯全面开放无人驾驶出租车服务",
-      "summary_zh": "Waymo宣布取消达拉斯地区无人驾驶出租车服务的等候名单，向所有公众开放。这是该公司在美国加速规模化部署的关键一步，目前其服务已覆盖多个城市，并向英国及欧洲扩张，标志着自动驾驶出行服务日趋成熟。",
+      "title": "Nvidia牵头AI安全联盟一周内发布提案",
+      "summary_zh": "成立仅一周的Open Secure AI Alliance在Nvidia主导下已迅速提出防御AI代理攻击的多项提案，联盟成员已超120家企业。这一高速协作旨在为快速演化的AI威胁建立行业安全基准，影响深远。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/",
+      "score": 4
+    },
+    {
+      "title": "Waymo在达拉斯全面开放无人出租车服务",
+      "summary_zh": "Waymo宣布在达拉斯取消等待名单，向所有公众开放全无人驾驶出租车服务。这是其扩展美国、英国和欧洲无人驾驶网络的关键一步，标志着商业自动驾驶服务从试验走向常态化运营的重要里程碑。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/04/waymo-opens-up-robotaxi-service-in-dallas-to-everyone/",
-      "score": 4
+      "score": 5
     },
     {
-      "title": "AMD数据中心业务同比翻番，AI需求强劲",
-      "summary_zh": "AMD最新财报显示，受AI算力需求推动，其数据中心业务收入同比增长107%至67亿美元。EPYC服务器CPU与Instinct GPU的强劲表现凸显了AMD在AI基础硬件市场的竞争力，而传统游戏业务则相对萎缩，公司战略重心持续向AI倾斜。",
+      "title": "NVIDIA Cosmos-H-Dreams将生成式仿真带入手术机器人",
+      "summary_zh": "NVIDIA发布Cosmos-H-Dreams，一个针对手术机器人的实时生成式仿真平台，能够创建高保真虚拟环境用于训练和测试。该技术有望大幅加速外科机器人的算法开发与触觉反馈研究，推动智慧医疗进步。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "score": 3
+    },
+    {
+      "title": "AMD数据中心业务受AI需求推动翻倍增长",
+      "summary_zh": "AMD最新财报显示，其数据中心营收同比暴增107%至67亿美元，主要由AI加速器需求驱动。游戏业务则明显退居次要地位，凸显AI算力市场依然是芯片厂商最强劲的增长引擎。",
       "source": "The Verge",
       "url": "https://www.theverge.com/tech/975381/amd-q2-2026-earnings-ai-gaming-ryzen",
       "score": 4
     },
     {
-      "title": "Spotify拓展AI混音与翻唱，联手独立厂牌联盟Merlin",
-      "summary_zh": "Spotify宣布独立厂牌联盟Merlin加入其AI音乐混音与翻唱项目，此前已与环球音乐合作。该付费工具将允许用户利用AI为参与艺人的曲目生成混音与翻唱，同时确保版权分配，标志着流媒体平台在AI生成内容商业化与版权平衡上迈出关键一步。",
+      "title": "Spotify联手Merlin拓展AI混音与翻唱项目",
+      "summary_zh": "Spotify宣布独立厂牌联盟Merlin加入其AI混音与翻唱计划，用户可付费将合作艺人的歌曲生成AI翻唱或混音。此举在为创作者提供新收入流的同时，也积极探索AI生成音乐在主流平台的合规商业化路径。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/04/spotify-adds-merlin-to-its-ai-music-remix-and-covers-effort/",
-      "score": 4
+      "score": 3
+    },
+    {
+      "title": "Liquid AI发布LFM2.5-2.6B，实现边缘本地智能体部署",
+      "summary_zh": "Liquid AI推出轻量级模型LFM2.5-2.6B，专为在资源受限的边缘设备上运行本地AI代理设计。该模型在保持较小体量的同时提供高性能推理，有望推动隐私敏感的智能体应用在手机、IoT等场景中普及。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+      "score": 3
     }
   ],
   "stories": [
     {
-      "title": "参商永隔",
+      "title": "参商二星永不相见",
       "dynasty": "春秋",
       "category": "古代天文地理",
       "source": "《左传·昭公元年》"
     },
     {
-      "title": "荧惑守心与宋景公不移祸",
-      "dynasty": "春秋",
+      "title": "荧惑守心：宋景公三拒移祸",
+      "dynasty": "春秋宋国",
       "category": "古代天文地理",
-      "source": "《吕氏春秋·制乐》《史记·宋微子世家》"
+      "source": "《史记·宋微子世家》"
     },
     {
-      "title": "落下闳巧定太初历",
+      "title": "郦道元踏遍山川注《水经》",
+      "dynasty": "北魏",
+      "category": "古代天文地理",
+      "source": "《北史·郦道元传》"
+    },
+    {
+      "title": "贾耽绘制《海内华夷图》：唐代的世界地图",
+      "dynasty": "唐",
+      "category": "古代天文地理",
+      "source": "《旧唐书·贾耽传》"
+    },
+    {
+      "title": "王景治河：东汉平息黄河水患的千年功臣",
+      "dynasty": "东汉",
+      "category": "古代天文地理",
+      "source": "《后汉书·王景传》"
+    },
+    {
+      "title": "天关客星：北宋捕获的宇宙“烟花”",
+      "dynasty": "北宋",
+      "category": "古代天文地理",
+      "source": "《宋会要辑稿》"
+    },
+    {
+      "title": "落下闳献《太初历》：正月和春节的由来",
       "dynasty": "西汉",
       "category": "古代天文地理",
       "source": "《史记·历书》《汉书·律历志》"
     },
     {
-      "title": "周公测影定地中",
-      "dynasty": "西周",
-      "category": "古代天文地理",
-      "source": "《周礼·地官》《周髀算经》"
+      "title": "弦高犒师：商人十二头牛退秦军",
+      "dynasty": "春秋",
+      "category": "兵法谋略故事",
+      "source": "《左传·僖公三十三年》"
     },
     {
-      "title": "马王堆古地图：汉代的高精度测绘",
-      "dynasty": "西汉",
-      "category": "古代天文地理",
-      "source": "马王堆汉墓帛地图《地形图》《驻军图》"
+      "title": "王翦请田：自污求存的大将智慧",
+      "dynasty": "战国秦",
+      "category": "兵法谋略故事",
+      "source": "《史记·白起王翦列传》"
     },
     {
-      "title": "徐光启与《崇祯历书》",
-      "dynasty": "明",
-      "category": "古代天文地理",
-      "source": "《崇祯历书》《明史·徐光启传》"
-    },
-    {
-      "title": "尚方宝剑：先斩后奏的真相",
-      "dynasty": "明",
-      "category": "历史趣考",
-      "source": "《明史·职官志》《万历野获编》"
-    },
-    {
-      "title": "唐代美女真的是以胖为美吗？",
-      "dynasty": "唐",
-      "category": "历史趣考",
-      "source": "《宣和画谱》《旧唐书·杨贵妃传》"
-    },
-    {
-      "title": "虞诩增灶破羌",
+      "title": "班超不入虎穴焉得虎子",
       "dynasty": "东汉",
-      "category": "兵法谋略",
-      "source": "《后汉书·虞诩传》"
+      "category": "兵法谋略故事",
+      "source": "《后汉书·班梁列传》"
     },
     {
-      "title": "张巡草人借箭",
-      "dynasty": "唐",
-      "category": "兵法谋略",
-      "source": "《资治通鉴·唐纪》"
+      "title": "《竹书纪年》引发的千年疑案：尧舜并非禅让？",
+      "dynasty": "战国（魏）",
+      "category": "历史趣考",
+      "source": "《竹书纪年》轶文"
     },
     {
-      "title": "涸辙之鲋",
-      "dynasty": "战国",
-      "category": "诸子百家寓言",
-      "source": "《庄子·外物》"
-    },
-    {
-      "title": "狗猛酒酸",
-      "dynasty": "战国",
-      "category": "诸子百家寓言",
-      "source": "《韩非子·外储说右上》"
-    },
-    {
-      "title": "中流击楫",
-      "dynasty": "东晋",
-      "category": "励志故事",
-      "source": "《晋书·祖逖传》"
-    },
-    {
-      "title": "扪虱而谈",
-      "dynasty": "东晋",
-      "category": "文人轶事",
-      "source": "《晋书·王猛传》"
-    },
-    {
-      "title": "坦腹东床",
-      "dynasty": "东晋",
-      "category": "历史轶事",
-      "source": "《世说新语·雅量》"
-    },
-    {
-      "title": "请君入瓮",
-      "dynasty": "唐",
-      "category": "历史故事",
-      "source": "《资治通鉴·唐纪》"
-    },
-    {
-      "title": "如鱼得水",
-      "dynasty": "三国",
-      "category": "历史典故",
-      "source": "《三国志·蜀书·诸葛亮传》"
-    },
-    {
-      "title": "周处除三害",
-      "dynasty": "西晋",
-      "category": "励志故事",
-      "source": "《晋书·周处传》"
-    },
-    {
-      "title": "黄袍加身",
-      "dynasty": "北宋",
-      "category": "历史典故",
-      "source": "《宋史·太祖本纪》《续资治通鉴长编》"
-    },
-    {
-      "title": "收天下兵铸金人",
+      "title": "秦始皇的“外星人”传说：宛渠之民与螺舟",
       "dynasty": "秦",
-      "category": "历史地理典故",
-      "source": "《史记·秦始皇本纪》"
+      "category": "历史趣考",
+      "source": "《拾遗记》"
+    },
+    {
+      "title": "温酒斩华雄的不是关羽，而是孙坚",
+      "dynasty": "东汉末年",
+      "category": "历史趣考",
+      "source": "《三国志·孙破虏讨逆传》"
+    },
+    {
+      "title": "王子猷雪夜访戴：乘兴而行，兴尽而返",
+      "dynasty": "东晋",
+      "category": "历史趣考",
+      "source": "《世说新语·任诞》"
+    },
+    {
+      "title": "宋代就有外卖服务：清明上河图里的送餐小哥",
+      "dynasty": "北宋",
+      "category": "历史趣考",
+      "source": "《东京梦华录》《清明上河图》"
+    },
+    {
+      "title": "轮扁斫轮：圣人之书乃糟粕？",
+      "dynasty": "春秋",
+      "category": "诸子百家寓言",
+      "source": "《庄子·天道》"
+    },
+    {
+      "title": "屠龙之技：学无所用古今同叹",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《庄子·列御寇》"
+    },
+    {
+      "title": "歧路亡羊：大道多歧学者慎择",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《列子·说符》"
+    },
+    {
+      "title": "浑沌开窍：朴拙也是一种大美",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《庄子·应帝王》"
+    },
+    {
+      "title": "鲁侯养鸟：爱之适足以害之",
+      "dynasty": "战国",
+      "category": "诸子百家寓言",
+      "source": "《庄子·至乐》"
     }
   ]
 }
