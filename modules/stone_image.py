@@ -357,8 +357,8 @@ FALLBACK_CHAIN = [
     ("Pollinations", _generate_pollinations), # 质量最不稳定，放最后
 ]
 
-# CloudBase 混元不带水印，免去处理
-WATERMARK_FREE_SOURCES = {"cloudbase"}
+# 所有来源统一去水印（混元右下角也有 AI 生成字样）
+WATERMARK_FREE_SOURCES: set = set()
 
 
 def _generate_one(
