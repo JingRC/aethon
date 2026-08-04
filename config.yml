@@ -94,6 +94,13 @@ stone_cards:
   output_dir: "docs/xhs"           # 卡片图片输出目录
   category: "石头禅修"             # 卡片分类（docs/xhs/日期/石头禅修/）
 
+# --- 奶龙名画恶搞配置 ---
+nailong:
+  enabled: true                    # 是否生成奶龙名画卡片
+  count: 10                        # 每天生成几张
+  output_dir: "docs/xhs"           # 卡片图片输出目录
+  category: "奶龙名画"             # 卡片分类
+
 # --- 小道士下山记漫画配置 ---
 manga:
   enabled: false                   # 本地手动跑，不自动

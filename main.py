@@ -811,6 +811,25 @@ def main():
             logger.error(f"漫画生成失败: {e}")
             traceback.print_exc()
 
+    # ── 10. 生成奶龙名画卡片 ──
+    nailong_config = config.get("nailong", {})
+    if nailong_config.get("enabled", False):
+        try:
+            logger.info("=" * 50)
+            logger.info("🐉 生成奶龙名画恶搞卡片...")
+
+            from modules.nailong_cards import render_nailong_cards
+            nailong_paths = render_nailong_cards(
+                output_dir=nailong_config.get("output_dir", "docs/xhs"),
+                category=nailong_config.get("category", "奶龙名画"),
+                count=nailong_config.get("count", 10),
+            )
+            logger.info(f"🐉 奶龙名画: {len(nailong_paths)} 张")
+
+        except Exception as e:
+            logger.error(f"奶龙名画生成失败: {e}")
+            traceback.print_exc()
+
     logger.info("=" * 50)
     logger.info(f"✅ 完成！AI快讯 {len(ai_news)} 条 + 古代故事 {len(stories)} 则")
     logger.info(f"📂 输出目录: {DOCS_DIR}")
