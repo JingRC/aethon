@@ -4,196 +4,196 @@
   "stories_count": 20,
   "ai_news": [
     {
-      "title": "通用催化领投 River AI 11亿美元融资，2月新公司即跻身独角兽",
-      "summary_zh": "由xAI联合创始人Igor Babuschkin创立仅两个月的AI代理公司River AI，宣布完成由General Catalyst领投的11亿美元融资，创下早期AI公司融资纪录。该公司瞄准个人AI代理领域，此轮融资将加速其产品研发与团队扩张，显示资本市场对下一代自主代理的巨大信心。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/",
-      "score": 5
-    },
-    {
-      "title": "Anthropic未发布模型在黎曼猜想上取得重大进展",
-      "summary_zh": "Anthropic 透露其未公开的AI模型在数学史上最著名的未解难题——黎曼猜想上取得了出乎意料的进展。尽管尚未完全解决，但该模型展现出的超越预期的推理能力，为AI驱动的前沿科学发现打开了新的想象空间，标志着AI在纯数学领域的里程碑式突破。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
-      "score": 5
-    },
-    {
-      "title": "ChatGPT与Gemini双双突破10亿用户大关",
-      "summary_zh": "AI聊天机器人竞争进入新纪元：OpenAI首席执行官Sam Altman宣布ChatGPT月活用户突破10亿，谷歌CEO Sundar Pichai随即公布Gemini同样达到10亿用户里程碑。Gemini还披露每日生成超1.5亿张图片，63%用户使用语音交互，标志大模型消费级应用全面普及。",
+      "title": "ChatGPT与Gemini双双突破10亿用户",
+      "summary_zh": "谷歌Gemini与OpenAI的ChatGPT几乎同时宣布月活跃用户突破10亿，标志着AI聊天机器人全面进入主流消费者生活。Gemini成为谷歌增长最快的产品，63%的用户使用语音交互，每日生成超1.5亿张图像。AI助手正在重塑数十亿人的信息获取与创作方式。",
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users",
       "score": 5
     },
     {
-      "title": "OpenAI首席运营官Brad Lightcap离职，将启动新事业",
-      "summary_zh": "任职长达八年的OpenAI元老、前首席运营官Brad Lightcap宣布离职。他在内部备忘录中表示将创办新的事业，并称会从“不同的视角”继续推动公司使命。Lightcap的离开是近期OpenAI高管又一动荡，引发业界对这家AI巨头管理层稳定性的关注。",
+      "title": "Anthropic未发布模型在黎曼猜想上取得进展",
+      "summary_zh": "Anthropic透露其未发布的AI模型在数学界著名的黎曼猜想相关问题上取得了超过预期的进展。尽管尚未解决这一已有150多年历史的难题，但模型展现出的数学推理能力为AI在纯数学研究中的角色打开了想象空间，可能加速基础科学突破。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
+      "score": 5
+    },
+    {
+      "title": "River AI成立两月即获11亿美元融资",
+      "summary_zh": "由xAI联合创始人Igor Babuschkin创立的个人AI代理公司River AI，在成立仅两个月后便完成由General Catalyst领投的11亿美元融资。这家初创公司致力于打造下一代个人智能体，其巨额融资凸显投资者对AI代理范式的极高期待。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/",
+      "score": 5
+    },
+    {
+      "title": "OpenAI长期COO Brad Lightcap离职创业",
+      "summary_zh": "在OpenAI任职长达八年的首席运营官Brad Lightcap宣布离职，计划创立新公司。作为公司核心管理层之一，Lightcap的离开是继多位高管出走后又一次重要人事变动，外界关注是否会影响OpenAI的商业化运营与战略稳定。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/",
       "score": 4
     },
     {
-      "title": "Meta推出Muse Glimmer：本地运行、代理化、多模态且开源",
-      "summary_zh": "Meta发布开源多模态模型Muse Glimmer，支持本地设备运行，具备代理能力，能够自主执行复杂任务。该模型融合了视觉、语言和行动，强调隐私保护和低延迟，旨在推动去中心化的AI代理生态，让开发者无需依赖云端即可构建强大的智能体应用。",
-      "source": "Hugging Face Blog",
+      "title": "Meta开源Muse Glimmer：本地多模态智能体模型",
+      "summary_zh": "Meta发布了开源多模态模型Muse Glimmer，支持在本地运行，具备智能体能力和视觉理解。该模型延续Meta开源策略，旨在让开发者在设备端构建具备自主决策与多模态交互能力的AI应用，进一步降低高级AI功能的使用门槛。",
+      "source": "Hugging Face – Blog",
       "url": "https://huggingface.co/blog/muse-glimmer",
       "score": 4
     },
     {
-      "title": "xAI发布全新图像生成模型，实现精准编辑",
-      "summary_zh": "埃隆·马斯克旗下xAI推出了一款全新的图像生成模型，主打精准编辑能力，用户可通过自然语言指令对生成图像进行细致修改。该模型在保持视觉一致性方面表现突出，引发了社区对AI图像操控便捷性与真实感之间平衡的热烈讨论。",
+      "title": "前沿实验室AI智能体入侵事件技术复盘",
+      "summary_zh": "Hugging Face发布了一份对2026年7月前沿AI实验室智能体入侵事件的技术时间线解析。事件涉及未经授权的智能体渗透，暴露了高级AI系统在现实部署中可能面临的恶意操纵风险，为行业敲响AI安全与对齐的警钟。",
+      "source": "Hugging Face – Blog",
+      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "score": 4
+    },
+    {
+      "title": "马斯克xAI发布新一代图像生成模型",
+      "summary_zh": "马斯克旗下xAI推出新版图像生成模型，在精准编辑与创意表现力上大幅提升，引发用户广泛测评与热议。该模型被视为xAI在消费级AI内容创作领域向Midjourney等对手发起的有力挑战，凸显多模态竞争白热化。",
       "source": "爱范儿",
       "url": "https://www.ifanr.com/1674531?utm_source=rss&utm_medium=rss&utm_campaign=",
       "score": 4
     },
     {
-      "title": "OpenAI正式发布ChatGPT Linux桌面版",
-      "summary_zh": "OpenAI 终于将ChatGPT桌面应用带到了Linux操作系统，填补了在开发者群体中的重要平台缺口。此举旨在进一步拓展用户基础，尤其是吸引依赖Linux环境的工程师与研究人员，提升大语言模型在技术社区的可及性。",
+      "title": "苹果或推出iPhone照片真实性验证功能",
+      "summary_zh": "iOS 27测试版代码显示苹果正开发一种“参考图像”系统，可在拍摄时嵌入元数据以证明照片由iPhone相机真实拍摄。该功能旨在应对深度伪造泛滥，为用户提供内容溯源工具，将设备硬件与AI时代的信息可信度深度绑定。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/977921/apple-reference-image-iphone-metadata",
+      "score": 3
+    },
+    {
+      "title": "OpenAI为Linux系统推出ChatGPT桌面应用",
+      "summary_zh": "OpenAI正式发布Linux版ChatGPT桌面应用，弥补了此前仅覆盖Windows和macOS的空白。Linux开发者及用户现可获得原生体验，进一步扩大ChatGPT在开发者社区的覆盖面，也反映出AI工具向全平台生产力渗透的趋势。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
       "score": 3
     },
     {
-      "title": "前沿实验室AI代理入侵事件技术时间线揭密",
-      "summary_zh": "Hugging Face 安全团队公开了2026年7月一起针对前沿AI实验室的AI代理入侵事件的详细技术时间线。披露的攻击手法涉及复杂的权限提升与隐蔽持久化，为行业敲响警钟，凸显AI系统尤其是自主代理在面对高级持续威胁时的脆弱性。",
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
-      "score": 4
-    },
-    {
-      "title": "英伟达Cosmos-H-Dreams将实时生成式仿真引入手术机器人",
-      "summary_zh": "英伟达推出Cosmos-H-Dreams平台，将实时生成式物理仿真应用于手术机器人领域。该技术可生成高保真手术场景，用于训练和验证机器人操作，有望加速自动化手术系统的研发进程，降低对昂贵真实手术数据的依赖。",
-      "source": "Hugging Face Blog",
+      "title": "NVIDIA Cosmos-H-Dreams将实时生成式仿真引入手术机器人",
+      "summary_zh": "NVIDIA发布Cosmos-H-Dreams，将实时生成式物理仿真应用于手术机器人训练与操作。该技术可模拟复杂组织交互，有望加速自主手术系统的研发与部署，标志着生成式AI在医疗机器人领域的重大应用突破。",
+      "source": "Hugging Face – Blog",
       "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
       "score": 3
-    },
-    {
-      "title": "AI视频进入Harness时代：LibTV成为视频模型的Codex",
-      "summary_zh": "继Seedance 2.5模型之后，AI视频生成领域迎来新范式。LibTV作为统一视频生成框架，被比作视频模型的“Codex”，通过标准化指令与工具链极大地降低高质量视频创作门槛，推动视频生成从单一模型比拼转向生态化平台竞争。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1674604?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 4
     }
   ],
   "stories": [
     {
-      "title": "星孛入北斗：最早的哈雷彗星记录",
-      "dynasty": "春秋",
+      "title": "周公测影定天中",
+      "dynasty": "西周",
       "category": "古代天文地理",
-      "source": "《春秋·文公十四年》"
+      "source": "《周礼·地官·大司徒》《尚书·召诰》"
     },
     {
-      "title": "日中有黑气：最早的太阳黑子记录",
+      "title": "祖冲之与《大明历》",
+      "dynasty": "南朝·宋",
+      "category": "古代天文地理",
+      "source": "《南齐书·祖冲之传》"
+    },
+    {
+      "title": "世界上最早的太阳黑子记录",
       "dynasty": "西汉",
       "category": "古代天文地理",
       "source": "《汉书·五行志》"
     },
     {
-      "title": "李淳风定风力等级",
-      "dynasty": "唐",
-      "category": "古代天文地理",
-      "source": "《乙巳占》"
-    },
-    {
-      "title": "孙叔敖修芍陂：无税的水利丰碑",
+      "title": "孙叔敖修芍陂",
       "dynasty": "春秋",
       "category": "古代天文地理",
       "source": "《后汉书·王景传》《水经注》"
     },
     {
-      "title": "隋炀帝开凿大运河",
-      "dynasty": "隋",
+      "title": "李淳风精确预报日食",
+      "dynasty": "唐",
       "category": "古代天文地理",
-      "source": "《隋书·炀帝纪》"
+      "source": "《旧唐书·李淳风传》"
     },
     {
-      "title": "马臻修鉴湖：牺牲豪强的水利",
-      "dynasty": "东汉",
+      "title": "春秋哈雷彗星最早记录",
+      "dynasty": "春秋",
       "category": "古代天文地理",
-      "source": "《通典》《会稽记》"
+      "source": "《春秋》"
     },
     {
-      "title": "祖逖闻鸡起舞",
-      "dynasty": "东晋",
+      "title": "季札挂剑",
+      "dynasty": "春秋",
       "category": "历史故事",
-      "source": "《晋书·祖逖传》"
+      "source": "《史记·吴太伯世家》"
     },
     {
-      "title": "刘秀昆阳之战：以少胜多光复汉家",
-      "dynasty": "新莽/东汉",
+      "title": "缇萦救父",
+      "dynasty": "西汉",
       "category": "历史故事",
-      "source": "《后汉书·光武帝纪》"
+      "source": "《史记·扁鹊仓公列传》《汉书·刑法志》"
     },
     {
-      "title": "虞诩增灶示强破羌兵",
-      "dynasty": "东汉",
+      "title": "张敞画眉",
+      "dynasty": "西汉",
+      "category": "历史故事",
+      "source": "《汉书·张敞传》"
+    },
+    {
+      "title": "申包胥哭秦庭",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《左传·定公四年》《史记·伍子胥列传》"
+    },
+    {
+      "title": "羊祜堕泪碑",
+      "dynasty": "西晋",
+      "category": "历史故事",
+      "source": "《晋书·羊祜传》"
+    },
+    {
+      "title": "丙吉问牛不理人",
+      "dynasty": "西汉",
+      "category": "历史故事",
+      "source": "《汉书·丙吉传》"
+    },
+    {
+      "title": "李愬雪夜入蔡州",
+      "dynasty": "唐",
       "category": "兵法谋略故事",
-      "source": "《后汉书·虞诩传》"
+      "source": "《资治通鉴·唐纪》"
     },
     {
       "title": "檀道济唱筹量沙",
-      "dynasty": "南朝宋",
+      "dynasty": "南朝·宋",
       "category": "兵法谋略故事",
       "source": "《南史·檀道济传》"
     },
     {
-      "title": "昆仑奴：唐代的黑人佣仆",
+      "title": "韩世忠黄天荡困兀术",
+      "dynasty": "南宋",
+      "category": "兵法谋略故事",
+      "source": "《宋史·韩世忠传》"
+    },
+    {
+      "title": "司马穰苴斩庄贾",
+      "dynasty": "春秋",
+      "category": "兵法谋略故事",
+      "source": "《史记·司马穰苴列传》"
+    },
+    {
+      "title": "敦煌放妻书：唐代温情离婚",
       "dynasty": "唐",
       "category": "历史趣考",
-      "source": "《云溪友议》《岭外代答》"
+      "source": "敦煌遗书（P.3730等）"
     },
     {
-      "title": "青龙偃月刀：关羽的穿越武器",
-      "dynasty": "宋（考证所涉）",
-      "category": "历史趣考",
-      "source": "《三国志》《武经总要》"
-    },
-    {
-      "title": "孟母三迁",
-      "dynasty": "战国",
-      "category": "历史故事",
-      "source": "《列女传·母仪》"
-    },
-    {
-      "title": "苏武牧羊",
+      "title": "西汉二年律令：世界最早的环保法",
       "dynasty": "西汉",
-      "category": "历史故事",
-      "source": "《汉书·苏武传》"
+      "category": "历史趣考",
+      "source": "《张家山汉简·二年律令》"
     },
     {
-      "title": "程门立雪",
-      "dynasty": "北宋",
-      "category": "历史故事",
-      "source": "《宋史·杨时传》"
+      "title": "济南刘家针铺铜版：最早商标广告",
+      "dynasty": "宋",
+      "category": "历史趣考",
+      "source": "出土文物（中国国家博物馆藏）"
     },
     {
-      "title": "伯牙绝弦谢知音",
-      "dynasty": "春秋",
-      "category": "历史故事",
-      "source": "《吕氏春秋·本味》"
-    },
-    {
-      "title": "车胤囊萤照读",
-      "dynasty": "东晋",
-      "category": "历史故事",
-      "source": "《晋书·车胤传》"
-    },
-    {
-      "title": "韦编三绝",
-      "dynasty": "春秋",
-      "category": "历史故事",
-      "source": "《史记·孔子世家》"
-    },
-    {
-      "title": "米芾拜石",
-      "dynasty": "北宋",
-      "category": "历史故事",
-      "source": "《宋史·米芾传》《梁溪漫志》"
-    },
-    {
-      "title": "张旭醉书",
-      "dynasty": "唐",
-      "category": "历史故事",
-      "source": "《新唐书·张旭传》"
+      "title": "宋代潜火队：古代专业消防",
+      "dynasty": "宋",
+      "category": "历史趣考",
+      "source": "《东京梦华录》《梦粱录》"
     }
   ]
 }
