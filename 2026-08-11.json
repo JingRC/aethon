@@ -1,0 +1,199 @@
+{
+  "date": "2026-08-11",
+  "ai_news_count": 10,
+  "stories_count": 20,
+  "ai_news": [
+    {
+      "title": "通用催化领投 River AI 11亿美元融资，2月新公司即跻身独角兽",
+      "summary_zh": "由xAI联合创始人Igor Babuschkin创立仅两个月的AI代理公司River AI，宣布完成由General Catalyst领投的11亿美元融资，创下早期AI公司融资纪录。该公司瞄准个人AI代理领域，此轮融资将加速其产品研发与团队扩张，显示资本市场对下一代自主代理的巨大信心。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/",
+      "score": 5
+    },
+    {
+      "title": "Anthropic未发布模型在黎曼猜想上取得重大进展",
+      "summary_zh": "Anthropic 透露其未公开的AI模型在数学史上最著名的未解难题——黎曼猜想上取得了出乎意料的进展。尽管尚未完全解决，但该模型展现出的超越预期的推理能力，为AI驱动的前沿科学发现打开了新的想象空间，标志着AI在纯数学领域的里程碑式突破。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
+      "score": 5
+    },
+    {
+      "title": "ChatGPT与Gemini双双突破10亿用户大关",
+      "summary_zh": "AI聊天机器人竞争进入新纪元：OpenAI首席执行官Sam Altman宣布ChatGPT月活用户突破10亿，谷歌CEO Sundar Pichai随即公布Gemini同样达到10亿用户里程碑。Gemini还披露每日生成超1.5亿张图片，63%用户使用语音交互，标志大模型消费级应用全面普及。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users",
+      "score": 5
+    },
+    {
+      "title": "OpenAI首席运营官Brad Lightcap离职，将启动新事业",
+      "summary_zh": "任职长达八年的OpenAI元老、前首席运营官Brad Lightcap宣布离职。他在内部备忘录中表示将创办新的事业，并称会从“不同的视角”继续推动公司使命。Lightcap的离开是近期OpenAI高管又一动荡，引发业界对这家AI巨头管理层稳定性的关注。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/",
+      "score": 4
+    },
+    {
+      "title": "Meta推出Muse Glimmer：本地运行、代理化、多模态且开源",
+      "summary_zh": "Meta发布开源多模态模型Muse Glimmer，支持本地设备运行，具备代理能力，能够自主执行复杂任务。该模型融合了视觉、语言和行动，强调隐私保护和低延迟，旨在推动去中心化的AI代理生态，让开发者无需依赖云端即可构建强大的智能体应用。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/muse-glimmer",
+      "score": 4
+    },
+    {
+      "title": "xAI发布全新图像生成模型，实现精准编辑",
+      "summary_zh": "埃隆·马斯克旗下xAI推出了一款全新的图像生成模型，主打精准编辑能力，用户可通过自然语言指令对生成图像进行细致修改。该模型在保持视觉一致性方面表现突出，引发了社区对AI图像操控便捷性与真实感之间平衡的热烈讨论。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1674531?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
+    },
+    {
+      "title": "OpenAI正式发布ChatGPT Linux桌面版",
+      "summary_zh": "OpenAI 终于将ChatGPT桌面应用带到了Linux操作系统，填补了在开发者群体中的重要平台缺口。此举旨在进一步拓展用户基础，尤其是吸引依赖Linux环境的工程师与研究人员，提升大语言模型在技术社区的可及性。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
+      "score": 3
+    },
+    {
+      "title": "前沿实验室AI代理入侵事件技术时间线揭密",
+      "summary_zh": "Hugging Face 安全团队公开了2026年7月一起针对前沿AI实验室的AI代理入侵事件的详细技术时间线。披露的攻击手法涉及复杂的权限提升与隐蔽持久化，为行业敲响警钟，凸显AI系统尤其是自主代理在面对高级持续威胁时的脆弱性。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "score": 4
+    },
+    {
+      "title": "英伟达Cosmos-H-Dreams将实时生成式仿真引入手术机器人",
+      "summary_zh": "英伟达推出Cosmos-H-Dreams平台，将实时生成式物理仿真应用于手术机器人领域。该技术可生成高保真手术场景，用于训练和验证机器人操作，有望加速自动化手术系统的研发进程，降低对昂贵真实手术数据的依赖。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "score": 3
+    },
+    {
+      "title": "AI视频进入Harness时代：LibTV成为视频模型的Codex",
+      "summary_zh": "继Seedance 2.5模型之后，AI视频生成领域迎来新范式。LibTV作为统一视频生成框架，被比作视频模型的“Codex”，通过标准化指令与工具链极大地降低高质量视频创作门槛，推动视频生成从单一模型比拼转向生态化平台竞争。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1674604?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
+    }
+  ],
+  "stories": [
+    {
+      "title": "星孛入北斗：最早的哈雷彗星记录",
+      "dynasty": "春秋",
+      "category": "古代天文地理",
+      "source": "《春秋·文公十四年》"
+    },
+    {
+      "title": "日中有黑气：最早的太阳黑子记录",
+      "dynasty": "西汉",
+      "category": "古代天文地理",
+      "source": "《汉书·五行志》"
+    },
+    {
+      "title": "李淳风定风力等级",
+      "dynasty": "唐",
+      "category": "古代天文地理",
+      "source": "《乙巳占》"
+    },
+    {
+      "title": "孙叔敖修芍陂：无税的水利丰碑",
+      "dynasty": "春秋",
+      "category": "古代天文地理",
+      "source": "《后汉书·王景传》《水经注》"
+    },
+    {
+      "title": "隋炀帝开凿大运河",
+      "dynasty": "隋",
+      "category": "古代天文地理",
+      "source": "《隋书·炀帝纪》"
+    },
+    {
+      "title": "马臻修鉴湖：牺牲豪强的水利",
+      "dynasty": "东汉",
+      "category": "古代天文地理",
+      "source": "《通典》《会稽记》"
+    },
+    {
+      "title": "祖逖闻鸡起舞",
+      "dynasty": "东晋",
+      "category": "历史故事",
+      "source": "《晋书·祖逖传》"
+    },
+    {
+      "title": "刘秀昆阳之战：以少胜多光复汉家",
+      "dynasty": "新莽/东汉",
+      "category": "历史故事",
+      "source": "《后汉书·光武帝纪》"
+    },
+    {
+      "title": "虞诩增灶示强破羌兵",
+      "dynasty": "东汉",
+      "category": "兵法谋略故事",
+      "source": "《后汉书·虞诩传》"
+    },
+    {
+      "title": "檀道济唱筹量沙",
+      "dynasty": "南朝宋",
+      "category": "兵法谋略故事",
+      "source": "《南史·檀道济传》"
+    },
+    {
+      "title": "昆仑奴：唐代的黑人佣仆",
+      "dynasty": "唐",
+      "category": "历史趣考",
+      "source": "《云溪友议》《岭外代答》"
+    },
+    {
+      "title": "青龙偃月刀：关羽的穿越武器",
+      "dynasty": "宋（考证所涉）",
+      "category": "历史趣考",
+      "source": "《三国志》《武经总要》"
+    },
+    {
+      "title": "孟母三迁",
+      "dynasty": "战国",
+      "category": "历史故事",
+      "source": "《列女传·母仪》"
+    },
+    {
+      "title": "苏武牧羊",
+      "dynasty": "西汉",
+      "category": "历史故事",
+      "source": "《汉书·苏武传》"
+    },
+    {
+      "title": "程门立雪",
+      "dynasty": "北宋",
+      "category": "历史故事",
+      "source": "《宋史·杨时传》"
+    },
+    {
+      "title": "伯牙绝弦谢知音",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《吕氏春秋·本味》"
+    },
+    {
+      "title": "车胤囊萤照读",
+      "dynasty": "东晋",
+      "category": "历史故事",
+      "source": "《晋书·车胤传》"
+    },
+    {
+      "title": "韦编三绝",
+      "dynasty": "春秋",
+      "category": "历史故事",
+      "source": "《史记·孔子世家》"
+    },
+    {
+      "title": "米芾拜石",
+      "dynasty": "北宋",
+      "category": "历史故事",
+      "source": "《宋史·米芾传》《梁溪漫志》"
+    },
+    {
+      "title": "张旭醉书",
+      "dynasty": "唐",
+      "category": "历史故事",
+      "source": "《新唐书·张旭传》"
+    }
+  ]
+}
