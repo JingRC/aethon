@@ -6,82 +6,82 @@
 
 ## 🤖 AI 快讯 · 今日必读 (10 条精选)
 
-### 1. [AI编程公司Cognition被曝洽谈新一轮融资，估值剑指400亿美元](https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/) ★★★★★
+### 1. [AI编程公司Cognition被曝洽谈400亿美元估值融资](https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/) ★★★★★
 
 **来源**: TechCrunch
 
-据TechCrunch报道，AI编程公司Cognition在数月前刚以260亿美元估值融资10亿美元后，现又传出正洽谈以400亿美元估值进行新一轮融资。若完成，将使其跻身估值最高的AI初创公司之列，反映AI编程赛道资本热度持续攀升。
+据报道，AI编程公司Cognition正洽谈新一轮融资，估值或达400亿美元。该公司数月前刚以260亿美元估值完成10亿美元融资。此举反映AI辅助编程赛道持续升温、资本向头部企业集中的趋势。
 
-### 2. [OpenAI支持的Thrive Holdings融资20亿美元，加速企业AI落地](https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/) ★★★★★
-
-**来源**: TechCrunch
-
-Thrive Holdings宣布完成20亿美元新一轮融资，投后估值达120亿美元，软银、D1 Capital和Altimeter等参投。该公司与OpenAI关系密切，专注为企业提供AI解决方案，资金将用于扩大产品与市场覆盖，表明企业级AI应用正成为投资热点。
-
-### 3. [Meta发布开源多模态智能体模型Muse Glimmer](https://huggingface.co/blog/muse-glimmer) ★★★★★
-
-**来源**: Hugging Face - Blog
-
-Meta推出Muse Glimmer，这是一款可在本地运行的开源多模态智能体模型，具备代理执行能力。该模型延续Meta开放策略，面向开发者提供可自由部署的智能体基础，有望降低构建多模态AI应用的门槛，并推动开源生态发展。
-
-### 4. [Hugging Face披露2026年7月安全事件](https://huggingface.co/blog/security-incident-july-2026) ★★★★★
-
-**来源**: Hugging Face - Blog
-
-Hugging Face正式披露2026年7月发生的一起安全事件，并向用户说明影响范围与应对措施。作为AI模型托管平台，此次事件引发对开源AI基础设施安全的关注，也体现平台在安全透明度方面的态度，提醒企业重新审视模型供应链风险。
-
-### 5. [AI安全三大先驱呼吁保持开放生态](https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/) ★★★★★
-
-**来源**: TechCrunch
-
-在Ai4大会上，Geoffrey Hinton、李飞飞和吴恩达就AI安全、开源与监管展开讨论。面对日益高涨的安全担忧，三人主张在防范风险的同时保持开放创新，并强调美国需在AI竞争中增强自身实力，以应对中国在亚洲的快速发展。
-
-### 6. [Anthropic为Claude加入水印，部分用户抱怨作弊将更难隐藏](https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/) ★★★★☆
-
-**来源**: TechCrunch
-
-Anthropic为Claude输出引入新型水印机制，旨在识别AI生成内容。此举引发部分用户不满，认为水印可能暴露他们在工作或学业中借助AI作弊的行为。争议凸显内容溯源与用户隐私之间的张力，也为生成式AI内容治理提供新案例。
-
-### 7. [Twitch主播现可拒绝内容被用于训练亚马逊AI](https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/) ★★★★☆
-
-**来源**: TechCrunch
-
-亚马逊宣布，Twitch主播的内容将默认用于训练其生成式AI模型，但用户可选择退出。Twitch首席产品官回应称，若改为默认加入，几乎无人会主动同意。该政策引发对创作者内容权利与AI训练数据获取方式的广泛讨论。
-
-### 8. [AI应用公司Lovable估值133亿美元，再融4亿美元](https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/) ★★★★☆
-
-**来源**: TechCrunch
-
-Lovable确认已完成新一轮4亿美元融资，投后估值达133亿美元。这家AI应用初创公司此前在6月已实现5000万美元年化经常性收入，增长迅速。新资金将用于进一步研发与市场扩张，显示AI原生应用在资本市场仍受追捧。
-
-### 9. [NVIDIA发布Cosmos-H-Dreams，将实时生成式仿真带入手术机器人](https://huggingface.co/blog/nvidia/cosmos-h-dreams) ★★★★☆
-
-**来源**: Hugging Face - Blog
-
-NVIDIA推出Cosmos-H-Dreams，面向手术机器人领域提供实时生成式仿真能力。该技术可生成高保真手术场景，用于训练、测试和验证机器人策略，有望加速外科自动化的发展，并拓展物理AI在医疗场景的应用边界。
-
-### 10. [荣耀发布Robot Phone：9999元起，AI手机开始拥有身体](https://www.ifanr.com/1674938?utm_source=rss&utm_medium=rss&utm_campaign=) ★★★★☆
+### 2. [DeepSeek V4 Pro正式版实测：能力直逼Fable 5](https://www.ifanr.com/1674965?utm_source=rss&utm_medium=rss&utm_campaign=) ★★★★★
 
 **来源**: 爱范儿
 
-荣耀发布Robot Phone，起售价9999元。该设备将AI能力与可动机械结构结合，让手机具备一定自主移动和交互能力，被视为AI手机向“具身智能”方向探索的产品。荣耀希望通过形态创新，在竞争激烈的手机市场中开辟新赛道。
+爱范儿实测DeepSeek V4 Pro正式版，称其能力已接近或达到Fable 5水平，并在智能体任务上表现突出。新版本在推理、工具调用和多步任务执行等方面有明显提升，显示中国AI模型在通用能力上的快速追赶与竞争力。
+
+### 3. [OpenAI支持的Thrive Holdings融资20亿美元加速企业AI](https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/) ★★★★☆
+
+**来源**: TechCrunch
+
+由OpenAI支持的Thrive Holdings宣布以120亿美元估值完成20亿美元新融资，软银、D1 Capital、Altimeter等参投。公司致力于将AI引入企业级应用，融资将用于扩展产品和市场，反映企业AI市场仍是资本重注的赛道。
+
+### 4. [Meta发布开源本地多模态智能体Muse Glimmer](https://huggingface.co/blog/muse-glimmer) ★★★★☆
+
+**来源**: Hugging Face Blog
+
+Meta推出开源模型Muse Glimmer，具备本地运行、智能体和多模态能力。该模型强调隐私与低延迟，可在设备端处理视觉与语言任务，降低对云端的依赖，是Meta在开放模型生态的又一布局，可能吸引端侧AI和智能体开发者。
+
+### 5. [Lovable确认估值133亿美元并再获4亿美元融资](https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/) ★★★★☆
+
+**来源**: TechCrunch
+
+AI应用开发平台Lovable确认获得4亿美元新融资，估值达133亿美元。公司称6月年化经常性收入已达5亿美元。新一轮融资将用于扩大AI构建应用的能力，凸显低代码/无代码AI开发市场的爆发式增长与投资者对快速商业化产品的青睐。
+
+### 6. [Hugging Face披露2026年7月安全事件详情](https://huggingface.co/blog/security-incident-july-2026) ★★★★☆
+
+**来源**: Hugging Face Blog
+
+Hugging Face发布安全事件披露，说明2026年7月发生的平台入侵事件。官方公开了攻击时间线、受影响范围与修复措施，并强调未发现模型权重或数据集被篡改，体现AI模型平台在安全透明方面的压力与责任。
+
+### 7. [亚马逊默认使用Twitch内容训练AI，主播可手动退出](https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/) ★★★★☆
+
+**来源**: TechCrunch
+
+亚马逊宣布将默认使用Twitch直播、视频、聊天等内容训练生成式AI模型，主播需手动选择退出。Twitch高管回应称若改为默认加入，几乎无人会主动同意，此举引发创作者对内容权利与AI数据使用的争议。
+
+### 8. [Hinton、李飞飞、吴恩达呼吁AI安全与开放并重](https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/) ★★★★☆
+
+**来源**: TechCrunch
+
+在Ai4会议上，Geoffrey Hinton、李飞飞和吴恩达就AI监管、开源获取及美中竞争展开讨论。三位专家认为保持开放对创新和安全至关重要，同时需防范风险，这一重量级对话为全球AI治理和开源政策提供了重要信号。
+
+### 9. [英伟达Cosmos-H-Dreams实现手术机器人实时仿真](https://huggingface.co/blog/nvidia/cosmos-h-dreams) ★★★★☆
+
+**来源**: Hugging Face Blog
+
+英伟达推出Cosmos-H-Dreams，将实时生成式仿真引入手术机器人领域。该技术可生成高保真手术场景，用于训练和验证机器人控制策略，减少对真实手术数据的依赖，加快外科机器人研发迭代，并提升系统安全性和泛化能力。
+
+### 10. [Anthropic为Claude加入水印，部分用户担心暴露使用](https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/) ★★★☆☆
+
+**来源**: TechCrunch
+
+Anthropic在Claude输出中添加水印，以识别在职场或课堂中的AI生成内容。一些用户在社交媒体抱怨，担心使用Claude完成工作或作业会被发现，反映AI内容溯源与用户隐私、使用自由之间的张力，以及平台在合规上的探索。
 
 ---
 
 ## 🏯 中国古代故事 · 典故 · 天文地理 · 科技发明 (1 则)
 
-### 1. 烛影斧声
+### 1. 秦始皇陵水银江河
 
-**北宋** · 历史趣考 · 出处：《续资治通鉴长编》《湘山野录》
+**秦** · 历史趣考 · 出处：《史记·秦始皇本纪》
 
-公元976年冬，宋太祖赵匡胤暴毙于万岁殿，当时身边只有弟弟晋王赵光义。流传最广的说法是“烛影斧声”：当夜太祖召赵光义入宫饮酒，殿外宫人远远看见烛光下光义时而离席，做避让之状；又听见有斧子戳雪的声音。不久太祖驾崩，赵光义抢先即位，是为宋太宗。正史《宋史》仅记“帝崩于万岁殿”，未明言被害。史家对死因争论千年：一说太祖死前已有传位弟弟的“金匮之盟”，一说太宗毒杀兄长篡位。现代考据认为“斧声”可能是“柱斧”，并非凶器。此案成为宋代第一疑案。
+司马迁记载秦始皇陵“以水银为百川江河大海，机相灌输”，后世多视为夸张。但1980年代考古人员在秦始皇陵封土区域检测到明显汞异常，封土中心汞含量远超正常值，东南、西南等区域分布与古代水系对应。这证实陵墓中可能确有大量水银，既为防腐防盗，也象征帝国水系。如此巨量水银从何而来？《史记·货殖列传》记载巴寡妇清因丹穴（朱砂矿）富可敌国，可能为秦始皇供汞。水银江河的奢华背后，是秦代惊人的资源动员能力。
 
-> 💡 **寓意**：权力更迭中最忌密室私议，史料阙如处尤需审慎辨别。
+> 💡 **寓意**：文献与考古互证，才能接近历史真相；奢靡工程也耗尽民力。
 
-> 📎 赵光义即位后改年号“太平兴国”，打破新君次年改元的旧例。
+> 📎 现代测量显示陵区汞异常范围约1.2万平方米。
 
-🔗 **深入了解**：[烛影斧声](https://baike.baidu.com/item/%E7%83%9B%E5%BD%B1%E6%96%A7%E5%A3%B0) | [宋太祖](https://baike.baidu.com/item/%E5%AE%8B%E5%A4%AA%E7%A5%96) | [赵光义](https://baike.baidu.com/item/%E8%B5%B5%E5%85%89%E4%B9%89) | [赵匡胤](https://baike.baidu.com/item/%E8%B5%B5%E5%8C%A1%E8%83%A4) | [北宋](https://baike.baidu.com/item/%E5%8C%97%E5%AE%8B) | [续资治通鉴长编](https://baike.baidu.com/item/%E7%BB%AD%E8%B5%84%E6%B2%BB%E9%80%9A%E9%89%B4%E9%95%BF%E7%BC%96) | [湘山野录](https://baike.baidu.com/item/%E6%B9%98%E5%B1%B1%E9%87%8E%E5%BD%95)
+🔗 **深入了解**：[秦始皇陵](https://baike.baidu.com/item/%E7%A7%A6%E5%A7%8B%E7%9A%87%E9%99%B5) | [水银](https://baike.baidu.com/item/%E6%B0%B4%E9%93%B6) | [史记](https://baike.baidu.com/item/%E5%8F%B2%E8%AE%B0) | [巴寡妇清](https://baike.baidu.com/item/%E5%B7%B4%E5%AF%A1%E5%A6%87%E6%B8%85) | [考古](https://baike.baidu.com/item/%E8%80%83%E5%8F%A4) | [秦始皇](https://baike.baidu.com/item/%E7%A7%A6%E5%A7%8B%E7%9A%87) | [司马迁](https://baike.baidu.com/item/%E5%8F%B8%E9%A9%AC%E8%BF%81)
 
 ---
 
-*📬 每日自动生成 · 2026-08-12 22:51*
+*📬 每日自动生成 · 2026-08-12 23:08*
