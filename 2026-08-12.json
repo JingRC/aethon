@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-12",
+  "ai_news_count": 10,
+  "stories_count": 1,
+  "ai_news": [
+    {
+      "title": "AI编程公司Cognition被曝洽谈新一轮融资，估值剑指400亿美元",
+      "summary_zh": "据TechCrunch报道，AI编程公司Cognition在数月前刚以260亿美元估值融资10亿美元后，现又传出正洽谈以400亿美元估值进行新一轮融资。若完成，将使其跻身估值最高的AI初创公司之列，反映AI编程赛道资本热度持续攀升。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/",
+      "score": 5
+    },
+    {
+      "title": "OpenAI支持的Thrive Holdings融资20亿美元，加速企业AI落地",
+      "summary_zh": "Thrive Holdings宣布完成20亿美元新一轮融资，投后估值达120亿美元，软银、D1 Capital和Altimeter等参投。该公司与OpenAI关系密切，专注为企业提供AI解决方案，资金将用于扩大产品与市场覆盖，表明企业级AI应用正成为投资热点。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
+      "score": 5
+    },
+    {
+      "title": "Meta发布开源多模态智能体模型Muse Glimmer",
+      "summary_zh": "Meta推出Muse Glimmer，这是一款可在本地运行的开源多模态智能体模型，具备代理执行能力。该模型延续Meta开放策略，面向开发者提供可自由部署的智能体基础，有望降低构建多模态AI应用的门槛，并推动开源生态发展。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/muse-glimmer",
+      "score": 5
+    },
+    {
+      "title": "Hugging Face披露2026年7月安全事件",
+      "summary_zh": "Hugging Face正式披露2026年7月发生的一起安全事件，并向用户说明影响范围与应对措施。作为AI模型托管平台，此次事件引发对开源AI基础设施安全的关注，也体现平台在安全透明度方面的态度，提醒企业重新审视模型供应链风险。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/security-incident-july-2026",
+      "score": 5
+    },
+    {
+      "title": "AI安全三大先驱呼吁保持开放生态",
+      "summary_zh": "在Ai4大会上，Geoffrey Hinton、李飞飞和吴恩达就AI安全、开源与监管展开讨论。面对日益高涨的安全担忧，三人主张在防范风险的同时保持开放创新，并强调美国需在AI竞争中增强自身实力，以应对中国在亚洲的快速发展。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/",
+      "score": 5
+    },
+    {
+      "title": "Anthropic为Claude加入水印，部分用户抱怨作弊将更难隐藏",
+      "summary_zh": "Anthropic为Claude输出引入新型水印机制，旨在识别AI生成内容。此举引发部分用户不满，认为水印可能暴露他们在工作或学业中借助AI作弊的行为。争议凸显内容溯源与用户隐私之间的张力，也为生成式AI内容治理提供新案例。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
+      "score": 4
+    },
+    {
+      "title": "Twitch主播现可拒绝内容被用于训练亚马逊AI",
+      "summary_zh": "亚马逊宣布，Twitch主播的内容将默认用于训练其生成式AI模型，但用户可选择退出。Twitch首席产品官回应称，若改为默认加入，几乎无人会主动同意。该政策引发对创作者内容权利与AI训练数据获取方式的广泛讨论。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/",
+      "score": 4
+    },
+    {
+      "title": "AI应用公司Lovable估值133亿美元，再融4亿美元",
+      "summary_zh": "Lovable确认已完成新一轮4亿美元融资，投后估值达133亿美元。这家AI应用初创公司此前在6月已实现5000万美元年化经常性收入，增长迅速。新资金将用于进一步研发与市场扩张，显示AI原生应用在资本市场仍受追捧。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/",
+      "score": 4
+    },
+    {
+      "title": "NVIDIA发布Cosmos-H-Dreams，将实时生成式仿真带入手术机器人",
+      "summary_zh": "NVIDIA推出Cosmos-H-Dreams，面向手术机器人领域提供实时生成式仿真能力。该技术可生成高保真手术场景，用于训练、测试和验证机器人策略，有望加速外科自动化的发展，并拓展物理AI在医疗场景的应用边界。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "score": 4
+    },
+    {
+      "title": "荣耀发布Robot Phone：9999元起，AI手机开始拥有身体",
+      "summary_zh": "荣耀发布Robot Phone，起售价9999元。该设备将AI能力与可动机械结构结合，让手机具备一定自主移动和交互能力，被视为AI手机向“具身智能”方向探索的产品。荣耀希望通过形态创新，在竞争激烈的手机市场中开辟新赛道。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1674938?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
+    }
+  ],
+  "stories": [
+    {
+      "title": "烛影斧声",
+      "dynasty": "北宋",
+      "category": "历史趣考",
+      "source": "《续资治通鉴长编》《湘山野录》"
+    }
+  ]
+}
