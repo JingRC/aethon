@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-14",
+  "ai_news_count": 10,
+  "stories_count": 1,
+  "ai_news": [
+    {
+      "title": "Meta发布Muse Glimmer：开源多模态智能体模型",
+      "summary_zh": "Meta推出开源多模态智能体模型Muse Glimmer，支持本地运行，具备智能体、多模态能力，与闭源Muse Spark形成对比。该发布呼应扎克伯格“AI为所有人”的公开信，为开发者提供可下载、可自行部署的强大模型。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/muse-glimmer",
+      "score": 5
+    },
+    {
+      "title": "DeepSeek V4 Pro正式版发布，多项指标逼近Fable 5",
+      "summary_zh": "DeepSeek正式推出V4 Pro版本，多项性能指标接近前沿模型Fable 5，展现中国大模型在推理和效率上的突破。此前V4 Flash已引发行业对“智效比”的关注，V4 Pro进一步巩固其在智能体时代的竞争力。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1674964?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
+    },
+    {
+      "title": "国产机器人低成本反超Figure AI，具身智能迎来DeepSeek时刻",
+      "summary_zh": "中国机器人团队仅使用两只标准夹爪，以更低成本实现反超Figure AI的性能，被业界称为具身智能的“DeepSeek时刻”。该突破表明国产机器人在硬件效率和成本控制上已具备全球竞争力，有望加速机器人商业化。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1675007?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
+    },
+    {
+      "title": "谷歌允许用户关闭Gemini生成内容的可见水印",
+      "summary_zh": "谷歌更新政策，允许用户在Gemini及AI视频生成器Flow中关闭可见“闪光”水印。但该设置不影响用于识别AI生成文件的隐形基准，旨在平衡用户体验与内容溯源需求。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
+      "score": 4
+    },
+    {
+      "title": "Uber与Pony.ai计划将2000辆robotaxi扩展至欧洲四城",
+      "summary_zh": "Uber与Pony.ai扩大合作，计划将2000辆自动驾驶出租车部署至欧洲四个新城市，此前已在克罗地亚萨格勒布试运营。此举标志着robotaxi商业化在欧洲加速落地。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/14/uber-and-pony-ai-plan-to-bring-2000-robotaxis-to-europe/",
+      "score": 4
+    },
+    {
+      "title": "加州正式允许自动驾驶卡车上高速测试",
+      "summary_zh": "Aurora Innovation和Kodiak AI获得加州车辆管理局许可，正式在高速公路上测试自动驾驶卡车。这标志着加州在自动驾驶货运领域迈出关键一步，为未来商业化运营奠定基础。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/14/self-driving-trucks-are-officially-testing-on-california-highways/",
+      "score": 4
+    },
+    {
+      "title": "谷歌不再追逐前沿AI，DeepMind或面临大幅裁员",
+      "summary_zh": "爱范儿独家报道称，谷歌不再盲目追逐前沿AI研究，DeepMind可能进行大幅裁员。此举反映了AI行业狂热退潮，即便强如谷歌也开始收缩战线，更加注重实用性和商业回报。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1675196?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
+    },
+    {
+      "title": "前沿实验室Agent入侵事件技术时间线公布",
+      "summary_zh": "Hugging Face发布2026年7月前沿实验室Agent入侵事件的技术时间线，详细还原攻击过程。该事件凸显了AI智能体系统面临的安全风险，为行业敲响警钟。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "score": 4
+    },
+    {
+      "title": "马斯克携24小时不间断工作的AI Agent回归",
+      "summary_zh": "马斯克推出可24小时持续工作的AI Agent，由Cursor团队精心打造。该产品旨在实现全天候自动化任务处理，标志着AI Agent从辅助工具向自主生产力迈进。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1674851?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
+    },
+    {
+      "title": "NVIDIA Cosmos-H-Dreams将实时生成模拟引入手术机器人",
+      "summary_zh": "NVIDIA推出Cosmos-H-Dreams，实现手术机器人的实时生成式模拟，为外科训练和手术规划提供高度逼真的虚拟环境。该技术有望降低手术机器人研发成本并提升安全性。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "score": 4
+    }
+  ],
+  "stories": [
+    {
+      "title": "孟浩然诵诗忤旨：不才明主弃",
+      "dynasty": "唐",
+      "category": "唐诗宋词背后的故事",
+      "source": "《新唐书·孟浩然传》《唐摭言》"
+    }
+  ]
+}
