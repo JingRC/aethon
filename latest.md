@@ -6,82 +6,82 @@
 
 ## 🤖 AI 快讯 · 今日必读 (10 条精选)
 
-### 1. [Meta发布Muse Glimmer：开源多模态智能体模型](https://huggingface.co/blog/muse-glimmer) ★★★★★
+### 1. [Meta推出开源多模态模型Muse Glimmer，主打本地化与智能体能力](https://huggingface.co/blog/muse-glimmer) ★★★★★
 
-**来源**: Hugging Face - Blog
+**来源**: Hugging Face Blog
 
-Meta推出开源多模态智能体模型Muse Glimmer，支持本地运行，具备智能体、多模态能力，与闭源Muse Spark形成对比。该发布呼应扎克伯格“AI为所有人”的公开信，为开发者提供可下载、可自行部署的强大模型。
+Meta发布开源多模态模型Muse Glimmer，强调本地部署、智能体能力和开放权重，与闭源的Muse Spark形成对比。该模型可下载至自有硬件运行，支持多模态理解与任务执行，体现了Meta推动AI普惠的承诺。
 
-### 2. [DeepSeek V4 Pro正式版发布，多项指标逼近Fable 5](https://www.ifanr.com/1674964?utm_source=rss&utm_medium=rss&utm_campaign=) ★★★★★
-
-**来源**: 爱范儿
-
-DeepSeek正式推出V4 Pro版本，多项性能指标接近前沿模型Fable 5，展现中国大模型在推理和效率上的突破。此前V4 Flash已引发行业对“智效比”的关注，V4 Pro进一步巩固其在智能体时代的竞争力。
-
-### 3. [国产机器人低成本反超Figure AI，具身智能迎来DeepSeek时刻](https://www.ifanr.com/1675007?utm_source=rss&utm_medium=rss&utm_campaign=) ★★★★★
+### 2. [谷歌DeepMind被曝将大幅裁员，或放弃追逐前沿AI](https://www.ifanr.com/1675196?utm_source=rss&utm_medium=rss&utm_campaign=) ★★★★★
 
 **来源**: 爱范儿
 
-中国机器人团队仅使用两只标准夹爪，以更低成本实现反超Figure AI的性能，被业界称为具身智能的“DeepSeek时刻”。该突破表明国产机器人在硬件效率和成本控制上已具备全球竞争力，有望加速机器人商业化。
+爱范儿独家获悉，谷歌DeepMind或将大幅裁员，并调整战略不再盲目追逐前沿AI模型。这一举措显示AI行业狂热可能正在退潮，即便是谷歌也开始削减开支，重新评估研究优先级。
 
-### 4. [谷歌允许用户关闭Gemini生成内容的可见水印](https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal) ★★★★☆
-
-**来源**: The Verge
-
-谷歌更新政策，允许用户在Gemini及AI视频生成器Flow中关闭可见“闪光”水印。但该设置不影响用于识别AI生成文件的隐形基准，旨在平衡用户体验与内容溯源需求。
-
-### 5. [Uber与Pony.ai计划将2000辆robotaxi扩展至欧洲四城](https://techcrunch.com/2026/08/14/uber-and-pony-ai-plan-to-bring-2000-robotaxis-to-europe/) ★★★★☆
+### 3. [加州批准自动驾驶卡车上路测试，Aurora与Kodiak获许可](https://techcrunch.com/2026/08/14/self-driving-trucks-are-officially-testing-on-california-highways/) ★★★★★
 
 **来源**: TechCrunch
 
-Uber与Pony.ai扩大合作，计划将2000辆自动驾驶出租车部署至欧洲四个新城市，此前已在克罗地亚萨格勒布试运营。此举标志着robotaxi商业化在欧洲加速落地。
+加州车管局正式向Aurora Innovation和Kodiak AI颁发自动驾驶卡车测试许可，允许其在州内高速公路上测试。这标志着自动驾驶货运技术在美国关键市场迈入公开道路验证阶段，为商业化铺路。
 
-### 6. [加州正式允许自动驾驶卡车上高速测试](https://techcrunch.com/2026/08/14/self-driving-trucks-are-officially-testing-on-california-highways/) ★★★★☆
+### 4. [DeepSeek V4 Pro正式版上线，多项指标逼近Fable 5](https://www.ifanr.com/1674964?utm_source=rss&utm_medium=rss&utm_campaign=) ★★★★★
+
+**来源**: 爱范儿
+
+DeepSeek V4 Pro正式版发布，在多项基准测试中表现逼近顶尖模型Fable 5。该模型延续DeepSeek高性价比路线，在推理、编码等核心能力上实现显著提升，为大模型应用提供更优选择。
+
+### 5. [具身智能迎来“DeepSeek时刻”：国产机器人低成本反超Figure AI](https://www.ifanr.com/1675007?utm_source=rss&utm_medium=rss&utm_campaign=) ★★★★★
+
+**来源**: 爱范儿
+
+国产具身智能机器人凭借创新设计和低成本方案，仅使用两只标准夹爪即在性能上反超Figure AI。这一突破被称为具身智能领域的“DeepSeek时刻”，展现了中国在机器人硬件与算法上的快速进步。
+
+### 6. [谷歌允许用户移除AI生成内容的可见水印](https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/) ★★★★☆
 
 **来源**: TechCrunch
 
-Aurora Innovation和Kodiak AI获得加州车辆管理局许可，正式在高速公路上测试自动驾驶卡车。这标志着加州在自动驾驶货运领域迈出关键一步，为未来商业化运营奠定基础。
+谷歌更新政策，允许用户在Gemini和Flow等AI工具中关闭可见水印。该设置仅移除“sparkle”可见水印，不会影响用于识别AI生成文件的隐形基准标记，为创作者提供更灵活的选择。
 
-### 7. [谷歌不再追逐前沿AI，DeepMind或面临大幅裁员](https://www.ifanr.com/1675196?utm_source=rss&utm_medium=rss&utm_campaign=) ★★★★☆
-
-**来源**: 爱范儿
-
-爱范儿独家报道称，谷歌不再盲目追逐前沿AI研究，DeepMind可能进行大幅裁员。此举反映了AI行业狂热退潮，即便强如谷歌也开始收缩战线，更加注重实用性和商业回报。
-
-### 8. [前沿实验室Agent入侵事件技术时间线公布](https://huggingface.co/blog/agent-intrusion-technical-timeline) ★★★★☆
-
-**来源**: Hugging Face - Blog
-
-Hugging Face发布2026年7月前沿实验室Agent入侵事件的技术时间线，详细还原攻击过程。该事件凸显了AI智能体系统面临的安全风险，为行业敲响警钟。
-
-### 9. [马斯克携24小时不间断工作的AI Agent回归](https://www.ifanr.com/1674851?utm_source=rss&utm_medium=rss&utm_campaign=) ★★★★☆
+### 7. [小米澎湃OS 4首发体验：首个AIOS表现如何？](https://www.ifanr.com/1675208?utm_source=rss&utm_medium=rss&utm_campaign=) ★★★★☆
 
 **来源**: 爱范儿
 
-马斯克推出可24小时持续工作的AI Agent，由Cursor团队精心打造。该产品旨在实现全天候自动化任务处理，标志着AI Agent从辅助工具向自主生产力迈进。
+小米发布澎湃OS 4，定位为其首个AI操作系统（AIOS），深度整合AI能力于系统底层。爱范儿首发体验显示，其在跨设备协同、智能助理和场景化服务上有明显提升，旨在实现“只有小米的AI才能成就AI的小米”。
 
-### 10. [NVIDIA Cosmos-H-Dreams将实时生成模拟引入手术机器人](https://huggingface.co/blog/nvidia/cosmos-h-dreams) ★★★★☆
+### 8. [马斯克带着24小时干活的Agent回来了，Cursor团队打造](https://www.ifanr.com/1674851?utm_source=rss&utm_medium=rss&utm_campaign=) ★★★★☆
 
-**来源**: Hugging Face - Blog
+**来源**: 爱范儿
 
-NVIDIA推出Cosmos-H-Dreams，实现手术机器人的实时生成式模拟，为外科训练和手术规划提供高度逼真的虚拟环境。该技术有望降低手术机器人研发成本并提升安全性。
+马斯克推出由Cursor团队打造的全天候AI Agent，能够24小时持续执行任务。这款产品主打自主性和长时间运行能力，标志着AI代理向真正“数字员工”迈进，引发行业对智能体工作流的新关注。
+
+### 9. [Uber与Pony.ai计划在欧洲部署2000辆Robotaxi](https://techcrunch.com/2026/08/14/uber-and-pony-ai-plan-to-bring-2000-robotaxis-to-europe/) ★★★★☆
+
+**来源**: TechCrunch
+
+Uber与自动驾驶公司Pony.ai宣布扩大合作，计划在欧洲部署2000辆Robotaxi，从克罗地亚萨格勒布扩展至另外四个欧洲城市。此举加速自动驾驶出租车在欧洲的商业化落地，显示双方对规模化运营的信心。
+
+### 10. [实测GLM-5.3：以7000亿参数杀回国模顶流](https://www.ifanr.com/1675225?utm_source=rss&utm_medium=rss&utm_campaign=) ★★★★☆
+
+**来源**: 爱范儿
+
+爱范儿实测GLM-5.3，这款7000亿参数的中国大模型在多项任务中表现优异，与2.8万亿参数的竞品不相上下。其高效架构和推理能力使其在竞争激烈的一周中重新跻身国产模型第一梯队。
 
 ---
 
 ## 🏯 中国古代故事 · 典故 · 天文地理 · 科技发明 (1 则)
 
-### 1. 孟浩然诵诗忤旨：不才明主弃
+### 1. 陈子昂摔琴赠文
 
-**唐** · 唐诗宋词背后的故事 · 出处：《新唐书·孟浩然传》《唐摭言》
+**唐** · 唐诗宋词故事 · 出处：唐·李亢《独异志》
 
-孟浩然隐居鹿门山，四十岁入长安应试不第。一次在王维官署做客，忽报唐玄宗到。孟浩然慌忙躲到床下，王维不敢隐瞒，奏明实情。玄宗素闻诗名，便命他出来，让他诵一首诗。孟浩然紧张之下，竟念起《岁暮归南山》：“北阙休上书，南山归敝庐。不才明主弃，多病故人疏。”玄宗听后脸色一沉：“卿不求仕，而朕未尝弃卿，奈何诬我！”于是命他放还南山。孟浩然从此绝意仕途，漫游山水，写下许多清逸诗篇。故事出自《新唐书》，生动说明人在关键时刻的言行，可能改变一生。
+陈子昂从蜀地初到长安应试，出身普通，诗文无人赏识。一天他在东市见到有人卖胡琴，要价百万钱，围观者众多却无人买。陈子昂竟当场买下，并约众人次日到宣阳里听琴。次日，他当众说：“我是蜀人陈子昂，有诗文百卷，可惜不为人知。胡琴只是乐工之事，怎值得我用心？”说完把琴摔碎，将诗卷分发众人。大家读后大为叹服，陈子昂一天之内名满长安。后来他写下《登幽州台歌》，成为初唐诗歌革新先驱。
 
-> 💡 **寓意**：机会稍纵即逝，才华虽高，措辞不当亦会自误；面对赏识者，谦逊与感恩比锋芒更重要。
+> 💡 **寓意**：才学需要勇气和机遇来展现，真才实学终究会被看见。
 
-> 📎 孟浩然爱吃鱼，传说最终因背疽未愈吃鱼复发而死，使“忌口”成为文人谈资。
+> 📎 后来“摔琴”成了刻意营销的典故。
 
-🔗 **深入了解**：[孟浩然](https://baike.baidu.com/item/%E5%AD%9F%E6%B5%A9%E7%84%B6) | [岁暮归南山](https://baike.baidu.com/item/%E5%B2%81%E6%9A%AE%E5%BD%92%E5%8D%97%E5%B1%B1) | [王维](https://baike.baidu.com/item/%E7%8E%8B%E7%BB%B4) | [唐玄宗](https://baike.baidu.com/item/%E5%94%90%E7%8E%84%E5%AE%97) | [不才明主弃](https://baike.baidu.com/item/%E4%B8%8D%E6%89%8D%E6%98%8E%E4%B8%BB%E5%BC%83) | [孟浩然诵诗忤旨：不才明主弃](https://baike.baidu.com/item/%E5%AD%9F%E6%B5%A9%E7%84%B6%E8%AF%B5%E8%AF%97%E5%BF%A4%E6%97%A8%EF%BC%9A%E4%B8%8D%E6%89%8D%E6%98%8E%E4%B8%BB%E5%BC%83) | [新唐书·孟浩然传](https://baike.baidu.com/item/%E6%96%B0%E5%94%90%E4%B9%A6%C2%B7%E5%AD%9F%E6%B5%A9%E7%84%B6%E4%BC%A0)
+🔗 **深入了解**：[陈子昂](https://baike.baidu.com/item/%E9%99%88%E5%AD%90%E6%98%82) | [登幽州台歌](https://baike.baidu.com/item/%E7%99%BB%E5%B9%BD%E5%B7%9E%E5%8F%B0%E6%AD%8C) | [独异志](https://baike.baidu.com/item/%E7%8B%AC%E5%BC%82%E5%BF%97) | [摔琴](https://baike.baidu.com/item/%E6%91%94%E7%90%B4) | [唐诗](https://baike.baidu.com/item/%E5%94%90%E8%AF%97) | [陈子昂摔琴赠文](https://baike.baidu.com/item/%E9%99%88%E5%AD%90%E6%98%82%E6%91%94%E7%90%B4%E8%B5%A0%E6%96%87)
 
 ---
 
-*📬 每日自动生成 · 2026-08-14 22:31*
+*📬 每日自动生成 · 2026-08-14 22:42*
