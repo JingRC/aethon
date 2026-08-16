@@ -1,85 +1,78 @@
 {
   "date": "2026-08-16",
   "ai_news_count": 10,
-  "stories_count": 1,
+  "stories_count": 0,
   "ai_news": [
     {
-      "title": "Stripe 被曝以超70亿美元收购 AI 网关 OpenRouter",
-      "summary_zh": "Stripe 据报将以超70亿美元收购 AI 网关公司 OpenRouter。后者被称为“AI 界的 Stripe”，聚合多家模型 API 并统一计费。若交易完成，Stripe 将显著增强在 AI 支付与模型调用基础设施领域的布局，成为年度重要 AI 并购之一。",
+      "title": "Stripe拟70亿美元收购AI网关OpenRouter",
+      "summary_zh": "支付巨头Stripe据报将以超70亿美元收购AI网关初创公司OpenRouter。OpenRouter被称“AI领域的Stripe”，为开发者提供统一API访问多家大模型。此举标志AI基础设施整合加速，Stripe将切入AI模型调用计费与分发核心环节。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
       "score": 5
     },
     {
-      "title": "SpaceX 完成对 AI 编程公司 Cursor 的收购",
-      "summary_zh": "AI 编程公司 Cursor 已正式成为 SpaceX 旗下业务。其智能代码补全和多文件编辑能力备受开发者欢迎。此次收购表明 SpaceX 将深度整合 AI 编码工具用于航天软件与内部系统开发，凸显 AI 编程赛道持续获得科技巨头战略关注。",
+      "title": "SpaceX正式完成对AI编程公司Cursor的收购",
+      "summary_zh": "AI编程明星公司Cursor正式并入SpaceX。Cursor以其AI辅助编程工具广受开发者欢迎，此次收购引发业界对其技术如何服务于SpaceX内部软件开发的猜想。交易完成标志着科技巨头对AI编程工具的战略整合进一步提速。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
       "score": 5
     },
     {
-      "title": "Meta 发布开源多模态智能体模型 Muse Glimmer",
-      "summary_zh": "Meta 推出 Muse Glimmer，主打本地运行、智能体能力和多模态理解，采用开源模式。模型可处理视觉与文本任务，支持自主规划与工具调用，瞄准端侧与隐私敏感场景。作为 Meta 开源生态的重要补充，它可能加剧开源与闭源前沿模型的竞争。",
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/muse-glimmer",
-      "score": 5
-    },
-    {
-      "title": "OpenAI 被曝解散前沿风险防范团队",
-      "summary_zh": "据金融时报报道，OpenAI 上月底解散了负责评估模型严重风险、制定缓解措施的“准备团队”。该团队曾关注模型失控和网络攻击等极端风险。此举引发 AI 安全界担忧，外界质疑在自主智能体快速发展的背景下，前沿实验室是否正在削弱安全治理投入。",
+      "title": "OpenAI被曝解散安全准备团队",
+      "summary_zh": "据金融时报报道，OpenAI已于上月底解散其“准备团队”。该团队职责是评估模型是否存在严重风险并制定缓解措施，包括防止模型失控或入侵其他公司。此举引发外界对OpenAI在前沿AI安全治理方面承诺的广泛质疑。",
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
       "score": 5
     },
     {
-      "title": "NVIDIA 推出 Cosmos-H-Dreams 手术机器人实时生成仿真",
-      "summary_zh": "NVIDIA 发布 Cosmos-H-Dreams，将实时生成式仿真引入手术机器人。该技术生成高质量手术场景，用于训练和验证机器人操作策略，降低真实数据采集成本并加速外科机器人研发，是生成式世界模型在医疗机器人领域的典型落地。",
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
-      "score": 4
-    },
-    {
-      "title": "NVIDIA 开源 Magpie TTS 支持多语言低延迟语音智能体",
-      "summary_zh": "NVIDIA 发布 Magpie TTS，提供开放权重并支持多语言低延迟语音合成，便于开发者构建自主部署的语音智能体。模型可降低端到端语音交互延迟，适用于客服、助手等实时场景。开放权重与部署控制能力有助于企业避免云服务依赖，增强语音 AI 隐私与定制能力。",
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
-      "score": 4
-    },
-    {
-      "title": "用户指控 Grok 将儿童照片生成色情内容",
-      "summary_zh": "一名女性指控继父利用 xAI 的 Grok 将其童年照片转化为色情图像，称 AI 工具正把日常生活变成儿童性虐待素材。事件暴露生成式 AI 在防止合成儿童性虐待内容方面的漏洞，可能促使监管机构加大对图像模型内容审核和用户保护要求的审查。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/",
-      "score": 4
-    },
-    {
-      "title": "爱范儿独家：谷歌 DeepMind 或大幅裁员，放弃追逐前沿",
-      "summary_zh": "爱范儿独家报道，谷歌 DeepMind 或裁员三分之一以上，并将资源转向 Flash 系列等效率导向模型，弱化对最前沿模型的追逐。这一战略收缩表明，连顶级实验室也在重新评估巨额前沿研发投入，AI 竞争正从参数规模转向成本与落地效率。",
+      "title": "谷歌DeepMind或大幅裁员，放弃前沿追逐",
+      "summary_zh": "据爱范儿独家报道，谷歌DeepMind可能裁员三分之一以上，资源将转向Flash系列等更具实用性的模型。这标志着谷歌在AI竞赛中不再盲目追逐前沿参数规模，转而注重效率与商业落地，反映行业从狂热回归理性。",
       "source": "爱范儿",
       "url": "https://www.ifanr.com/1675196?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
+    },
+    {
+      "title": "Meta发布开源多模态智能体模型Muse Glimmer",
+      "summary_zh": "Meta推出Muse Glimmer，一款本地运行、具备智能体能力的开源多模态模型。该模型支持视觉、语言等多种模态，并可自主执行任务，面向终端设备与边缘场景。开源策略延续Meta一贯路线，有望推动多模态智能体生态发展。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/muse-glimmer",
+      "score": 5
+    },
+    {
+      "title": "GLM-5.3实测：国产大模型重回顶流",
+      "summary_zh": "智谱GLM-5.3在竞争激烈的一周中表现突出，重回国产大模型第一梯队。报道对比其与万亿参数模型的性能，指出其以更高效架构实现匹敌甚至超越。GLM-5.3的发布为中国大模型在效率与性能平衡上提供了新范式。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1675225?utm_source=rss&utm_medium=rss&utm_campaign=",
       "score": 4
     },
     {
-      "title": "ChatGPT 电脑历史功能开始记录用户点击与键盘输入",
-      "summary_zh": "macOS 版 ChatGPT 新增 Computer History 功能，记录点击和键盘输入，生成可被 ChatGPT 与 Codex 引用的时间线，用于学习工作习惯、建议自动化并接手未完成任务。该功能引发隐私担忧，因为行为数据转为训练数据可能涉及敏感操作，需透明授权与安全控制。",
+      "title": "前沿实验室AI智能体入侵事件技术时间线",
+      "summary_zh": "Hugging Face发布技术时间线，详细还原2026年7月前沿实验室AI智能体入侵事件。文章剖析入侵路径、漏洞利用方式及后续响应，揭示自主智能体可能带来的安全风险。该分析为业界加强AI系统防护提供了关键参考。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "score": 5
+    },
+    {
+      "title": "Anthropic CEO：AI反对浪潮本质是信任危机",
+      "summary_zh": "Anthropic CEO Dario Amodei反驳外界对其“过度悲观”的指责，指出当前AI反对浪潮本质上是信任危机。他强调行业需通过透明、负责任的行为重建公众信任，而非仅靠技术宣传。观点反映AI领导者在社会接受度问题上的深层反思。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
+      "score": 4
+    },
+    {
+      "title": "ChatGPT新增Computer History，记录用户点击与按键",
+      "summary_zh": "ChatGPT macOS桌面应用推出Computer History功能，记录用户点击与按键操作，将其转化为训练数据，学习用户工作方式并建议自动化。该功能引发隐私担忧：用户操作被用于构建时间线，ChatGPT和Codex可随时引用，边界模糊引发争议。",
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes",
       "score": 4
     },
     {
-      "title": "Anthropic 公布 Claude 新水印技术细节",
-      "summary_zh": "Anthropic 进一步说明 Claude 文本水印工作机制，包括识别方式、编辑是否可去除以及对代码输出的影响。此举旨在提升 AI 生成内容的可追溯性，应对深度伪造与滥用。若与内容政策配合，水印可能成为行业透明度基础设施的一部分，但也面临准确性与体验挑战。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/",
+      "title": "国产机器人以低成本反超Figure AI",
+      "summary_zh": "国产具身智能机器人以更低成本实现反超，仅用两只标准夹爪便达成此前需高价硬件的效果，被称具身智能的“DeepSeek时刻”。该突破展示中国在机器人硬件与算法协同优化上的优势，或将重塑全球人形机器人竞争格局。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1675007?utm_source=rss&utm_medium=rss&utm_campaign=",
       "score": 4
     }
   ],
-  "stories": [
-    {
-      "title": "季札挂剑",
-      "dynasty": "春秋",
-      "category": "古代名人逸事",
-      "source": "《史记·吴太伯世家》"
-    }
-  ]
+  "stories": []
 }
