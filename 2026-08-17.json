@@ -1,0 +1,78 @@
+{
+  "date": "2026-08-17",
+  "ai_news_count": 10,
+  "stories_count": 0,
+  "ai_news": [
+    {
+      "title": "Meta发布开源多模态智能体模型Muse Glimmer",
+      "summary_zh": "Meta推出开源模型Muse Glimmer，主打本地运行、智能体能力和多模态理解，采用开放权重。它可在消费级硬件上高效运行，支持视觉与文本输入，标志着Meta开源AI生态的进一步布局，降低开发者构建智能体应用的门槛。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/muse-glimmer",
+      "score": 5
+    },
+    {
+      "title": "爱范儿独家：谷歌DeepMind或裁员三分之一，资源转向Flash",
+      "summary_zh": "爱范儿独家报道，谷歌正调整AI战略，不再盲目追逐前沿研究，旗下DeepMind可能裁员三分之一以上，资源将转向Flash系列模型。此举反映行业从追求极致性能转向成本效率，可能引发AI人才市场震荡。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1675196?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
+    },
+    {
+      "title": "AI视频初创Higgsfield获4亿美元B轮，估值54亿",
+      "summary_zh": "AI视频生成初创公司Higgsfield完成4亿美元B轮融资，由前Snap高管Alex Mashrabov创立，估值在8个月内翻四倍至54亿美元。资金将用于扩展AI图像和视频创作工具，显示资本对生成式视频赛道的持续追捧。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/17/higgsfield-raises-400m-series-b-quadrupling-its-valuation-in-8-months-to-5-4b/",
+      "score": 4
+    },
+    {
+      "title": "Groq融资3.5亿美元，从AI芯片转型neocloud",
+      "summary_zh": "AI芯片公司Groq完成3.5亿美元融资，估值35亿美元，并正式从芯片制造商转型为neocloud服务商，扩大其基于Nvidia的数据中心规模。此举表明AI推理需求激增，专用芯片公司也在向云服务延伸以争夺市场。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/",
+      "score": 4
+    },
+    {
+      "title": "英伟达15亿美元投资软银数据中心开发商，保障OpenAI算力",
+      "summary_zh": "英伟达向软银旗下数据中心开发商投资15亿美元，以确保其芯片为OpenAI项目提供算力支持。这笔投资强化了英伟达在AI基础设施中的核心地位，并加深与软银、OpenAI的合作，推动大规模数据中心建设。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/17/nvidia-investing-1-5b-in-softbank-data-center-developer-behind-openai-project/",
+      "score": 4
+    },
+    {
+      "title": "亚马逊被曝销毁稀有书籍训练AI模型，引发伦理争议",
+      "summary_zh": "据报道，亚马逊正在销毁稀有书籍以训练大语言模型，因为这些书籍对模型训练极具价值，而网上可用内容已被训练殆尽。此举引发对文化遗产保护和版权伦理的强烈争议，凸显AI数据获取的灰色地带。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/17/amazon-once-an-online-bookseller-is-destroying-rare-books-to-train-ai-models/",
+      "score": 4
+    },
+    {
+      "title": "英伟达发布Cosmos-H-Dreams，将实时生成模拟引入手术机器人",
+      "summary_zh": "英伟达发布Cosmos-H-Dreams，将实时生成式模拟引入手术机器人领域。该技术可为外科手术提供高保真虚拟环境，加速机器人训练和术前规划，有望提升手术安全性并降低医疗培训成本。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "score": 4
+    },
+    {
+      "title": "英伟达开源Magpie TTS：低延迟多语言语音代理",
+      "summary_zh": "英伟达推出Magpie TTS开源文本转语音模型，支持多语言低延迟语音代理，并提供完整权重和部署控制。开发者可构建实时语音助手，避免依赖闭源API，有望推动语音AI应用在边缘和云端的大规模落地。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+      "score": 4
+    },
+    {
+      "title": "Liquid AI发布LFM2.5-VL-3B，提升边缘视觉能力",
+      "summary_zh": "Liquid AI推出LFM2.5-VL-3B视觉语言模型，专为边缘设备优化，在保持较小参数量的同时提供更优的视觉理解能力。该模型可部署于手机、物联网等终端，降低推理延迟和成本，推动多模态AI在边缘场景的实用化。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
+      "score": 4
+    },
+    {
+      "title": "德国监管机构要求苹果停止阻止用户使用第三方应用",
+      "summary_zh": "德国联邦卡特尔局裁定苹果App Tracking Transparency提示设计偏向自家应用，要求其停止吓唬用户远离第三方应用。苹果将修改数据收集同意规则，这一决定可能影响依赖广告的AI数据生态，并引发其他地区跟进监管。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/980977/apple-app-tracking-transparency-settlement-germany",
+      "score": 3
+    }
+  ],
+  "stories": []
+}
