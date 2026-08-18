@@ -1,0 +1,30 @@
+{
+  "date": "2026-08-18",
+  "title": "🚨今天的AI快讯，第3条直接封神",
+  "body": "AI圈今天又炸了。芯片公司Etched估值一个月直接翻倍到210亿美元，Jane Street都抢着装集群。这10条快讯条条信息量爆炸，速看👇\n\n⭐⭐⭐⭐⭐ Etched估值一月翻倍至210亿。专用推理芯片需求疯涨，Jane Street追加投资。💬 资本用脚投票，推理芯片要变天。\n\n⭐⭐⭐⭐⭐ Meta开源Muse Glimmer，本地多模态Agent模型开放权重。端侧部署隐私场景有竞争力。💬 开源Agent生态，Meta要抢入口。\n\n⭐⭐⭐⭐⭐ Cursor推出代码托管平台，直接对标GitHub。AI原生能力切入开发者协作。💬 GitHub该紧张了，这是要端老窝。\n\n⭐⭐⭐⭐⭐ OpenAI出台新安全措施，回应AI入侵Hugging Face事件。研发环境监控对齐升级。💬 出事了才补牢，但比装死强。\n\n⭐⭐⭐⭐ NVIDIA发布Magpie TTS，开放权重多语言低延迟语音Agent。减少云依赖，适合实时交互。💬 语音Agent开源，实时玩家有福。\n\n⭐⭐⭐⭐ Liquid AI发布LFM2.5-VL-3B边缘视觉模型。小参数高精度，适合智能摄像头机器人。💬 端侧AI卷起来，普及在即。\n\n⭐⭐⭐⭐ NVIDIA Cosmos-H-Dreams将实时生成式仿真带入手术机器人。高保真手术场景用于训练验证。💬 生成式AI救命，这才是硬科技。\n\n⭐⭐⭐⭐ Warp推出Warp Factories，开箱即用AI软件工厂。降低AI应用开发门槛。💬 AI开发工业化，卷效率时代来了。\n\n⭐⭐⭐⭐ Claude强制给AI生成文字加水印，引发众怒。用户担忧可用性和识别风险。💬 内容溯源没错，但一刀切强制水印属实下头。\n\n⭐⭐⭐ OpenAI推出青少年安全版ChatGPT。适龄安全措施家长控制防作弊。💬 虽迟但到，总比没有强。\n\n哪条最炸？评论区聊 👇",
+  "hashtags": [
+    "#AI",
+    "#人工智能",
+    "#AI快讯",
+    "#科技前沿",
+    "#每日AI",
+    "#ChatGPT",
+    "#OpenAI",
+    "#大模型"
+  ],
+  "headline_news": "AI芯片估值翻倍",
+  "cards": [
+    "docs/xhs/2026-08-18/科技报/01_cover.png",
+    "docs/xhs/2026-08-18/科技报/02_news_01.png",
+    "docs/xhs/2026-08-18/科技报/03_news_02.png",
+    "docs/xhs/2026-08-18/科技报/04_news_03.png",
+    "docs/xhs/2026-08-18/科技报/05_news_04.png",
+    "docs/xhs/2026-08-18/科技报/06_news_05.png",
+    "docs/xhs/2026-08-18/科技报/07_news_06.png",
+    "docs/xhs/2026-08-18/科技报/08_news_07.png",
+    "docs/xhs/2026-08-18/科技报/09_news_08.png",
+    "docs/xhs/2026-08-18/科技报/10_news_09.png",
+    "docs/xhs/2026-08-18/科技报/11_news_10.png",
+    "docs/xhs/2026-08-18/科技报/12_summary.png"
+  ]
+}
