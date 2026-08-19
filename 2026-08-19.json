@@ -1,199 +1,85 @@
 {
   "date": "2026-08-19",
   "ai_news_count": 10,
-  "stories_count": 20,
+  "stories_count": 1,
   "ai_news": [
     {
-      "title": "OpenAI 紧急暂停新模型训练，AI 进入“越聪明越危险”阶段",
-      "summary_zh": "OpenAI于周二宣布放慢部分AI开发速度，同时加强安全与防护措施，应对日益激烈的竞争和即将到来的IPO。此举折射出前沿实验室对更强大模型潜在风险的担忧，也引发行业关于AI发展节奏与安全平衡的广泛讨论。",
+      "title": "Meta发布开源多模态智能体模型Muse Glimmer",
+      "summary_zh": "Meta推出开源模型Muse Glimmer，支持本地运行、多模态理解和智能体任务。该模型在设备端即可处理视觉、语言等多种输入，具备自主决策能力，并采用开放权重许可，有望降低开发者构建AI代理的门槛，推动去中心化AI生态发展。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/muse-glimmer",
+      "score": 5
+    },
+    {
+      "title": "OpenAI主动放缓AI开发节奏引发行业震动",
+      "summary_zh": "OpenAI宣布因安全与保护措施升级，主动放慢部分AI模型开发速度。正值公司IPO临近、Anthropic及开源对手竞争加剧之际，此举引发行业广泛讨论，凸显前沿AI在能力跃升与风险管控之间的张力。分析认为，这标志着AI行业进入更谨慎的治理阶段。",
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
       "score": 5
     },
     {
-      "title": "Claude 为所有 AI 生成文字添加水印，引发全球用户强烈不满",
-      "summary_zh": "Anthropic 为 Claude 生成的所有文字内容加入水印，以提升可追溯性。这一做法迅速引发用户强烈反对，认为侵犯创作自由和隐私，并可能导致文本被识别为机器生成。事件凸显AI可追溯性与用户体验之间的深层矛盾。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1675465?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 5
-    },
-    {
-      "title": "Meta 推出 Muse Glimmer：开源、智能体、多模态的全能模型",
-      "summary_zh": "Meta 发布 Muse Glimmer，一款本地运行的智能体多模态开源模型。该模型强调端侧部署能力，支持自主任务执行和跨模态理解，为开发者提供更大控制权。作为Meta在开源AI领域的最新布局，有望推动智能体应用生态发展。",
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/muse-glimmer",
-      "score": 5
-    },
-    {
-      "title": "前沿实验室智能体入侵事件技术时间线：2026年7月安全事件剖析",
-      "summary_zh": "Hugging Face 发布技术时间线，详细剖析2026年7月针对前沿AI实验室的智能体入侵事件。文章揭示攻击者如何利用智能体工具和权限漏洞实施渗透，为AI安全防御提供关键参考，凸显智能体系统在真实环境中面临的严峻安全挑战。",
-      "source": "Hugging Face Blog",
+      "title": "前沿实验室AI代理入侵事件技术时间线公布",
+      "summary_zh": "一份技术报告详细复盘了2026年7月某前沿AI实验室遭遇的代理入侵事件。报告按时间线梳理攻击链、漏洞利用方式及后续响应，揭示智能体系统在工具调用、权限管理上的安全盲区，为行业提供关键攻防经验，推动Agent安全框架完善。",
+      "source": "Hugging Face - Blog",
       "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
-      "score": 5
+      "score": 4
     },
     {
-      "title": "Waymo 新一代低成本机器人出租车在三个城市面向所有乘客开放",
-      "summary_zh": "Waymo 宣布其新一代机器人出租车“Ojai”在三个城市向所有乘客开放。该车型成本更低，是实现大规模运营和盈利的关键。此次开放标志着Waymo在自动驾驶出租车商业化上迈出重要一步，加剧与竞争对手的市场争夺。",
+      "title": "Waymo新一代廉价Robotaxi在三个城市全面开放",
+      "summary_zh": "Waymo宣布其下一代Robotaxi车型Ojai在三个城市向所有乘客开放。该车型成本显著降低，是Waymo迈向大规模部署和盈利的关键一步，标志着自动驾驶出行服务从试点进入规模化运营新阶段，对Robotaxi市场竞争格局产生重要影响。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/19/waymos-cheaper-next-gen-robotaxi-is-now-open-to-all-riders-in-these-three-cities/",
       "score": 4
     },
     {
-      "title": "TerraPower 核反应堆为 AI 数据中心提供秘密武器",
-      "summary_zh": "TerraPower 的核电站拥有相对于竞争对手的战略优势，尤其在争取AI数据中心供电协议时。其核反应堆设计能够提供稳定、低碳的电力，满足AI数据中心巨大的能源需求，有望成为AI基础设施能源供应的新范式。",
+      "title": "AI会计初创Rillet完成1亿美元C轮融资，估值达10亿美元",
+      "summary_zh": "AI原生会计平台Rillet宣布完成1亿美元C轮融资，由Iconiq领投，估值达10亿美元，跻身独角兽。公司ARR在过去三个月翻倍，显示AI在财务自动化领域的快速渗透。资金将用于产品扩张和市场拓展，进一步巩固AI企业服务赛道热度。",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/",
+      "url": "https://techcrunch.com/2026/08/19/rillet-raises-100m-series-c-at-1b-valuation-2-years-after-emerging-from-stealth/",
       "score": 4
     },
     {
-      "title": "AI 会计初创 Rillet 完成 1 亿美元 C 轮融资，估值达 10 亿美元",
-      "summary_zh": "AI 原生记账平台 Rillet 宣布完成 1 亿美元 C 轮融资，由 Iconiq 领投，估值达 10 亿美元，成为新晋独角兽。公司在过去三个月内年化经常性收入翻倍，显示AI在财务自动化领域的强劲需求和商业化潜力。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/19/rillet-raises-100m-series-c-at-1b-valuation-2-years-after-emerging-from-stealth/",
-      "score": 3
-    },
-    {
-      "title": "Google 在搜索和 Gemini 中推出全新 AI 学习工具",
-      "summary_zh": "Google 在搜索和 Gemini 中推出面向学生的新学习工具，包括学习笔记本、抽认卡和练习测验等功能。此举旨在将 Gemini 打造成学生首选AI助手，与OpenAI等竞争对手争夺教育市场，进一步将AI融入日常学习场景。",
+      "title": "谷歌为Search和Gemini推出全新AI学习工具",
+      "summary_zh": "谷歌在Search和Gemini中推出面向学生的新AI学习功能，包括研究笔记本、闪卡和练习测验等。此举旨在让Gemini成为学生首选AI学习助手，与OpenAI等对手争夺教育市场，进一步将AI能力融入日常学习场景，提升用户粘性。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
       "score": 3
     },
     {
-      "title": "夏季开源模型态势观察：2026年重要趋势",
-      "summary_zh": "Hugging Face 发布2026年夏季开源模型态势报告，总结当前开源AI生态的发展趋势，包括模型性能提升、多模态扩展和社区协作强化。报告指出开源模型正在缩小与闭源前沿的差距，推动AI技术民主化和产业创新。",
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "title": "OpenAI升级企业客户隐私保护，与Anthropic展开竞争",
+      "summary_zh": "OpenAI推出新的企业客户隐私保护措施，试图在与Anthropic的竞争中占据上风。双方在企业AI市场围绕数据隔离、合规性和隐私承诺展开激烈角逐。此举反映出企业客户对数据安全的关切日益成为云AI服务选择的关键因素。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/",
       "score": 3
     },
     {
-      "title": "NVIDIA Cosmos-H-Dreams 将实时生成模拟引入手术机器人",
-      "summary_zh": "NVIDIA 发布 Cosmos-H-Dreams，将实时生成式模拟技术应用于手术机器人领域。该技术可生成高保真手术场景，帮助训练和验证机器人系统，有望提升手术安全性和成功率。此举拓展了生成式AI在医疗领域的应用边界，彰显NVIDIA在垂直AI领域的布局。",
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "title": "TerraPower核反应堆为AI数据中心提供秘密武器",
+      "summary_zh": "TerraPower的核电站拥有针对AI数据中心交易的战略优势。其先进核反应堆设计可提供稳定、低碳的大规模电力，满足AI算力激增带来的能源需求。在数据中心电力短缺背景下，这一优势使TerraPower在与竞争对手争夺AI能源合同时脱颖而出。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/",
+      "score": 4
+    },
+    {
+      "title": "Claude为AI生成文字添加水印引发用户强烈不满",
+      "summary_zh": "Anthropic为Claude生成的所有文字添加水印，以应对AI内容溯源和虚假信息问题，但该举措引发全球用户强烈反感。用户担忧隐私泄露和文本可识别性影响使用体验。事件凸显AI透明度与用户体验之间的平衡难题，也反映出平台强推治理措施的反弹风险。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1675465?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
+    },
+    {
+      "title": "NVIDIA发布Magpie TTS多语言语音代理模型",
+      "summary_zh": "NVIDIA推出Magpie TTS，一个开放权重的多语言语音合成模型，支持低延迟语音代理构建。该模型赋予开发者完全部署控制权，可本地化运行，降低语音AI门槛。适用于客服、虚拟助手等场景，推动多语言语音交互技术的普及与创新。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
       "score": 4
     }
   ],
   "stories": [
     {
-      "title": "石申与《石氏星经》",
-      "dynasty": "战国",
+      "title": "祖冲之编《大明历》",
+      "dynasty": "南北朝",
       "category": "古代天文地理",
-      "source": "《史记·天官书》《晋书·天文志》"
-    },
-    {
-      "title": "祖冲之与《大明历》",
-      "dynasty": "南朝宋齐",
-      "category": "古代天文地理",
-      "source": "《南齐书·祖冲之传》《宋书·历志》"
-    },
-    {
-      "title": "玄奘西行与《大唐西域记》",
-      "dynasty": "唐",
-      "category": "古代天文地理",
-      "source": "《大唐西域记》《大慈恩寺三藏法师传》"
-    },
-    {
-      "title": "隋炀帝开凿大运河",
-      "dynasty": "隋",
-      "category": "古代天文地理",
-      "source": "《隋书·炀帝纪》《资治通鉴》"
-    },
-    {
-      "title": "潘季驯与“束水攻沙”",
-      "dynasty": "明",
-      "category": "古代天文地理",
-      "source": "《明史·河渠志》《河防一览》"
-    },
-    {
-      "title": "徐光启与《崇祯历书》",
-      "dynasty": "明",
-      "category": "古代天文地理",
-      "source": "《明史·徐光启传》《崇祯历书》"
-    },
-    {
-      "title": "一鸣惊人",
-      "dynasty": "春秋",
-      "category": "成语典故",
-      "source": "《史记·楚世家》"
-    },
-    {
-      "title": "老马识途",
-      "dynasty": "春秋",
-      "category": "成语典故",
-      "source": "《韩非子·说林上》"
-    },
-    {
-      "title": "孟浩然“不才明主弃”",
-      "dynasty": "唐",
-      "category": "唐诗宋词背后的故事",
-      "source": "《新唐书·孟浩然传》《唐才子传》"
-    },
-    {
-      "title": "乌台诗案：苏轼因诗获罪",
-      "dynasty": "北宋",
-      "category": "唐诗宋词背后的故事",
-      "source": "《宋史·苏轼传》《续资治通鉴长编》"
-    },
-    {
-      "title": "庖丁解牛",
-      "dynasty": "战国",
-      "category": "诸子百家寓言",
-      "source": "《庄子·养生主》"
-    },
-    {
-      "title": "井底之蛙",
-      "dynasty": "战国",
-      "category": "诸子百家寓言",
-      "source": "《庄子·秋水》"
-    },
-    {
-      "title": "明武宗禁猪令",
-      "dynasty": "明",
-      "category": "历史趣考",
-      "source": "《明武宗实录》"
-    },
-    {
-      "title": "交子：世界上最早的纸币",
-      "dynasty": "北宋",
-      "category": "历史趣考",
-      "source": "《宋史·食货志》"
-    },
-    {
-      "title": "秦简中的指纹破案",
-      "dynasty": "秦",
-      "category": "历史趣考",
-      "source": "《睡虎地秦墓竹简·封诊式》"
-    },
-    {
-      "title": "马王堆素纱襌衣",
-      "dynasty": "西汉",
-      "category": "历史趣考",
-      "source": "《长沙马王堆一号汉墓发掘简报》"
-    },
-    {
-      "title": "烛影斧声",
-      "dynasty": "北宋",
-      "category": "历史趣考",
-      "source": "《续资治通鉴长编》"
-    },
-    {
-      "title": "越王勾践剑千年不锈",
-      "dynasty": "春秋",
-      "category": "历史趣考",
-      "source": "《文物》1966年第5期"
-    },
-    {
-      "title": "戚继光抗倭与鸳鸯阵",
-      "dynasty": "明",
-      "category": "名将故事",
-      "source": "《明史·戚继光传》"
-    },
-    {
-      "title": "谢安围棋赌墅",
-      "dynasty": "东晋",
-      "category": "名士故事",
-      "source": "《晋书·谢安传》"
+      "source": "《南齐书·祖冲之传》《宋书·律历志》"
     }
   ]
 }
