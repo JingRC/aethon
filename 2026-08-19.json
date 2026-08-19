@@ -4,82 +4,82 @@
   "stories_count": 1,
   "ai_news": [
     {
-      "title": "Meta发布开源多模态智能体模型Muse Glimmer",
-      "summary_zh": "Meta推出开源模型Muse Glimmer，支持本地运行、多模态理解和智能体任务。该模型在设备端即可处理视觉、语言等多种输入，具备自主决策能力，并采用开放权重许可，有望降低开发者构建AI代理的门槛，推动去中心化AI生态发展。",
-      "source": "Hugging Face - Blog",
+      "title": "Meta 携 Muse Glimmer 回归：本地化、智能体化、多模态且开源",
+      "summary_zh": "Meta 发布开源多模态智能体模型 Muse Glimmer，主打本地运行、智能体能力与多模态理解，支持开放权重，可能重塑端侧开源模型竞争格局，为开发者和企业提供可私有部署的强模型选择。",
+      "source": "Hugging Face Blog",
       "url": "https://huggingface.co/blog/muse-glimmer",
       "score": 5
     },
     {
-      "title": "OpenAI主动放缓AI开发节奏引发行业震动",
-      "summary_zh": "OpenAI宣布因安全与保护措施升级，主动放慢部分AI模型开发速度。正值公司IPO临近、Anthropic及开源对手竞争加剧之际，此举引发行业广泛讨论，凸显前沿AI在能力跃升与风险管控之间的张力。分析认为，这标志着AI行业进入更谨慎的治理阶段。",
+      "title": "OpenAI 踩下刹车：新模型训练放缓，安全优先",
+      "summary_zh": "OpenAI 在 IPO 临近和竞争加剧之际宣布放缓部分 AI 开发，以加强安全与保护措施。这一主动减速引发业界关注：在追逐 AGI 与商业化压力下，前沿实验室开始重新权衡安全节奏与透明治理。",
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
       "score": 5
     },
     {
-      "title": "前沿实验室AI代理入侵事件技术时间线公布",
-      "summary_zh": "一份技术报告详细复盘了2026年7月某前沿AI实验室遭遇的代理入侵事件。报告按时间线梳理攻击链、漏洞利用方式及后续响应，揭示智能体系统在工具调用、权限管理上的安全盲区，为行业提供关键攻防经验，推动Agent安全框架完善。",
-      "source": "Hugging Face - Blog",
-      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
-      "score": 4
-    },
-    {
-      "title": "Waymo新一代廉价Robotaxi在三个城市全面开放",
-      "summary_zh": "Waymo宣布其下一代Robotaxi车型Ojai在三个城市向所有乘客开放。该车型成本显著降低，是Waymo迈向大规模部署和盈利的关键一步，标志着自动驾驶出行服务从试点进入规模化运营新阶段，对Robotaxi市场竞争格局产生重要影响。",
+      "title": "Waymo 新一代低价 Robotaxi 在美三城全面开放",
+      "summary_zh": "Waymo 正式向三座城市的全部乘客开放代号 Ojai 的下一代 Robotaxi。该车型成本更低，是公司迈向大规模运营与盈利的关键一步，标志着自动驾驶出租车商业化进入降本增效、扩大覆盖的新阶段。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/19/waymos-cheaper-next-gen-robotaxi-is-now-open-to-all-riders-in-these-three-cities/",
       "score": 4
     },
     {
-      "title": "AI会计初创Rillet完成1亿美元C轮融资，估值达10亿美元",
-      "summary_zh": "AI原生会计平台Rillet宣布完成1亿美元C轮融资，由Iconiq领投，估值达10亿美元，跻身独角兽。公司ARR在过去三个月翻倍，显示AI在财务自动化领域的快速渗透。资金将用于产品扩张和市场拓展，进一步巩固AI企业服务赛道热度。",
+      "title": "Cognition CEO 否认 SpaceX 曾试图收购公司",
+      "summary_zh": "针对 SpaceX 洽谈收购 AI 编程初创 Cognition 的报道，Cognition CEO 公开否认。此前 SpaceX 已收购 Cursor，加速追赶 OpenAI 与 Anthropic 在企业 AI 领域的布局，此传闻凸显 AI 编码赛道并购热度升温。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup/",
+      "score": 4
+    },
+    {
+      "title": "OpenAI 推出新隐私保护措施，与 Anthropic 争夺企业客户",
+      "summary_zh": "OpenAI 宣布强化企业客户数据隐私保护，与 Anthropic 展开正面竞争。随着企业采用生成式 AI 的顾虑集中转向数据安全，隐私条款成为云厂商和模型商争夺大客户的关键差异点，此举可能推动行业提升隐私标准。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/",
+      "score": 4
+    },
+    {
+      "title": "Rillet 获 1 亿美元 C 轮融资，估值达 10 亿美元",
+      "summary_zh": "AI 原生会计初创 Rillet 宣布完成 1 亿美元 C 轮融资，由 Iconiq 领投，估值达 10 亿美元，跻身独角兽。该公司称 ARR 在三个月内翻倍，体现 AI 自动化财务流程在企业服务市场的快速增长潜力。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/19/rillet-raises-100m-series-c-at-1b-valuation-2-years-after-emerging-from-stealth/",
       "score": 4
     },
     {
-      "title": "谷歌为Search和Gemini推出全新AI学习工具",
-      "summary_zh": "谷歌在Search和Gemini中推出面向学生的新AI学习功能，包括研究笔记本、闪卡和练习测验等。此举旨在让Gemini成为学生首选AI学习助手，与OpenAI等对手争夺教育市场，进一步将AI能力融入日常学习场景，提升用户粘性。",
+      "title": "NVIDIA Cosmos-H-Dreams 将实时生成式仿真带入手术机器人",
+      "summary_zh": "NVIDIA 发布 Cosmos-H-Dreams，为手术机器人提供实时生成式仿真能力，可通过合成场景训练和验证外科 AI。该技术有望降低高质量手术数据获取成本，加速机器人手术系统的研发、测试与监管验证流程。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "score": 4
+    },
+    {
+      "title": "前沿实验室智能体入侵事件技术时间线公开",
+      "summary_zh": "Hugging Face 发布一份前沿 AI 实验室智能体入侵事件的技术时间线，还原 2026 年 7 月攻击细节。报告揭示了智能体系统在权限、工具调用与监控方面的安全漏洞，为行业提供攻击路径分析与防护参考。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "score": 4
+    },
+    {
+      "title": "Google 在搜索和 Gemini 中推出 AI 学习工具",
+      "summary_zh": "Google 在搜索与 Gemini 中推出面向学生的新 AI 学习工具，支持创建学习笔记、生成闪卡、练习测验等功能，并增强多格式笔记支持。此举旨在把 Gemini 打造成学生首选学习助手，与 OpenAI 等展开教育场景竞争。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
       "score": 3
     },
     {
-      "title": "OpenAI升级企业客户隐私保护，与Anthropic展开竞争",
-      "summary_zh": "OpenAI推出新的企业客户隐私保护措施，试图在与Anthropic的竞争中占据上风。双方在企业AI市场围绕数据隔离、合规性和隐私承诺展开激烈角逐。此举反映出企业客户对数据安全的关切日益成为云AI服务选择的关键因素。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/",
-      "score": 3
-    },
-    {
-      "title": "TerraPower核反应堆为AI数据中心提供秘密武器",
-      "summary_zh": "TerraPower的核电站拥有针对AI数据中心交易的战略优势。其先进核反应堆设计可提供稳定、低碳的大规模电力，满足AI算力激增带来的能源需求。在数据中心电力短缺背景下，这一优势使TerraPower在与竞争对手争夺AI能源合同时脱颖而出。",
+      "title": "TerraPower 核反应堆或成 AI 数据中心供电秘密武器",
+      "summary_zh": "TerraPower 的核电站技术在争夺 AI 数据中心供电合同时具备战略优势，其设计可更灵活匹配数据中心负载与选址需求。随着 AI 算力扩张推高能源需求，先进核能成为解决数据中心清洁、稳定供电的关键方案。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/",
-      "score": 4
-    },
-    {
-      "title": "Claude为AI生成文字添加水印引发用户强烈不满",
-      "summary_zh": "Anthropic为Claude生成的所有文字添加水印，以应对AI内容溯源和虚假信息问题，但该举措引发全球用户强烈反感。用户担忧隐私泄露和文本可识别性影响使用体验。事件凸显AI透明度与用户体验之间的平衡难题，也反映出平台强推治理措施的反弹风险。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1675465?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 4
-    },
-    {
-      "title": "NVIDIA发布Magpie TTS多语言语音代理模型",
-      "summary_zh": "NVIDIA推出Magpie TTS，一个开放权重的多语言语音合成模型，支持低延迟语音代理构建。该模型赋予开发者完全部署控制权，可本地化运行，降低语音AI门槛。适用于客服、虚拟助手等场景，推动多语言语音交互技术的普及与创新。",
-      "source": "Hugging Face - Blog",
-      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
       "score": 4
     }
   ],
   "stories": [
     {
-      "title": "祖冲之编《大明历》",
-      "dynasty": "南北朝",
+      "title": "哈雷彗星的最早记录：春秋“星孛入于北斗”",
+      "dynasty": "春秋",
       "category": "古代天文地理",
-      "source": "《南齐书·祖冲之传》《宋书·律历志》"
+      "source": "《春秋·鲁文公十四年》"
     }
   ]
 }
