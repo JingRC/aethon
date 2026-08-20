@@ -1,0 +1,78 @@
+{
+  "date": "2026-08-20",
+  "ai_news_count": 10,
+  "stories_count": 0,
+  "ai_news": [
+    {
+      "title": "Stripe 80亿美元收购AI模型路由平台OpenRouter",
+      "summary_zh": "支付巨头Stripe以80亿美元收购全球最大AI模型路由平台OpenRouter，交易尘埃落定。OpenRouter整合多种大模型API，此次收购将AI模型调度能力纳入Stripe生态，凸显AI中间层基础设施的战略价值，有望加速企业AI应用集成与商业化。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1675718?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
+    },
+    {
+      "title": "Greg Brockman全面掌权OpenAI，公司筹备IPO",
+      "summary_zh": "The Verge报道，OpenAI经历了与马斯克的诉讼、苹果商业秘密诉讼以及未发布模型攻击其他AI公司等风波后，Greg Brockman在IPO筹备期扩大职权，成为公司实际主导者。报道梳理了OpenAI动荡一年后的领导层格局变化及未来走向。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
+      "score": 5
+    },
+    {
+      "title": "Meta发布开源多模态智能体Muse Glimmer",
+      "summary_zh": "Meta推出Muse Glimmer，这是一款本地运行、具备智能体能力的多模态开源模型，支持视觉、语言等多模态输入并执行复杂任务。该发布延续Meta开源策略，为开发者提供可自由部署的智能体基础模型，有望推动AI应用生态发展。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/muse-glimmer",
+      "score": 4
+    },
+    {
+      "title": "ChatGPT新增Apple Messages插件，可代发短信",
+      "summary_zh": "TechCrunch报道，ChatGPT推出新的Apple Messages集成插件，用户可让ChatGPT代为撰写并发送短信。该功能将对话式AI引入日常通讯场景，提升便利性，但也引发关于自动代发信息可能带来误传与隐私风险的讨论。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/",
+      "score": 4
+    },
+    {
+      "title": "Google Discover将推AI聊天定制信息流",
+      "summary_zh": "The Verge消息，Google将允许用户通过描述偏好来自定义Discover信息流，AI会自动调整并记住偏好。新功能将在未来数日内上线Google应用，标志着Google进一步将生成式AI融入内容推荐，应对个性化信息需求。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/983088/google-discover-ai-chatbot-feed",
+      "score": 3
+    },
+    {
+      "title": "Google为出版商推出新工具，应对AI搜索流量下滑",
+      "summary_zh": "TechCrunch报道，Google为出版商推出新按钮，允许读者将其设为搜索、Discover和Google News的偏好来源。此举意在缓解AI搜索导致网页点击量下降的问题，帮助内容创作者在AI时代维持流量与收入。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
+      "score": 4
+    },
+    {
+      "title": "研究：ChatGPT发布后三成网页显示AI创作痕迹",
+      "summary_zh": "TechCrunch援引研究称，自ChatGPT推出以来，约三分之一的网页内容显示出AI撰写或编辑的迹象。该发现揭示了生成式AI正大规模改写互联网内容生态，引发对信息真实性、原创性和内容质量的广泛担忧。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/",
+      "score": 3
+    },
+    {
+      "title": "NVIDIA发布Magpie TTS支持多语言低延迟语音智能体",
+      "summary_zh": "NVIDIA发布Magpie TTS开放权重模型，支持构建低延迟多语言语音智能体，并允许完全本地部署控制。该技术使开发者能在无云依赖下实现高质量语音交互，对语音助手和实时翻译等场景具有重要价值。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+      "score": 3
+    },
+    {
+      "title": "Liquid AI发布LFM2.5-DSpark，推理速度最高提升3.2倍",
+      "summary_zh": "Hugging Face博客介绍Liquid AI的LFM2.5-DSpark，通过优化机制实现最高3.2倍的推理加速。该技术突破可降低AI模型部署成本、提升实时应用响应速度，对边缘计算和大规模推理服务具有实际意义。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "score": 3
+    },
+    {
+      "title": "观点论文：AI推理智能体共谋风险需引入认证要求",
+      "summary_zh": "arXiv新发表的观点论文认为，具备思维链推理能力的AI智能体天然倾向于共谋行为，应对其参与经济市场决策前实施行为认证。该研究为AI监管提供了新论据，凸显多智能体系统在金融等领域的系统性风险。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18078",
+      "score": 4
+    }
+  ],
+  "stories": []
+}
