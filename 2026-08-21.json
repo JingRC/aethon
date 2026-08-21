@@ -1,0 +1,199 @@
+{
+  "date": "2026-08-21",
+  "ai_news_count": 10,
+  "stories_count": 20,
+  "ai_news": [
+    {
+      "title": "Stripe以80亿美元收购AI模型路由平台OpenRouter",
+      "summary_zh": "支付巨头Stripe以80亿美元完成对AI模型路由平台OpenRouter的收购，并承诺维持其独立产品路线。此次收购将AI基础设施与支付生态深度结合，可能重塑AI模型分发与调用的市场格局，是近年AI领域最重大的并购之一。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1675718",
+      "score": 5
+    },
+    {
+      "title": "特斯拉、Uber和Waymo获准在内华达州运营数千辆Robotaxi",
+      "summary_zh": "内华达州批准特斯拉、Uber和Waymo在未来12个月内部署最多8000辆Robotaxi。这一政策突破为自动驾驶出行服务的大规模商业化扫清了关键监管障碍，标志着自动驾驶行业进入规模化运营新阶段。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/",
+      "score": 5
+    },
+    {
+      "title": "Meta发布开源多模态AI模型Muse Glimmer",
+      "summary_zh": "Meta正式发布Muse Glimmer，这是一款本地化、代理式、多模态的开源AI模型，强调可在设备端运行，具备智能体交互与多模态理解能力。该发布延续了Meta在开源AI领域的战略，有望推动端侧AI应用生态发展。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/muse-glimmer",
+      "score": 4
+    },
+    {
+      "title": "Greg Brockman角色扩张，OpenAI进入“布罗克曼时代”",
+      "summary_zh": "经历与马斯克的法律纠纷、苹果起诉及模型安全风波后，OpenAI联合创始人Greg Brockman的角色大幅扩展，成为公司IPO前的核心决策者。此次权力集中可能深刻影响OpenAI未来的战略方向与治理结构。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
+      "score": 4
+    },
+    {
+      "title": "新数据显示OpenAI在企业市场正追赶Anthropic",
+      "summary_zh": "最新市场数据显示，OpenAI在企业用户市场正迅速追赶Anthropic，企业客户在两个实验室之间频繁切换模型。这种高流动性反映出企业AI支出的“粘性”不足，可能给两家公司的投资者带来长远担忧。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
+      "score": 4
+    },
+    {
+      "title": "NVIDIA发布开源权重多语言语音模型Magpie TTS",
+      "summary_zh": "NVIDIA正式推出Magpie TTS，一款开放权重的多语言文本转语音模型，支持低延迟语音智能体构建，并赋予开发者完整的部署控制权。该模型旨在帮助企业快速搭建多语言语音交互应用，推动语音AI的普及。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+      "score": 4
+    },
+    {
+      "title": "NVIDIA推出手术机器人实时生成式仿真工具Cosmos-H-Dreams",
+      "summary_zh": "NVIDIA发布Cosmos-H-Dreams，将实时生成式仿真引入手术机器人领域。该工具可加速手术场景的合成与机器人训练，降低对真实数据的依赖，展示了生成式AI在医疗机器人中的广阔应用前景。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "score": 4
+    },
+    {
+      "title": "AI数据公司Micro1年化收入达5亿美元，受益于训练数据热潮",
+      "summary_zh": "AI数据公司Micro1宣布达到5亿美元的总运行率，得益于全球AI训练数据需求激增。其竞争对手也呈现快速扩张，反映AI数据采集与标注市场进入高速增长期，成为AI产业链中的关键一环。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/",
+      "score": 3
+    },
+    {
+      "title": "Google为出版商提供新按钮，应对AI搜索导致的流量损失",
+      "summary_zh": "Google推出一项新功能：读者点击按钮即可将某家出版商设为Search、Discover和Google News的首选来源。此举帮助优质内容方在AI搜索冲击下减少流量下滑，但也引发关于默认推荐机制是否公平的讨论。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
+      "score": 3
+    },
+    {
+      "title": "MiniMax发布视频模型创作工具MiniMax Design",
+      "summary_zh": "MiniMax正式推出视频模型设计工具MiniMax Design，被称为“视频模型界的Codex”。该工具支持通过自然语言直接生成、编辑视频，意图取代传统专业创作软件，大幅降低视频制作门槛，引领AI视频创作新范式。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1675657",
+      "score": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "李愬雪夜入蔡州",
+      "dynasty": "唐",
+      "category": "兵法谋略",
+      "source": "《旧唐书·李愬传》"
+    },
+    {
+      "title": "狄青夜袭昆仑关",
+      "dynasty": "北宋",
+      "category": "兵法谋略",
+      "source": "《宋史·狄青传》"
+    },
+    {
+      "title": "戚继光鸳鸯阵",
+      "dynasty": "明",
+      "category": "兵法谋略",
+      "source": "《明史·戚继光传》"
+    },
+    {
+      "title": "韩世忠黄天荡",
+      "dynasty": "南宋",
+      "category": "兵法谋略",
+      "source": "《宋史·韩世忠传》"
+    },
+    {
+      "title": "韦睿钟离之战",
+      "dynasty": "南朝梁",
+      "category": "兵法谋略",
+      "source": "《梁书·韦睿传》"
+    },
+    {
+      "title": "曹玮以静制动破敌",
+      "dynasty": "北宋",
+      "category": "兵法谋略",
+      "source": "《宋史·曹玮传》"
+    },
+    {
+      "title": "南柯一梦",
+      "dynasty": "唐",
+      "category": "成语典故",
+      "source": "李公佐《南柯太守传》"
+    },
+    {
+      "title": "请君入瓮",
+      "dynasty": "唐",
+      "category": "成语典故",
+      "source": "《资治通鉴·唐纪》"
+    },
+    {
+      "title": "衣冠禽兽本来是夸人？",
+      "dynasty": "明清",
+      "category": "历史趣考",
+      "source": "《明史·舆服志》等"
+    },
+    {
+      "title": "古人一天吃两顿饭？",
+      "dynasty": "先秦至唐",
+      "category": "历史趣考",
+      "source": "《礼记·内则》《汉书》等"
+    },
+    {
+      "title": "敦煌星图：千年前的天穹照",
+      "dynasty": "唐",
+      "category": "古代天文地理",
+      "source": "敦煌藏经洞遗书"
+    },
+    {
+      "title": "徐光启与《崇祯历书》",
+      "dynasty": "明",
+      "category": "古代天文地理",
+      "source": "《明史·历志》《崇祯历书》"
+    },
+    {
+      "title": "晏殊不欺君",
+      "dynasty": "北宋",
+      "category": "人物风范",
+      "source": "《宋史·晏殊传》"
+    },
+    {
+      "title": "娄师德唾面自干",
+      "dynasty": "唐",
+      "category": "人物风范",
+      "source": "《新唐书·娄师德传》"
+    },
+    {
+      "title": "谢安临危对弈",
+      "dynasty": "东晋",
+      "category": "人物风范",
+      "source": "《晋书·谢安传》"
+    },
+    {
+      "title": "范蠡三聚三散",
+      "dynasty": "春秋",
+      "category": "人物风范",
+      "source": "《史记·越王勾践世家》"
+    },
+    {
+      "title": "汲黯矫制赈灾",
+      "dynasty": "西汉",
+      "category": "人物风范",
+      "source": "《史记·汲郑列传》"
+    },
+    {
+      "title": "王旦荐贤不市恩",
+      "dynasty": "北宋",
+      "category": "人物风范",
+      "source": "《宋史·王旦传》"
+    },
+    {
+      "title": "赵广汉钩距问案",
+      "dynasty": "西汉",
+      "category": "历史智慧",
+      "source": "《汉书·赵广汉传》"
+    },
+    {
+      "title": "高允直笔修史",
+      "dynasty": "北魏",
+      "category": "历史智慧",
+      "source": "《魏书·高允传》"
+    }
+  ]
+}
