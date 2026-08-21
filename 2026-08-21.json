@@ -1,199 +1,78 @@
 {
   "date": "2026-08-21",
   "ai_news_count": 10,
-  "stories_count": 20,
+  "stories_count": 0,
   "ai_news": [
     {
-      "title": "Stripe以80亿美元收购AI模型路由平台OpenRouter",
-      "summary_zh": "支付巨头Stripe以80亿美元完成对AI模型路由平台OpenRouter的收购，并承诺维持其独立产品路线。此次收购将AI基础设施与支付生态深度结合，可能重塑AI模型分发与调用的市场格局，是近年AI领域最重大的并购之一。",
+      "title": "DeepSeek多模态模型上新，开源社区迎来“天眼”时刻",
+      "summary_zh": "DeepSeek发布全新多模态模型，被社区称为“鲸鱼终于开天眼”。该模型在视觉语言理解与生成任务上表现亮眼，标志着DeepSeek从纯文本向多模态能力的关键跨越，有望进一步推动开源多模态生态发展，为全球开发者提供高性价比的视觉AI方案。",
       "source": "爱范儿",
-      "url": "https://www.ifanr.com/1675718",
+      "url": "https://www.ifanr.com/1676067?utm_source=rss&utm_medium=rss&utm_campaign=",
       "score": 5
     },
     {
-      "title": "特斯拉、Uber和Waymo获准在内华达州运营数千辆Robotaxi",
-      "summary_zh": "内华达州批准特斯拉、Uber和Waymo在未来12个月内部署最多8000辆Robotaxi。这一政策突破为自动驾驶出行服务的大规模商业化扫清了关键监管障碍，标志着自动驾驶行业进入规模化运营新阶段。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/",
-      "score": 5
-    },
-    {
-      "title": "Meta发布开源多模态AI模型Muse Glimmer",
-      "summary_zh": "Meta正式发布Muse Glimmer，这是一款本地化、代理式、多模态的开源AI模型，强调可在设备端运行，具备智能体交互与多模态理解能力。该发布延续了Meta在开源AI领域的战略，有望推动端侧AI应用生态发展。",
-      "source": "Hugging Face Blog",
+      "title": "Meta开源Muse Glimmer：本地化、Agent化、多模态新模型",
+      "summary_zh": "Meta发布Muse Glimmer，一款强调本地部署、具备智能体能力和多模态理解的开源大模型。该模型支持离线运行，并在隐私保护和任务自主执行方面做了深度优化，是Meta在开源AI生态中的重要战略布局，或重塑端侧AI应用开发范式。",
+      "source": "Hugging Face - Blog",
       "url": "https://huggingface.co/blog/muse-glimmer",
+      "score": 5
+    },
+    {
+      "title": "ChatGPT新增短信读取能力，AI助手深度集成手机系统",
+      "summary_zh": "ChatGPT新增功能，可读取用户短信以提供更个性化、更智能的服务。这一更新意味着AI助手开始深入渗透移动设备的核心通讯数据，引发对隐私边界的广泛讨论，同时也给苹果等封闭平台生态带来新的博弈压力。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1675954?utm_source=rss&utm_medium=rss&utm_campaign=",
       "score": 4
     },
     {
-      "title": "Greg Brockman角色扩张，OpenAI进入“布罗克曼时代”",
-      "summary_zh": "经历与马斯克的法律纠纷、苹果起诉及模型安全风波后，OpenAI联合创始人Greg Brockman的角色大幅扩展，成为公司IPO前的核心决策者。此次权力集中可能深刻影响OpenAI未来的战略方向与治理结构。",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
-      "score": 4
-    },
-    {
-      "title": "新数据显示OpenAI在企业市场正追赶Anthropic",
-      "summary_zh": "最新市场数据显示，OpenAI在企业用户市场正迅速追赶Anthropic，企业客户在两个实验室之间频繁切换模型。这种高流动性反映出企业AI支出的“粘性”不足，可能给两家公司的投资者带来长远担忧。",
+      "title": "AI会计公司Rillet 48小时融资1亿美元，跻身独角兽",
+      "summary_zh": "AI会计初创公司Rillet CEO在董事会会议上展示增长数据后，意外引发Iconiq、Sequoia等机构的抢投热潮，48小时内完成1亿美元融资并晋升独角兽。事件凸显AI垂直应用赛道的资本热度，以及顶级VC对财务自动化方向的强烈信心。",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
+      "url": "https://techcrunch.com/2026/08/21/how-ai-accounting-startup-rillet-raised-100m-and-became-a-unicorn-in-48-hours/",
       "score": 4
     },
     {
-      "title": "NVIDIA发布开源权重多语言语音模型Magpie TTS",
-      "summary_zh": "NVIDIA正式推出Magpie TTS，一款开放权重的多语言文本转语音模型，支持低延迟语音智能体构建，并赋予开发者完整的部署控制权。该模型旨在帮助企业快速搭建多语言语音交互应用，推动语音AI的普及。",
-      "source": "Hugging Face Blog",
+      "title": "苹果大幅裁减Siri与Vision Pro团队，AI战略转向",
+      "summary_zh": "苹果确认在Siri和Vision Pro团队裁员数百人，包括基本关闭Vision Pro游戏团队并缩减沉浸式内容创作团队。此举显示苹果在AR/VR业务上明显收缩，并将资源集中于更实用的AI产品方向，如轻量级AI眼镜和核心助手能力。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/983451/apple-layoffs-vision-pro-siri",
+      "score": 4
+    },
+    {
+      "title": "Nvidia研究：AI智能体的“缰绳”比模型本身更重要",
+      "summary_zh": "Nvidia最新研究表明，AI智能体能否可靠完成任务，更大程度上取决于外部框架（harness）的设计，如微调策略、工具调用流程和上下文管理。即使基础模型能力平平，精心设计的框架也能让其表现稳定，推动业界重新审视AI工程重点。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
+      "score": 4
+    },
+    {
+      "title": "NVIDIA发布Magpie TTS开源模型，低延迟多语言语音代理落地",
+      "summary_zh": "NVIDIA发布Magpie TTS，一款开放权重、支持多语言的低延迟语音合成模型，开发者可完全控制部署。该模型面向实时语音代理场景，提供高自然度和跨语言能力，降低了对云端语音服务的依赖，推动语音AI向端侧和私有化部署加速演进。",
+      "source": "Hugging Face - Blog",
       "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
       "score": 4
     },
     {
-      "title": "NVIDIA推出手术机器人实时生成式仿真工具Cosmos-H-Dreams",
-      "summary_zh": "NVIDIA发布Cosmos-H-Dreams，将实时生成式仿真引入手术机器人领域。该工具可加速手术场景的合成与机器人训练，降低对真实数据的依赖，展示了生成式AI在医疗机器人中的广阔应用前景。",
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "title": "Hugging Face发布2026夏季开源模型生态观察报告",
+      "summary_zh": "Hugging Face发布2026年夏季开源模型状态报告，系统梳理了当前开源大模型的能力边界、性能进展和生态格局，并对标闭源模型指出差距与机遇。报告特别关注推理效率、多模态融合、Agent框架等前沿方向，是了解开源AI现状的重要参考。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "score": 3
+    },
+    {
+      "title": "Liquid AI推出LFM2.5-DSpark：推理速度最高提升3.2倍",
+      "summary_zh": "Liquid AI发布LFM2.5-DSpark模型，通过稀疏激活和高效架构设计实现最高3.2倍的推理加速，显著降低单位Token成本。该技术为大模型在边缘设备、高并发API服务等场景的规模化部署提供了更经济的路径，加速AI应用落地。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
       "score": 4
     },
     {
-      "title": "AI数据公司Micro1年化收入达5亿美元，受益于训练数据热潮",
-      "summary_zh": "AI数据公司Micro1宣布达到5亿美元的总运行率，得益于全球AI训练数据需求激增。其竞争对手也呈现快速扩张，反映AI数据采集与标注市场进入高速增长期，成为AI产业链中的关键一环。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/",
-      "score": 3
-    },
-    {
-      "title": "Google为出版商提供新按钮，应对AI搜索导致的流量损失",
-      "summary_zh": "Google推出一项新功能：读者点击按钮即可将某家出版商设为Search、Discover和Google News的首选来源。此举帮助优质内容方在AI搜索冲击下减少流量下滑，但也引发关于默认推荐机制是否公平的讨论。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
-      "score": 3
-    },
-    {
-      "title": "MiniMax发布视频模型创作工具MiniMax Design",
-      "summary_zh": "MiniMax正式推出视频模型设计工具MiniMax Design，被称为“视频模型界的Codex”。该工具支持通过自然语言直接生成、编辑视频，意图取代传统专业创作软件，大幅降低视频制作门槛，引领AI视频创作新范式。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1675657",
+      "title": "研究揭示LLM跨语言安全缺口：安全对齐存在“幻觉”",
+      "summary_zh": "最新研究发现，当前大模型的安全对齐训练以英语为中心，导致非英语语言场景下安全防护显著失效，形成跨语言安全缺口。这种“对齐幻觉”对语音助手和多语言对话系统构成直接风险，研究者呼吁构建多语言多维度的安全评测体系。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2608.18131",
       "score": 3
     }
   ],
-  "stories": [
-    {
-      "title": "李愬雪夜入蔡州",
-      "dynasty": "唐",
-      "category": "兵法谋略",
-      "source": "《旧唐书·李愬传》"
-    },
-    {
-      "title": "狄青夜袭昆仑关",
-      "dynasty": "北宋",
-      "category": "兵法谋略",
-      "source": "《宋史·狄青传》"
-    },
-    {
-      "title": "戚继光鸳鸯阵",
-      "dynasty": "明",
-      "category": "兵法谋略",
-      "source": "《明史·戚继光传》"
-    },
-    {
-      "title": "韩世忠黄天荡",
-      "dynasty": "南宋",
-      "category": "兵法谋略",
-      "source": "《宋史·韩世忠传》"
-    },
-    {
-      "title": "韦睿钟离之战",
-      "dynasty": "南朝梁",
-      "category": "兵法谋略",
-      "source": "《梁书·韦睿传》"
-    },
-    {
-      "title": "曹玮以静制动破敌",
-      "dynasty": "北宋",
-      "category": "兵法谋略",
-      "source": "《宋史·曹玮传》"
-    },
-    {
-      "title": "南柯一梦",
-      "dynasty": "唐",
-      "category": "成语典故",
-      "source": "李公佐《南柯太守传》"
-    },
-    {
-      "title": "请君入瓮",
-      "dynasty": "唐",
-      "category": "成语典故",
-      "source": "《资治通鉴·唐纪》"
-    },
-    {
-      "title": "衣冠禽兽本来是夸人？",
-      "dynasty": "明清",
-      "category": "历史趣考",
-      "source": "《明史·舆服志》等"
-    },
-    {
-      "title": "古人一天吃两顿饭？",
-      "dynasty": "先秦至唐",
-      "category": "历史趣考",
-      "source": "《礼记·内则》《汉书》等"
-    },
-    {
-      "title": "敦煌星图：千年前的天穹照",
-      "dynasty": "唐",
-      "category": "古代天文地理",
-      "source": "敦煌藏经洞遗书"
-    },
-    {
-      "title": "徐光启与《崇祯历书》",
-      "dynasty": "明",
-      "category": "古代天文地理",
-      "source": "《明史·历志》《崇祯历书》"
-    },
-    {
-      "title": "晏殊不欺君",
-      "dynasty": "北宋",
-      "category": "人物风范",
-      "source": "《宋史·晏殊传》"
-    },
-    {
-      "title": "娄师德唾面自干",
-      "dynasty": "唐",
-      "category": "人物风范",
-      "source": "《新唐书·娄师德传》"
-    },
-    {
-      "title": "谢安临危对弈",
-      "dynasty": "东晋",
-      "category": "人物风范",
-      "source": "《晋书·谢安传》"
-    },
-    {
-      "title": "范蠡三聚三散",
-      "dynasty": "春秋",
-      "category": "人物风范",
-      "source": "《史记·越王勾践世家》"
-    },
-    {
-      "title": "汲黯矫制赈灾",
-      "dynasty": "西汉",
-      "category": "人物风范",
-      "source": "《史记·汲郑列传》"
-    },
-    {
-      "title": "王旦荐贤不市恩",
-      "dynasty": "北宋",
-      "category": "人物风范",
-      "source": "《宋史·王旦传》"
-    },
-    {
-      "title": "赵广汉钩距问案",
-      "dynasty": "西汉",
-      "category": "历史智慧",
-      "source": "《汉书·赵广汉传》"
-    },
-    {
-      "title": "高允直笔修史",
-      "dynasty": "北魏",
-      "category": "历史智慧",
-      "source": "《魏书·高允传》"
-    }
-  ]
+  "stories": []
 }
