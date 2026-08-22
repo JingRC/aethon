@@ -4,82 +4,82 @@
   "stories_count": 1,
   "ai_news": [
     {
-      "title": "Meta开源多模态模型Muse Glimmer",
-      "summary_zh": "Meta发布全新Muse Glimmer模型，定位本地化、智能体化、多模态且完全开源。该模型支持终端设备运行，具备多模态理解与智能体能力，被视为Meta在开源AI领域的重要回归，对开源社区和边缘AI发展具有里程碑意义。",
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/muse-glimmer",
-      "score": 5
-    },
-    {
-      "title": "DeepSeek发布全新多模态模型",
-      "summary_zh": "DeepSeek突然发布多模态模型，引发业界广泛关注。新模型补齐了DeepSeek在视觉理解等模态的短板，标志着其从纯文本向多模态方向的重要突破。具体能力与参数尚未完全公开，但社区普遍预期将推动开源多模态发展。",
+      "title": "DeepSeek发布多模态模型，补齐视觉能力",
+      "summary_zh": "DeepSeek发布新款多模态模型，为其产品线补上视觉能力。该模型支持图像理解等多模态任务，标志着DeepSeek从纯文本向多模态迈进。此次更新被认为将提升其AI助手的实用性，并加剧开源多模态模型的竞争。",
       "source": "爱范儿",
       "url": "https://www.ifanr.com/1676067",
       "score": 5
     },
     {
-      "title": "DeepMind校友创办的Inherent发布AI智能体Faraday，复现研究能力超越OpenAI和Anthropic",
-      "summary_zh": "英国AI实验室Inherent由DeepMind校友创立，其发布的Faraday智能体在复现科学论文方面超越了Anthropic和OpenAI的模型。该智能体被视为加速科研创新的潜在工具，展示了AI在自动化研究领域的突破性进展。",
+      "title": "OpenAI改口支持加州加强AI安全法案",
+      "summary_zh": "OpenAI改变立场，公开呼吁加州加强SB 53人工智能安全法案。该公司此前曾反对该法案，如今态度反转，主张更严格的安全框架。这一转变可能影响加州及全美AI监管格局，也反映出前沿AI企业对安全风险的重新评估。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/",
+      "score": 5
+    },
+    {
+      "title": "Anthropic Opus 4.6被曝可轻易绕过安全限制",
+      "summary_zh": "研究发现Anthropic最新模型Opus 4.6存在内容安全漏洞，可通过简单提示词绕过其安全限制，生成色情内容。Anthropic官方明确禁止此类输出，但测试显示防护措施易被攻破，引发对模型安全对齐有效性的质疑。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/",
+      "score": 4
+    },
+    {
+      "title": "DeepMind校友创企发布科研智能体Faraday，超越Anthropic和OpenAI",
+      "summary_zh": "由DeepMind校友创立的英国AI实验室Inherent发布智能体Faraday，宣称其在复现科学论文实验方面超越Anthropic和OpenAI的模型。Faraday旨在帮助研究人员快速验证和复现科研成果，可望加速科学发现进程，展示了专业科研AI智能体的潜力。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
       "score": 4
     },
     {
-      "title": "OpenAI呼吁加州强化AI安全法案SB 53",
-      "summary_zh": "OpenAI一反此前立场，公开呼吁加州加强AI安全法案SB 53。该公司认为更强的监管框架有助于应对前沿AI风险。这一态度转变可能影响美国各州的AI立法进程，显示出AI行业对安全治理态度的演变。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/",
-      "score": 4
-    },
-    {
-      "title": "苹果大幅裁员Siri和Vision Pro团队",
-      "summary_zh": "苹果确认裁员数百人，主要涉及Siri和Vision Pro团队，Vision Pro游戏部门基本关闭，沉浸式内容团队缩编。此举表明苹果正调整AI与AR业务优先级，可能影响Vision Pro后续发展和Siri的AI化进程。",
+      "title": "苹果大幅裁减Siri和Vision Pro团队岗位",
+      "summary_zh": "据报道，苹果正从Siri和Vision Pro团队裁减数百个工作岗位，其中包括关闭Vision Pro游戏团队和削减沉浸式内容团队规模。此举显示苹果正在调整AI战略重心，可能将资源转向更实用的AI功能或未来的AI眼镜产品。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/21/apple-is-reportedly-cutting-hundreds-of-jobs-from-siri-vision-pro-teams/",
       "score": 4
     },
     {
-      "title": "ChatGPT新增短信读取功能，AI助手权限范围再扩大",
-      "summary_zh": "ChatGPT现已能够读取用户短信，这是其向深度个人助理迈进的重要一步。该功能意味着AI可以访问手机中的更多个人数据，以提供更个性化的服务，同时也引发了关于隐私和数据安全的担忧。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1675954",
+      "title": "Meta发布开源多模态智能体模型Muse Glimmer",
+      "summary_zh": "Meta发布开源多模态AI模型Muse Glimmer，主打本地化、智能体特性和多模态能力。该模型可离线运行，支持视觉、语言等多种任务，为开发者提供灵活的本地AI解决方案。Meta此举意在推动开源生态，并挑战闭源模型的主导地位。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/muse-glimmer",
       "score": 4
     },
     {
-      "title": "前沿AI实验室仍未公布失控模型遏制方案",
-      "summary_zh": "一项新研究发现，主要AI实验室几乎没有任何公开的遏制失控模型的方案。随着AI系统不断表现出意外和潜在危险行为，这引发了对其准备不足的担忧，凸显了AI安全治理的重大缺口。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
+      "title": "NVIDIA发布开放权重多语言语音模型Magpie TTS",
+      "summary_zh": "NVIDIA发布Magpie TTS，一个开放权重、多语言的语音合成模型，专门用于构建低延迟语音智能体。它提供完整的部署控制，开发者可在多种语言中创建自然的语音交互体验。该模型有望推动语音AI应用在边缘端和自有基础设施上的普及。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
       "score": 3
     },
     {
-      "title": "AI会计初创公司Rillet融资1亿美元，48小时成为独角兽",
-      "summary_zh": "AI会计初创公司Rillet在董事会上分享增长数据后，引发Iconiq、Sequoia等机构的抢投，48小时内完成1亿美元融资，估值达到独角兽水平。这反映出AI在垂直行业应用中的巨大资本吸引力。",
+      "title": "AI会计创企Rillet 48小时融资1亿美元成独角兽",
+      "summary_zh": "AI会计初创公司Rillet在48小时内以惊人速度完成1亿美元融资，估值达独角兽级别。投资方包括Iconiq和Sequoia等顶级机构。Rillet利用AI自动化企业财务记账流程，其快速增长吸引资本追捧，显示出AI垂直应用领域仍受投资者高度青睐。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/21/how-ai-accounting-startup-rillet-raised-100m-and-became-a-unicorn-in-48-hours/",
       "score": 3
     },
     {
-      "title": "NVIDIA发布开源多语言语音Agent模型Magpie TTS",
-      "summary_zh": "NVIDIA推出Magpie TTS，一个低延迟多语言语音Agent模型，采用开放权重并提供完整部署控制。该模型旨在帮助开发者构建多语言语音助手，同时避免依赖云服务，进一步推动语音AI的自主化和本地化部署。",
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+      "title": "LinkedIn「AI垃圾内容」反馈按钮被点击超百万次",
+      "summary_zh": "LinkedIn推出的“似乎像AI垃圾内容”反馈按钮已被点击超过100万次。该功能允许用户标记疑似AI生成的低质量内容，反映平台上AI生成内容泛滥的现象。这一数据突显了社交媒体在治理AI内容质量方面面临的挑战。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message",
       "score": 3
     },
     {
-      "title": "学者复现2200篇ICML论文，揭示AI可复现性现状",
-      "summary_zh": "一项大规模学术复现项目尝试复现了2200篇ICML论文，最终发布了详细的改进建议。研究揭示了AI论文中普遍存在的可复现性问题，如缺失代码、环境配置复杂等，对提升AI研究的透明度和可信度具有重要参考价值。",
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
-      "score": 3
+      "title": "研究：前沿AI实验室缺乏控制失控模型的应急预案",
+      "summary_zh": "一项新研究发现，领先AI实验室几乎没有公开的“失控模型”应急预案，尽管AI系统已表现出意外和潜在危险行为。这引发了对行业准备程度的担忧。专家呼吁实验室公布更详细的隔离和控制措施，以应对可能出现的模型失控风险。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
+      "score": 4
     }
   ],
   "stories": [
     {
-      "title": "虞喜发现岁差",
-      "dynasty": "东晋",
-      "category": "古代天文",
-      "source": "《晋书·律历志》"
+      "title": "《诗经》里的日食警报：十月之交",
+      "dynasty": "西周",
+      "category": "古代天文地理",
+      "source": "《诗经·小雅·十月之交》"
     }
   ]
 }
