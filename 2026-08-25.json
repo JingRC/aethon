@@ -4,82 +4,82 @@
   "stories_count": 1,
   "ai_news": [
     {
-      "title": "Stability AI获7600万美元新融资",
-      "summary_zh": "Stable Diffusion开发商Stability AI完成7600万美元新增融资，累计融资额达2.32亿美元，资金将用于模型研发与商业化落地，缓解此前财务压力。此次融资显示资本对生成式视觉AI赛道仍有信心，但商业模式可持续性尚待验证。",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/",
-      "score": 5
-    },
-    {
-      "title": "OpenAI自研Jalapeño芯片展现高吞吐推理实力",
-      "summary_zh": "在SemiAnalysis的InferenceX基准测试中，OpenAI自研芯片Jalapeño在每用户Token数和每千瓦吞吐量上均优于当前最先进水平，专为大规模快速推理设计。该芯片有望降低推理成本并减少对英伟达的依赖，但生态与量产挑战依然存在。",
+      "title": "OpenAI Jalapeño芯片基准测试：推理速度与能效全面领先",
+      "summary_zh": "在SemiAnalysis的InferenceX基准测试中，OpenAI自研芯片Jalapeño在每用户token数和每千瓦吞吐量上均超越现有最先进产品。该芯片专为大规模快速推理设计，显示OpenAI在硬件自主化上迈出关键一步，有望降低对英伟达的依赖。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show/",
       "score": 5
     },
     {
-      "title": "IBM发布Granite 4.2 LLM系列",
-      "summary_zh": "IBM通过Hugging Face博客详细介绍Granite 4.2系列大语言模型的构建过程，涵盖数据配方、训练方法与架构设计。该系列针对企业级应用优化，强调透明性和可复现性，为开源模型生态提供新选择，并巩固IBM在生成式AI领域的竞争力。",
-      "source": "Hugging Face - Blog",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "title": "Stability AI获7600万美元新融资",
+      "summary_zh": "Stability AI宣布完成7600万美元新融资，总融资额达2.32亿美元。该公司以Stable Diffusion图像生成模型闻名，在竞争激烈的生成式AI市场中持续获得资本支持，用于推动模型研发和商业化。此次融资也表明投资者仍看好开源图像生成赛道。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/",
       "score": 4
     },
     {
-      "title": "NVIDIA开源多语言语音模型Magpie TTS",
-      "summary_zh": "NVIDIA发布开源Magpie TTS模型，支持多语言低延迟语音Agent构建，开发者可获得开放权重与完全部署控制权。该模型针对实时语音交互优化，有望降低语音AI应用门槛，推动客户服务、游戏等领域语音Agent普及，并加速边缘侧部署。",
-      "source": "Hugging Face - Blog",
-      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
-      "score": 4
-    },
-    {
-      "title": "Claude Cowork上线跨聊天共享记忆功能",
-      "summary_zh": "Anthropic为Claude的Cowork工作模式加入共享记忆功能，用户无需在每次对话中重复项目背景、偏好和上下文。该功能打通聊天与工作空间记忆壁垒，使AI助手在长期项目中更具连贯性，显著提升Agent类产品的实用性。",
+      "title": "Claude Cowork新增跨会话共享记忆",
+      "summary_zh": "Anthropic为Claude推出共享记忆功能，覆盖聊天和Cowork工作区。用户不再需要反复向AI说明项目背景、偏好等信息，AI可以记住之前的对话内容，提升协作效率。这是Anthropic在AI智能体连续性上的重要更新，让Claude更像真正的工作伙伴。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat/",
       "score": 4
     },
     {
-      "title": "Waymo无人驾驶出租车将登陆慕尼黑",
-      "summary_zh": "Waymo宣布将自动驾驶出租车服务拓展至德国慕尼黑，借助当地友好的自动驾驶法规推动商业化部署。这是Waymo进军欧洲市场的重要一步，标志其全球化扩张提速，也为欧洲自动驾驶政策与运营提供试验场。",
+      "title": "Waymo自动驾驶出租车将登陆慕尼黑",
+      "summary_zh": "Waymo宣布将把自动驾驶出租车服务拓展至德国慕尼黑。德国有利的自动驾驶法规使其成为自动驾驶测试和商业化部署的热点地区。这是Waymo继美国市场后首次进入欧洲重要城市，标志着其国际扩张迈出实质性一步。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/25/waymo-robotaxis-are-headed-to-munich/",
       "score": 4
     },
     {
-      "title": "曝Hugging Face评估出售，估值至少130亿美元",
-      "summary_zh": "据披露，AI开源平台Hugging Face正在评估出售方案，交易估值或达至少130亿美元。若成行，将成为AI基础设施领域最大并购之一。Hugging Face拥有庞大模型库与开发者社区，其去向将深刻影响开源AI生态格局。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1676529",
-      "score": 5
-    },
-    {
-      "title": "苹果发布M5 Ultra与M6芯片，号称迄今最强",
-      "summary_zh": "苹果在本次发布中推出M5 Ultra和M6芯片，宣称其为迄今最强芯片，性能大幅提升，并同步更新Mac Mini与Mac Studio。新芯片强化AI工作负载处理能力，巩固苹果在端侧AI计算领域的布局，但产品价格也随之上涨。",
+      "title": "苹果发布史上最强芯片M5 Ultra和M6",
+      "summary_zh": "苹果发布M5 Ultra和M6芯片，号称“史上最强芯片”。新款Mac Mini和Mac Studio同步更新。M6芯片在AI计算能力上有显著提升，专为端侧AI工作负载设计，进一步巩固苹果在AI硬件领域的竞争力。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/25/apple-debuts-its-most-powerful-chip-ever-in-m5-ultra-and-m6/",
       "score": 4
     },
     {
-      "title": "Liquid AI发布LFM2.5-DSpark，推理提速3.2倍",
-      "summary_zh": "Liquid AI发布LFM2.5-DSpark，在保持模型质量的同时实现最高3.2倍推理加速。该技术通过稀疏化与动态计算路径优化，为大规模模型降本部署提供了高效方案，有望加速企业级低延迟AI应用的落地。",
+      "title": "NVIDIA开源Magpie TTS：多语言语音代理低延迟部署",
+      "summary_zh": "NVIDIA发布Magpie TTS，开放权重并支持多语言，允许开发者完全掌控部署，构建低延迟语音代理。该模型面向实时语音交互场景，为开发者提供灵活的本地化部署方案，降低了对云端API的依赖，有助于推动语音AI应用创新。",
       "source": "Hugging Face - Blog",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
       "score": 4
     },
     {
-      "title": "特朗普政府大幅上调H-1B签证费用",
-      "summary_zh": "美国国土安全部宣布对H-1B签证收取超10.3万美元费用，同时国务院计划撤销至多20万庇护者的签证。此举将显著增加科技公司和AI企业雇佣海外人才的成本，可能重塑硅谷的人才引进与移民策略。",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/policy/984723/trump-h1b-fee-asylum-legal-immigration",
+      "title": "2026年夏季开源模型现状报告",
+      "summary_zh": "Hugging Face发布2026年夏季开源模型观察报告，总结过去半年开源模型生态的重要进展，包括社区贡献、模型性能提升和与闭源模型的差距变化。报告指出开源模型在推理效率、多模态能力和Agent场景应用上取得突破，开源与闭源差距进一步缩小。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "score": 3
+    },
+    {
+      "title": "小米发布玄戒AI芯片全家桶，端侧AI性能大幅提升",
+      "summary_zh": "小米发布玄戒系列AI芯片“全家桶”，包括玄戒O3等型号，集成自研AI计算单元，端侧AI性能大幅提升。测试显示其性能超过iPhone，且端侧AI速度极快。此举标志着小米在AI自研芯片道路上的重要里程碑，将推动手机端AI应用体验升级。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1676441",
+      "score": 4
+    },
+    {
+      "title": "IBM发布Granite 4.2语言模型",
+      "summary_zh": "IBM在Hugging Face发布Granite 4.2系列语言模型，详细介绍其架构设计与训练方法。该模型面向企业级生成式AI场景，优化了推理效率和可定制性。Granite系列是IBM开源AI战略的核心，此次更新进一步增强其在企业市场的竞争力。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "score": 3
+    },
+    {
+      "title": "Google AI生成内容污染Google Earth，引发公信力担忧",
+      "summary_zh": "爱范儿报道，Google AI在地球和相册产品中加入的生成式内容导致大量AI虚构图像混入真实地理信息，影响超10亿用户。文章批评Google在AI内容与真实数据隔离方面做得不足，认为这是对产品公信力的不负责，呼吁加强引导与防护。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1676650",
       "score": 4
     }
   ],
   "stories": [
     {
-      "title": "萧何月下追韩信",
-      "dynasty": "西汉",
+      "title": "子产不毁乡校",
+      "dynasty": "春秋",
       "category": "历史故事",
-      "source": "《史记·淮阴侯列传》"
+      "source": "《左传·襄公三十一年》"
     }
   ]
 }
