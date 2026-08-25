@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-25",
+  "ai_news_count": 10,
+  "stories_count": 1,
+  "ai_news": [
+    {
+      "title": "Stability AI获7600万美元新融资",
+      "summary_zh": "Stable Diffusion开发商Stability AI完成7600万美元新增融资，累计融资额达2.32亿美元，资金将用于模型研发与商业化落地，缓解此前财务压力。此次融资显示资本对生成式视觉AI赛道仍有信心，但商业模式可持续性尚待验证。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/",
+      "score": 5
+    },
+    {
+      "title": "OpenAI自研Jalapeño芯片展现高吞吐推理实力",
+      "summary_zh": "在SemiAnalysis的InferenceX基准测试中，OpenAI自研芯片Jalapeño在每用户Token数和每千瓦吞吐量上均优于当前最先进水平，专为大规模快速推理设计。该芯片有望降低推理成本并减少对英伟达的依赖，但生态与量产挑战依然存在。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show/",
+      "score": 5
+    },
+    {
+      "title": "IBM发布Granite 4.2 LLM系列",
+      "summary_zh": "IBM通过Hugging Face博客详细介绍Granite 4.2系列大语言模型的构建过程，涵盖数据配方、训练方法与架构设计。该系列针对企业级应用优化，强调透明性和可复现性，为开源模型生态提供新选择，并巩固IBM在生成式AI领域的竞争力。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "score": 4
+    },
+    {
+      "title": "NVIDIA开源多语言语音模型Magpie TTS",
+      "summary_zh": "NVIDIA发布开源Magpie TTS模型，支持多语言低延迟语音Agent构建，开发者可获得开放权重与完全部署控制权。该模型针对实时语音交互优化，有望降低语音AI应用门槛，推动客户服务、游戏等领域语音Agent普及，并加速边缘侧部署。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+      "score": 4
+    },
+    {
+      "title": "Claude Cowork上线跨聊天共享记忆功能",
+      "summary_zh": "Anthropic为Claude的Cowork工作模式加入共享记忆功能，用户无需在每次对话中重复项目背景、偏好和上下文。该功能打通聊天与工作空间记忆壁垒，使AI助手在长期项目中更具连贯性，显著提升Agent类产品的实用性。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat/",
+      "score": 4
+    },
+    {
+      "title": "Waymo无人驾驶出租车将登陆慕尼黑",
+      "summary_zh": "Waymo宣布将自动驾驶出租车服务拓展至德国慕尼黑，借助当地友好的自动驾驶法规推动商业化部署。这是Waymo进军欧洲市场的重要一步，标志其全球化扩张提速，也为欧洲自动驾驶政策与运营提供试验场。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/25/waymo-robotaxis-are-headed-to-munich/",
+      "score": 4
+    },
+    {
+      "title": "曝Hugging Face评估出售，估值至少130亿美元",
+      "summary_zh": "据披露，AI开源平台Hugging Face正在评估出售方案，交易估值或达至少130亿美元。若成行，将成为AI基础设施领域最大并购之一。Hugging Face拥有庞大模型库与开发者社区，其去向将深刻影响开源AI生态格局。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1676529",
+      "score": 5
+    },
+    {
+      "title": "苹果发布M5 Ultra与M6芯片，号称迄今最强",
+      "summary_zh": "苹果在本次发布中推出M5 Ultra和M6芯片，宣称其为迄今最强芯片，性能大幅提升，并同步更新Mac Mini与Mac Studio。新芯片强化AI工作负载处理能力，巩固苹果在端侧AI计算领域的布局，但产品价格也随之上涨。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/25/apple-debuts-its-most-powerful-chip-ever-in-m5-ultra-and-m6/",
+      "score": 4
+    },
+    {
+      "title": "Liquid AI发布LFM2.5-DSpark，推理提速3.2倍",
+      "summary_zh": "Liquid AI发布LFM2.5-DSpark，在保持模型质量的同时实现最高3.2倍推理加速。该技术通过稀疏化与动态计算路径优化，为大规模模型降本部署提供了高效方案，有望加速企业级低延迟AI应用的落地。",
+      "source": "Hugging Face - Blog",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "score": 4
+    },
+    {
+      "title": "特朗普政府大幅上调H-1B签证费用",
+      "summary_zh": "美国国土安全部宣布对H-1B签证收取超10.3万美元费用，同时国务院计划撤销至多20万庇护者的签证。此举将显著增加科技公司和AI企业雇佣海外人才的成本，可能重塑硅谷的人才引进与移民策略。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/policy/984723/trump-h1b-fee-asylum-legal-immigration",
+      "score": 4
+    }
+  ],
+  "stories": [
+    {
+      "title": "萧何月下追韩信",
+      "dynasty": "西汉",
+      "category": "历史故事",
+      "source": "《史记·淮阴侯列传》"
+    }
+  ]
+}
