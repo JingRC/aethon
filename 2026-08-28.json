@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-28",
+  "ai_news_count": 10,
+  "stories_count": 1,
+  "ai_news": [
+    {
+      "title": "法院裁定特朗普政府将Anthropic列入黑名单违宪",
+      "summary_zh": "加利福尼亚州法院裁定，五角大楼今年初将Anthropic列入供应链风险黑名单的行为违宪，标志着这家AI实验室在与特朗普政府的长期法律战中赢得关键胜利。此前该决定限制了Anthropic与美国政府的合作，法院判决可能影响未来联邦机构对AI公司的监管边界。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling",
+      "score": 5
+    },
+    {
+      "title": "OpenAI、Anthropic、Google等100家公司联合呼吁防御流氓AI",
+      "summary_zh": "OpenAI、Anthropic、Google等逾100家科技与AI企业联合发布倡议，警告新一代AI网络威胁的紧迫性，并推广新的安全解决方案。该行动旨在促使行业与政府合作，建立防御机制，防止AI系统被恶意利用，标志着AI安全从单打独斗走向广泛联盟。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/",
+      "score": 5
+    },
+    {
+      "title": "Anthropic与Nscale签署450亿美元算力合同",
+      "summary_zh": "Anthropic与云服务商Nscale达成一项价值450亿美元的算力合作协议，这是目前公开的AI领域最大算力合同之一。该交易将保障Anthropic下一代模型的大规模训练与推理需求，也反映顶尖AI实验室对算力资源的争夺已进入千亿级投入阶段。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1677210?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 5
+    },
+    {
+      "title": "OpenAI自研芯片仅用九个月",
+      "summary_zh": "OpenAI从零开始设计并流片了自己的AI芯片，整个过程仅耗时九个月，被认为是罕见的“闪电战”工程。此举旨在减少对英伟达的依赖并优化推理成本，标志着大模型公司向上游硬件整合迈出关键一步，可能重塑AI芯片竞争格局。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1676824?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
+    },
+    {
+      "title": "MiniMax企业收入暴涨700%，转向“卖铲子”",
+      "summary_zh": "MiniMax被曝“违背祖训”大力拓展B端业务，企业收入同比暴涨700%，年经常性收入达8亿美元。该公司正通过Agent基建与效率工具向企业客户输出AI能力，从模型提供商转向“卖铲人”，成为国内AI商业化的一匹黑马。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1676874?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "score": 4
+    },
+    {
+      "title": "IBM发布Granite 4.2开源大模型",
+      "summary_zh": "IBM通过Hugging Face发布了Granite 4.2系列LLM，详细介绍了模型架构、训练方法与性能优化。该系列面向企业级场景，强调效率与可控性，延续IBM在开源模型方面的投入，为开源生态注入新选择。",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "score": 4
+    },
+    {
+      "title": "Hugging Face发布2026夏季开源模型观察报告",
+      "summary_zh": "Hugging Face发布《2026夏季开源模型状况》，总结了过去几个月开源模型的演进趋势、性能突破与社区采用情况。报告指出开源模型与闭源模型的差距持续缩小，并预告了未来方向的关注点，是观察开源AI生态的重要参考。",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "score": 3
+    },
+    {
+      "title": "研究者重现ICML 2026收录的2200篇论文",
+      "summary_zh": "一个大规模复现项目尝试重现ICML 2026全部2200篇论文的实验结果，并公开了经验与教训。该项目揭示了论文可复现性的现状，包括代码可用性、环境依赖和结果差异等问题，为提升AI研究透明度提供了宝贵数据。",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
+      "score": 3
+    },
+    {
+      "title": "Meta 180亿美元和解案允许保留儿童数据训练年龄检测模型",
+      "summary_zh": "Meta与29个州达成的180亿美元和解中，一项条款允许其保留13岁以下儿童的特定数据，用于训练和测试年龄检测模型。该条款被批评为以隐私换监管豁免，凸显大型平台在未成年人数据使用上的法律灰色地带。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/27/buried-in-metas-18b-settlement-is-a-legal-pass-on-kids-data/",
+      "score": 4
+    },
+    {
+      "title": "Thinking Machines联创Barret Zoph转投Google",
+      "summary_zh": "在短暂任职OpenAI后，Thinking Machines联合创始人兼前CTO Barret Zoph现已加入Google。他曾在OpenAI短暂停留，此次加盟或表明Google正积极吸纳顶尖AI人才，以加强基础模型研究。该人事变动引发业界关注。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/27/barret-zoph-the-thinking-machines-co-founder-who-defected-to-openai-is-now-at-google/",
+      "score": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "请君入瓮",
+      "dynasty": "唐",
+      "category": "成语典故",
+      "source": "《资治通鉴·唐纪》"
+    }
+  ]
+}
