@@ -4,82 +4,82 @@
   "stories_count": 1,
   "ai_news": [
     {
-      "title": "法院裁定特朗普政府将Anthropic列入黑名单违宪",
-      "summary_zh": "加利福尼亚州法院裁定，五角大楼今年初将Anthropic列入供应链风险黑名单的行为违宪，标志着这家AI实验室在与特朗普政府的长期法律战中赢得关键胜利。此前该决定限制了Anthropic与美国政府的合作，法院判决可能影响未来联邦机构对AI公司的监管边界。",
+      "title": "法院裁定五角大楼将Anthropic列入黑名单违宪",
+      "summary_zh": "美国法院周四裁定，五角大楼今年早些时候将AI实验室Anthropic列入供应链黑名单的行为违宪。Anthropic于三月提起诉讼，指控特朗普政府滥用职权，这场数月的拉锯战以Anthropic获胜告终，对AI行业的政府采购与安全审查具有重要意义。",
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling",
       "score": 5
     },
     {
-      "title": "OpenAI、Anthropic、Google等100家公司联合呼吁防御流氓AI",
-      "summary_zh": "OpenAI、Anthropic、Google等逾100家科技与AI企业联合发布倡议，警告新一代AI网络威胁的紧迫性，并推广新的安全解决方案。该行动旨在促使行业与政府合作，建立防御机制，防止AI系统被恶意利用，标志着AI安全从单打独斗走向广泛联盟。",
+      "title": "OpenAI九个月自研AI芯片，大模型公司开始造芯",
+      "summary_zh": "在大模型竞争白热化的背景下，OpenAI开始自主研发AI芯片，整个流程仅用九个月完成。这一战略举措旨在降低对Nvidia的依赖，优化推理成本与算力供给，揭示头部大模型公司正将造芯视为核心竞争力的一部分，可能重塑AI芯片市场格局。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1676824",
+      "score": 5
+    },
+    {
+      "title": "100多家AI公司联合呼吁抵御“流氓AI”威胁",
+      "summary_zh": "OpenAI、Anthropic、Google等全球100多家科技公司与AI初创企业联合发布声明，批评当前网络安全状况，并提出一套新解决方案以抵御新一代基于AI的网络威胁。此举标志着AI行业在安全治理上罕见的集体行动，凸显了前沿AI模型被恶意利用的紧迫风险。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/",
-      "score": 5
-    },
-    {
-      "title": "Anthropic与Nscale签署450亿美元算力合同",
-      "summary_zh": "Anthropic与云服务商Nscale达成一项价值450亿美元的算力合作协议，这是目前公开的AI领域最大算力合同之一。该交易将保障Anthropic下一代模型的大规模训练与推理需求，也反映顶尖AI实验室对算力资源的争夺已进入千亿级投入阶段。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1677210?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 5
-    },
-    {
-      "title": "OpenAI自研芯片仅用九个月",
-      "summary_zh": "OpenAI从零开始设计并流片了自己的AI芯片，整个过程仅耗时九个月，被认为是罕见的“闪电战”工程。此举旨在减少对英伟达的依赖并优化推理成本，标志着大模型公司向上游硬件整合迈出关键一步，可能重塑AI芯片竞争格局。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1676824?utm_source=rss&utm_medium=rss&utm_campaign=",
       "score": 4
     },
     {
-      "title": "MiniMax企业收入暴涨700%，转向“卖铲子”",
-      "summary_zh": "MiniMax被曝“违背祖训”大力拓展B端业务，企业收入同比暴涨700%，年经常性收入达8亿美元。该公司正通过Agent基建与效率工具向企业客户输出AI能力，从模型提供商转向“卖铲人”，成为国内AI商业化的一匹黑马。",
-      "source": "爱范儿",
-      "url": "https://www.ifanr.com/1676874?utm_source=rss&utm_medium=rss&utm_campaign=",
-      "score": 4
-    },
-    {
-      "title": "IBM发布Granite 4.2开源大模型",
-      "summary_zh": "IBM通过Hugging Face发布了Granite 4.2系列LLM，详细介绍了模型架构、训练方法与性能优化。该系列面向企业级场景，强调效率与可控性，延续IBM在开源模型方面的投入，为开源生态注入新选择。",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-      "score": 4
-    },
-    {
-      "title": "Hugging Face发布2026夏季开源模型观察报告",
-      "summary_zh": "Hugging Face发布《2026夏季开源模型状况》，总结了过去几个月开源模型的演进趋势、性能突破与社区采用情况。报告指出开源模型与闭源模型的差距持续缩小，并预告了未来方向的关注点，是观察开源AI生态的重要参考。",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
-      "score": 3
-    },
-    {
-      "title": "研究者重现ICML 2026收录的2200篇论文",
-      "summary_zh": "一个大规模复现项目尝试重现ICML 2026全部2200篇论文的实验结果，并公开了经验与教训。该项目揭示了论文可复现性的现状，包括代码可用性、环境依赖和结果差异等问题，为提升AI研究透明度提供了宝贵数据。",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
-      "score": 3
-    },
-    {
-      "title": "Meta 180亿美元和解案允许保留儿童数据训练年龄检测模型",
-      "summary_zh": "Meta与29个州达成的180亿美元和解中，一项条款允许其保留13岁以下儿童的特定数据，用于训练和测试年龄检测模型。该条款被批评为以隐私换监管豁免，凸显大型平台在未成年人数据使用上的法律灰色地带。",
+      "title": "Meta 180亿美元和解被指给儿童数据留“合法后门”",
+      "summary_zh": "Meta与美国29个州达成的180亿美元和解协议中，包含允许其保留13岁以下儿童部分数据以训练和测试年龄检测模型的条款。批评者指出，这实质上为Meta提供了法律豁免，使儿童数据在特定目的下可被继续处理，引发隐私保护与商业利益的重大争议。",
       "source": "TechCrunch",
       "url": "https://techcrunch.com/2026/08/27/buried-in-metas-18b-settlement-is-a-legal-pass-on-kids-data/",
       "score": 4
     },
     {
-      "title": "Thinking Machines联创Barret Zoph转投Google",
-      "summary_zh": "在短暂任职OpenAI后，Thinking Machines联合创始人兼前CTO Barret Zoph现已加入Google。他曾在OpenAI短暂停留，此次加盟或表明Google正积极吸纳顶尖AI人才，以加强基础模型研究。该人事变动引发业界关注。",
+      "title": "MiniMax企业收入暴涨700%，悄然转型Agent基建",
+      "summary_zh": "中国AI公司MiniMax企业业务收入同比增长700%，年化收入达到8亿美元。根据报道，MiniMax将重心转向Agent基础设施与效率工具，从单纯的大模型提供商转型为基建型选手，体现出AI商业化路径的多元化趋势。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1676874",
+      "score": 4
+    },
+    {
+      "title": "Google AI Mode入局旅行代理，可追踪票价并订酒店",
+      "summary_zh": "Google的AI Mode新增航班价格追踪与酒店预订功能，标志其从信息搜索向AI旅行代理进化。用户可直接在AI Mode中完成部分行程规划与预订流程，显示Google正将生成式AI深度整合进高价值商业场景，与现有在线旅游平台展开直接竞争。",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/08/27/barret-zoph-the-thinking-machines-co-founder-who-defected-to-openai-is-now-at-google/",
+      "url": "https://techcrunch.com/2026/08/27/googles-ai-mode-can-now-track-flight-prices-help-book-hotels-and-more/",
+      "score": 4
+    },
+    {
+      "title": "Hugging Face发布399美元开源机器人Microduck",
+      "summary_zh": "Hugging Face推出开源机器人Microduck，售价399美元，CEO Clem Delangue称其为可用强化学习教新把戏的开源机器人。该产品将机器人硬件与社区驱动的AI训练结合，降低具身智能的研究门槛，有望推动开源机器人在教育和个人场景中的普及。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/",
+      "score": 3
+    },
+    {
+      "title": "黄仁勋再称Nvidia实现AGI，随即自嘲“无意义”",
+      "summary_zh": "在Nvidia财报电话会议上，CEO黄仁勋再次宣称公司实现了AGI，但又马上表示这一里程碑没有意义。这一矛盾的表述反映业界对AGI定义的分歧，也暗示Nvidia作为算力提供商更关注实际商业应用而非概念炒作，引发对AGI标准的热议。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/985597/jensen-huang-says-nvidia-achieved-senseless-agi",
+      "score": 3
+    },
+    {
+      "title": "Anthropic推出官方Claude Code插件目录",
+      "summary_zh": "Anthropic在GitHub上发布了官方管理的Claude Code插件目录，为开发者提供经过验证的高质量插件资源。此举旨在系统化扩展Claude Code的功能生态，帮助企业用户和开发者更安全、高效地定制AI编程助手，是Anthropic在开发者工具生态建设上的重要一步。",
+      "source": "GitHub Trending",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "score": 3
+    },
+    {
+      "title": "小鹏新版VLA 9月实装，可预判未来6秒路况",
+      "summary_zh": "小鹏汽车宣布其新版VLA（视觉语言动作）模型将于9月实装，能记住过去30秒的驾驶场景，并预判未来6秒的路况变化。这一技术使车辆开始在时间维度上思考驾驶，标志着端到端自动驾驶在中国市场的商业化落地又进一步。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1677118",
       "score": 3
     }
   ],
   "stories": [
     {
-      "title": "请君入瓮",
-      "dynasty": "唐",
+      "title": "一鸣惊人",
+      "dynasty": "春秋",
       "category": "成语典故",
-      "source": "《资治通鉴·唐纪》"
+      "source": "《韩非子·喻老》《史记·楚世家》"
     }
   ]
 }
