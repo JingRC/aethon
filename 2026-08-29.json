@@ -1,0 +1,78 @@
+{
+  "date": "2026-08-29",
+  "ai_news_count": 10,
+  "stories_count": 0,
+  "ai_news": [
+    {
+      "title": "Anthropic研究员展示自我改进AI新突破",
+      "summary_zh": "Anthropic研究员展示了自我改进AI系统的初步成果：在10个针对特定不当行为的基准测试中，自动化系统均能提升性能而不降低整体能力。该研究为AI自我改进提供了实证基础，但也引发了对AI安全与失控风险的讨论。相关论文已引发学界广泛关注。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
+      "score": 5
+    },
+    {
+      "title": "法院裁定特朗普政府非法将Anthropic列入黑名单",
+      "summary_zh": "美国联邦法官裁定，五角大楼今年早些时候将Anthropic列入供应链风险黑名单的行为违宪，这是Anthropic在与特朗普政府数月拉锯战中的首次胜诉。Anthropic于3月在加州提起诉讼，指控政府缺乏正当程序。该裁决可能为其他AI公司应对行政打压树立先例。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling",
+      "score": 5
+    },
+    {
+      "title": "Neocloud Lambda获10亿美元债务融资购买AI芯片",
+      "summary_zh": "GPU云服务商Lambda通过私募债务融资10亿美元，用于购买英伟达AI芯片并租赁给微软。这是继一系列贷款后的最新一笔，凸显AI军备竞赛的高昂成本。Lambda等Neocloud厂商正通过杠杆融资扩大算力供给，以满足大模型训练的旺盛需求。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
+      "score": 4
+    },
+    {
+      "title": "a16z设立11亿美元'机器时代'基金投资AI硬件",
+      "summary_zh": "硅谷顶级风投Andreessen Horowitz宣布成立11亿美元的'机器时代'基金，专注于加速AI的物理基础设施建设。该基金将投资数据中心、芯片、能源和机器人等硬件领域，标志着这家以软件投资闻名的机构向AI底层硬件大规模扩张。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/28/a16z-creates-a-1-1b-machine-age-fund-to-accelerate-the-physical-buildout-of-ai/",
+      "score": 4
+    },
+    {
+      "title": "开源权重AI公司成为硅谷最热收购目标",
+      "summary_zh": "大量资本正在涌入'免费赠送模型'的生意。开源权重AI公司（如Mistral、DeepSeek等）因技术实力和人才储备而备受巨头青睐，成为收购热点。这一趋势反映出AI行业竞争格局的变化：通过开源吸引开发者，再通过企业服务变现的模式正在被验证。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
+      "score": 4
+    },
+    {
+      "title": "Google进一步将搜索结果埋入AI模式之下",
+      "summary_zh": "Google正在部分搜索中自动展开搜索结果顶部的AI摘要，将传统的链接列表推得更靠下。据Search Engine Roundtable报道，这一变化在生效时会大幅改变搜索结果页布局，引发出版商和SEO从业者的担忧。AI模式正在逐步主导Google搜索体验。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/986364/google-search-ai-overviews-auto-expand",
+      "score": 4
+    },
+    {
+      "title": "OpenAI只用九个月就设计出自己的AI芯片",
+      "summary_zh": "据报道，OpenAI在九个月内完成了首款自研AI芯片的设计，由博通等合作伙伴代工。此举旨在减少对英伟达的依赖，并针对自身大模型工作负载进行优化。造芯成为大模型公司的核心竞争力，OpenAI正加速向芯片产业链上游布局。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1676824",
+      "score": 5
+    },
+    {
+      "title": "MiniMax企业收入暴涨700%，悄悄转型'卖铲子'",
+      "summary_zh": "MiniMax企业业务年化收入达8亿美元，同比增长700%，从消费级应用转向AI Infra和Agent生态。这家曾以C端产品闻名的中国AI公司，现在通过提供Agent开发平台和算力服务赚取收入，'卖铲子'模式初见成效，也印证了AI商业化路径的转变。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1676874",
+      "score": 4
+    },
+    {
+      "title": "Hugging Face发布2026夏季开源模型格局观察",
+      "summary_zh": "Hugging Face发布夏季开源模型报告，分析了开源社区与闭源模型的竞争态势。报告指出，开源模型在性能上继续追赶，但在训练成本、推理效率和生态支持上仍存差距。同时，模型发布的'开源'定义日益模糊，引发了关于真正开放性的讨论。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "score": 3
+    },
+    {
+      "title": "小鹏新版VLA 9月实装：记住过去30秒，预判未来6秒",
+      "summary_zh": "小鹏汽车宣布其新版视觉语言动作模型（VLA）将于9月实装，具备短时记忆与未来预测能力：可记住过去30秒的驾驶场景，并预判未来6秒的交通动态。这一'时间感知'能力有望显著提升自动驾驶在复杂路况下的决策可靠性。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1677118",
+      "score": 3
+    }
+  ],
+  "stories": []
+}
