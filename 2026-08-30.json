@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-30",
+  "ai_news_count": 10,
+  "stories_count": 1,
+  "ai_news": [
+    {
+      "title": "索尼音乐与华纳起诉Anthropic侵犯版权",
+      "summary_zh": "索尼音乐和华纳查普尔在加州北区法院起诉Anthropic，指控其“大胆的”知识产权盗窃，涉及数万首歌曲，要求每件作品最高15万美元赔偿，并强调AI训练中未授权使用音乐。此案可能为生成式AI版权责任设定先例。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+      "score": 5
+    },
+    {
+      "title": "Nvidia的AI优势正超越GPU",
+      "summary_zh": "Nvidia新一代数据中心系统不再单纯依赖增加处理器核心，而是通过更智能的流量控制提升效率，例如NVLink和网络交换技术。这一转变意味着Nvidia的护城河扩展至系统级互连，而非仅靠GPU算力，对AI基础设施格局产生深远影响。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
+      "score": 5
+    },
+    {
+      "title": "Neocloud Lambda获10亿美元债务融资采购AI芯片",
+      "summary_zh": "新型云厂商Lambda通过私人债务融资10亿美元，用于购买Nvidia AI芯片并租给微软。这显示AI基础设施的高昂成本正推动企业转向债务融资，也反映出算力需求的持续暴增。Lambda在融资市场活跃，凸显neocloud赛道竞争白热化。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
+      "score": 4
+    },
+    {
+      "title": "Anthropic研究员展示自我改进AI新成果",
+      "summary_zh": "Anthropic一名研究员演示了自动化系统在10个特定错误行为的基准上全部提升性能，且不牺牲整体表现。这为自我改进AI提供了实证，但也引发对AI自我演化失控风险的担忧。该研究或加速AI自主优化能力的发展。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
+      "score": 5
+    },
+    {
+      "title": "开源权重AI公司成硅谷热门收购标的",
+      "summary_zh": "大量资本正在涌入“免费送模型”的商业领域，开源权重AI公司成为科技巨头和风投的收购热点。这一趋势表明，AI竞争正从模型本身转向开源生态、社区和分发渠道，重塑行业并购格局。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
+      "score": 4
+    },
+    {
+      "title": "Google进一步将搜索结果埋在AI模式之下",
+      "summary_zh": "Google正在自动展开部分搜索的AI摘要，使传统链接列表大幅下移，改变用户获取信息的方式。这一调整强化AI在搜索中的主导地位，但也引发对内容流量和搜索引擎优化的担忧。该变化对内容创作者和SEO行业影响深远。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/986364/google-search-ai-overviews-auto-expand",
+      "score": 4
+    },
+    {
+      "title": "小鹏发布新版VLA，让汽车拥有时间感知能力",
+      "summary_zh": "小鹏新版VLA将于9月实装，能记住过去30秒、预判未来6秒，实现在“时间里”开车。该技术赋予自动驾驶系统对动态场景的时序理解能力，有望显著提升复杂路况下的决策安全和拟人化程度，是自动驾驶大模型的重要进展。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1677118",
+      "score": 5
+    },
+    {
+      "title": "OpenAI用九个月自研芯片，AI开始给自己造芯",
+      "summary_zh": "报道披露OpenAI从零设计AI芯片仅用九个月，表明大模型公司正将硬件自研视为核心竞争力。此举可能降低对Nvidia的依赖，并推动AI芯片架构针对模型训练进行定制优化，对算力供应链产生深远影响。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1676824",
+      "score": 5
+    },
+    {
+      "title": "MiniMax转向企业服务，收入暴涨700%",
+      "summary_zh": "MiniMax放弃纯C端路线，转向企业服务与Agent基础设施，年化收入达8亿美元，同比增长700%。这一战略转变表明AI应用公司需要寻找更可持续的商业模式，也反映出企业级AI市场的巨大潜力。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1676874",
+      "score": 4
+    },
+    {
+      "title": "2026年夏季开源模型生态观察报告发布",
+      "summary_zh": "Hugging Face发布2026年夏季开源模型现状报告，分析开放模型与封闭模型的竞争格局、性能差距和社区趋势。报告显示开源模型能力快速追赶，生态日益丰富，为行业决策提供重要参考。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "score": 4
+    }
+  ],
+  "stories": [
+    {
+      "title": "金龟换酒：贺知章识谪仙人",
+      "dynasty": "唐",
+      "category": "唐诗背后的故事",
+      "source": "《本事诗·高逸》"
+    }
+  ]
+}
