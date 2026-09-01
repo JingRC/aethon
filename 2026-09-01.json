@@ -1,0 +1,78 @@
+{
+  "date": "2026-09-01",
+  "ai_news_count": 10,
+  "stories_count": 0,
+  "ai_news": [
+    {
+      "title": "IBM发布Granite 4.2开源大模型",
+      "summary_zh": "IBM通过Hugging Face发布Granite 4.2系列开源大语言模型，并详解其架构设计、训练方法与优化策略。该系列旨在提供企业级性能和更强的推理能力，进一步丰富开源模型生态，为企业AI应用提供高效、可定制的基础模型。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "score": 5
+    },
+    {
+      "title": "五角大楼引入ChatGPT与Grok定制版AI工具",
+      "summary_zh": "美国国防部将OpenAI的ChatGPT与SpaceXAI的Grok的定制版本接入其中央AI门户，与谷歌Gemini并列。此举标志着军事部门对前沿商用AI工具的整合进入新阶段，同时引发关于AI在国防应用中的伦理与安全讨论。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/",
+      "score": 5
+    },
+    {
+      "title": "苹果指控前员工向OpenAI窃取商业数据",
+      "summary_zh": "苹果公布证据，指控一名前员工在得知被调查后销毁数据盗窃证据，涉嫌向OpenAI泄露公司机密。该案件凸显科技巨头间围绕AI人才与知识产权的激烈竞争，可能对OpenAI的招聘行为带来法律与声誉压力。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/",
+      "score": 4
+    },
+    {
+      "title": "Anthropic与Nscale签署450亿美元算力协议",
+      "summary_zh": "AI公司Anthropic与算力供应商Nscale签订价值450亿美元的大规模算力合同，以确保大模型训练所需的超算资源。这笔巨额交易反映前沿AI对算力的饥渴，也显示资本正围绕AI基础设施展开激烈争夺。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1677210",
+      "score": 5
+    },
+    {
+      "title": "2026夏开源模型生态观察报告发布",
+      "summary_zh": "Hugging Face发布《2026年夏季开源模型生态观察》，梳理过去一季开源模型的进展、性能提升与社区趋势。报告指出开源模型与闭源模型的差距持续缩小，并分析了多模态与小型化模型的兴起，对于把握AI开源生态方向具有参考价值。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "score": 4
+    },
+    {
+      "title": "量化感知修复：4-bit模型性能反超全精度原版",
+      "summary_zh": "一项名为“量化感知修复”的新技术在Hugging Face发布，声称通过压缩得到的4-bit模型在性能上超越了其全精度原版。该方法有望大幅降低大模型部署的显存和算力需求，同时提升效率，对边缘设备与云端推理均具重要意义。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+      "score": 4
+    },
+    {
+      "title": "Instagram限制未披露AI账号的传播范围",
+      "summary_zh": "随着用户对AI网红的不满加剧，Instagram开始限制未明确标注为AI的账号的触达范围。新措施要求AI账号必须披露身份，否则将被限制推荐与曝光。这是社交媒体平台在AI内容透明度监管上迈出的重要一步。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
+      "score": 4
+    },
+    {
+      "title": "Debian投票通过允许使用AI辅助开发",
+      "summary_zh": "Debian项目投票决定不禁止Linux发行版开发中使用AI工具，认可负责任使用AI可提升开发者生产力，并强调生成式AI不豁免现有许可证与质量要求。这一决定为开源社区如何在AI时代规范代码贡献提供了参考。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
+      "score": 3
+    },
+    {
+      "title": "ICML 2026复现计划：2200篇论文的教训",
+      "summary_zh": "Hugging Face团队分享了对ICML 2026年2200篇论文进行复现实验的经验，揭示该领域普遍存在的可复现性问题，包括缺少代码、环境依赖和评估不清。这项大规模研究为改进AI研究和开源社区规范提供了实证依据。",
+      "source": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
+      "score": 4
+    },
+    {
+      "title": "小鹏VLA大模型9月实装，实现时间维度驾驶",
+      "summary_zh": "小鹏汽车宣布新版VLA（视觉-语言-动作）大模型将于9月实装，能记忆过去30秒环境并预判未来6秒，开启“时间维度”驾驶。这标志着自动驾驶AI从感知走向时空理解，是端到端智驾的重要演进。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1677118",
+      "score": 4
+    }
+  ],
+  "stories": []
+}
