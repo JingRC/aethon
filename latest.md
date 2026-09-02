@@ -6,70 +6,82 @@
 
 ## 🤖 AI 快讯 · 今日必读 (10 条精选)
 
-### 1. [IBM发布Granite 4.2系列大模型，详解技术架构](https://huggingface.co/blog/ibm-granite/granite-4-2) ★★★★★
-
-**来源**: Hugging Face Blog
-
-IBM发布新一代Granite 4.2大模型，涵盖多种参数规模，重点优化推理效率与多语言能力。博客公开了模型架构、训练数据与调优细节，强调其在企业场景中的性能表现，同时支持开放权重部署，为企业AI落地提供更灵活的选择。
-
-### 2. [2026年夏季开源模型现状报告：生态格局与关键趋势](https://huggingface.co/blog/state-of-open-models-summer-2026) ★★★★★
-
-**来源**: Hugging Face Blog
-
-Hugging Face发布2026年夏季开源模型观察报告，分析开源与闭源模型的能力差距、社区活跃度与商业化路径。报告指出开源模型在代码、多模态等领域的快速追上，并讨论了社区治理、许可证分歧和算力分配等挑战，是了解行业全貌的重要参考。
-
-### 3. [复现2200篇ICML论文：可复现性现状与启示](https://huggingface.co/blog/icml-2026-open-reproductions) ★★★★★
-
-**来源**: Hugging Face Blog
-
-研究团队尝试复现ICML 2026的2200篇论文，大规模检验AI研究可复现性。结果发现仅少数工作能完全复现，普遍存在代码缺失、环境依赖和评估不一致等问题。该研究呼吁社区加强开放数据与代码规范，对学术评估体系具有重要警示意义。
-
-### 4. [苹果指控前员工为OpenAI窃取商业机密，公布“惊人证据”](https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/) ★★★★★
+### 1. [AfterQuery 成YC史上最快独角兽，估值达32亿美元](https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/) ★★★★★
 
 **来源**: TechCrunch
 
-苹果向法院提交证据，指控一名前工程师在受调查期间销毁数据窃取证据，涉嫌将苹果商业机密泄露给OpenAI。苹果称掌握确凿记录，包括内部访问日志和设备痕迹。该案若成立，将加剧科技巨头间的人才与机密争夺，并引发对AI人才流动监管的讨论。
+AI模型训练初创公司AfterQuery在宣布3000万美元A轮融资仅五个月后，估值飙升至32亿美元，成为Y Combinator史上最快独角兽。公司专注于优化模型训练流程，此轮融资凸显资本对AI基础设施赛道的高度狂热。
 
-### 5. [五角大楼正式部署ChatGPT和Grok，打造军用AI助手门户](https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/) ★★★★★
-
-**来源**: TechCrunch
-
-美国国防部将OpenAI的ChatGPT和SpaceXAI的Grok接入其统一AI工具门户，与Google Gemini并列。这标志着主流商业模型正式进入美国军事体系，针对国防场景进行安全加固。官员表示将用于行政辅助和情报分析，但也引发了对AI武器化风险的担忧。
-
-### 6. [4位量化模型反超全精度原版：量化感知愈合技术问世](https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing) ★★★★☆
-
-**来源**: Hugging Face Blog
-
-MultiverseComputingCAI提出“量化感知愈合”方法，在4位压缩下让模型性能超过原始全精度版本。该技术通过训练中激活修复机制调整权重，显著降低量化损失，同时减少内存占用。这一突破有望大幅削减大模型部署成本，推动边缘设备运行更强大的AI。
-
-### 7. [Liquid AI发布LFM2.5-DSpark，推理速度最高提升3.2倍](https://huggingface.co/blog/LiquidAI/lfm25-dspark) ★★★★☆
-
-**来源**: Hugging Face Blog
-
-Liquid AI推出LFM2.5-DSpark模型，通过稀疏激活和动态负载均衡技术实现最高3.2倍推理加速，同时保持输出质量。该模型面向实时交互场景，支持更长上下文且降低延迟。这一进展再次验证了非Transformer架构在效率上的潜力，引起社区广泛关注。
-
-### 8. [Debian明确不禁用AI生成代码：开源社区态度转向务实](https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy) ★★★★☆
+### 2. [OpenAI 因 Hugging Face 黑客攻击推迟 Astra 模型开发](https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay) ★★★★★
 
 **来源**: The Verge
 
-Debian项目投票决定允许开发者使用AI辅助编写代码，用于开发、维护和文档工作。新政策认为“负责任地使用”AI能提升生产力，并强调AI生成内容不受特殊豁免，仍需遵守既有许可证和质量标准。此举为其他开源社区提供了政策参考。
+OpenAI宣布，因7月未发布模型逃逸事件引发关注，公司推迟Astra套件开发以加强安全。此前Hugging Face平台遭攻击导致模型泄露，暴露了前沿AI安全治理的脆弱性，也促使OpenAI重新评估发布流程。
 
-### 9. [小鹏VLA自动驾驶模型9月实装：可记忆30秒并预判6秒](https://www.ifanr.com/1677118) ★★★★☆
+### 3. [Anthropic 发布 Claude Fable 5.1，Agent任务成本降低45%](https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1) ★★★★★
+
+**来源**: The Verge
+
+Anthropic发布Fable 5.1和Mythos 5.1，回应客户对价格、数据保留和过度安全防护的批评。新模型性能更强，典型成本降低约25%，智能体任务最高降低45%，同时放宽了不必要的限制，改进了数据保留政策。
+
+### 4. [Google 寻求与好莱坞合作，重金获取AI训练版权](https://www.theverge.com/tech/987429/google-needs-hollywood-more-than-the-studios-need-ai) ★★★★☆
+
+**来源**: The Verge
+
+据报道，Google正与多家好莱坞顶级电影公司接洽，希望达成许可协议，以支付巨额费用换取使用受版权保护的内容训练AI模型。该消息引发业内讨论：传统影视公司是否应授权内容给AI公司，以及这对创意产业和AI发展将产生何种深远影响。
+
+### 5. [Apple 指控 OpenAI 销毁证据，要求快速取证](https://www.theverge.com/tech/987575/apple-openai-destroying-evidence-trade-secrets-lawsuit) ★★★★☆
+
+**来源**: The Verge
+
+苹果在商业机密诉讼中指控OpenAI销毁证据，申请“快速取证”。苹果称OpenAI直到本周才交出涉案前员工的MacBook，引发故意延误证据提交的质疑。这加剧了两家科技巨头间的紧张关系。
+
+### 6. [Waymo 开火特斯拉：纯端到端AI不够安全](https://techcrunch.com/2026/09/01/waymo-goes-on-offense-ahead-of-teslas-cybercab-launch/) ★★★★☆
+
+**来源**: TechCrunch
+
+在特斯拉Cybercab发布前夕，Waymo公开表示，完全自动驾驶离不开多种传感器融合，并警告纯端到端AI系统“不够安全”。此举被视为Waymo在Robotaxi竞争日趋激烈之际，试图以技术路线之争影响公众和监管认知，为自家多传感器方案争取话语权。
+
+### 7. [Google 发布 AI 设计工具 Pics，主打提示词创作](https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/) ★★★★☆
+
+**来源**: TechCrunch
+
+Google推出AI设计工具Google Pics，进一步进军由Canva和Adobe主导的创意软件市场。与传统的拖拽式设计不同，Pics采用AI优先策略，用户通过自然语言提示即可生成完整设计，代表了创意工具从“手动设计”向“AI生成”的范式转变。
+
+### 8. [ChatGPT Health 接入 Epic，医生可导入患者数据](https://techcrunch.com/2026/09/01/chatgpt-health-adds-epic-integration-for-clinicians-to-import-patient-data/) ★★★★☆
+
+**来源**: TechCrunch
+
+OpenAI宣布ChatGPT Health与电子健康记录巨头Epic集成，临床医生可以通过该功能获得患者健康记录的只读访问权限，并导入数据辅助诊疗。此举标志着生成式AI进入临床工作流的实质性一步，但也引发了对医疗数据隐私和AI准确性的关注。
+
+### 9. [中国发布自动驾驶强制国标，L3级加速落地](https://www.ifanr.com/1677995?utm_source=rss&utm_medium=rss&utm_campaign=) ★★★★★
 
 **来源**: 爱范儿
 
-小鹏汽车宣布新版VLA大模型于9月实装，将视觉-语言-行动能力与时间记忆结合。系统可记住过去30秒的驾驶场景，并预判未来6秒的交通动态，提升复杂路况下的决策能力。这标志着自动驾驶从感知决策迈向带记忆的时序推理新阶段。
+中国出台自动驾驶强制性国家标准，享界、智界等品牌已提前布局。新规对未来两年L3级自动驾驶的大规模上车做出强制要求，从传感器、算法到安全冗余均提出明确规范，标志着中国自动驾驶进入有法可依的新阶段，将深刻影响行业竞争格局。
 
-### 10. [NVIDIA发布紧凑型多模态审核模型Nemotron 3.5 Safety](https://arxiv.org/abs/2608.27548) ★★★★☆
+### 10. [IBM 发布 Granite 4.2 LLM，披露技术细节](https://huggingface.co/blog/ibm-granite/granite-4-2) ★★★★☆
 
-**来源**: arXiv
+**来源**: Hugging Face - Blog
 
-NVIDIA推出Nemotron 3.5 Content Safety Moderator，一个紧凑型多模态、多语言内容审核模型，支持图像、文档和截图理解，并具备推理能力。该模型针对不同政策灵活适配，可实时拦截违规内容，为AI应用提供更可靠的安全护栏，尤其适合边缘部署。
-
----
-
-## 🏯 中国古代故事 · 典故 · 天文地理 · 科技发明 (0 则)
+IBM在Hugging Face博客发布Granite 4.2大语言模型的技术详解，介绍了模型架构、训练数据和方法。作为企业级开放模型系列，Granite 4.2在可扩展性、推理能力和特定领域性能上进行了优化，旨在为企业客户提供高效、安全的本地化AI方案。
 
 ---
 
-*📬 每日自动生成 · 2026-09-01 01:30*
+## 🏯 中国古代故事 · 典故 · 天文地理 · 科技发明 (1 则)
+
+### 1. 蔡伦改进造纸术
+
+**东汉** · 古代科技发明 · 出处：《后汉书·蔡伦传》
+
+东汉以前，人们用竹简木牍写字，笨重如山；或用缣帛，昂贵如金。蔡伦任尚方令，掌管宫廷器物制造。他见读书人背着一车简册赶路，决心造一种轻便廉价的书写材料。他把树皮、麻头、破布、旧渔网收来，经挫、捣、抄、烘等工序，造出植物纤维纸。元兴元年（105年），蔡伦将纸献给汉和帝，和帝试用后大为赞赏，下令全国推广。这种纸质地细密、成本低廉，世称“蔡侯纸”，从此知识传播的速度如虎添翼。
+
+> 💡 **寓意**：变废为宝、博采众长，一项技术革新能撬动整个文明的传播进程。
+
+> 📎 考古学家在甘肃天水放马滩发现了西汉早期的纸地图，比蔡伦纸更早，但蔡伦让造纸走上规模化、标准化之路。
+
+🔗 **深入了解**：[蔡伦](https://baike.baidu.com/item/%E8%94%A1%E4%BC%A6) | [造纸术](https://baike.baidu.com/item/%E9%80%A0%E7%BA%B8%E6%9C%AF) | [后汉书](https://baike.baidu.com/item/%E5%90%8E%E6%B1%89%E4%B9%A6) | [蔡侯纸](https://baike.baidu.com/item/%E8%94%A1%E4%BE%AF%E7%BA%B8) | [东汉](https://baike.baidu.com/item/%E4%B8%9C%E6%B1%89) | [汉和帝](https://baike.baidu.com/item/%E6%B1%89%E5%92%8C%E5%B8%9D) | [蔡伦改进造纸术](https://baike.baidu.com/item/%E8%94%A1%E4%BC%A6%E6%94%B9%E8%BF%9B%E9%80%A0%E7%BA%B8%E6%9C%AF)
+
+---
+
+*📬 每日自动生成 · 2026-09-01 23:59*
