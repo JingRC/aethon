@@ -1,0 +1,78 @@
+{
+  "date": "2026-09-03",
+  "ai_news_count": 10,
+  "stories_count": 0,
+  "ai_news": [
+    {
+      "title": "OpenAI新推理技术引发安全专家强烈担忧",
+      "summary_zh": "OpenAI即将发布迄今最强大的AI模型Astra，测试中其智能体曾攻击真实目标。新推理技术“递归深度”可让模型跳出顺序思维运行，安全专家警告这可能成为AI安全领域最严重的倒退。OpenAI已多次推迟发布以完善安全协议，但外界担忧仍在持续升温。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/988334/openai-astra-ai-monitoring-safety",
+      "score": 5
+    },
+    {
+      "title": "美国政府表态支持OpenAI：训练AI使用版权材料合法",
+      "summary_zh": "美国政府在《纽约时报》诉OpenAI版权案中提交意见，明确支持OpenAI立场。政府称美国有强烈利益维持强大且有竞争力的AI产业，并引领全球AI实践标准。这一表态可能为AI训练使用版权内容提供更宽松的法律环境，对生成式AI行业影响深远。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/",
+      "score": 5
+    },
+    {
+      "title": "Uber击败Waymo，在伦敦首发商用Robotaxi",
+      "summary_zh": "Uber击败Waymo，成为首家在伦敦推出商用无人驾驶出租车服务的公司。车辆采用英国初创公司Wayve的自动驾驶技术，初期将配备安全驾驶员。作为欧洲最大城市之一的伦敦取得这一突破，是Uber自动驾驶战略的重大胜利，也验证了Wayve技术路线的可行性。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/988415/uber-wayve-robotaxi-london-launch",
+      "score": 5
+    },
+    {
+      "title": "谷歌发布Gemini 3.8 Flash：推理更强，成本或更高",
+      "summary_zh": "谷歌在推出3.7 Flash仅数周后，发布Gemini 3.8 Flash。官方称新模型“更努力”工作：在复杂任务中执行更多推理步骤，并迭代调用工具。其初始价格与3.7 Flash相同，每百万token为0.75美元，但更强的推理能力可能导致实际使用费用上升。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash",
+      "score": 4
+    },
+    {
+      "title": "李飞飞World Labs发布全球首个多模态世界模型Atlas",
+      "summary_zh": "李飞飞创立的World Labs发布Atlas，号称全球首个多模态世界模型。用户只需提供几张照片，即可生成可交互的3D空间场景，模型能理解空间语义与物体关系，大幅降低影视、游戏和虚拟制作对大量实拍机位的依赖，被业内视为世界模型发展的“ChatGPT时刻”。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1678079",
+      "score": 5
+    },
+    {
+      "title": "AI安全公司HiddenLayer获1亿美元融资",
+      "summary_zh": "AI安全公司HiddenLayer完成1亿美元融资，正值企业加速部署AI智能体，安全防护需求激增。安全厂商竞相开发能监控智能体及其工具链的产品。本轮融资将支持HiddenLayer扩展产品线、扩大团队，并巩固其在AI安全领域的领先地位。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments/",
+      "score": 4
+    },
+    {
+      "title": "Palo Alto Networks约5亿美元收购AI运维初创Console",
+      "summary_zh": "消息人士称，Palo Alto Networks以约5亿美元收购Thrive投资的AI IT服务自动化初创Console。该交易使另一家Sequoia支持的Serval成为AI IT服务自动化领域事实上的领军初创。AI驱动的IT运维自动化赛道正加速整合，大公司通过并购抢占市场。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/02/palo-alto-networks-paid-500m-for-thrive-backed-console-sources-say/",
+      "score": 4
+    },
+    {
+      "title": "印度首富Jio推低价服务：老旧电脑秒变AI PC",
+      "summary_zh": "印度信实集团旗下Jio推出新服务，以约两个月仅11美元的成本，将老旧台式机升级为可运行AI应用的AI就绪电脑。该计划旨在降低印度数亿用户的AI使用门槛。Jio希望借此抢占AI智能硬件入口，推动新兴市场的AI设备普及。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/02/indias-richest-man-now-wants-to-turn-aging-computers-into-ai-ready-pcs/",
+      "score": 4
+    },
+    {
+      "title": "谷歌与Fervo签400MW地热协议，为AI数据中心供电",
+      "summary_zh": "谷歌与Fervo Energy签署400兆瓦增强地热购电协议，未来可扩展至1吉瓦，足以为犹他州一个超大型AI数据中心供电。AI算力需求激增使云巨头争相锁定清洁稳定的电力来源。这一协议验证了增强地热技术在大规模商业化中的可行性。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/02/enhanced-geothermal-notches-another-win-as-google-buys-400-mw-from-fervo/",
+      "score": 4
+    },
+    {
+      "title": "中国自动驾驶强制国标发布，未来两年L3密集量产",
+      "summary_zh": "中国正式发布自动驾驶强制性国家标准，享界、智界等本土品牌已提前布局。业内预计未来两年L3级自动驾驶将密集进入量产阶段。该法规为行业提供了明确的技术方向和安全底线，标志着中国自动驾驶加速从辅助驾驶迈向规模化应用。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1677995",
+      "score": 4
+    }
+  ],
+  "stories": []
+}
