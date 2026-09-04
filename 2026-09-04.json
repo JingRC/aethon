@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-04",
+  "ai_news_count": 10,
+  "stories_count": 1,
+  "ai_news": [
+    {
+      "title": "OpenAI发布GPT-6 Astra，宣称进入AGI时代",
+      "summary_zh": "OpenAI发布下一代模型GPT-6 Astra，称其为“代际能力飞跃”，在网络安全、专业工作、软件工程和计算机使用等领域表现卓越，也是首个被认定为达到OpenAI“AGI标准”的模型。这标志着AI进入AGI时代，但其安全性和社会影响也引发了广泛争议。",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
+      "score": 5
+    },
+    {
+      "title": "李飞飞发布全球首个多模态世界模型 Atlas",
+      "summary_zh": "AI科学家李飞飞创办的World Labs发布全球首个多模态世界模型Atlas，能够从几张静态照片生成、重建和模拟整个三维世界，并支持实时交互。该模型理解空间关系，有望大幅改变电影制作、游戏和机器人等行业的场景生成方式，被视为世界模型的“ChatGPT时刻”。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1678079",
+      "score": 5
+    },
+    {
+      "title": "Thinking Machines据报获Accel领投10亿美元，估值400亿美元",
+      "summary_zh": "据TechCrunch报道，风险投资公司Accel正洽谈领投Thinking Machines的10亿美元新一轮融资，估值达400亿美元。这家高人气AI初创公司运营收入年化已超1亿美元。若完成，将成为AI领域又一只超级独角兽，反映资本市场对基础模型创业公司的持续狂热。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/",
+      "score": 5
+    },
+    {
+      "title": "中国发布自动驾驶强制国标，L3级车辆密集上车在即",
+      "summary_zh": "中国发布自动驾驶强制性国家标准，为L3级自动驾驶铺路，包括享界、智界在内的车企已提前适配新规。报道指出，今明两年将迎来L3级自动驾驶车型密集上市。该政策明确了高阶自动驾驶的产品准入和安全责任，将加速AI驾驶技术的规模化商用，带动相关产业链发展。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1677995",
+      "score": 4
+    },
+    {
+      "title": "Meta以约95%折扣换取用户共享AI模型使用数据",
+      "summary_zh": "Meta为其最新的Muse Spark AI模型推出付费数据共享计划：用户如果允许Meta读取其提示词和模型输出，可获得平均约95%的折扣。Meta意图收集真实使用数据以改进未来模型，但这引发隐私保护与数据使用边界的关注，也展示了AI公司获取训练数据的新方式。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model/",
+      "score": 4
+    },
+    {
+      "title": "Google发布AI天气预测模型 WeatherNext 3",
+      "summary_zh": "Google发布新一代AI天气模型WeatherNext 3，将深度学习引入气象预报。该模型提供更精准的降水等预测，并将逐步接入Google搜索、Google Maps和Gemini。这是AI在科学模拟领域的又一实践，让普通人能更方便地用AI预知天气，减少忘带伞的尴尬。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/",
+      "score": 4
+    },
+    {
+      "title": "特斯拉开放Cybercab无人驾驶车队购买意向征集",
+      "summary_zh": "特斯拉在公司网站上发布意向表单，向社会公开征集有意购买并运营Cybercab无人驾驶出租车车队的企业或个人。此举被认为是特斯拉从销售汽车转向提供自动驾驶出行服务的商业化前奏。Cybercab取消了方向盘和踏板，其运营模式还需监管批准。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/03/tesla-is-asking-people-if-they-want-to-buy-and-run-cybercab-fleets/",
+      "score": 4
+    },
+    {
+      "title": "Google在Gmail、Docs和Keep推出AI语音交互功能",
+      "summary_zh": "Google在Gmail、Docs和Keep中推出基于AI的语音交互功能，用户可以通过对话方式搜索邮件、起草文档或记录笔记。该功能使用户获得更自然、更高效的办公体验，是Google将AI语音助手深入整合进生产力工具的重要一步，但实际效果和准确性仍需检验。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/03/google-launches-ai-voice-features-in-gmail-docs-and-keep/",
+      "score": 3
+    },
+    {
+      "title": "Abliteration.ai：把去除AI安全护栏做成一门生意",
+      "summary_zh": "新创公司Abliteration.ai正将“去除AI安全护栏”商业化，提供无审查限制的AI模型，让用户更容易获得更强大的未过滤模型。公司辩称，让防御者拥有与攻击者相同的工具，最终可提升网络安全。然而，此举也引发对模型滥用、恶意内容和监管风险的担忧。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails/",
+      "score": 4
+    },
+    {
+      "title": "Google发布Gemini 3.8 Flash：主打快省，推理仍是短板",
+      "summary_zh": "Google发布轻量级模型Gemini 3.8 Flash，主打通话快速、成本更低，能高效完成文档处理、内容分类等日常任务。评测认为该模型“干活勤快，但没开窍”，在复杂推理上依然不足。它的定位务实，为开发者和企业提供了更经济高效的AI选择。",
+      "source": "爱范儿",
+      "url": "https://www.ifanr.com/1678197",
+      "score": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "二疏辞官：知进退的千古佳话",
+      "dynasty": "西汉",
+      "category": "诸子百家寓言",
+      "source": "《汉书·疏广传》"
+    }
+  ]
+}
